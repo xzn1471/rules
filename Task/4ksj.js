@@ -25,17 +25,17 @@ BoxJs订阅地址:
 QuantumultX配置:
 
 [task_local]
-0 6 * * * https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/4ksj.js, tag=𝟒𝐊世界每日签到, img-url=https://raw.githubusercontent.com/Yuheng0101/X/main/Assets/4ksj.png, enabled=true
+0 6 * * * https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/refs/heads/main/Task/4ksj.js, tag=𝟒𝐊世界每日签到, enabled=true
 ******************************************
 Loon配置:
 
 [Script]
-cron "0 6 * * *" script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/4ksj.js, timeout=10, tag=𝟒𝐊世界每日签到, img-url=https://raw.githubusercontent.com/Yuheng0101/X/main/Assets/4ksj.png
+cron "0 6 * * *" script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/refs/heads/main/Task/4ksj.js, timeout=10, tag=𝟒𝐊世界每日签到
 ******************************************
 Surge配置:
 
 [Script]
-𝟒𝐊世界每日签到 = type=cron,cronexp=0 6 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/4ksj.js,timeout=60
+𝟒𝐊世界每日签到 = type=cron,cronexp=0 6 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/refs/heads/main/Task/4ksj.js,timeout=60
 ******************************************
 青龙配置:
 # 是否开启调试模式
