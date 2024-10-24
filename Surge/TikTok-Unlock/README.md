@@ -5,6 +5,7 @@
 * [TikTok](#TikTok)
 * [準備工作](#準備工作)
 * [Surge](#Surge)
+* [抓包降级](#抓包降级)
 
 ---
 
@@ -84,5 +85,12 @@ https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/refs/heads/main/Surge/Tik
 ```
 https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/refs/heads/main/Surge/TikTok.list
 ```
+
+---
+
+### <a id="抓包降级"> 抓包降级 TikTok 21.1.0 </a>
+
+* [教程](https://semporia.github.io/iTunes.html)
+* [备用地址](https://semporia.blogspot.com/2022/06/tiktok-2110.html)
 
 ---
