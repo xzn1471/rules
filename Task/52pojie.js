@@ -41,28 +41,28 @@ hostname = www.52pojie.cn
 
 [rewrite_local]
 # 吾爱破解获取Cookie
-^https:\/\/www\.52pojie\.cn\/home\.php\? url script-request-header https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/52pojie.js
+^https:\/\/www\.52pojie\.cn\/home\.php\? url script-request-header https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/refs/heads/main/Task/52pojie.js
 
 [task_local]
-0 9 * * * https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/52pojie.js, tag=吾爱破解签到, img-url=https://raw.githubusercontent.com/Yuheng0101/X/main/Assets/52pojie.png, enabled=true
+0 9 * * * https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/refs/heads/main/Task/52pojie.js, tag=吾爱破解签到, enabled=true
 ******************************************
 Loon配置:
 [MITM]
 hostname = www.52pojie.cn
 
 [Script]
-http-request ^https:\/\/www\.52pojie\.cn\/home\.php\? tag=吾爱破解获取Cookie, script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/52pojie.js
+http-request ^https:\/\/www\.52pojie\.cn\/home\.php\? tag=吾爱破解获取Cookie, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/refs/heads/main/Task/52pojie.js
 
-cron "0 9 * * *" script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/52pojie.js, timeout=10, tag=吾爱破解签到, img-url=https://raw.githubusercontent.com/Yuheng0101/X/main/Assets/52pojie.png
+cron "0 9 * * *" script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/refs/heads/main/Task/52pojie.js, timeout=10, tag=吾爱破解签到
 ******************************************
 Surge配置:
 [MITM]
 hostname = %APPEND% www.52pojie.cn
 
 [Script]
-吾爱破解获取Cookie = type=http-request,pattern=^https:\/\/www\.52pojie\.cn\/home\.php\?, script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/52pojie.js
+吾爱破解获取Cookie = type=http-request,pattern=^https:\/\/www\.52pojie\.cn\/home\.php\?, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/refs/heads/main/Task/52pojie.js
 
-吾爱破解签到 = type=cron,cronexp=0 9 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/52pojie.js,timeout=60
+吾爱破解签到 = type=cron,cronexp=0 9 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/refs/heads/main/Task/52pojie.js,timeout=60
 ******************************************/
 const $ = new Env(`吾爱破解`)
 $.isRequest = () => 'undefined' !== typeof $request
