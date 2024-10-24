@@ -47,16 +47,16 @@
 ### 配置 (QuanX)
 ```properties
 [task_local]
-6 9 * * * https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/moyu.js, tag=摸鱼来啦, img-url=https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/67/04/ff/6704ff4c-b49b-de91-70ac-201c62d5296f/AppIcon-0-0-1x_U007emarketing-0-0-0-5-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/144x144bb.png, enabled=true
+6 9 * * * https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/refs/heads/main/Task/moyu.js, tag=摸鱼来啦, enabled=true
 ```
 ### 配置 (Loon)
 ```properties
 [Script]
-cron "6 9 * * *" script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/moyu.js, timeout=20, tag=摸鱼来啦, img-url=https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/67/04/ff/6704ff4c-b49b-de91-70ac-201c62d5296f/AppIcon-0-0-1x_U007emarketing-0-0-0-5-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/144x144bb.png
+cron "6 9 * * *" script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/refs/heads/main/Task/moyu.js, timeout=20, tag=摸鱼来啦
 ```
 ### 配置 (Surge)
 ```properties
-摸鱼来啦 = type=cron,cronexp=6 9 * * *,script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/moyu.js,script-update-interval=604800
+摸鱼来啦 = type=cron,cronexp=6 9 * * *,script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/refs/heads/main/Task/moyu.js,script-update-interval=604800
 ```
 ******************************************/
 const $ = new Env('摸鱼来啦~', {
