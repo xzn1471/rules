@@ -47,16 +47,16 @@
 ### 配置 (QuanX)
 ```properties
 [task_local]
-6 9 * * * https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/refs/heads/main/Task/moyu.js, tag=摸鱼来啦, enabled=true
+6 9 * * * https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Task/Tasks/moyu.js, tag=摸鱼来啦, enabled=true
 ```
 ### 配置 (Loon)
 ```properties
 [Script]
-cron "6 9 * * *" script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/refs/heads/main/Task/moyu.js, timeout=20, tag=摸鱼来啦
+cron "6 9 * * *" script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Task/Tasks/moyu.js, timeout=20, tag=摸鱼来啦
 ```
 ### 配置 (Surge)
 ```properties
-摸鱼来啦 = type=cron,cronexp=6 9 * * *,script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/refs/heads/main/Task/moyu.js,script-update-interval=604800
+摸鱼来啦 = type=cron,cronexp=6 9 * * *,script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Task/Tasks/moyu.js,script-update-interval=604800
 ```
 ******************************************/
 const $ = new Env('摸鱼来啦~', {
