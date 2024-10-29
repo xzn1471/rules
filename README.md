@@ -11,5 +11,9 @@
 Surge、Qx、Loon分流规则、JS脚本、Task
 
 
+# JS文件如下：
+ASN-China  按ASN分流中国大陆IP与域名直连
+Net-Test   测试加解密耗时
+
 
 
