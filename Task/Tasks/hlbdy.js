@@ -25,14 +25,14 @@
 
 ********************* 𝐐𝐮𝐚𝐧𝐭𝐮𝐦𝐮𝐥𝐭 𝐗 *********************
 [task_local]
-0 9,15 * * * https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/refs/heads/main/Task/hlbdy.js, tag=黑料不打烊, enabled=true
+0 9,15 * * * https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Task/Tasks/hlbdy.js, tag=黑料不打烊, enabled=true
 
 ********************* 𝐋𝐨𝐨𝐧 *********************
 [Script]
-cron "9,15 * * *" script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/refs/heads/main/Task/hlbdy.js, timeout=10, tag=黑料不打烊
+cron "9,15 * * *" script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Task/Tasks/hlbdy.js, timeout=10, tag=黑料不打烊
 
 ********************* 𝐒𝐮𝐫𝐠𝐞 *********************
-黑料不打烊 = type=cron,cronexp=0 9,15 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/refs/heads/main/Task/hlbdy.js,timeout=60
+黑料不打烊 = type=cron,cronexp=0 9,15 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Task/Tasks/hlbdy.js,timeout=60
 
 ********************* 𝐒𝐭𝐚𝐬𝐡 *********************
 cron:
@@ -42,7 +42,7 @@ cron:
       timeout: 60
 script-providers:
   黑料不打烊:
-    url: https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/refs/heads/main/Task/hlbdy.js
+    url: https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Task/Tasks/hlbdy.js
     interval: 86400
     
 ********************* 𝐍𝐨𝐝𝐞𝐉𝐒 *********************
