@@ -13,7 +13,7 @@
 7. 本脚本及其更新版权归作者所有
  
 [task_local]
-30 20 * * * https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/meitu/meitu.js, tag=美图鉴赏, enabled=true, img-url=https://raw.githubusercontent.com/Yuheng0101/X/main/Assets/meitu.png
+30 20 * * * https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Task/Tasks/meitu.js, tag=美图鉴赏, enabled=true, img-url=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Task/Tasks/icon/meitu.png
 
  ******************************************/
 const $ = new Env("美图写真");
