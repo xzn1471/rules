@@ -476,6 +476,32 @@
         "https://raw.githubusercontent.com/Yuheng0101/X/main/Assets/52pojie.png"
       ],
       "script": "https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/52pojie.js"
+    },
+    {
+      "id": "idaily",
+      "name": "iDaily",
+      "descs_html": [
+        "点此直达【<a href=\"https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/idaily/idaily.js\">脚本地址</a>】"
+      ],
+      "keys": [
+        "@iDaily.random"
+      ],
+      "settings": [
+        {
+          "id": "@iDaily.random",
+          "name": "随机获取",
+          "val": false,
+          "type": "boolean",
+          "desc": "打开将会随机获取内容"
+        }
+      ],
+      "author": "@evilbutcher",
+      "repo": "https://github.com/evilbutcher/QuantumultX/tree/master/check_in/idaily",
+      "icons": [
+        "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/picture/idaily_tran.png",
+        "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/picture/idaily.png"
+      ],
+      "script": "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/idaily/idaily.js"
     }
   ]
 }
