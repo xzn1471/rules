@@ -24,9 +24,9 @@ Net-Test   测试加解密耗时
 
 Network-Info  网络详情
 
-  Net-lsp-beta  网络信息 𝕏(β)
+      Net-lsp-beta  网络信息 𝕏(β)
   
-  Net-lsp-x   网络信息 𝕏
+      Net-lsp-x   网络信息 𝕏
   
   Network-Info  网络信息
   
