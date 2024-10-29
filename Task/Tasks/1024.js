@@ -24,16 +24,16 @@
 ### 配置 (QuanX)
 ```properties
 [task_local]
-0 8,14,20 * * * https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/refs/heads/main/Task/1024.js, tag=最新技術推送, enabled=true
+0 8,14,20 * * * https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Task/Tasks/1024.js, tag=最新技術推送, enabled=true
 ```
 ### 配置 (Loon)
 ```properties
 [Script]
-cron "0 8,14,20 * * *" script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/refs/heads/main/Task/1024.js, timeout=10, tag=最新技術推送
+cron "0 8,14,20 * * *" script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Task/Tasks/1024.js, timeout=10, tag=最新技術推送
 ```
 ### 配置 (Surge)
 ```properties
-最新技術推送 = type=cron,cronexp= 0 8,14,20 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/refs/heads/main/Task/1024.js,timeout=60
+最新技術推送 = type=cron,cronexp= 0 8,14,20 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Task/Tasks/1024.js,timeout=60
 ```
 ## BoxJs地址
     https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/boxjs.json
