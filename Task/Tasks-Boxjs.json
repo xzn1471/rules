@@ -189,25 +189,6 @@
       "script": "http://192.168.68.169:5501/NewProject/Task/%E9%BB%91%E6%96%99%E4%B8%8D%E6%89%93%E7%83%8A/hlbdy.js"
     },
     {
-      "id": "BOBOLAOSHIV587.60s",
-      "name": "每天60秒读懂世界",
-      "descs_html": ["<a target='_blank' href='https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/60s.js'>跳转脚本</a>"],
-      "keys": ["zaobao_debug"],
-      "settings": [
-        {
-          "id": "zaobao_debug",
-          "name": "是否开启调试模式",
-          "val": false,
-          "type": "boolean",
-          "desc": ""
-        }
-      ],
-      "author": "@BOBOLAOSHIV587",
-      "repo": "https://github.com/BOBOLAOSHIV587",
-      "icons": ["https://raw.githubusercontent.com/Yuheng0101/X/main/Assets/60s.png", "https://raw.githubusercontent.com/Yuheng0101/X/main/Assets/60s.png"],
-      "script": "https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/60s.js"
-    },
-    {
       "id": "BOBOLAOSHIV587.javday",
       "name": "𝐉𝐀𝐕𝐃𝐚𝐲每日推荐",
       "descs_html": [
@@ -408,8 +389,7 @@
       "script": "https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/52pojie.js"
     },
     {
-      "id": "idaily",
-      "name": "iDaily",
+      "name": "iDaily每日环球视野",
       "descs_html": [
         "点此直达【<a href=\"https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/idaily/idaily.js\">脚本地址</a>】"
       ],
