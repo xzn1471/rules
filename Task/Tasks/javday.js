@@ -21,17 +21,17 @@ BoxJs订阅地址:
 QuantumultX配置:
 
 [task_local]
-0 22 * * * https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/refs/heads/main/Task/javday.js, tag=𝐉𝐀𝐕𝐃𝐚𝐲每日推荐, enabled=true
+0 22 * * * https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Task/Tasks/javday.js, tag=𝐉𝐀𝐕𝐃𝐚𝐲每日推荐, enabled=true
 ******************************************
 Loon配置:
 
 [Script]
-cron "0 22 * * *" script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/refs/heads/main/Task/javday.js, timeout=10, tag=𝐉𝐀𝐕𝐃𝐚𝐲每日推荐
+cron "0 22 * * *" script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Task/Tasks/javday.js, timeout=10, tag=𝐉𝐀𝐕𝐃𝐚𝐲每日推荐
 ******************************************
 Surge配置:
 
 [Script]
-𝐉𝐀𝐕𝐃𝐚𝐲每日推荐 = type=cron,cronexp=0 22 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/refs/heads/main/Task/javday.js,timeout=60
+𝐉𝐀𝐕𝐃𝐚𝐲每日推荐 = type=cron,cronexp=0 22 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Task/Tasks/javday.js,timeout=60
 ******************************************
 青龙配置:
 # 是否开启调试模式
