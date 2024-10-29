@@ -11,11 +11,3 @@
 # Surge、Qx、Loon分流规则、JS脚本、Task
 
 
-
-StormSniffer     StormSniffer解锁
-
-
-Surge-Tool     Surge Tool 故障排查/规则统计
-
-
-YouTube     YouTube去广告-qx(>=iOS15) 去首页瀑布流广告/播放页推荐列表广告(非贴片广告)
