@@ -39,7 +39,7 @@ const main = async () => {
   try {
     await showNotice();
     await loadRemoteScriptByCache(
-      "https://cdn.jsdelivr.net/gh/Yuheng0101/X@main/Utils/cheerio.js",
+      "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Task/Tasks/icon/cheerio.js",
       "createCheerio",
       "cheerio"
     );
