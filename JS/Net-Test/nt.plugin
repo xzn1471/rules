@@ -7,9 +7,9 @@
 #!date = 2024-01-26 03:02:13
 
 [Script]
-http-request ^https?:\/\/neteasems\.test\/binary script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/refs/heads/main/JS/Net-Test/ntbm.js, requires-body=true, binary-body-mode=1, timeout=20, tag=测试加解密耗时二进制模式
+http-request ^https?:\/\/neteasems\.test\/binary script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Net-Test/JS/ntbm.js, requires-body=true, binary-body-mode=1, timeout=20, tag=测试加解密耗时二进制模式
 
-http-request ^https?:\/\/neteasems\.test script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/refs/heads/main/JS/Net-Test/nt.js, requires-body=true, timeout=20, tag=测试加解密耗时
+http-request ^https?:\/\/neteasems\.test script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Net-Test/JS/nt.js, requires-body=true, timeout=20, tag=测试加解密耗时
 
 [MITM]
 hostname = neteasems.test
