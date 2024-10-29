@@ -419,11 +419,11 @@ async function GetCache(url, sck) {
 }
 async function HttpGetFile() {
   const file_a = await GetCache(
-    "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/refs/heads/main/JS/Surge-Tool/file_a.txt",
+    "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Surge-Tool/JS/file_a.txt",
     "SurgeTool_Cache_A"
   );
   const file_b = await GetCache(
-    "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/refs/heads/main/JS/Surge-Tool/file_b.txt",
+    "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Surge-Tool/JS/file_b.txt",
     "SurgeTool_Cache_B"
   );
   return [file_a, file_b];
