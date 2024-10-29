@@ -7,7 +7,7 @@ const $ = new Env("ModuleName")
 async function loadCheerio() {
     return new Promise(async (resolve) => {
         $.getScript(
-            'https://cdn.jsdelivr.net/gh/Yuheng0101/X@main/Utils/cheerio.js'
+            'https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Task/Tasks/icon/cheerio.js'
         ).then((fn) => {
             eval(fn)
             const cheerio = createCheerio()
