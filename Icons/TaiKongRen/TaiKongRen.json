@@ -1,0 +1,19 @@
+{
+"name":"太空人", 
+"description":"长大了，我要当世界冠军，爸爸妈妈可高兴了，给我爱吃的喜之郎，我要做太空人", 
+"icons":
+[
+{"name":"1", "url":"https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/TaiKongRen/Image/Tkr1.png"},
+{"name":"2", "url":"https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/TaiKongRen/Image/Tkr2.png"},
+{"name":"3", "url":"https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/TaiKongRen/Image/Tkr3.png"},
+{"name":"4", "url":"https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/TaiKongRen/Image/Tkr4.png"},
+{"name":"5", "url":"https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/TaiKongRen/Image/Tkr5.png"},
+{"name":"6", "url":"https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/TaiKongRen/Image/Tkr6.png"},
+{"name":"7", "url":"https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/TaiKongRen/Image/Tkr7.png"},
+{"name":"8", "url":"https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/TaiKongRen/Image/Tkr8.png"},
+{"name":"9", "url":"https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/TaiKongRen/Image/Tkr9.png"},
+{"name":"10", "url":"https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/TaiKongRen/Image/Tkr10.png"},
+{"name":"11", "url":"https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/TaiKongRen/Image/Tkr11.png"},
+{"name":"12", "url":"https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/TaiKongRen/Image/Tkr12.png"},
+]
+}
