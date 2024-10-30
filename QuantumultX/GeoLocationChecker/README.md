@@ -13,10 +13,10 @@
 台湾地区旗帜替换为🇨🇳版
 
 ```
-geo_location_checker=http://ip-api.com/json/?lang=zh-CN, https://raw.githubusercontent.com/I-am-R-E/Functional-Store-Hub/Master/GeoLocationChecker/QuantumultX/IP-API.js
+geo_location_checker=http://ip-api.com/json/?lang=zh-CN, https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/QuantumultX/GeoLocationChecker/IP-API(1).js
 ```
   
 台湾地区旗帜显示为🇹🇼版
 ```
-geo_location_checker=http://ip-api.com/json/?lang=zh-CN, https://raw.githubusercontent.com/I-am-R-E/Functional-Store-Hub/Master/GeoLocationChecker/QuantumultX/IP-API-TaiwanFlag.js
+geo_location_checker=http://ip-api.com/json/?lang=zh-CN, https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/QuantumultX/GeoLocationChecker/IP-API-TaiwanFlag.js
 ```
