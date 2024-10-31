@@ -60,37 +60,37 @@
 **日本**
 
 ```
-https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/refs/heads/main/Loon/TikTok-Unlock/TikTok-JP.plugin
+https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Loon/TikTok-Unlock/TikTok-JP.plugin
 ```
 
 **台湾**
 
 ```
-https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/refs/heads/main/Loon/TikTok-Unlock/TikTok-TW.plugin
+https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Loon/TikTok-Unlock/TikTok-TW.plugin
 ```
 
 **韩国**
 
 ```
-https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/refs/heads/main/Loon/TikTok-Unlock/TikTok-KR.plugin
+https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Loon/TikTok-Unlock/TikTok-KR.plugin
 ```
 
 **美国**
 
 ```
-https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/refs/heads/main/Loon/TikTok-Unlock/TikTok-US.plugin
+https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Loon/TikTok-Unlock/TikTok-US.plugin
 ```
 
 **英国**
 
 ```
-https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/refs/heads/main/Loon/TikTok-Unlock/TikTok-UK.plugin
+https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Loon/TikTok-Unlock/TikTok-UK.plugin
 ```
 
 3、在`[Remote Rule]`下面添加TikTok分流规则，示例如下：
 
 ```
-https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/refs/heads/main/Loon/TikTok.list, tag=TikTok, policy=TikTok, update-interval=86400, enabled=true
+https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Loon/TikTok.list, tag=TikTok, policy=TikTok, update-interval=86400, enabled=true
 ```
 
 ---
