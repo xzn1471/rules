@@ -1,4 +1,4 @@
-// @xream @key
+// @BOBOLAOSHIV587
 const UPDATA = "2024-03-16 14:14:49";
 const isPanel = typeof $input != "undefined",
   stname = "SurgeTool_Rule_NUM",
