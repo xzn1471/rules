@@ -3,14 +3,6 @@
  * @update 20240515
  * @version 1.0.0
  *****************************************
-脚本声明:
-1. 本脚本仅用于学习研究，禁止用于商业用途
-2. 本脚本不保证准确性、可靠性、完整性和及时性
-3. 任何个人或组织均可无需经过通知而自由使用
-4. 作者对任何脚本问题概不负责，包括由此产生的任何损失
-5. 如果任何单位或个人认为该脚本可能涉嫌侵犯其权利，应及时通知并提供身份证明、所有权证明，我将在收到认证文件确认后删除
-6. 请勿将本脚本用于商业用途，由此引起的问题与作者无关
-7. 本脚本及其更新版权归作者所有
  
 [task_local]
 30 20 * * * https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Task/Tasks/meitu.js, tag=美图鉴赏, enabled=true, img-url=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Task/Tasks/icon/meitu.png
