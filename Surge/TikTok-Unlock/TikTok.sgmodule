@@ -1,9 +1,9 @@
 #!name=TikTok 解鎖
 #!desc=移除 TikTok 視頻水印並自定義區域解鎖，需要設定此插件對應區域的節點。
-#!author=Semporia
-#!icon=https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/TikTok.png
-#!openUrl=https://github.com/Semporia/TikTok-Unlock
-#!homepage=https://github.com/Semporia/TikTok-Unlock
+#!author=BOBOLAOSHIV587
+#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/Qure/Image/Color/TikTok.png
+#!openUrl=https://github.com/BOBOLAOSHIV587
+#!homepage=https://github.com/BOBOLAOSHIV587
 
 [Rule]
 AND, ((GEOIP, CN), (DOMAIN, pitaya.bytedance.com)), DIRECT
@@ -114,4 +114,4 @@ DOMAIN-KEYWORD,ttlivecdn.com.,TikTok
 TikTok 解鎖 = type=http-request, pattern=https?:\/\/.+.(tiktokv|tiktokcdn).com\/.+(region\d?=CN|&mcc_mnc=\d+), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Loon/TikTok-Unlock/TikTok.js
 
 [MITM]
-hostname = %APPEND% *.byteoversea.com, *.tik-tokapi.com, *.tiktokv.com
+hostname = %APPEND% *.byteoversea.com, *.tik-tokapi.com, *.tiktokv.com, *.tiktokcdn.com
