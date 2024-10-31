@@ -1,4 +1,3 @@
-![示例](https://raw.githubusercontent.com/Orz-3/mini/none/yaofan.png)
 
 ![示例](https://raw.githubusercontent.com/Orz-3/mini/none/头部.png)
 
@@ -9,10 +8,6 @@
 本项目可用于QuantumultX 1.07及以上版本，Loon 2.1.10(278)以上，和Pharos Pro 1.3.3及以上版本中
 
 **注意：** 本项目图标可用于订阅，Task，策略组等位置的远程引用
-
-##### Telegram频道： [mini](https://t.me/Orzmini)
-
-##### Telegram群组： [mini](https://t.me/Orz_mini)
 
 ### Quantumult X使用方法：
 
