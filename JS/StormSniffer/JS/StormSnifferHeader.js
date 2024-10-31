@@ -1,6 +1,6 @@
 /*
-脚本功能：获取StormSnifferHeader
-原脚本作者：paynexss
+# 脚本功能：获取StormSnifferHeader
+# 原脚本作者：paynexss
 
 [rewrite_local]
 ^http[s]?:\/\/api\.x-storm\.com(:\d{2,5})?\/app/.+$ url script-request-header https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/StormSniffer/JS/StormSnifferHeader.js
