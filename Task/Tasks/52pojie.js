@@ -4,15 +4,6 @@
  * @update 20241017
  * @version 1.0.4
  ******************************************
-脚本声明:
-1. 本脚本仅用于学习研究，禁止用于商业用途
-2. 本脚本不保证准确性、可靠性、完整性和及时性
-3. 任何个人或组织均可无需经过通知而自由使用
-4. 作者对任何脚本问题概不负责，包括由此产生的任何损失
-5. 如果任何单位或个人认为该脚本可能涉嫌侵犯其权利，应及时通知并提供身份证明、所有权证明，我将在收到认证文件确认后删除
-6. 请勿将本脚本用于商业用途，由此引起的问题与作者无关
-7. 本脚本及其更新版权归作者所有
-******************************************
 脚本说明: 部分内容摘自@NobyDa(野比佬)原脚本地址: https://github.com/NobyDa/Script/blob/master/52pojie-DailyBonus/52pojie.js; 文章借鉴: https://github.com/qd-today/templates/issues/34; 
 
 手动登录 https://www.52pojie.cn/home.php 如通知成功获取cookie, 则可以使用此签到脚本.
@@ -32,7 +23,7 @@ Node.js说明:
 
 
 BoxJs订阅地址:
-    - https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/boxjs.json
+    - https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Task/Tasks-Boxjs.json
 
 ******************************************
 QuantumultX配置:
@@ -41,28 +32,28 @@ hostname = www.52pojie.cn
 
 [rewrite_local]
 # 吾爱破解获取Cookie
-^https:\/\/www\.52pojie\.cn\/home\.php\? url script-request-header https://raw.githubusercontent.com/BOBOLAOSHIV587/heads/main/Task/Tasks/52pojie.js
+^https:\/\/www\.52pojie\.cn\/home\.php\? url script-request-header https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Task/Tasks/52pojie.js
 
 [task_local]
-0 9 * * * https://raw.githubusercontent.com/BOBOLAOSHIV587/heads/main/Task/Tasks/52pojie.js, tag=吾爱破解签到, enabled=true
+0 9 * * * https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Task/Tasks/52pojie.js, tag=吾爱破解签到, enabled=true
 ******************************************
 Loon配置:
 [MITM]
 hostname = www.52pojie.cn
 
 [Script]
-http-request ^https:\/\/www\.52pojie\.cn\/home\.php\? tag=吾爱破解获取Cookie, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/heads/main/Task/Tasks/52pojie.js
+http-request ^https:\/\/www\.52pojie\.cn\/home\.php\? tag=吾爱破解获取Cookie, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Task/Tasks/52pojie.js
 
-cron "0 9 * * *" script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/heads/main/Task/Tasks/52pojie.js, timeout=10, tag=吾爱破解签到
+cron "0 9 * * *" script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Task/Tasks/52pojie.js, timeout=10, tag=吾爱破解签到
 ******************************************
 Surge配置:
 [MITM]
 hostname = %APPEND% www.52pojie.cn
 
 [Script]
-吾爱破解获取Cookie = type=http-request,pattern=^https:\/\/www\.52pojie\.cn\/home\.php\?, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/heads/main/Task/Tasks/52pojie.js
+吾爱破解获取Cookie = type=http-request,pattern=^https:\/\/www\.52pojie\.cn\/home\.php\?, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Task/Tasks/52pojie.js
 
-吾爱破解签到 = type=cron,cronexp=0 9 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/heads/main/Task/Tasks/52pojie.js,timeout=60
+吾爱破解签到 = type=cron,cronexp=0 9 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Task/Tasks/52pojie.js,timeout=60
 ******************************************/
 const $ = new Env(`吾爱破解`)
 $.isRequest = () => 'undefined' !== typeof $request
