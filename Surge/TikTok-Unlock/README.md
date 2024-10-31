@@ -59,31 +59,31 @@
 **日本**
 
 ```
-https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/refs/heads/main/Surge/TikTok-Unlock/TiKTok-JP.sgmodule
+https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Surge/TikTok-Unlock/TiKTok-JP.sgmodule
 ```
 
 **台湾**
 
 ```
-https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/refs/heads/main/Surge/TikTok-Unlock/TiKTok-TW.sgmodule
+https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Surge/TikTok-Unlock/TiKTok-TW.sgmodule
 ```
 
 **韩国**
 
 ```
-https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/refs/heads/main/Surge/TikTok-Unlock/TiKTok-KR.sgmodule
+https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Surge/TikTok-Unlock/TiKTok-KR.sgmodule
 ```
 
 **美国**
 
 ```
-https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/refs/heads/main/Surge/TikTok-Unlock/TiKTok-US.sgmodule
+https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Surge/TikTok-Unlock/TiKTok-US.sgmodule
 ```
 
 3、添加以下`分流`
 
 ```
-https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/refs/heads/main/Surge/TikTok.list
+https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Surge/TikTok.list
 ```
 
 ---
