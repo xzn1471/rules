@@ -1,9 +1,9 @@
 /*
 脚本功能：获取StormSnifferHeader
-脚本作者：PayNe
+原脚本作者：paynexss
 
 [rewrite_local]
-^http[s]?:\/\/api\.x-storm\.com(:\d{2,5})?\/app/.+$ url script-request-header https://raw.githubusercontent.com/paynexss/Scripts/main/Scripts/StormSnifferHeader.js
+^http[s]?:\/\/api\.x-storm\.com(:\d{2,5})?\/app/.+$ url script-request-header https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/StormSniffer/JS/StormSnifferHeader.js
 
 [mitm]
 hostname = *.x-storm.com
