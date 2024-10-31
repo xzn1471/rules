@@ -8,7 +8,7 @@
 
 ===========QuantumultX===========
 [rewrite_local]
-^https:\/\/biz\.caiyunapp\.com\/v2\/user.+ url script-response-body https://raw.githubusercontent.com/zwf234/rules/master/js/caiyun.js
+^https:\/\/biz\.caiyunapp\.com\/v2\/user.+ url script-response-body https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/caiyun.js
 
 
 [MITM]
