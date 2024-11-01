@@ -1,8 +1,8 @@
   
 /*
-咪咕视频会员到期日
+# 咪咕视频会员到期日
 ***************************
-QuantumultX:
+# QuantumultX:
 [rewrite_local]
 ^https:\//v.miguvideo.com\/ability\/v2\/member-info url script-response-body https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/migushipin/JS/mg.js
 [mitm]
