@@ -1,19 +1,16 @@
-/*
- *
- *
 # 个人备用
 # 脚本功能：AudioMack解锁永久订阅
 # 软件版本：6.4.4
 # 更新时间：2022-01-23
 # 原脚本作者：yqc007
-# 脚本作者：
+# 脚本作者：BOBOLAOSHIV587
 
 *******************************
 
 [rewrite_local]
 
 # > AudioMack解锁永久订阅
-^https?:\/\/api\.revenuecat\.com\/v1\/subscribers\/(identify|\d+)$ url script-response-body https://raw.githubusercontent.com/yqc007/QuantumultX/master/AudioMackFProCrack.js
+^https?:\/\/api\.revenuecat\.com\/v1\/subscribers\/(identify|\d+)$ url script-response-body https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Audiomack/AudioMackFProCrack.js
 
 [mitm] 
 
