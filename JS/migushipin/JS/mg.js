@@ -4,7 +4,7 @@
 ***************************
 QuantumultX:
 [rewrite_local]
-^https:\//v.miguvideo.com\/ability\/v2\/member-info url script-response-body https://raw.githubusercontent.com/litieyin/AD_VIP/main/Script/migu/memberinfo.js
+^https:\//v.miguvideo.com\/ability\/v2\/member-info url script-response-body https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/migushipin/JS/mg.js
 [mitm]
 hostname = v.miguvideo.com
 **************************/
