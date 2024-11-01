@@ -8,7 +8,7 @@
 
 
 [Script]
-http-response https://pan.baidu.com/rest/2.0/membership/user script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/BaiDuYun/JS/BaiDuYun.js,requires-body=1,max-size=0
+http-response https://pan.baidu.com/rest/2.0/membership/user script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/BaiDuYun/JS/BaiDuYun.js, requires-body=true, timeout=60, tag=BaiDuYun
 
 [MITM]
 hostname = pan.baidu.com
