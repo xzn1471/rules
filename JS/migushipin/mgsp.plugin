@@ -6,8 +6,6 @@
 #!author=BOBOLAOSHIV587
 #!homepage=https://github.com/BOBOLAOSHIV587/Rules
 
-
-
 [Rewrite]
 # > 开屏广告
 ^https://.*miguvideo\.com/request/sdk reject-200
