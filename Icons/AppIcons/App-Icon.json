@@ -4,18 +4,6 @@
     "icons": [
         {
             "name": "Loon",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Loon.png"
-        },
-        {
-            "name": "Loon",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Loon-TieTie.png"
-        },
-        {
-            "name": "Loon",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Loon-TestFlight.png"
-        },
-        {
-            "name": "Loon",
             "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Loon-BB-Quietly.png"
         },
         {
@@ -29,6 +17,18 @@
         {
             "name": "LoonLite",
             "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/LoonLite.png"
+        },
+        {
+            "name": "Loon",
+            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Loon.png"
+        },
+        {
+            "name": "Loon",
+            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Loon-TieTie.png"
+        },
+        {
+            "name": "Loon",
+            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Loon-TestFlight.png"
         },
         {
             "name": "QuantumultX",
@@ -139,70 +139,6 @@
             "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/CloudflareWorkers.png"
         },
         {
-            "name": "Select",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Select.png"
-        },
-        {
-            "name": "UrlTest",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/UrlTest.png"
-        },
-        {
-            "name": "Fallback",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Fallback.png"
-        },
-        {
-            "name": "LoadBalance",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/LoadBalance.png"
-        },
-        {
-            "name": "Relay Chain",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Relay.png"
-        },
-        {
-            "name": "Advertising",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Advertising.png"
-        },
-        {
-            "name": "AdBlack",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/AdBlack.png"
-        },
-        {
-            "name": "AdOff",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/AdOff.png"
-        },
-        {
-            "name": "Network",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Network.png"
-        },
-        {
-            "name": "Wi-Fi",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Wi-Fi.png"
-        },
-        {
-            "name": "Cellular",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Cellular.png"
-        },
-        {
-            "name": "Netisp",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Netisp.png"
-        },
-        {
-            "name": "NodeTools",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/NodeTools.png"
-        },
-        {
-            "name": "CookieInfo",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/CookieInfo.png"
-        },
-        {
-            "name": "TaskCheck-in",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/TaskCheck-in.png"
-        },
-        {
-            "name": "Final",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Final.png"
-        },
-        {
             "name": "Web_301",
             "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Web_301.png"
         },
@@ -227,52 +163,12 @@
             "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Web_502.png"
         },
         {
-            "name": "Web_redirect",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Web_redirect.png"
-        },
-        {
-            "name": "Web_warning",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Web_warning.png"
-        },
-        {
-            "name": "Web_www",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Web_www.png"
-        },
-        {
-            "name": "NodeSeek",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/NodeSeek.png"
-        },
-        {
-            "name": "V2EX",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/V2EX-01.png"
-        },
-        {
-            "name": "V2EX",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/V2EX-02.png"
-        },
-        {
-            "name": "V2EX",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/V2EX-03.png"
-        },
-        {
             "name": "AppStore",
             "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/AppStore_01.png"
         },
         {
-            "name": "AppStore",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/AppStore_02.png"
-        },
-        {
-            "name": "AppStore",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/AppStore_03.png"
-        },
-        {
             "name": "TestFlight",
             "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/TestFlight-01.png"
-        },
-        {
-            "name": "TestFlight",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/TestFlight-02.png"
         },
         {
             "name": "AppleWeather",
@@ -321,22 +217,6 @@
         {
             "name": "ThunderCloudDisk Xunlei",
             "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/ThunderCloudDisk.png"
-        },
-        {
-            "name": "123Pan",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/123Pan.png"
-        },
-        {
-            "name": "FeijiPan",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/FeijiPan.png"
-        },
-        {
-            "name": "115Netdisk",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/115Netdisk.png"
-        },
-        {
-            "name": "CtfileDrive",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/CtfileDrive.png"
         },
         {
             "name": "PikPak",
@@ -391,18 +271,6 @@
             "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Jingdong.png"
         },
         {
-            "name": "CaiNiao",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Cainiao.png"
-        },
-        {
-            "name": "iCost",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/iCost.png"
-        },
-        {
-            "name": "SparkMail",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/SparkMail.png"
-        },
-        {
             "name": "AppRaven",
             "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/AppRaven.png"
         },
@@ -413,18 +281,6 @@
         {
             "name": "NeteaseMusic",
             "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/NeteaseMusic.png"
-        },
-        {
-            "name": "LMP",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/LMP.png"
-        },
-        {
-            "name": "LightPlayer",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/LightPlayer.png"
-        },
-        {
-            "name": "Listenify",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Listenify.png"
         },
         {
             "name": "TencentVideo WeTV",
@@ -467,10 +323,6 @@
             "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/CMSPlayer-1.0.15.png"
         },
         {
-            "name": "SteveWatch",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/SteveWatch.png"
-        },
-        {
             "name": "APTV",
             "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/APTV.png"
         },
@@ -485,14 +337,6 @@
         {
             "name": "VidHub",
             "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/VidHub-01.png"
-        },
-        {
-            "name": "VidHub",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/VidHub-02.png"
-        },
-        {
-            "name": "Forward",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Forward.png"
         },
         {
             "name": "yybx",
@@ -515,10 +359,6 @@
             "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Conflux.png"
         },
         {
-            "name": "MediaPlayer",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/MediaPlayer.png"
-        },
-        {
             "name": "MediaStorm",
             "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/MediaStorm.png"
         },
@@ -531,32 +371,12 @@
             "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Emby-02.png"
         },
         {
-            "name": "Follow",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Follow.png"
-        },
-        {
             "name": "RSSHubRadar",
             "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/RSSHubRadar.png"
         },
         {
-            "name": "IThome",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/IThome.png"
-        },
-        {
-            "name": "CoolApk Kuan",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/CoolApk.png"
-        },
-        {
-            "name": "Zhihu",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Zhihu.png"
-        },
-        {
             "name": "Himalaya",
             "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Himalaya.png"
-        },
-        {
-            "name": "Shenmezhidemai",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Zhidemai.png"
         },
         {
             "name": "ColorfulCloudsWeather Caiyun",
@@ -569,18 +389,6 @@
         {
             "name": "LEMO FM",
             "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/LEMO-FM.png"
-        },
-        {
-            "name": "Memento",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Memento-light.png"
-        },
-        {
-            "name": "Memento",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Memento-dark.png"
-        },
-        {
-            "name": "Userscripts",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Userscripts.png"
         },
         {
             "name": "Tampermonkey",
@@ -599,52 +407,12 @@
             "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Microsoft-01.png"
         },
         {
-            "name": "Microsoft",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Microsoft-02.png"
-        },
-        {
-            "name": "Microsoft",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Microsoft-03.png"
-        },
-        {
-            "name": "Windows",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Windows-01.png"
-        },
-        {
-            "name": "Windows",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Windows-02.png"
-        },
-        {
-            "name": "Windows",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Windows-03.png"
-        },
-        {
             "name": "ChatGPT OpenAI",
             "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/ChatGPT.png"
         },
         {
-            "name": "InternetExplorer",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/InternetExplorer.png"
-        },
-        {
             "name": "Arc",
             "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Arc.png"
-        },
-        {
-            "name": "Arc Search",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/ArcSearch-01.png"
-        },
-        {
-            "name": "Arc Search",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/ArcSearch-02.png"
-        },
-        {
-            "name": "Quark",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Quark.png"
-        },
-        {
-            "name": "Alook",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Alook.png"
         },
         {
             "name": "Google",
@@ -735,12 +503,104 @@
             "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/GitHub.png"
         },
         {
-            "name": "GitLab",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/GitLab-JiHu.png"
+            "name": "migushipin",
+            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/MiGuShiPin.png"
         },
         {
-            "name": "GitBlur",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/GitBlur.png"
+            "name": "AccuWeather",
+            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/AccuWeather.png"
+        },
+        {
+            "name": "Audiomack",
+            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Audiomack.png"
+        },
+        {
+            "name": "Block100",
+            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Block100.png"
+        },
+        {
+            "name": "Notability",
+            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Notability.png"
+        },
+        {
+            "name": "Picsart",
+            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Picsart.png"
+        },
+        {
+            "name": "Pixelcut",
+            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Pixelcut.png"
+        },
+        {
+            "name": "SoundCloud",
+            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/SoundCloud.png"
+        },
+        {
+            "name": "TIDAL",
+            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/TIDAL.png"
+        },
+        {
+            "name": "Hodor",
+            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Hodor.png"
+        },
+        {
+            "name": "StormSniffer",
+            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/StormSniffer.png"
+        },
+        {
+            "name": "StreamHTTPSniffer",
+            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/StreamHTTPSniffer.png"
+        },
+        {
+            "name": "aiqicha",
+            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/aiqicha.png"
+        },
+        {
+            "name": "DAMA",
+            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/DAMA.png"
+        },
+        {
+            "name": "Documents",
+            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Documents.png"
+        },
+        {
+            "name": "Facebook",
+            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Facebook.png"
+        },
+        {
+            "name": "Gmail",
+            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Gmail.png"
+        },
+        {
+            "name": "GoogleMaps",
+            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/GoogleMaps.png"
+        },
+        {
+            "name": "GooglePhotos",
+            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/GooglePhotos.png"
+        },
+        {
+            "name": "GoogleVoice",
+            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/GoogleVoice.png"
+        },
+        {
+            "name": "Mail",
+            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Mail.png"
+        },
+        {
+            "name": "QQMail",
+            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/QQMail.png"
+        },
+        {
+            "name": "Shazam",
+            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Shazam.png"
+        },
+        {
+            "name": "Threads",
+            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Threads.png"
+        },
+        {
+            "name": "YahooMail",
+            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/YahooMail.png"
         },
         {
             "name": "Sub-Store",
@@ -869,118 +729,6 @@
         {
             "name": "FAULT-US",
             "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/FAULT-US.png"
-        },
-        {
-            "name": "migushipin",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/MiGuShiPin.png"
-        },
-        {
-            "name": "AccuWeather",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/AccuWeather.png"
-        },
-        {
-            "name": "Audiomack",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Audiomack.png"
-        },
-        {
-            "name": "Block100",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Block100.png"
-        },
-        {
-            "name": "Notability",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Notability.png"
-        },
-        {
-            "name": "Picsart",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Picsart.png"
-        },
-        {
-            "name": "Pixelcut",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Pixelcut.png"
-        },
-        {
-            "name": "SoundCloud",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/SoundCloud.png"
-        },
-        {
-            "name": "TIDAL",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/TIDAL.png"
-        },
-        {
-            "name": "Hodor",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Hodor.png"
-        },
-        {
-            "name": "StormSniffer",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/StormSniffer.png"
-        },
-        {
-            "name": "StreamHTTPSniffer",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/StreamHTTPSniffer.png"
-        },
-        {
-            "name": "aiqicha",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/aiqicha.png"
-        },
-        {
-            "name": "DAMA",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/DAMA.png"
-        },
-        {
-            "name": "Documents",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Documents.png"
-        },
-        {
-            "name": "Facebook",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Facebook.png"
-        },
-        {
-            "name": "Gmail",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Gmail.png"
-        },
-        {
-            "name": "GoogleDrive",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/GoogleDrive.png"
-        },
-        {
-            "name": "GoogleMaps",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/GoogleMaps.png"
-        },
-        {
-            "name": "GooglePhotos",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/GooglePhotos.png"
-        },
-        {
-            "name": "GoogleVoice",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/GoogleVoice.png"
-        },
-        {
-            "name": "Instagram",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Instagram.png"
-        },
-        {
-            "name": "Mail",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Mail.png"
-        },
-        {
-            "name": "QQMail",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/QQMail.png"
-        },
-        {
-            "name": "QQMusic",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/QQMusic.png"
-        },
-        {
-            "name": "Shazam",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Shazam.png"
-        },
-        {
-            "name": "Threads",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Threads.png"
-        },
-        {
-            "name": "YahooMail",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/YahooMail.png"
         }
     ]
 }
