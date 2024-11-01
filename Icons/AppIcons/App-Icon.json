@@ -99,36 +99,12 @@
             "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Cloudflare.png"
         },
         {
-            "name": "CloudflareWorkers",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/CloudflareWorkers.png"
-        },
-        {
             "name": "AppStore",
             "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/AppStore_01.png"
         },
         {
-            "name": "TestFlight",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/TestFlight-01.png"
-        },
-        {
             "name": "AppleWeather",
             "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/AppleWeather.png"
-        },
-        {
-            "name": "ChinaMobile CMCC",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/ChinaMobile-CMCC.png"
-        },
-        {
-            "name": "ChinaTelecom CTCC",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/ChinaTelecom-CTCC.png"
-        },
-        {
-            "name": "ChinaUnicom CUCC",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/ChinaUnicom-CUCC.png"
-        },
-        {
-            "name": "ChinaBroadnet CBN",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/ChinaBroadnet-CBN.png"
         },
         {
             "name": "QQ",
@@ -139,24 +115,12 @@
             "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/WeChat.png"
         },
         {
-            "name": "DingTalk Dingding",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/DingTalk.png"
-        },
-        {
             "name": "TikTok DouYin",
             "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/TikTok.png"
         },
         {
-            "name": "AliyunDrive",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/AliyunDrive.png"
-        },
-        {
             "name": "BaiduNetdisk",
             "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/BaiduNetDisk.png"
-        },
-        {
-            "name": "ThunderCloudDisk Xunlei",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/ThunderCloudDisk.png"
         },
         {
             "name": "PikPak",
@@ -165,22 +129,6 @@
         {
             "name": "GoogleDrive",
             "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/GoogleDrive.png"
-        },
-        {
-            "name": "OneDrive",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/OneDrive.png"
-        },
-        {
-            "name": "Amap Gaode",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Amap.png"
-        },
-        {
-            "name": "Railway12306",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Railway12306.png"
-        },
-        {
-            "name": "Weibo",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Weibo.png"
         },
         {
             "name": "Weibo",
@@ -193,22 +141,6 @@
         {
             "name": "RedPaper XiaoHhongShu",
             "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/RedPaper.png"
-        },
-        {
-            "name": "Alipay Zhifubao",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Alipay-2024.png"
-        },
-        {
-            "name": "Taobao",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Taobao.png"
-        },
-        {
-            "name": "Goofish Xianyu",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Goofish.png"
-        },
-        {
-            "name": "JingDong",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Jingdong.png"
         },
         {
             "name": "AppRaven",
@@ -275,26 +207,6 @@
             "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Infuse.png"
         },
         {
-            "name": "VidHub",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/VidHub-01.png"
-        },
-        {
-            "name": "yybx",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/yybx.png"
-        },
-        {
-            "name": "yyb",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/yyb.png"
-        },
-        {
-            "name": "iemc",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/iemc.png"
-        },
-        {
-            "name": "tvok",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/tvok.png"
-        },
-        {
             "name": "Conflux",
             "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Conflux.png"
         },
@@ -343,10 +255,6 @@
             "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Apple.png"
         },
         {
-            "name": "Microsoft",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Microsoft-01.png"
-        },
-        {
             "name": "ChatGPT OpenAI",
             "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/ChatGPT.png"
         },
@@ -359,24 +267,12 @@
             "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Google.png"
         },
         {
-            "name": "GoogleChrome",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/GoogleChrome.png"
-        },
-        {
             "name": "MicrosoftEdge",
             "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/MicrosoftEdge.png"
         },
         {
             "name": "Firefox",
             "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Firefox.png"
-        },
-        {
-            "name": "Firefox",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/FirefoxNightly.png"
-        },
-        {
-            "name": "Firefox",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/FirefoxFocus.png"
         },
         {
             "name": "Speedtest",
@@ -411,20 +307,12 @@
             "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Swiftgram.png"
         },
         {
-            "name": "iMe",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/iMe.png"
-        },
-        {
             "name": "Nicegram",
             "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Nicegram-01.png"
         },
         {
             "name": "Nicegram",
             "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Nicegram-02.png"
-        },
-        {
-            "name": "Turrit",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Turrit.png"
         },
         {
             "name": "Spotify",
