@@ -71,34 +71,6 @@
             "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Egern-02.png"
         },
         {
-            "name": "Hiddify",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Hiddify-Blue.png"
-        },
-        {
-            "name": "Hiddify",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Hiddify-Red.png"
-        },
-        {
-            "name": "Hiddify",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Hiddify-Yellow.png"
-        },
-        {
-            "name": "Hiddify",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Hiddify-Green.png"
-        },
-        {
-            "name": "v2rayN-blue",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/v2rayN-blue.png"
-        },
-        {
-            "name": "v2rayN-red",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/v2rayN-red.png"
-        },
-        {
-            "name": "v2rayN-purple",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/v2rayN-purple.png"
-        },
-        {
             "name": "Clash",
             "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Clash.png"
         },
@@ -109,14 +81,6 @@
         {
             "name": "ClashX",
             "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/ClashX.png"
-        },
-        {
-            "name": "Surfboard",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Surfboard-01.png"
-        },
-        {
-            "name": "Surfboard",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Surfboard-02.png"
         },
         {
             "name": "1.1.1.1",
@@ -137,30 +101,6 @@
         {
             "name": "CloudflareWorkers",
             "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/CloudflareWorkers.png"
-        },
-        {
-            "name": "Web_301",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Web_301.png"
-        },
-        {
-            "name": "Web_302",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Web_302.png"
-        },
-        {
-            "name": "Web_403",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Web_403.png"
-        },
-        {
-            "name": "Web_404",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Web_404.png"
-        },
-        {
-            "name": "Web_500",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Web_500.png"
-        },
-        {
-            "name": "Web_502",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Web_502.png"
         },
         {
             "name": "AppStore",
@@ -633,6 +573,58 @@
         {
             "name": "Limbo",
             "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Limbo-02.png"
+        },
+        {
+            "name": "Hiddify",
+            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Hiddify-Blue.png"
+        },
+        {
+            "name": "Hiddify",
+            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Hiddify-Red.png"
+        },
+        {
+            "name": "Hiddify",
+            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Hiddify-Yellow.png"
+        },
+        {
+            "name": "Hiddify",
+            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Hiddify-Green.png"
+        },
+        {
+            "name": "v2rayN-blue",
+            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/v2rayN-blue.png"
+        },
+        {
+            "name": "v2rayN-red",
+            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/v2rayN-red.png"
+        },
+        {
+            "name": "v2rayN-purple",
+            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/v2rayN-purple.png"
+        },
+        {
+            "name": "Web_301",
+            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Web_301.png"
+        },
+        {
+            "name": "Web_302",
+            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Web_302.png"
+        },
+        {
+            "name": "Web_403",
+            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Web_403.png"
+        },
+        {
+            "name": "Web_404",
+            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Web_404.png"
+        },
+        {
+            "name": "Web_500",
+            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Web_500.png"
+        },
+        {
+            "name": "Web_502",
+            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Web_502.png"
         },
         {
             "name": "SSID-HK",
