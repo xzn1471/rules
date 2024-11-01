@@ -1,5 +1,10 @@
 #!name=AccuWeather
 #!desc=版本 15.2.1
+#!system=ios
+#!author=BOBOLAOSHIV587
+#!homepage=https://github.com/BOBOLAOSHIV587/Rules
+#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/ColorfulCloudsWeatherPro.png
+#!date=2024-11-01
 
 
 [Script]
