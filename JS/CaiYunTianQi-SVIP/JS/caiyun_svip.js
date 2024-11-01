@@ -1,14 +1,17 @@
 /*************************************
 
-项目功能：彩云天气 解锁SVIP(旧版)
-下载地址：https://t.cn/A66d95hV
-电报频道：https://t.me/chxm1023
-使用声明：⚠️仅供参考，🈲转载与售卖！
+# 个人备用
+# 项目功能：彩云天气 解锁SVIP(旧版)
+# 下载地址：https://t.cn/A66d95hV
+# 电报频道：https://t.me/chxm1023
+# 原脚本作者：chxm1023
+# 脚本作者：BOBOLAOSHIV587
+# 使用声明：⚠️仅供参考，🈲转载与售卖！
 
 **************************************
 
 [rewrite_local]
-https?:\/\/biz\.caiyunapp\.com\/(membership_rights|v2\/user) url script-response-body https://raw.githubusercontent.com/chxm1023/Rewrite/main/caiyun_svip.js
+https?:\/\/biz\.caiyunapp\.com\/(membership_rights|v2\/user) url script-response-body https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/CaiYunTianQi-SVIP/JS/caiyun_svip.js
 
 [mitm]
 hostname = biz.caiyunapp.com
