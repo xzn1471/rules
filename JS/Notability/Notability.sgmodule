@@ -1,0 +1,13 @@
+#!name=Notability解锁
+#!desc=Notability解锁2099年
+#!system=ios
+#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/NeteaseMusic.png
+#!date=2024-11-01
+
+
+[Script]
+Notability = type=http-response, pattern=^https?:\/\/notability\.com\/(global|subscriptions), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Notability/JS/Notability.js, requires-body=true, max-size=-1, timeout=60
+
+
+[MITM]
+hostname = %APPEND% notability.com
