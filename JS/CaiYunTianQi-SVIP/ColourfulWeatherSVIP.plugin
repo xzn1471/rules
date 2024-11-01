@@ -3,6 +3,9 @@
 #!system=ios
 #!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/ColorfulCloudsWeatherPro.png
 #!date=2024-11-01
+#!author=BOBOLAOSHIV587
+#!homepage=https://github.com/BOBOLAOSHIV587/Rules
+
 
 [Rule]
 # 禁用上传信息 - 来源: @苍井灰灰
