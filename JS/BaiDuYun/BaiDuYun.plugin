@@ -1,5 +1,11 @@
 #!name=百度网盘
 #!desc= 版本 11.21.1, 解锁 SVIP倍速播放、高画质
+#!system=ios
+#!author=BOBOLAOSHIV587
+#!homepage=https://github.com/BOBOLAOSHIV587/Rules
+#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/BaiduNetDisk.png
+#!date=2024-11-01
+
 
 [Script]
 http-response https://pan.baidu.com/rest/2.0/membership/user script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/BaiDuYun/JS/BaiDuYun.js,requires-body=1,max-size=0
