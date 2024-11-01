@@ -1,16 +1,14 @@
 /******************************
-
-脚本功能：PornHub Unlock Premium
-网页版本：2.0.1
-网站地址：https://shrtm.nu/PornHub
-脚本作者：Hausd0rff
-更新时间：2022-03-09
-使用声明：⚠️此脚本仅供学习与交流，
-        请勿转载与贩卖！⚠️⚠️⚠️
+# 个人备用
+# 脚本功能：PornHub Unlock Premium
+# 网页版本：2.0.1
+# 网站地址：https://shrtm.nu/PornHub
+# 脚本作者：Hausd0rff、ycq007
+# 更新时间：2022-03-09
 *******************************
 [rewrite_local]
 # > PornHub Unlock Premium By Hausd0rff
-^https?:\/\/cn\.pornhubpremium\.com\/ url script-request-header https://raw.githubusercontent.com/yqc007/QuantumultX/master/PornHubPremiumCrack.js
+^https?:\/\/cn\.pornhubpremium\.com\/ url script-request-header https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/PornHub/JS/PornHubPremiumCrack.js
 
 [mitm] 
 hostname = cn.pornhubpremium.com
