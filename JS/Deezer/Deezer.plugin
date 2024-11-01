@@ -6,10 +6,9 @@
 #!author=BOBOLAOSHIV587
 #!homepage=https://github.com/BOBOLAOSHIV587/Rules
 
-
 [Script]
+# > Deezer解锁Hi-Fi订阅
 http-request ^https?:\/\/media\.deezer\.com\/v1\/get_url$ script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Deezer/JS/DeezerHiFiProCrack.js, requires-body=true, timeout=60, tag=DeezerHiFiProCrack
-
 
 [MITM]
 hostname = media.deezer.com
