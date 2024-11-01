@@ -1,9 +1,15 @@
-#!name=Tidal Plus
-#!desc=解锁 Tidal订阅 原yqc007
+#!name=TIDAL Plus
+#!desc= TIDAL解锁HiFi Plus
+#!system=ios
+#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/TIDAL.png
+#!date=2024-11-01
+#!author=@BOBOLAOSHIV587
+#!homepage=https://github.com/BOBOLAOSHIV587/Rules
+
 
 [Script]
-
 TidalPlus = type=http-request,pattern=^https?:\/\/api\.tidal\.com\/v1\/(pages\/album|(user|track|page)s\/(\d+)\/(state|subscription|lyrics|onboarding|playbackinfopostpaywall)),requires-body=0,script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/TIDAL/JS/TIDALHiFiPlusCrack.js
+
 
 [MITM]
 hostname = %APPEND% api.tidal.com
