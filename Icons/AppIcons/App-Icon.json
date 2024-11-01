@@ -921,6 +921,66 @@
         {
             "name": "aiqicha",
             "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/aiqicha.png"
+        },
+        {
+            "name": "DAMA",
+            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/DAMA.png"
+        },
+        {
+            "name": "Documents",
+            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Documents.png"
+        },
+        {
+            "name": "Facebook",
+            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Facebook.png"
+        },
+        {
+            "name": "Gmail",
+            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Gmail.png"
+        },
+        {
+            "name": "GoogleDrive",
+            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/GoogleDrive.png"
+        },
+        {
+            "name": "GoogleMaps",
+            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/GoogleMaps.png"
+        },
+        {
+            "name": "GooglePhotos",
+            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/GooglePhotos.png"
+        },
+        {
+            "name": "GoogleVoice",
+            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/GoogleVoice.png"
+        },
+        {
+            "name": "Instagram",
+            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Instagram.png"
+        },
+        {
+            "name": "Mail",
+            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Mail.png"
+        },
+        {
+            "name": "QQMail",
+            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/QQMail.png"
+        },
+        {
+            "name": "QQMusic",
+            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/QQMusic.png"
+        },
+        {
+            "name": "Shazam",
+            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Shazam.png"
+        },
+        {
+            "name": "Threads",
+            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Threads.png"
+        },
+        {
+            "name": "YahooMail",
+            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/YahooMail.png"
         }
     ]
 }
