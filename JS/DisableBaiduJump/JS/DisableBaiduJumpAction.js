@@ -1,18 +1,16 @@
 /*
  *
  *
-脚本功能：解决Safari中疯狂跳转百度
-脚本作者：Hausd0rff
-电报频道：https://t.me/yqc_123
-问题反馈：https://t.me/yqc_777
-使用声明：⚠️此脚本仅供学习与交流，
-        请勿转载与贩卖！⚠️⚠️⚠️
+# 个人自用
+# 脚本功能：解决Safari中疯狂跳转百度
+# 脚本作者：Hausd0rff
+
 *******************************
 
 [rewrite_local]
 
 # > 百度不跳转
-^https?:\/\/.*\.baidu\.com\/.+ url script-request-header https://raw.githubusercontent.com/yqc007/QuantumultX/master/Purity/DisableBaiduJumpAction.js
+^https?:\/\/.*\.baidu\.com\/.+ url script-request-header https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/DisableBaiduJump/JS/DisableBaiduJumpAction.js
 
 [mitm] 
 
