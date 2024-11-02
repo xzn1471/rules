@@ -705,6 +705,14 @@
         {
             "name": "WPS",
             "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/WPS.png"
+        },
+        {
+            "name": "Bazaart",
+            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Bazaart.png"
+        },
+        {
+            "name": "DeepFacer",
+            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/DeepFacer.png"
         }
     ]
 }
