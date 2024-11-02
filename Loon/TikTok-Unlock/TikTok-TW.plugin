@@ -1,10 +1,10 @@
 #!name=TikTok TW
 #!desc=解锁 TikTok 台灣 地区
-#!openUrl=https://github.com/BOBOLAOSHIV587
 #!author=BOBOLAOSHIV587
 #!category=😍BOBO TikTok
 #!homepage=https://github.com/BOBOLAOSHIV587
-#!icon= https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/Qure/Image/Color/TikTok.png
+#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/TikTok.png
+#!openUrl=https://apps.apple.com/app/id835599320
 
 [Rule]
 DOMAIN-SUFFIX,byteoversea.com
