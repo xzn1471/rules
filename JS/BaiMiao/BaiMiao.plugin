@@ -1,0 +1,17 @@
+#!name=ScanScan(BaiMiao)白描
+#!desc=白描解锁黄金会员
+#!system=ios
+#!author=BOBOLAOSHIV587
+#!homepage=https://github.com/BOBOLAOSHIV587/Rules
+#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/ScanScan(BaiMiao).png
+#!date=2024-11-01
+
+[Rewrite]
+^https?:\/\/baimiao\.uzero\.cn\/api\/v2\.user\/c(heckLoginClient|leanAccount) reject-array
+
+[Script]
+# > 白描解锁黄金会员
+http-response ^https?:\/\/baimiao\.uzero\.cn\/api\/v2\.user\/appLaunchWithUser script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/BaiMiao/JS/BaiMiaoGoldVipCrack.js, requires-body=true, timeout=60, tag=BaiMiaoGoldVipCrack
+
+[MITM]
+hostname = baimiao.uzero.cn
