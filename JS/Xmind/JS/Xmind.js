@@ -1,17 +1,12 @@
 /*
-脚本功能：解锁Xmind思维导图订阅到2030年
-脚本作者：Stranger
-电报频道：https://t.me/qixinscience
-
-更新时间：2022.08.13
-下载：商店下载
-
-使用声明：⚠️⚠️⚠️此脚本仅供学习与交流,禁止转载与贩卖,需在24小时内从设备中删除！⚠️⚠️⚠️
-
-QuantumultX 重写配置
+# 个人自用
+# 脚本功能：解锁Xmind思维导图订阅到2030年
+# 脚本作者：Stranger
+# 电报频道：https://t.me/qixinscience
+# 更新时间：2022.08.13
 
 [rewrite_local]
-https?:\/\/www\.xmind\.(cn|net)\/\_res\/devices url script-response-body https://raw.githubusercontent.com/zwf234/rules/master/js/xmind.js
+https?:\/\/www\.xmind\.(cn|net)\/\_res\/devices url script-response-body https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Xmind/JS/Xmind.js
 
 [mitm]
 hostname = www.xmind.cn, www.xmind.net
