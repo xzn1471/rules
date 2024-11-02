@@ -1,0 +1,14 @@
+#!name=DarkRoom
+#!desc=DarkRoom 解锁永久高级版
+#!system=ios
+#!author=BOBOLAOSHIV587
+#!homepage=https://github.com/BOBOLAOSHIV587/Rules
+#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Darkroom.png
+#!date=2024-11-01
+
+[Script]
+# > DarkRoom 解锁永久高级版
+http-response ^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32}) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/DarkRoom/JS/DarkRoomPremiumCrack.js, requires-body=true, timeout=60, tag=DarkRoomPremiumCrack
+
+[MITM]
+hostname = api.revenuecat.com
