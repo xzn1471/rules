@@ -1,15 +1,14 @@
 /******************************
-脚本功能：醒图解锁会员
-应用版本：7.3.0
-应用下载：http://t.cn/A6oxXjFN
-脚本作者：Hausd0rff
-更新时间：2023-07-19
-脚本发布：https://t.me/yqc_123
-使用声明：⚠️仅供学习交流, 🈲️商业用途
+# 个人自用
+# 脚本功能：醒图解锁会员
+# 应用版本：7.3.0
+# 应用下载：http://t.cn/A6oxXjFN
+# 脚本作者：Hausd0rff
+# 更新时间：2023-07-19
 *******************************
 [rewrite_local]
 # > 醒图解锁会员
-^https?:\/\/commerce-api\.faceu\.mobi\/commerce\/v1\/subscription\/user_info url script-request-header https://raw.githubusercontent.com/yqc007/QuantumultX/master/RetouchPicsVipCrack.js
+^https?:\/\/commerce-api\.faceu\.mobi\/commerce\/v1\/subscription\/user_info url script-request-header https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/RetouchPics/JS/RetouchPicsVipCrack.js
 [mitm] 
 hostname = commerce-api.faceu.mobi, api3-misc-lf.retouchpics.com
 
