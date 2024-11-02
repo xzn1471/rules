@@ -1,19 +1,17 @@
 /******************************
 
-脚本功能：VivaCut解锁永久订阅
-软件版本：3.0.0
-下载地址：http://t.cn/A6KGiuTa
-脚本作者：Hausd0rff
-更新时间：2022-11-20
-电报频道：https://t.me/yqc_123
-问题反馈：https://t.me/yqc_777
-使用声明：⚠️仅供学习交流，🈲️商业用途
+# 个人备用
+# 脚本功能：VivaCut解锁永久订阅
+# 软件版本：3.0.0
+# 下载地址：http://t.cn/A6KGiuTa
+# 脚本作者：Hausd0rff
+# 更新时间：2022-11-20
 
 *******************************
 
 [rewrite_local]
 # > VivaCut解锁永久订阅
-^https?:\/\/medi\.dxzzy321\.top\/api\/rest\/commerce\/integrate\/vip\/perform$ url script-response-body https://raw.githubusercontent.com/yqc007/QuantumultX/master/VivaCutProCrack.js
+^https?:\/\/medi\.dxzzy321\.top\/api\/rest\/commerce\/integrate\/vip\/perform$ url script-response-body https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/VivaCut/JS/VivaCutProCrack.js
 
 [mitm] 
 hostname = medi.dxzzy321.top
