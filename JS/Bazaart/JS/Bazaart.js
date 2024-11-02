@@ -1,21 +1,16 @@
 /******************************
-
-脚本功能：Bazaart百色特——解锁订阅
-下载地址：https://is.gd/X3M25D
-软件版本：10.0.4
-脚本作者：彭于晏💞
-更新时间：2023-10-5
-问题反馈：QQ+89996462
-QQ会员群：779392027💞
-TG反馈群：https://t.me/plus8889
-TG频道群：https://t.me/py996
-使用声明：⚠️此脚本仅供学习与交流，请勿转载与贩卖！⚠️⚠️⚠️
+# 个人自用
+# 脚本功能：Bazaart百色特——解锁订阅
+# 下载地址：https://is.gd/X3M25D
+# 软件版本：10.0.4
+# 脚本作者：彭于晏💞
+# 更新时间：2023-10-5
 
 *******************************
 
 [rewrite_local]
 
-^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Bazaart.js
+^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt url script-response-body https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Bazaart/JS/Bazaart.js
 
 [mitm] 
 
