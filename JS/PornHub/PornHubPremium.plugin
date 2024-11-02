@@ -5,6 +5,8 @@
 #!date=2024-11-01
 #!author=BOBOLAOSHIV587
 #!homepage=https://github.com/BOBOLAOSHIV587/Rules
+#!category=😍BOBO Premium
+
 
 [Script]
 http-request ^https?:\/\/cn\.pornhubpremium\.com\/ script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/PornHub/JS/PornHubPremiumCrack.js, timeout=60, tag=PornHubPremiumCrack
