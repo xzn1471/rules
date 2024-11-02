@@ -5,6 +5,8 @@
 #!homepage=https://github.com/BOBOLAOSHIV587/Rules
 #!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/ScanScan(BaiMiao).png
 #!date=2024-11-01
+#!category=😍BOBO Premium
+
 
 [Rewrite]
 ^https?:\/\/baimiao\.uzero\.cn\/api\/v2\.user\/c(heckLoginClient|leanAccount) reject-array
