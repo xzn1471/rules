@@ -1,27 +1,15 @@
 /*************************************
-
-脚本功能：Goodnotes6——解锁订阅
-下载地址：https://is.gd/npTODJ
-软件版本：6.0.1
-脚本作者：彭于晏💞
-更新时间：2023-8-9
-问题反馈：QQ+89996462
-QQ会员群：779392027💞
-TG反馈群：https://t.me/plus8889
-TG频道群：https://t.me/py996
-使用声明：⚠️此脚本仅供学习与交流，请勿转载与贩卖！⚠️⚠️⚠️
-
-更多资源请微信搜索小程序【屌丝博客】
-
-*******************************/
-项目名称：**********
-使用声明：⚠️仅供参考，🈲转载与售卖！
-电报频道：https://t.me/chxm1023
+# 个人自用
+# 脚本功能：Goodnotes6——解锁订阅
+# 下载地址：https://is.gd/npTODJ
+# 软件版本：6.0.1
+# 脚本作者：彭于晏💞
+# 更新时间：2023-8-9
 
 **************************************
 [rewrite_local]
-^https:\/\/isi\..*\.g.*\.(com\..*|com)\/.+\/(receipts$|subscribers\/?(.*?)*$) url script-response-body http://git.yycm.link/chxm1023/Rewrite/raw/main/gg.js
-^https:\/\/isi\..*\.g.*\.(com\..*|com)\/.+\/(receipts$|subscribers\/?(.*?)*$) url script-request-header http://git.yycm.link/chxm1023/Rewrite/raw/main/gg.js
+^https:\/\/isi\..*\.g.*\.(com\..*|com)\/.+\/(receipts$|subscribers\/?(.*?)*$) url script-response-body https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Goodnotes6/JS/Goodnotes6.js
+^https:\/\/isi\..*\.g.*\.(com\..*|com)\/.+\/(receipts$|subscribers\/?(.*?)*$) url script-request-header https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Goodnotes6/JS/Goodnotes6.js
 
 [mitm]
 hostname = isi.*.g*.com*
