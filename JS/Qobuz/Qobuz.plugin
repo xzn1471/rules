@@ -1,0 +1,15 @@
+#!name=Qobuz解锁Hi-Res订阅
+#!desc=Qobuz解锁Hi-Res订阅  软件版本：6.6.0
+#!system=ios
+#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Qobuz.png
+#!date=2024-11-01
+#!author=BOBOLAOSHIV587
+#!homepage=https://github.com/BOBOLAOSHIV587/Rules
+#!openUrl = 下载地址：http://t.cn/A6XT3lHQ
+
+[Script]
+# > Qobuz解锁Hi-Res订阅
+http-request ^https?:\/\/www\.qobuz\.com\/api\.json\/0\.2\/user\/login$ script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Qobuz/JS/QobuzHiResProCrack.js, requires-body=true, timeout=60, tag=QobuzHiResProCrack
+
+[MITM]
+hostname = www.qobuz.com
