@@ -1,8 +1,6 @@
 /******************************************
  * @Name 𝑅𝑒𝑚𝑖𝑛𝑖
  * @Description 𝑈𝑛𝑙𝑜𝑐𝑘 𝑃𝑟𝑜 𝑆𝑢𝑏𝑠𝑐𝑟𝑖𝑝𝑡𝑖𝑜𝑛
- * @Channel https://t.me/yqc_123
- * @Feedback https://t.me/yqc_777
  * @Author 𝐻𝑎𝑢𝑠𝑑𝑜𝑟𝑓𝑓
  * @Update 20240508
  * @Link http://t.cn/A6H2Hx43
@@ -10,7 +8,7 @@
  ******************************************
 [rewrite_local]
 # > 𝑅𝑒𝑚𝑖𝑛𝑖 𝐶𝑟𝑎𝑐𝑘 𝑃𝑟𝑜
-^https?:\/\/remini\.oracle\.bendingspoonsapps\.com\/v2\/users\/setup$ url script-response-body https://raw.githubusercontent.com/yqc007/QuantumultX/master/ReminiProCrack.js
+^https?:\/\/remini\.oracle\.bendingspoonsapps\.com\/v2\/users\/setup$ url script-response-body https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Remini/JS/ReminiProCrack.js
 [mitm] 
 hostname = remini.oracle.bendingspoonsapps.com
 ******************************************/
