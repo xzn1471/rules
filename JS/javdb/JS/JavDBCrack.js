@@ -1,21 +1,16 @@
 /******************************
 
-脚本功能：JavDB解锁会员
-软件版本：1.9.12
-官网地址：https://javdb.com/
-下载地址：https://t.me/yqc_123
-脚本作者：Hausd0rff
-更新时间：2022-09-24
-电报频道：https://t.me/yqc_123
-问题反馈：https://t.me/yqc_777
-使用声明：⚠️此脚本仅供学习与交流，
-        请勿转载与贩卖！⚠️⚠️⚠️
-脚本说明：注册时填写邀请码：rckasw
-        可无限延长脚本的使用期限
+# 脚本功能：JavDB解锁会员
+# 软件版本：1.9.12
+# 官网地址：https://javdb.com/
+# 脚本作者：Hausd0rff
+# 更新时间：2022-09-24
+# 脚本说明：注册时填写邀请码：rckasw
+#         可无限延长脚本的使用期限
 *******************************
 [rewrite_local]
 # > JavDB解锁会员
-^https?:\/\/.+\/api\/v1\/(movies\/.*\/play|startup) url script-request-header https://raw.githubusercontent.com/yqc007/QuantumultX/master/JavDBCrack.js
+^https?:\/\/.+\/api\/v1\/(movies\/.*\/play|startup) url script-request-header https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/javdb/JS/JavDBCrack.js
 
 [mitm] 
 hostname = shukego.com, yiliang8888.com, 91mingyang.com, mnter.com, f5bc.club
