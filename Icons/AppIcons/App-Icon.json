@@ -677,6 +677,22 @@
         {
             "name": "ScanScan(BaiMiao)",
             "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/ScanScan(BaiMiao).png"
+        },
+        {
+            "name": "ClarityWallpaper",
+            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/ClarityWallpaper.png"
+        },
+        {
+            "name": "Darkroom",
+            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Darkroom.png"
+        },
+        {
+            "name": "JianYing",
+            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/JianYing.png"
+        },
+        {
+            "name": "Picsew",
+            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Picsew.png"
         }
     ]
 }
