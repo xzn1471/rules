@@ -5,6 +5,8 @@
 #!date=2024-11-01
 #!author=BOBOLAOSHIV587
 #!homepage=https://github.com/BOBOLAOSHIV587/Rules
+#!category=😍BOBO Premium
+
 
 [Script]
 http-request ^https?:\/\/api\.tidal\.com\/v1\/(pages\/album|(user|track|page)s\/(\d+)\/(state|subscription|lyrics|onboarding|playbackinfopostpaywall)),requires-body=0 script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/TIDAL/JS/TIDALHiFiPlusCrack.js
