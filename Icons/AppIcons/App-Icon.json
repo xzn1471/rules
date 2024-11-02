@@ -713,6 +713,22 @@
         {
             "name": "DeepFacer",
             "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/DeepFacer.png"
+        },
+        {
+            "name": "Qobuz",
+            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Qobuz.png"
+        },
+        {
+            "name": "Remini",
+            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Remini.png"
+        },
+        {
+            "name": "RetouchPics",
+            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/RetouchPics.png"
+        },
+        {
+            "name": "ServerBee",
+            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/ServerBee.png"
         }
     ]
 }
