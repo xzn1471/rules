@@ -1,0 +1,14 @@
+#!name=Documents文件管理器+解锁订阅
+#!desc=Documents文件管理器+解锁订阅  软件版本：v8.5
+#!system=ios
+#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Documents.png
+#!date=2024-11-01
+#!author=BOBOLAOSHIV587
+#!homepage=https://github.com/BOBOLAOSHIV587/Rules
+#!openUrl = 下载地址：https://is.gd/DLjoIn
+
+[Script]
+http-request ^https:\/\/license\.pdfexpert\.com\/api\/2\.0\/documents\/subscription\/refresh script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Documents/JS/Documents.js, requires-body=true, timeout=60, tag=Documents
+
+[MITM]
+hostname = license.pdfexpert.com
