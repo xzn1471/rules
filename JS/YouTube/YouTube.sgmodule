@@ -5,6 +5,8 @@
 #!date=2024-11-01
 #!author=@BOBOLAOSHIV587
 #!homepage=https://github.com/BOBOLAOSHIV587/Rules
+#!category=😍BOBO Premium
+
 
 [Script]
 youtube-proto = type=http-response,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next),requires-body=1,binary-body-mode=1,max-size=2097152,script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/YouTube/JS/YouTube.js
