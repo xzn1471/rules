@@ -1,0 +1,16 @@
+#!name=ServerBee——解锁订阅
+#!desc=ServerBee——解锁订阅  软件版本：1.3.1
+#!system=ios
+#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/ServerBee.png
+#!date=2024-11-01
+#!author=BOBOLAOSHIV587
+#!homepage=https://github.com/BOBOLAOSHIV587/Rules
+#!openUrl = 下载地址：https://is.gd/NyslNJ
+
+[Script]
+ServerBee = type=http-response, pattern=^https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/ServerBee/JS/ServerBee.js, requires-body=true, max-size=-1, timeout=60
+ServerBee = type=http-request, pattern=^https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/ServerBee/JS/ServerBee.js, timeout=60
+
+[MITM]
+hostname = %APPEND% api.revenuecat.com
+
