@@ -5,7 +5,7 @@
 
 [rewrite_local]
 
-^https:\/\/vas\.wps\.cn\/query\/api\/v1\/list_purchase_info url script-response-body https://raw.githubusercontent.com/510004015/Quantumult_X/Remote/Premium/WPSOffice.js
+^https:\/\/vas\.wps\.cn\/query\/api\/v1\/list_purchase_info url script-response-body https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/WPS/JS/WPSOffice.js
 
 [mitm]
 
