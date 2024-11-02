@@ -1,0 +1,15 @@
+#!name=拦截猫+解锁订阅
+#!desc=拦截猫+解锁订阅  软件版本：1.3.26
+#!system=ios
+#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/WasteCat.png
+#!date=2024-11-01
+#!author=BOBOLAOSHIV587
+#!homepage=https://github.com/BOBOLAOSHIV587/Rules
+#!openUrl = 下载地址：https://is.gd/eiw1MI
+
+[Script]
+http-response ^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/WasteCat/JS/WasteCat.js, requires-body=true, timeout=60, tag=WasteCat
+
+[MITM]
+hostname = buy.itunes.apple.com
+
