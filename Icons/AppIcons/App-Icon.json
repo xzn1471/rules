@@ -693,6 +693,18 @@
         {
             "name": "Picsew",
             "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Picsew.png"
+        },
+        {
+            "name": "VivaCut",
+            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/VivaCut.png"
+        },
+        {
+            "name": "VN",
+            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/VN.png"
+        },
+        {
+            "name": "WPS",
+            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/WPS.png"
         }
     ]
 }
