@@ -1,8 +1,10 @@
 /*
 
+# 作者：510004015
+
 [rewrite_local]
 
-^https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/membership\/user url script-response-body https://raw.githubusercontent.com/510004015/Quantumult_X/Remote/Premium/BaiduCloud.js
+^https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/membership\/user url script-response-body https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/BaiDuYun/JS/BaiduCloud.js
 
 [mitm] 
 
