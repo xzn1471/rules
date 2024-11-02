@@ -1,18 +1,14 @@
 /******************************
-
-脚本功能：Qobuz解锁Hi-Res订阅
-软件版本：6.6.0
-下载地址：http://t.cn/A6XT3lHQ
-脚本作者：Hausd0rff
-更新时间：2022-06-03
-脚本发布：https://t.me/yqc_123
-问题反馈：https://t.me/yqc_777
-使用声明：⚠️此脚本仅供学习与交流，
-        请勿转载与贩卖！⚠️⚠️⚠️
+# 个人自用
+# 脚本功能：Qobuz解锁Hi-Res订阅
+# 软件版本：6.6.0
+# 下载地址：http://t.cn/A6XT3lHQ
+# 脚本作者：Hausd0rff
+# 更新时间：2022-06-03
 *******************************
 [rewrite_local]
 # > Qobuz解锁Hi-Res订阅
-^https?:\/\/www\.qobuz\.com\/api\.json\/0\.2\/user\/login$ url script-request-body https://raw.githubusercontent.com/yqc007/QuantumultX/master/QobuzHiResProCrack.js
+^https?:\/\/www\.qobuz\.com\/api\.json\/0\.2\/user\/login$ url script-request-body https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Qobuz/JS/QobuzHiResProCrack.js
 
 [mitm] 
 hostname = www.qobuz.com
