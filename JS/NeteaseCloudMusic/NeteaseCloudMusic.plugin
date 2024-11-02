@@ -2,6 +2,8 @@
 #!desc=解锁会员音频、音质
 #!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/NeteaseMusic.png
 #!homepage = https://github.com/BOBOLAOSHIV587
+#!category=😍BOBO Premium
+
 
 [Rewrite]
 ^https?:\/\/interface\d?\.music\.163\.com\/e?api\/vip\/cashier\/tspopup\/get - reject-200
