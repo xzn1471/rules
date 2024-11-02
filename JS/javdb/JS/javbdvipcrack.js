@@ -1,16 +1,14 @@
 /******************************
-脚本功能：javdb 解锁永久会员
-软件版本：1.9.16
-下载地址：https://jav.app
-脚本作者：Hausd0rff
-更新时间：2023-05-26
-脚本发布：https://t.me/yqc_123
-使用声明：‼️脚本仅供学习交流, 🈲️商业用途
+# 脚本功能：javdb 解锁永久会员
+# 软件版本：1.9.16
+# 下载地址：https://jav.app
+# 脚本作者：Hausd0rff
+# 更新时间：2023-05-26
 *******************************
 [rewrite_local]
 # > javdb 解锁永久会员
-^https?:\/\/.*\/api\/v1\/users url script-response-body https://raw.githubusercontent.com/yqc007/QuantumultX/master/javbdvipcrack.js
-^https?:\/\/.*\/api\/v1\/(movies\/.*\/play|startup) url script-request-header https://raw.githubusercontent.com/yqc007/QuantumultX/master/javdbvipcrack.js
+^https?:\/\/.*\/api\/v1\/users url script-response-body https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/javdb/JS/javbdvipcrack.js
+^https?:\/\/.*\/api\/v1\/(movies\/.*\/play|startup) url script-request-header https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/javdb/JS/javdbvipcrack.js
 [mitm] 
 hostname = api.pxxgg.xyz, api.ujvnmkx.cn, jdforrepam.com, api.yijingluowangluo.xyz, api.wwwuh5.cn, api.hechuangxinxi.xyz
 *******************************/
