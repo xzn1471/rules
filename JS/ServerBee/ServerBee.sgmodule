@@ -6,6 +6,8 @@
 #!author=BOBOLAOSHIV587
 #!homepage=https://github.com/BOBOLAOSHIV587/Rules
 #!openUrl = 下载地址：https://is.gd/NyslNJ
+#!category=😍BOBO Premium
+
 
 [Script]
 ServerBee = type=http-response, pattern=^https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/ServerBee/JS/ServerBee.js, requires-body=true, max-size=-1, timeout=60
