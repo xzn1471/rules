@@ -5,6 +5,8 @@
 #!date=2024-11-01
 #!author=BOBOLAOSHIV587
 #!homepage=https://github.com/BOBOLAOSHIV587/Rules
+#!category=😍BOBO Premium
+
 
 [Script]
 http-response ^https?:\/\/notability\.com\/(global|subscriptions) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Notability/JS/Notability.js, requires-body=true, timeout=60, tag=Notability
