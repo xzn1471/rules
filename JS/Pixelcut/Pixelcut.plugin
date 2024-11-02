@@ -5,6 +5,8 @@
 #!homepage=https://github.com/BOBOLAOSHIV587/Rules
 #!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Pixelcut.png
 #!date=2024-11-01
+#!category=😍BOBO Premium
+
 
 [Script]
 http-response https://api.revenuecat.com/v1/(receipts|subscribers)/* script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Pixelcut/JS/Pixelcut.js,requires-body=1, timeout=60, tag=Pixelcut解锁Premium
