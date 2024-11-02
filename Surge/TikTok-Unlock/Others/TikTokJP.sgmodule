@@ -1,5 +1,10 @@
-#!name=Tiktok
-#!desc=JP
+#!name=Tiktok JP
+#!desc=解锁 JP 地区
+#!openUrl=https://github.com/BOBOLAOSHIV587
+#!author=BOBOLAOSHIV587
+#!category=😍BOBO TikTok
+#!homepage=https://github.com/BOBOLAOSHIV587
+#!icon= https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/TikTok.png
 
 [Rule]
 DOMAIN-SUFFIX,byteoversea.com,JP
