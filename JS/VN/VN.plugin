@@ -1,0 +1,14 @@
+#!name=VN视频剪辑解锁订阅
+#!desc=VN(VlogNow)视频剪辑解锁订阅  软件版本：1.59.2
+#!system=ios
+#!author=BOBOLAOSHIV587
+#!homepage=https://github.com/BOBOLAOSHIV587/Rules
+#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/VN.png
+#!date=2024-11-01
+
+[Script]
+# > VN视频剪辑解锁订阅
+http-response ^https?:\/\/api2\.vlognow\.me\/vn-pay\/api\/v1\/public\/iap\/receipt\/status script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/VN/JS/VlogNowProCrack.js, requires-body=true, timeout=60, tag=VlogNowProCrack
+
+[MITM]
+hostname = api2.vlognow.me
