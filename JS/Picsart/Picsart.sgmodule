@@ -5,6 +5,8 @@
 #!homepage=https://github.com/BOBOLAOSHIV587/Rules
 #!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Picsart.png
 #!date=2024-11-01
+#!category=😍BOBO Premium
+
 
 [Script]
 Picsart = type=http-response,pattern=https://api.meiease.(cn|com)/shop/subscription/apple/purchases,script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Picsart/JS/Picsart.js,requires-body=1,max-size=0
