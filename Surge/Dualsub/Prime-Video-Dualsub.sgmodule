@@ -1,5 +1,6 @@
 #!name=Prime Video Dualsub
 #!desc=Prime Video subtitles add-ons
+#!category=😍BOBO Enhance
 
 [Script]
 Prime-Video-Dualsub = type=http-response,pattern=https:\/\/.+(cloudfront|akamaihd|avi-cdn).net\/(.+\.vtt|\w+\/2\$.+\/[a-zA-Z0-9-]+\.m3u8),requires-body=1,max-size=0,timeout=30,script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Surge/Dualsub/JS/Dualsub.js
