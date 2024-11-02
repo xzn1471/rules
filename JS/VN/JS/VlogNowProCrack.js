@@ -1,19 +1,16 @@
 /******************************
 
-脚本功能：VN视频剪辑解锁订阅
-软件版本：1.59.2
-下载地址：http://t.cn/A6K5dGGw
-脚本作者：Passer_by_yun
-更新时间：2022-10-22
-电报频道：https://t.me/yqc_123
-问题反馈：https://t.me/yqc_777
-使用声明：⚠️仅供学习交流，🈲️商业用途
+# 个人备用
+# 脚本功能：VN视频剪辑解锁订阅
+# 软件版本：1.59.2
+# 下载地址：http://t.cn/A6K5dGGw
+# 更新时间：2022-10-22
 
 *******************************
 
 [rewrite_local]
 # > VN视频剪辑解锁订阅
-^https?:\/\/api2\.vlognow\.me\/vn-pay\/api\/v1\/public\/iap\/receipt\/status url script-response-body https://raw.githubusercontent.com/yqc007/QuantumultX/master/VlogNowProCrack.js
+^https?:\/\/api2\.vlognow\.me\/vn-pay\/api\/v1\/public\/iap\/receipt\/status url script-response-body https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/VN/JS/VlogNowProCrack.js
 
 [mitm] 
 hostname = api2.vlognow.me
