@@ -1,18 +1,14 @@
 /******************************
-
-脚本功能：麻豆社区解锁全部视频
-软件版本：1.0.6+34
-下载地址：https://shrtm.nu/mdsq
-脚本作者：Hausd0rff
-更新时间：2022-10-15
-脚本发布：https://t.me/yqc_123
-问题反馈：https://t.me/yqc_777
-使用声明：⚠️此脚本仅供学习与交流，
-        请勿转载与贩卖！⚠️⚠️⚠️
+# 个人自用
+# 脚本功能：麻豆社区解锁全部视频
+# 软件版本：1.0.6+34
+# 下载地址：https://shrtm.nu/mdsq
+# 脚本作者：Hausd0rff
+# 更新时间：2022-10-15
 *******************************
 [rewrite_local]
 # > 麻豆社区解锁全部视频
-^https?:\/\/.*\/api\/app\/media\/m3u8\/.*\.m3u8 url script-request-header https://raw.githubusercontent.com/yqc007/QuantumultX/master/mdsqallcrack.js
+^https?:\/\/.*\/api\/app\/media\/m3u8\/.*\.m3u8 url script-request-header https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/mdsq/JS/mdsqallcrack.js
 
 [mitm] 
 hostname = ypmnkbb.saejeuj.com, fufxtyc.bytebwq.com, lcbnejx.dirptev.com, gcyivjc.qrneryt.com
