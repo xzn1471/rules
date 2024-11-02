@@ -3,6 +3,7 @@
 #!system=ios
 #!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/NeteaseMusic.png
 #!date=2024-11-01
+#!category=😍BOBO Premium
 
 [Map Local]
 ^https?:\/\/interface\d?\.music\.163\.com\/e?api\/vip\/cashier\/tspopup\/get data-type=text data=" " status-code=200
