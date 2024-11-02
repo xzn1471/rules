@@ -1,0 +1,18 @@
+#!name=Httpbot解锁永久订阅
+#!desc=Httpbot解锁永久订阅,进软件恢复购买  强大的网络调试工具，类似Anubis
+#!system=ios
+#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/HTTPBot.png
+#!date=2024-11-01
+#!author=BOBOLAOSHIV587
+#!homepage=https://github.com/BOBOLAOSHIV587/Rules
+#!openUrl = 
+
+
+[Script]
+# > Httpbot解锁永久订阅,进软件恢复购买
+Httpbot = type=http-request, pattern=^https?:\/\/api\.revenuecat\.com/v\d/(subscribers/(\$RCAnonymousID\%)?(\w)+|receipts)$, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/HTTPBot/JS/Httpbot.js, timeout=60
+
+
+[MITM]
+hostname = %APPEND% api.revenuecat.com
+
