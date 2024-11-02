@@ -1,6 +1,8 @@
 #!name=Troubleshoot
 #!desc=故障排除 访问 http://trouble.shoot 查看
 #!author=@BOBOLAOSHIV587
+#!category=😍BOBO
+
 
 [General]
 force-http-engine-hosts = %APPEND% trouble.shoot
