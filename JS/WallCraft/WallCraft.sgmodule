@@ -1,0 +1,15 @@
+#!name=WallCraft解锁专业版
+#!desc=WallCraft解锁专业版  软件版本：2.8.3
+#!system=ios
+#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Wallcraft.png
+#!date=2024-11-01
+#!author=BOBOLAOSHIV587
+#!homepage=https://github.com/BOBOLAOSHIV587/Rules
+#!openUrl = 下载地址：http://t.cn/A6iO7Eht
+
+[Script]
+# > WallCraft解锁永久专业版
+WallCraftFProCrack = type=http-response, pattern=^https?:\/\/billing-ios\.wallpaperscraft\.com\/verify_receipt\/remove_ads$, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/WallCraft/JS/WallCraftFProCrack.js, requires-body=true, max-size=-1, timeout=60
+
+[MITM]
+hostname = %APPEND% *.wallpaperscraft.com
