@@ -1,10 +1,10 @@
 #!name = TikTok 解鎖
 #!desc = 移除 TikTok 視頻水印並自定義區域解鎖，需要設定此插件對應區域的節點。
-#!openUrl = https://github.com/BOBOLAOSHIV587/Rules
 #!author =BOBOLAOSHIV587
 #!category=😍BOBO TikTok
 #!homepage = https://github.com/BOBOLAOSHIV587
-#!icon = https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/Qure/Image/Color/TikTok.png
+#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/TikTok.png
+#!openUrl=https://apps.apple.com/app/id835599320
 #!select = 解鎖地區,台灣,日本,韓國,泰國,越南,英國,法國,德國,美國,巴西,俄羅斯,墨西哥,土耳其,西班牙,阿根廷,新加坡,菲律賓,馬來西亞
 
 [Rule]
