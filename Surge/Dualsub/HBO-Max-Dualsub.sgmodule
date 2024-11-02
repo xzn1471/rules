@@ -1,5 +1,6 @@
 #!name=HBO Max Dualsub
 #!desc=HBO Max subtitles add-ons
+#!category=😍BOBO Enhance
 
 [Script]
 HBO-Max-Dualsub = type=http-response,pattern=https:\/\/(manifests.v2.api.hbo.com|.+hbomaxcdn.com)\/(hls.m3u8.+|video.+\.vtt),requires-body=1,max-size=0,timeout=30,script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Surge/Dualsub/JS/Dualsub.js
