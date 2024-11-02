@@ -665,6 +665,18 @@
         {
             "name": "FAULT-US",
             "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/FAULT-US.png"
+        },
+        {
+            "name": "1Blocker",
+            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/1Blocker.png"
+        },
+        {
+            "name": "AdGuard",
+            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/AdGuard.png"
+        },
+        {
+            "name": "ScanScan(BaiMiao)",
+            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/ScanScan(BaiMiao).png"
         }
     ]
 }
