@@ -1,16 +1,15 @@
 /******************************
 
-脚本功能：剪映解锁会员
-应用版本：9.8.2
-应用下载：http://t.cn/A6pmj73Z
-脚本作者：Hausd0rff
-更新时间：2023-06-26
-脚本发布：https://t.me/yqc_123
-使用声明：⚠️仅供学习交流, 🈲️商业用途
+# 个人备用
+# 脚本功能：剪映解锁会员
+# 应用版本：9.8.2
+# 应用下载：http://t.cn/A6pmj73Z
+# 脚本作者：Hausd0rff
+# 更新时间：2023-06-26
 *******************************
 [rewrite_local]
 # > 剪映解锁会员
-^https?:\/\/commerce-api-.*\.faceu\.mobi\/commerce\/v1\/(subscription\/user_info|purchase\/draft_unlock|effect\/check_effects) url script-request-header https://raw.githubusercontent.com/yqc007/QuantumultX/master/VideoFusionVipCrack.js
+^https?:\/\/commerce-api-.*\.faceu\.mobi\/commerce\/v1\/(subscription\/user_info|purchase\/draft_unlock|effect\/check_effects) url script-request-header https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/JianYing/JS/VideoFusionVipCrack.js
 [mitm] 
 hostname = api*.faceu.mobi, api3-lq.faceu.mobi, commerce-api-lf.faceu.mobi, commerce-api-lq.faceu.mobi, lv-api-lq.ulikecam.com, lv-api-hl.ulikecam.com
 
