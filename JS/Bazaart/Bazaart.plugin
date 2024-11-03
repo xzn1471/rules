@@ -1,11 +1,12 @@
 #!name=Bazaart百色特——解锁订阅
 #!desc=Bazaart百色特——解锁订阅  软件版本：10.0.4
-#!system=ios
-#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Bazaart.png
+#!system=iOS
 #!date=2024-11-01
 #!author=BOBOLAOSHIV587
-#!homepage=https://github.com/BOBOLAOSHIV587/Rules
 #!category=😍BOBO Premium
+#!homepage=https://github.com/BOBOLAOSHIV587/Rules
+#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Bazaart.png
+#!openUrl=https://apps.apple.com/app/id515094775
 
 
 [Script]
