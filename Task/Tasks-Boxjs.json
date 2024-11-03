@@ -360,7 +360,7 @@
       "id": "BOBO.wuai",
       "name": "吾爱破解",
       "descs_html": [
-        "<a style='color:#686de0;display:block;text-align:center;' target='_blank' href='https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Task/Tasks/52pojie.js'>脚本链接</a>"
+        "<a style='color:#686de0;display:block;text-align:center;' target='_blank' href='https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Task/Tasks/52PoJie/JS/52pojie.js'>脚本链接</a>"
       ],
       "keys": ["wuai_debug", "wuai_cookie"],
       "settings": [
@@ -386,7 +386,7 @@
         "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Task/Tasks/icon/52pojie.png",
         "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Task/Tasks/icon/52pojie.png"
       ],
-      "script": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Task/Tasks/52pojie.js"
+      "script": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Task/Tasks/52PoJie/JS/52pojie.js"
     },
     {
       "id": "BOBO.idaily",
