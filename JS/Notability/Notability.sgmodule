@@ -1,11 +1,12 @@
 #!name=Notability解锁
 #!desc=Notability解锁2099年
 #!system=ios
-#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Notability.png
 #!date=2024-11-01
 #!author=@BOBOLAOSHIV587
-#!homepage=https://github.com/BOBOLAOSHIV587/Rules
 #!category=😍BOBO Premium
+#!homepage=https://github.com/BOBOLAOSHIV587/Rules
+#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Documents.png
+#!openUrl=https://apps.apple.com/app/id364901807
 
 
 [Script]
