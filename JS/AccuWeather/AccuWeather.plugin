@@ -1,11 +1,12 @@
 #!name=AccuWeather
 #!desc=AccuWeather解锁Premium 版本 15.2.1
-#!system=ios
+#!system=iOS
+#!date=2024-11-01
 #!author=BOBOLAOSHIV587
+#!category=😍BOBO Premium
 #!homepage=https://github.com/BOBOLAOSHIV587/Rules
 #!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/AccuWeather.png
-#!date=2024-11-01
-#!category=😍BOBO Premium
+#!openUrl=https://apps.apple.com/app/id300048137
 
 [Script]
 # > AccuWeather 解锁 Premium
