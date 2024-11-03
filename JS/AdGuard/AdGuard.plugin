@@ -1,11 +1,12 @@
 #!name=AdGuard
 #!desc=AdGuard 解锁永久高级版
-#!system=ios
+#!system=iOS
+#!date=2024-11-01
 #!author=BOBOLAOSHIV587
+#!category=😍BOBO Premium
 #!homepage=https://github.com/BOBOLAOSHIV587/Rules
 #!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/AdGuard.png
-#!date=2024-11-01
-#!category=😍BOBO Premium
+#!openUrl=https://apps.apple.com/app/id1047223162
 
 [Script]
 # > AdGuard 解锁永久高级版
