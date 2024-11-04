@@ -3,14 +3,12 @@
 项目名称：Photomator-照片编辑
 下载地址：https://t.cn/A60W87es  id1444636541
 脚本作者：chxm1023
-电报频道：https://t.me/chxm1023
-使用声明：⚠️仅供参考，🈲转载与售卖！
 
 **************************************
 
 [rewrite_local]
-^https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) url script-response-body https://raw.githubusercontent.com/chxm1023/Rewrite/main/Revenuecat/Photomator.js
-^https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) url script-request-header https://raw.githubusercontent.com/chxm1023/Rewrite/main/Revenuecat/Photomator.js
+^https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) url script-response-body https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Photomator/JS/Photomator.js
+^https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) url script-request-header https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Photomator/JS/Photomator.js
 
 [mitm]
 hostname = api.revenuecat.com
