@@ -1,0 +1,17 @@
+#!name=Pixelmator
+#!desc=Pixelmator Photo+解锁订阅  软件版本：2.0.14
+#!system=iOS
+#!date=2024-11-01
+#!author=BOBOLAOSHIV587
+#!category=😍BOBO Premium
+#!homepage=https://github.com/BOBOLAOSHIV587/Rules
+#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Pixelmator.png
+#!openUrl=https://apps.apple.com/app/id924695435
+
+[Script]
+Pixelmator = type=http-response, pattern=https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Pixelmator/JS/Pixelmator.js, requires-body=true, max-size=-1, timeout=60
+
+
+[MITM]
+hostname = %APPEND% api.revenuecat.com
+
