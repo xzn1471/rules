@@ -1,8 +1,3 @@
-// Quantumult X引用地址： https://raw.githubusercontent.com/czy13724/Quantumult-X/main/scripts/nicegram.js
-// Surge/Shadowrocket 模块地址： https://raw.githubusercontent.com/czy13724/Quantumult-X/main/Surge/nicegram.sgmodule
-// Loon 插件地址： https://raw.githubusercontent.com/czy13724/Quantumult-X/main/Loon/nicegram.plugin
-// Stash 覆写地址： https://raw.githubusercontent.com/czy13724/Quantumult-X/main/Stash/nicegram.stoverride
-
 /*
 项目名称： nicegram
 项目作者： David
@@ -11,8 +6,7 @@
 使用声明： 仅供个人参考学习交流，勿用于其它用途
 
 [rewrite_local]
-^https?:\/\/nicegram\.cloud\/api\/v\d\/(ai-assistant\/purchase-list|user\/info|telegram\/auth) url script-response-body https://raw.githubusercontent.com/czy13724/Quantumult-X/main/scripts/nicegram.js
-
+^https?:\/\/nicegram\.cloud\/api\/v\d\/(ai-assistant\/purchase-list|user\/info|telegram\/auth) url script-response-body https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Nicegram/JS/nicegram.js
 [mitm]
 hostname = nicegram.cloud
 */
