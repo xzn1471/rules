@@ -2,10 +2,11 @@
 #!desc=解锁Storm Sniffer
 #!system=ios
 #!author=BOBOLAOSHIV587
-#!homepage=https://github.com/BOBOLAOSHIV587/Rules
-#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/StormSniffer.png
 #!date=2024-11-01
 #!category=😍BOBO Premium
+#!homepage=https://github.com/BOBOLAOSHIV587/Rules
+#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/StormSniffer.png
+#!openUrl=https://apps.apple.com/app/id1610958307
 
 
 [Script]
