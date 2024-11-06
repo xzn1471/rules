@@ -1,0 +1,19 @@
+#!name=小熊油耗解锁Vip
+#!desc=小熊油耗解锁Vip
+#!system=iOS
+#!date=2024-11-01
+#!author=BOBOLAOSHIV587
+#!category=😍BOBO Premium
+#!homepage=https://github.com/BOBOLAOSHIV587/Rules
+#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/XXYH.png
+#!openUrl=https://apps.apple.com/app/id569914644
+
+
+[Script]
+# >小熊油耗解锁Vip
+XXYH = type=http-response, pattern=^http[s]?:\/\/www\.xiaoxiongyouhao\.com\/api\/vip\/index.php, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/XiaoXiongYouHao/JS/XXYH.js, requires-body=true, max-size=-1, timeout=60
+
+
+[MITM]
+hostname = %APPEND% www.xiaoxiongyouhao.com
+
