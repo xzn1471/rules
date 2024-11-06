@@ -10,10 +10,10 @@
 
 [rewrite_local]
 # >TickTick 滴答清单解锁Vip
-^https:\/\/(ticktick|dida365)\.com\/api\/v2\/user\/status url script-response-body https://raw.githubusercontent.com/Mike-offers/Rewrite/refs/heads/master/QuantumultX/TickTick.js
+^https:\/\/(ticktick|dida365)\.com\/api\/v2\/user\/status url script-response-body https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/TickTick/JS/TickTick.js
 
 [mitm]
-hostname = dida365.com , ticktick.com
+hostname = dida365.com, ticktick.com
 
 *************************************/
 
