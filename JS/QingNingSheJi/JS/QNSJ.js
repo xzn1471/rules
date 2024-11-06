@@ -10,7 +10,7 @@
 
 [rewrite_local]
 # >青柠设计解锁VIP
-^https:\/\/api\.qingning6\.com\/api\/user\/getUserInfo url script-response-body https://raw.githubusercontent.com/Mike-offers/Rewrite/refs/heads/master/QuantumultX/QNSJ.js
+^https:\/\/api\.qingning6\.com\/api\/user\/getUserInfo url script-response-body https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/QingNingSheJi/JS/QNSJ.js
 
 [mitm]
 hostname = api.qingning6.com
