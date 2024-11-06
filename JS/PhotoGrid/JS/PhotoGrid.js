@@ -10,7 +10,7 @@
 
 [rewrite_local]
 # >PhotoGrid解锁VIP
-^https?:\/\/pgapi\.(ksmobile\.com||photogrid\.app)\/v1\/ios\/auth url script-response-body https://raw.githubusercontent.com/Mike-offers/Rewrite/refs/heads/master/QuantumultX/PhotoGrid.js
+^https?:\/\/pgapi\.(ksmobile\.com||photogrid\.app)\/v1\/ios\/auth url script-response-body https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/PhotoGrid/JS/PhotoGrid.js
 
 [mitm]
 hostname = pgapi.ksmobile.com, pgapi.photogrid.app
