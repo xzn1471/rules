@@ -10,7 +10,7 @@
 
 [rewrite_local]
 # >Swifty Compiler解锁Premium
-^https?:\/\/api\.qonversion\.io\/v1\/user\/(init|purchase)$ url script-request-header https://raw.githubusercontent.com/Mike-offers/Rewrite/refs/heads/master/QuantumultX/SwiftyCompiler.js
+^https?:\/\/api\.qonversion\.io\/v1\/user\/(init|purchase)$ url script-request-header https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/SwiftyCompiler/JS/SwiftyCompiler.js
 
 [mitm]
 hostname = api.qonversion.io
