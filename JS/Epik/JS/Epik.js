@@ -8,7 +8,7 @@
 >「 注意事项 」         使用此脚本，会导致AppleStore无法切换账户，解决方法[关闭QX切换账户，或关闭MITM，或删除脚本，或去设置媒体与购买项目处切换ID]
 
 [rewrite_local]
-^https:\/\/user-snow-api\.snow\.me\/v1\/purchase\/subscription\/subscriber\/status$ url script-request-header https://raw.githubusercontent.com/Mike-offers/Rewrite/refs/heads/master/QuantumultX/Epik.js
+^https:\/\/user-snow-api\.snow\.me\/v1\/purchase\/subscription\/subscriber\/status$ url script-request-header https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Epik/JS/Epik.js
 
 [mitm]
 hostname = user-snow-api.snow.me
