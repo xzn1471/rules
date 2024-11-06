@@ -9,7 +9,7 @@
 >「 额外说明 」         请勿传播或售卖此脚本
 
 [rewrite_local]
-^https?:\/\/.*\.api\.moji\.com\/(sns\/json\/profile\/get_info_.+|json\/member_new\/homepage_info.+|user\/personal\/json\/profile_.+|flycard\/novice|shortvideo\/.+) url script-response-body https://raw.githubusercontent.com/Mike-offers/Rewrite/refs/heads/master/QuantumultX//MoJiWeather.js
+^https?:\/\/.*\.api\.moji\.com\/(sns\/json\/profile\/get_info_.+|json\/member_new\/homepage_info.+|user\/personal\/json\/profile_.+|flycard\/novice|shortvideo\/.+) url script-response-body https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/MoJiWeather/JS/MoJiWeather.js
 
 [mitm]
 hostname = *.api.moji.com
