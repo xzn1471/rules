@@ -10,7 +10,7 @@
 
 [rewrite_local]
 # >Sorted解锁Pro
-^https?:\/\/api\.sortedapp\.com\/receipt$ url script-response-body https://raw.githubusercontent.com/Mike-offers/Rewrite/refs/heads/master/QuantumultX/Sorted.js
+^https?:\/\/api\.sortedapp\.com\/receipt$ url script-response-body https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Sorted/JS/Sorted.js
 
 [mitm]
 hostname = api.sortedapp.com
