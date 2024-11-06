@@ -6,10 +6,9 @@
 >「 更新时间 」         2024-09-27
 >「 注意事项 」         如需引用请注明出处，谢谢合作！
 >「 注意事项 」         使用此脚本，会导致AppleStore无法切换账户，解决方法[关闭QX切换账户，或关闭MITM，或删除脚本，或去设置媒体与购买项目处切换ID]
->「 额外说明 」         请勿传播或售卖此脚本
 
 [rewrite_local]
-^https?:\/\/(nicegram\.cloud\/api\/v\d\/user\/info|restore-access\.indream\.app\/restoreAccess) url script-response-body https://raw.githubusercontent.com/Mike-offers/Rewrite/refs/heads/master/QuantumultX/Nicegram.js
+^https?:\/\/(nicegram\.cloud\/api\/v\d\/user\/info|restore-access\.indream\.app\/restoreAccess) url script-response-body https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Nicegram/JS/NicegramPremium.js
 
 [mitm]
 hostname = nicegram.cloud, restore-access.indream.app
