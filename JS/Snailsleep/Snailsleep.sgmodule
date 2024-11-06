@@ -1,0 +1,19 @@
+#!name=蜗牛睡眠解锁Vip
+#!desc=蜗牛睡眠解锁Vip.使用此脚本，会导致AppleStore无法切换账户，解决方法[关闭QX切换账户，或关闭MITM，或删除脚本，或去设置媒体与购买项目处切换ID]
+#!system=iOS
+#!date=2024-11-01
+#!author=BOBOLAOSHIV587
+#!category=😍BOBO Premium
+#!homepage=https://github.com/BOBOLAOSHIV587/Rules
+#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/WNSM.png
+#!openUrl=https://apps.apple.com/app/id1025313530
+
+
+[Script]
+# >蜗牛睡眠解锁Vip
+Snailsleep = type=http-response, pattern=^https?:\/\/snailsleep\.net\/snail\/v\d\/profile\/get., script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Snailsleep/JS/Snailsleep.js, requires-body=true, max-size=-1, timeout=60
+
+
+[MITM]
+hostname = %APPEND% snailsleep.net
+
