@@ -8,8 +8,8 @@
 
 [rewrite_local]
 # > 自动获取Revenuecat核心数据
-^https:\/\/(api\.revenuecat|isi\.csan\.goodnotes)\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) url script-response-body https://raw.githubusercontent.com/Mike-offers/Rewrite/refs/heads/master/QuantumultX/AutoUnlockRevenuecat.js
-^https:\/\/(api\.revenuecat|isi\.csan\.goodnotes)\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) url script-request-header https://raw.githubusercontent.com/Mike-offers/Rewrite/refs/heads/master/QuantumultX/AutoUnlockRevenuecat.js
+^https:\/\/(api\.revenuecat|isi\.csan\.goodnotes)\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) url script-response-body https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Revenuecat/JS/Revenuecat.js
+^https:\/\/(api\.revenuecat|isi\.csan\.goodnotes)\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) url script-request-header https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Revenuecat/JS/Revenuecat.js
 
 [mitm]
 hostname = api.revenuecat.com , isi.csan.goodnotes.com
