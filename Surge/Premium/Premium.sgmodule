@@ -401,8 +401,36 @@ Adapty = type=http-response, pattern=^https?:\/\/api\.adapty\.io\/api\/v\d\/sdk\
 
 
 
+# > Craft解锁Premium
+Craft = type=http-response, pattern=^https?:\/\/(api|docs)\.craft\.do\/(api\/)?(auth\/v\d\/profile|subscription\/(receipt|teams\/get-subscriptions)), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Craft/JS/Craft.js, requires-body=true, max-size=-1, timeout=60
+
+
+
+# > ChatOn AI解锁Premium
+ChatOnAI = type=http-response, pattern=^https?:\/\/billing\.chaton\.ai\/v1\/subscriptions, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/ChatOnAI/JS/ChatOnAI.js, requires-body=true, max-size=-1, timeout=60
+
+
+
+# > Epik解锁Pro
+Epik = type=http-request, pattern=^https:\/\/user-snow-api\.snow\.me\/v1\/purchase\/subscription\/subscriber\/status$, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Epik/JS/Epik.js, timeout=60
+
+
+
+# > DreamFace解锁Pro
+DreamFace = type=http-response, pattern=^https?:\/\/dreamfaceapp\.com\/df-server\/user\/save_user_login, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/DreamFace/JS/DreamFace.js, requires-body=true, max-size=-1, timeout=60
+
+
+
+# > Filmix解锁Pro
+Filmix = type=http-response, pattern=https:\/\/appv2\.filmix\.com\.cn\/api\/(v2|v4)\/users, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Filmix/JS/Filmix.js, requires-body=true, max-size=-1, timeout=60
+
+
+
+# > FaceLab解锁Vip
+FaceLab = type=http-request, pattern=^https?:\/\/subscription-api\.lyrebirdstudio\.net\/subscriptions\/apple\/(verify|status|decode-apple-receipt), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/FaceLab/JS/FaceLab.js, timeout=60
+
 
 
 [MITM]
-hostname = %APPEND% api.revenuecat.com, buy.itunes.apple.com, *.adguard.org, app-subscription-proxy.accuweather.com, pan.baidu.com, baimiao.uzero.cn, tagit.hyhuo.com, biz.caiyunapp.com, ios.chat.openai.com, license.pdfexpert.com, media.deezer.com, api.deepfaker.app, api*.faceu.mobi, api3-lq.faceu.mobi, commerce-api-lf.faceu.mobi, commerce-api-lq.faceu.mobi, lv-api-lq.ulikecam.com, lv-api-hl.ulikecam.com, app.theinitium.com, isi.*.g*.com*, filmicpro.oracle.bendingspoonsapps.com, interface*.music.163.com, restore-access.indream.app, nicegram.cloud, notability.com, api.meiease.*, api-drive.mypikpak.com, cn.pornhubpremium.com, www.qobuz.com, commerce-api.faceu.mobi, api3-misc-lf.retouchpics.com, remini.oracle.bendingspoonsapps.com, api-mobile.soundcloud.com, spclient.wg.spotify.com, *.x-storm.com, *.wallpaperscraft.com, *.docer.wps.cn, vipapi.wps.cn, account.wps.cn, *.wps.cn, medi.dxzzy321.top, api2.vlognow.me, api.tidal.com, shukego.com, yiliang8888.com, 91mingyang.com, mnter.com, f5bc.club, api.pxxgg.xyz, api.ujvnmkx.cn, jdforrepam.com, api.yijingluowangluo.xyz, api.wwwuh5.cn, api.hechuangxinxi.xyz, ypmnkbb.saejeuj.com, fufxtyc.bytebwq.com, lcbnejx.dirptev.com, gcyivjc.qrneryt.com, *.miguvideo.com, *.migu.cn, ap*.intsig.net, mobile.flightradar24.com, api.mr.pixocial.com, newbeee-api.beautyplus.com, isi.csan.goodnotes.com, app.autocad360.com, api.alohaprofile.com, api.adapty.io
+hostname = %APPEND% api.revenuecat.com, buy.itunes.apple.com, *.adguard.org, app-subscription-proxy.accuweather.com, pan.baidu.com, baimiao.uzero.cn, tagit.hyhuo.com, biz.caiyunapp.com, ios.chat.openai.com, license.pdfexpert.com, media.deezer.com, api.deepfaker.app, api*.faceu.mobi, api3-lq.faceu.mobi, commerce-api-lf.faceu.mobi, commerce-api-lq.faceu.mobi, lv-api-lq.ulikecam.com, lv-api-hl.ulikecam.com, app.theinitium.com, isi.*.g*.com*, filmicpro.oracle.bendingspoonsapps.com, interface*.music.163.com, restore-access.indream.app, nicegram.cloud, notability.com, api.meiease.*, api-drive.mypikpak.com, cn.pornhubpremium.com, www.qobuz.com, commerce-api.faceu.mobi, api3-misc-lf.retouchpics.com, remini.oracle.bendingspoonsapps.com, api-mobile.soundcloud.com, spclient.wg.spotify.com, *.x-storm.com, *.wallpaperscraft.com, *.docer.wps.cn, vipapi.wps.cn, account.wps.cn, *.wps.cn, medi.dxzzy321.top, api2.vlognow.me, api.tidal.com, shukego.com, yiliang8888.com, 91mingyang.com, mnter.com, f5bc.club, api.pxxgg.xyz, api.ujvnmkx.cn, jdforrepam.com, api.yijingluowangluo.xyz, api.wwwuh5.cn, api.hechuangxinxi.xyz, ypmnkbb.saejeuj.com, fufxtyc.bytebwq.com, lcbnejx.dirptev.com, gcyivjc.qrneryt.com, *.miguvideo.com, *.migu.cn, ap*.intsig.net, mobile.flightradar24.com, api.mr.pixocial.com, newbeee-api.beautyplus.com, isi.csan.goodnotes.com, app.autocad360.com, api.alohaprofile.com, api.adapty.io, api.craft.do, docs.craft.do, billing.chaton.ai, user-snow-api.snow.me, dreamfaceapp.com, appv2.filmix.com.cn, subscription-api.lyrebirdstudio.net
 
