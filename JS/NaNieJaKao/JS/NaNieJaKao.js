@@ -9,7 +9,7 @@
 >「 额外说明 」         请勿传播或售卖此脚本
 
 [rewrite_local]
-^https?:\/\/nanie\.flyingeffect\.com\/api\/me\/info url script-response-body https://raw.githubusercontent.com/Mike-offers/Rewrite/refs/heads/master/QuantumultX/NNJK.js
+^https?:\/\/nanie\.flyingeffect\.com\/api\/me\/info url script-response-body https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/NaNieJaKao/JS/NaNieJaKao.js
 
 [mitm]
 hostname = nanie.flyingeffect.com
