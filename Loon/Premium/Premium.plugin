@@ -477,11 +477,31 @@ http-request ^https?:\/\/(purchase-qingtu-api.b612kaji|api-qingtu.kajicam).com\/
 
 
 
+# >iMe解锁Premium
+http-response https:\/\/api\.imem\.apple\.app\/api\/premium\/getOwnStatus script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/iMe/JS/iMe.js, requires-body=true, timeout=60, tag=iMe
 
 
+
+# >蜗牛睡眠解锁Vip
+http-response ^https?:\/\/snailsleep\.net\/snail\/v\d\/profile\/get. script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Snailsleep/JS/Snailsleep.js, requires-body=true, timeout=60, tag=Snailsleep
+
+
+
+# >元气桌面壁纸解锁Vip
+http-response ^https?:\/\/mobile-ios-wallpaper-api\.zhhainiao\.com\/v1\/user\/info script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/YuanQiZMBZ/JS/YQZMBZ.js, requires-body=true, timeout=60, tag=YQZMBZ
+
+
+
+# >小旋风收音机解锁VIP
+http-response ^https?:\/\/49.232.234.212:80\/user\/fixUserPayData script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/XiaoXuanFengFM/JS/XXFSYJ.js, requires-body=true, timeout=60, tag=XXFSYJ
+
+
+
+# >小熊油耗解锁Vip
+http-response ^http[s]?:\/\/www\.xiaoxiongyouhao\.com\/api\/vip\/index.php script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/XiaoXiongYouHao/JS/XXYH.js, requires-body=true, timeout=60, tag=XXYH
 
 
 
 [MITM]
-hostname = api.revenuecat.com, buy.itunes.apple.com, *.adguard.org, app-subscription-proxy.accuweather.com, pan.baidu.com, baimiao.uzero.cn, tagit.hyhuo.com, biz.caiyunapp.com, ios.chat.openai.com, license.pdfexpert.com, media.deezer.com, api.deepfaker.app, api*.faceu.mobi, api3-lq.faceu.mobi, commerce-api-lf.faceu.mobi, commerce-api-lq.faceu.mobi, lv-api-lq.ulikecam.com, lv-api-hl.ulikecam.com, app.theinitium.com, isi.*.g*.com*, filmicpro.oracle.bendingspoonsapps.com, interface*.music.163.com, restore-access.indream.app, nicegram.cloud, notability.com, api.meiease.*, api-drive.mypikpak.com, cn.pornhubpremium.com, www.qobuz.com, commerce-api.faceu.mobi, api3-misc-lf.retouchpics.com, remini.oracle.bendingspoonsapps.com, api-mobile.soundcloud.com, spclient.wg.spotify.com, *.x-storm.com, www.xmind.cn, www.xmind.net, *.wallpaperscraft.com, *.docer.wps.cn, vipapi.wps.cn, account.wps.cn, *.wps.cn, medi.dxzzy321.top, api2.vlognow.me, api.tidal.com, shukego.com, yiliang8888.com, 91mingyang.com, mnter.com, f5bc.club, api.pxxgg.xyz, api.ujvnmkx.cn, jdforrepam.com, api.yijingluowangluo.xyz, api.wwwuh5.cn, api.hechuangxinxi.xyz, ypmnkbb.saejeuj.com, fufxtyc.bytebwq.com, lcbnejx.dirptev.com, gcyivjc.qrneryt.com, *.miguvideo.com, *.migu.cn, ap*.intsig.net, mobile.flightradar24.com, api.mr.pixocial.com, newbeee-api.beautyplus.com, isi.csan.goodnotes.com, app.autocad360.com, api.alohaprofile.com, api.adapty.io, api.craft.do, docs.craft.do, billing.chaton.ai, user-snow-api.snow.me, dreamfaceapp.com, appv2.filmix.com.cn, subscription-api.lyrebirdstudio.net, nanie.flyingeffect.com, *.api.moji.com, pgapi.ksmobile.com, pgapi.photogrid.app, peakvisor.com, service.perfect365.com, video-svr.perfect365.com, api.polaxiong.com, dida365.com, ticktick.com, user-snow-api.snow.me, *-slidebox-ios-prod.cloudfunctions.net, api.sortedapp.com, api.qonversion.io, m.815616.xyz, i.815616.xyz, 175.178.52.149, api.qingning6.com, purchase-qingtu-api.b612kaji.com, api-qingtu.kajicam.com
+hostname = api.revenuecat.com, buy.itunes.apple.com, *.adguard.org, app-subscription-proxy.accuweather.com, pan.baidu.com, baimiao.uzero.cn, tagit.hyhuo.com, biz.caiyunapp.com, ios.chat.openai.com, license.pdfexpert.com, media.deezer.com, api.deepfaker.app, api*.faceu.mobi, api3-lq.faceu.mobi, commerce-api-lf.faceu.mobi, commerce-api-lq.faceu.mobi, lv-api-lq.ulikecam.com, lv-api-hl.ulikecam.com, app.theinitium.com, isi.*.g*.com*, filmicpro.oracle.bendingspoonsapps.com, interface*.music.163.com, restore-access.indream.app, nicegram.cloud, notability.com, api.meiease.*, api-drive.mypikpak.com, cn.pornhubpremium.com, www.qobuz.com, commerce-api.faceu.mobi, api3-misc-lf.retouchpics.com, remini.oracle.bendingspoonsapps.com, api-mobile.soundcloud.com, spclient.wg.spotify.com, *.x-storm.com, www.xmind.cn, www.xmind.net, *.wallpaperscraft.com, *.docer.wps.cn, vipapi.wps.cn, account.wps.cn, *.wps.cn, medi.dxzzy321.top, api2.vlognow.me, api.tidal.com, shukego.com, yiliang8888.com, 91mingyang.com, mnter.com, f5bc.club, api.pxxgg.xyz, api.ujvnmkx.cn, jdforrepam.com, api.yijingluowangluo.xyz, api.wwwuh5.cn, api.hechuangxinxi.xyz, ypmnkbb.saejeuj.com, fufxtyc.bytebwq.com, lcbnejx.dirptev.com, gcyivjc.qrneryt.com, *.miguvideo.com, *.migu.cn, ap*.intsig.net, mobile.flightradar24.com, api.mr.pixocial.com, newbeee-api.beautyplus.com, isi.csan.goodnotes.com, app.autocad360.com, api.alohaprofile.com, api.adapty.io, api.craft.do, docs.craft.do, billing.chaton.ai, user-snow-api.snow.me, dreamfaceapp.com, appv2.filmix.com.cn, subscription-api.lyrebirdstudio.net, nanie.flyingeffect.com, *.api.moji.com, pgapi.ksmobile.com, pgapi.photogrid.app, peakvisor.com, service.perfect365.com, video-svr.perfect365.com, api.polaxiong.com, dida365.com, ticktick.com, user-snow-api.snow.me, *-slidebox-ios-prod.cloudfunctions.net, api.sortedapp.com, api.qonversion.io, m.815616.xyz, i.815616.xyz, 175.178.52.149, api.qingning6.com, purchase-qingtu-api.b612kaji.com, api-qingtu.kajicam.com, -api.imem.app, snailsleep.net, mobile-ios-wallpaper-api.zhhainiao.com, 49.232.234.212, www.xiaoxiongyouhao.com
 
