@@ -10,7 +10,7 @@
 
 [rewrite_local]
 # >Snow解锁Pro
-^https:\/\/user-snow-api\.snow\.me\/v1\/purchase\/subscription\/subscriber\/status$ url script-request-header https://raw.githubusercontent.com/Mike-offers/Rewrite/refs/heads/master/QuantumultX/Snow.js
+^https:\/\/user-snow-api\.snow\.me\/v1\/purchase\/subscription\/subscriber\/status$ url script-request-header https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Snow/JS/Snow.js
 
 [mitm]
 hostname = user-snow-api.snow.me
