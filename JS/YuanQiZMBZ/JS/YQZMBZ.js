@@ -10,7 +10,7 @@
 
 [rewrite_local]
 # >元气桌面壁纸解锁Vip
-^https?:\/\/mobile-ios-wallpaper-api\.zhhainiao\.com\/v1\/user\/info url script-response-body https://raw.githubusercontent.com/Mike-offers/Rewrite/refs/heads/master/QuantumultX/YQZMBZ.js
+^https?:\/\/mobile-ios-wallpaper-api\.zhhainiao\.com\/v1\/user\/info url script-response-body https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/YuanQiZMBZ/JS/YQZMBZ.js
 
 [mitm]
 hostname = mobile-ios-wallpaper-api.zhhainiao.com
