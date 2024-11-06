@@ -10,7 +10,7 @@
 
 [rewrite_local]
 # >Perfect365 Video解锁Plus
-^https?:\/\/video-svr\.perfect365\.com\/video\/P365Video\/services url script-response-body https://raw.githubusercontent.com/Mike-offers/Rewrite/refs/heads/master/QuantumultX/Perfect365Video.js
+^https?:\/\/video-svr\.perfect365\.com\/video\/P365Video\/services url script-response-body https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Perfect365Video/JS/Perfect365Video.js
 
 [mitm]
 hostname = video-svr.perfect365.com
