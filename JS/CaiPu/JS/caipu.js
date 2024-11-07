@@ -7,13 +7,12 @@
 项目地址：香哈菜谱
 下载地址：https://t.cn/AipUXQUl
 脚本作者：chxm1023
-使用声明：⚠️仅供参考，🈲转载与售卖！
 使用说明：解锁VIP，香哈课程无法观看
 
 **************************************
 
 [rewrite_local]
-^https:\/\/api.*\.xiangha\.com url script-response-body https://raw.githubusercontent.com/chxm1023/Rewrite/main/caipu.js
+^https:\/\/api.*\.xiangha\.com url script-response-body https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/CaiPu/JS/caipu.js
 
 [mitm]
 hostname = *.xiangha.com
