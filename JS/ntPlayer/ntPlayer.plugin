@@ -1,0 +1,20 @@
+#!name=ntPlayer-解锁订阅
+#!desc=ntPlayer-解锁订阅.注意事项：开启脚本再进入软件，多尝试几次
+#!system=iOS
+#!date=2024-11-01
+#!author=BOBOLAOSHIV587
+#!category=😍BOBO Premium
+#!homepage=https://github.com/BOBOLAOSHIV587/Rules
+#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/ntPlayer.png
+#!openUrl=https://apps.apple.com/app/id1613758141
+
+
+[Script]
+# >ntPlayer-解锁订阅
+http-response ^https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/ntPlayer/JS/ntPlayer.js, requires-body=true, timeout=60, tag=ntPlayer
+http-request ^https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/ntPlayer/JS/ntPlayer.js, timeout=60, tag=ntPlayer
+
+
+[MITM]
+hostname = api.revenuecat.com
+
