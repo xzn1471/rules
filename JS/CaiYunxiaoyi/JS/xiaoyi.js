@@ -7,7 +7,7 @@
 *******************************
 [rewrite_local]
 # >彩云小译-登陆后解锁会员
-^https:\/\/interpreter\.cyapi\.cn\/ url script-response-body https://raw.githubusercontent.com/afengye/QX/main/xiaoyi.js
+^https:\/\/interpreter\.cyapi\.cn\/ url script-response-body https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/CaiYunxiaoyi/JS/xiaoyi.js
 [mitm] 
 hostname = interpreter.cyapi.cn
 *******************************/
