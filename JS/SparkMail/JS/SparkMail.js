@@ -1,13 +1,13 @@
 /*******************************
-脚本功能：SparkMaill邮箱管理-解锁订阅
+脚本功能：SparkMail邮箱管理-解锁订阅
 脚本作者：afengye
 注意事项：查看频道说明
 频道地址：https://t.me/afengye
 使用声明：️仅供学习交流, 🈲️商业用途
 ********************************
 [rewrite_local]
-^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/.+$) url script-response-body https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/SparkMaill/JS/SparkMaill.js
-^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/.+$) url script-request-header https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/SparkMaill/JS/SparkMaill.js
+^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/.+$) url script-response-body https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/SparkMail/JS/SparkMail.js
+^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/.+$) url script-request-header https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/SparkMail/JS/SparkMail.js
 [mitm] 
 hostname = api.revenuecat.com
 *******************************/
