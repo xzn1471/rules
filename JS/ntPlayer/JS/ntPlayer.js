@@ -8,8 +8,8 @@
 ********************************
 [rewrite_local]
 # >ntPlayer-解锁订阅
-^https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) url script-response-body https://raw.githubusercontent.com/afengye/QX/main/ntPlayer.js
-^https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) url script-request-header https://raw.githubusercontent.com/afengye/QX/main/ntPlayer.js
+^https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) url script-response-body https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/ntPlayer/JS/ntPlayer.js
+^https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) url script-request-header https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/ntPlayer/JS/ntPlayer.js
 [mitm] 
 hostname = api.revenuecat.com
 *******************************/
