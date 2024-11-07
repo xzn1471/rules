@@ -1,0 +1,20 @@
+#!name=Lake涂色书
+#!desc=Lake涂色书-解锁订阅.注意事项 : 先不开脚本进入软件 退出软件 再开启脚本进入软件 解锁失败反复尝试以下操作 退出软件 开启脚本进入软件
+#!system=iOS
+#!date=2024-11-01
+#!author=BOBOLAOSHIV587
+#!category=😍BOBO Premium
+#!homepage=https://github.com/BOBOLAOSHIV587/Rules
+#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Lake.png
+#!openUrl=https://apps.apple.com/app/id1183717726
+
+
+[Script]
+# > Lake涂色书-解锁订阅
+Lake = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/.+$), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Lake/JS/Lake.js, requires-body=true, max-size=-1, timeout=60
+Lake = type=http-request, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/.+$), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Lake/JS/Lake.js, timeout=60
+
+
+[MITM]
+hostname = %APPEND% api.revenuecat.com
+
