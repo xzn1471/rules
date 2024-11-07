@@ -1,5 +1,5 @@
-#!name=自动获取Revenuecat核心数据
-#!desc=自动获取Revenuecat核心数据.使用此脚本，会导致AppleStore无法切换账户，解决方法[关闭QX切换账户，或关闭MITM，或删除脚本，或去设置媒体与购买项目处切换ID]
+#!name=Revenuecat 系列解锁合集
+#!desc=Revenuecat 系列解锁合集.使用此脚本，会导致AppleStore无法切换账户，解决方法[关闭QX切换账户，或关闭MITM，或删除脚本，或去设置媒体与购买项目处切换ID]
 #!system=iOS
 #!date=2024-11-01
 #!author=BOBOLAOSHIV587
@@ -14,6 +14,9 @@
 # > 自动获取Revenuecat核心数据
 Revenuecat = type=http-response, pattern=^https:\/\/(api\.revenuecat|isi\.csan\.goodnotes)\.com\/.+\/(receipts$|subscribers\/?(.*?)*$), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Revenuecat/JS/Revenuecat.js, requires-body=true, max-size=-1, timeout=60
 Revenuecat = type=http-request, pattern=^https:\/\/(api\.revenuecat|isi\.csan\.goodnotes)\.com\/.+\/(receipts$|subscribers\/?(.*?)*$), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Revenuecat/JS/Revenuecat.js, timeout=60
+# > Revenuecat 系列解锁合集
+Reheji = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Revenuecat/JS/Reheji.js, requires-body=true, max-size=-1, timeout=60
+Reheji = type=http-request, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Revenuecat/JS/Reheji.js, timeout=60
 
 
 [MITM]
