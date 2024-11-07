@@ -47,12 +47,6 @@ http-request ^https:\/\/spclient\.wg\.spotify\.com\/user-customization-service\/
 
 
 
-# > APTV-+解锁订阅
-APTV = type=http-response, pattern=https://api.revenuecat.com/v1/(receipts|subscribers)/*, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/APTV/JS/APTV.js, requires-body=true, max-size=-1, timeout=60
-
-
-
-
 # > Audiomack解锁会员功能
 Audiomack = type=http-response,pattern=https://api.revenuecat.com/v1/(receipts|subscribers)/*,script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Audiomack/JS/Audiomack.js,requires-body=1,max-size=0
 
@@ -66,11 +60,6 @@ AnimeArt = type=http-request, pattern=^https?:\/\/api\.revenuecat\.com\/.+\/(rec
 
 # > AdGuard 解锁永久高级版
 AdGuardProCrack = type=http-response, pattern=^https?:\/\/mobile-api\.adguard\.org\/api\/.+\/ios_validate_receipt, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/AdGuard/JS/AdGuardProCrack.js, requires-body=true, max-size=-1, timeout=60
-
-
-
-# > AccuWeather 解锁 Premium
-AccuWeather = type=http-response,pattern=https://app-subscription-proxy.accuweather.com/subscriptions/v1/apple/validate,script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/AccuWeather/JS/AccuWeather.js,requires-body=1,max-size=0
 
 
 
@@ -105,12 +94,6 @@ caiyun_svip = type=http-response, pattern=https?:\/\/biz\.caiyunapp\.com\/(membe
 
 # > ChatGPT 解锁 Plus 订阅
 ChatGPTPlusCrack = type=http-response, pattern=^https?:\/\/ios\.chat\.openai\.com\/backend-api\/(accounts\/check\/|models), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/ChatGPT/JS/ChatGPTPlusCrack.js, requires-body=true, max-size=-1, timeout=60
-
-
-
-# > 克拉壁纸解锁订阅
-ClarityPaperProCrack = type=http-response, pattern=^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/ClarityPaper/JS/ClarityPaperProCrack.js, requires-body=true, max-size=-1, timeout=60
-
 
 
 
@@ -396,18 +379,8 @@ AlohaBrowser = type=http-response, pattern=^https?:\/\/api\.alohaprofile\.com\/v
 
 
 
-# > Adapty系列解锁合集
-Adapty = type=http-response, pattern=^https?:\/\/api\.adapty\.io\/api\/v\d\/sdk\/(analytics\/profiles|in-apps\/(apple\/receipt\/validate|purchase-containers)|purchase\/app-store), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Adapty/JS/Adapty.js, requires-body=true, max-size=-1, timeout=60
-
-
-
 # > Craft解锁Premium
 Craft = type=http-response, pattern=^https?:\/\/(api|docs)\.craft\.do\/(api\/)?(auth\/v\d\/profile|subscription\/(receipt|teams\/get-subscriptions)), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Craft/JS/Craft.js, requires-body=true, max-size=-1, timeout=60
-
-
-
-# > ChatOn AI解锁Premium
-ChatOnAI = type=http-response, pattern=^https?:\/\/billing\.chaton\.ai\/v1\/subscriptions, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/ChatOnAI/JS/ChatOnAI.js, requires-body=true, max-size=-1, timeout=60
 
 
 
@@ -441,11 +414,6 @@ MoJiWeather = type=http-response, pattern=^https?:\/\/.*\.api\.moji\.com\/(sns\/
 
 
 
-# >PhotoGrid解锁VIP
-PhotoGrid = type=http-response, pattern=^https?:\/\/pgapi\.(ksmobile\.com||photogrid\.app)\/v1\/ios\/auth, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/PhotoGrid/JS/PhotoGrid.js, requires-body=true, max-size=-1, timeout=60
-
-
-
 # >PeakVisor解锁Premium
 PeakVisor = type=http-response, pattern=^https:\/\/peakvisor\.com\/peakvisor\/v1\/purchase\/verifyReceipt, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/PeakVisor/JS/PeakVisor.js, requires-body=true, max-size=-1, timeout=60
 
@@ -463,11 +431,6 @@ Perfect365Video = type=http-response, pattern=^https?:\/\/video-svr\.perfect365\
 
 # >Polarr 泼辣修图解锁Pro
 PolarrXT = type=http-response, pattern=^https?:\/\/api\.polaxiong\.com\/v1\/payments\/(appleiap\/receipts\/confirmation|profiles\/@me\/subscription), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/PolarrXT/JS/PolarrXT.js, requires-body=true, max-size=-1, timeout=60
-
-
-
-# >TickTick 滴答清单解锁Vip
-TickTick = type=http-response, pattern=^https:\/\/(ticktick|dida365)\.com\/api\/v2\/user\/status, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/TickTick/JS/TickTick.js, requires-body=true, max-size=-1, timeout=60
 
 
 
@@ -501,16 +464,6 @@ QNSJ = type=http-response, pattern=^https:\/\/api\.qingning6\.com\/api\/user\/ge
 
 
 
-# >轻图解锁Pro
-QingTu = type=http-request, pattern=^https?:\/\/(purchase-qingtu-api.b612kaji|api-qingtu.kajicam).com\/(v1\/purchase\/subscription\/subscriber\/status|xht\/api\/user\/info), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/QingTu/JS/QingTu.js, timeout=60
-
-
-
-# >iMe解锁Premium
-iMe = type=http-response, pattern=https:\/\/api\.imem\.apple\.app\/api\/premium\/getOwnStatus, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/iMe/JS/iMe.js, requires-body=true, max-size=-1, timeout=60
-
-
-
 # >蜗牛睡眠解锁Vip
 Snailsleep = type=http-response, pattern=^https?:\/\/snailsleep\.net\/snail\/v\d\/profile\/get., script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Snailsleep/JS/Snailsleep.js, requires-body=true, max-size=-1, timeout=60
 
@@ -526,12 +479,7 @@ XXFSYJ = type=http-response, pattern=^https?:\/\/49.232.234.212:80\/user\/fixUse
 
 
 
-# >小熊油耗解锁Vip
-XXYH = type=http-response, pattern=^http[s]?:\/\/www\.xiaoxiongyouhao\.com\/api\/vip\/index.php, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/XiaoXiongYouHao/JS/XXYH.js, requires-body=true, max-size=-1, timeout=60
-
-
-
 
 [MITM]
-hostname = %APPEND% api.revenuecat.com, buy.itunes.apple.com, *.adguard.org, app-subscription-proxy.accuweather.com, pan.baidu.com, baimiao.uzero.cn, tagit.hyhuo.com, biz.caiyunapp.com, ios.chat.openai.com, license.pdfexpert.com, media.deezer.com, api.deepfaker.app, api*.faceu.mobi, api3-lq.faceu.mobi, commerce-api-lf.faceu.mobi, commerce-api-lq.faceu.mobi, lv-api-lq.ulikecam.com, lv-api-hl.ulikecam.com, app.theinitium.com, isi.*.g*.com*, filmicpro.oracle.bendingspoonsapps.com, interface*.music.163.com, restore-access.indream.app, nicegram.cloud, notability.com, api.meiease.*, api-drive.mypikpak.com, cn.pornhubpremium.com, www.qobuz.com, commerce-api.faceu.mobi, api3-misc-lf.retouchpics.com, remini.oracle.bendingspoonsapps.com, api-mobile.soundcloud.com, spclient.wg.spotify.com, *.x-storm.com, *.wallpaperscraft.com, *.docer.wps.cn, vipapi.wps.cn, account.wps.cn, *.wps.cn, medi.dxzzy321.top, api2.vlognow.me, api.tidal.com, shukego.com, yiliang8888.com, 91mingyang.com, mnter.com, f5bc.club, api.pxxgg.xyz, api.ujvnmkx.cn, jdforrepam.com, api.yijingluowangluo.xyz, api.wwwuh5.cn, api.hechuangxinxi.xyz, ypmnkbb.saejeuj.com, fufxtyc.bytebwq.com, lcbnejx.dirptev.com, gcyivjc.qrneryt.com, *.miguvideo.com, *.migu.cn, ap*.intsig.net, mobile.flightradar24.com, api.mr.pixocial.com, newbeee-api.beautyplus.com, isi.csan.goodnotes.com, app.autocad360.com, api.alohaprofile.com, api.adapty.io, api.craft.do, docs.craft.do, billing.chaton.ai, user-snow-api.snow.me, dreamfaceapp.com, appv2.filmix.com.cn, subscription-api.lyrebirdstudio.net, nanie.flyingeffect.com, *.api.moji.com, pgapi.ksmobile.com, pgapi.photogrid.app, peakvisor.com, service.perfect365.com, video-svr.perfect365.com, api.polaxiong.com, dida365.com, ticktick.com, user-snow-api.snow.me, *-slidebox-ios-prod.cloudfunctions.net, api.sortedapp.com, api.qonversion.io, m.815616.xyz, i.815616.xyz, 175.178.52.149, api.qingning6.com, purchase-qingtu-api.b612kaji.com, api-qingtu.kajicam.com, -api.imem.app, snailsleep.net, mobile-ios-wallpaper-api.zhhainiao.com, 49.232.234.212, www.xiaoxiongyouhao.com
+hostname = %APPEND% api.revenuecat.com, buy.itunes.apple.com, *.adguard.org, pan.baidu.com, baimiao.uzero.cn, tagit.hyhuo.com, biz.caiyunapp.com, ios.chat.openai.com, license.pdfexpert.com, media.deezer.com, api.deepfaker.app, api*.faceu.mobi, api3-lq.faceu.mobi, commerce-api-lf.faceu.mobi, commerce-api-lq.faceu.mobi, lv-api-lq.ulikecam.com, lv-api-hl.ulikecam.com, app.theinitium.com, isi.*.g*.com*, filmicpro.oracle.bendingspoonsapps.com, interface*.music.163.com, restore-access.indream.app, nicegram.cloud, notability.com, api.meiease.*, api-drive.mypikpak.com, cn.pornhubpremium.com, www.qobuz.com, commerce-api.faceu.mobi, api3-misc-lf.retouchpics.com, remini.oracle.bendingspoonsapps.com, api-mobile.soundcloud.com, spclient.wg.spotify.com, *.x-storm.com, *.wallpaperscraft.com, *.docer.wps.cn, vipapi.wps.cn, account.wps.cn, *.wps.cn, medi.dxzzy321.top, api2.vlognow.me, api.tidal.com, shukego.com, yiliang8888.com, 91mingyang.com, mnter.com, f5bc.club, api.pxxgg.xyz, api.ujvnmkx.cn, jdforrepam.com, api.yijingluowangluo.xyz, api.wwwuh5.cn, api.hechuangxinxi.xyz, ypmnkbb.saejeuj.com, fufxtyc.bytebwq.com, lcbnejx.dirptev.com, gcyivjc.qrneryt.com, *.miguvideo.com, *.migu.cn, ap*.intsig.net, mobile.flightradar24.com, api.mr.pixocial.com, newbeee-api.beautyplus.com, isi.csan.goodnotes.com, app.autocad360.com, api.alohaprofile.com, api.craft.do, docs.craft.do, user-snow-api.snow.me, dreamfaceapp.com, appv2.filmix.com.cn, subscription-api.lyrebirdstudio.net, nanie.flyingeffect.com, *.api.moji.com, peakvisor.com, service.perfect365.com, video-svr.perfect365.com, api.polaxiong.com, user-snow-api.snow.me, *-slidebox-ios-prod.cloudfunctions.net, api.sortedapp.com, api.qonversion.io, m.815616.xyz, i.815616.xyz, 175.178.52.149, api.qingning6.com, snailsleep.net, mobile-ios-wallpaper-api.zhhainiao.com, 49.232.234.212
 
