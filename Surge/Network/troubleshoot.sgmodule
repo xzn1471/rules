@@ -11,4 +11,4 @@ force-http-engine-hosts = %APPEND% trouble.shoot
 hostname = %APPEND% trouble.shoot, *.trouble.shoot
 
 [Script]
-troubleshoot = type=http-request, pattern=^https?:\/\/trouble\.shoot, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Network-Info/JS/troubleshoot.js, timeout=300
+troubleshoot = type=http-request, pattern=^https?:\/\/trouble\.shoot, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Surge/Network/JS/troubleshoot.js, timeout=300
