@@ -1,0 +1,11 @@
+#!name=流媒体解锁检测
+#!desc=Netflix, Disney+, YouTube Unlock Detection
+#!category=😍BOBO
+# 更新日期：2024.09.09
+# 版本：3.3
+
+[Panel]
+stream-all = script-name=stream-all, title="流媒体解锁检测", content="请刷新面板", update-interval={{{UPDATE_INTERVAL}}}
+
+[Script]
+stream-all = type=generic, timeout=15, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Surge/Module/StreamAll/JS/Stream-All.js
