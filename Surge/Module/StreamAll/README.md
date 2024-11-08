@@ -3,7 +3,7 @@
 <h4 align="center">一个可以快速检测你节点流媒体解锁情况的面板 </h4>
 
 <p align="center">
-<img src="img/All.PNG" width="400" /> </div>
+<img src="img/All.PNG" width="450" /> </div>
 <img src="img/Mini.PNG" width="400" /> </div>
 </p>
 
