@@ -16,4 +16,4 @@ DOMAIN,api-ipv6.ip.sb,PROXY
 DOMAIN,v6.ident.me,PROXY
 
 [Script]
-network-changed script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Network-Info/JS/event.js
+network-changed script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Surge/Network/JS/event.js
