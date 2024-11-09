@@ -13,5 +13,6 @@
 # > AccuWeather 解锁 Premium
 AccuWeather = type=http-response,pattern=https://app-subscription-proxy.accuweather.com/subscriptions/v1/apple/validate,script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/AccuWeather/JS/AccuWeather.js,requires-body=1,max-size=0
 
+
 [MITM]
 hostname = %APPEND% app-subscription-proxy.accuweather.com
