@@ -1,0 +1,16 @@
+#!name=TVRemote
+#!desc=TVRemote解锁永久订阅
+#!system=ios
+#!author=BOBOLAOSHIV587
+#!date=2024-11-01
+#!category=😍BOBO Premium
+#!homepage=https://github.com/BOBOLAOSHIV587/Rules
+#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/TVRemote.png
+#!openUrl=https://apps.apple.com/app/id1591238748
+
+[Script]
+# > TVRemote解锁永久订阅
+http-response ^https?:\/\/api\.revenuecat\.com\/v1\/(subscribers\/[^\/]+$|receipts$) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/TVRemote/JS/TVRemote.js, requires-body=true, timeout=60, tag=TVRemote
+
+[MITM]
+hostname = api.revenuecat.com
