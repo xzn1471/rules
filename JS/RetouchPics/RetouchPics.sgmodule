@@ -15,4 +15,3 @@ RetouchPicsVipCrack = type=http-request, pattern=^https?:\/\/commerce-api\.faceu
 
 [MITM]
 hostname = %APPEND% commerce-api.faceu.mobi, api3-misc-lf.retouchpics.com
-
