@@ -17,4 +17,3 @@ Perfect365Video = type=http-response, pattern=^https?:\/\/video-svr\.perfect365\
 
 [MITM]
 hostname = %APPEND% video-svr.perfect365.com
-
