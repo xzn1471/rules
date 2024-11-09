@@ -8,7 +8,6 @@
 #!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/JianYing.png
 #!openUrl=https://apps.apple.com/app/id1458072671
 
-
 [Script]
 # > 剪映解锁会员
 VideoFusionVipCrack = type=http-request, pattern=^https?:\/\/commerce-api-.*\.faceu\.mobi\/commerce\/v1\/(subscription\/user_info|purchase\/draft_unlock|effect\/check_effects), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/JianYing/JS/VideoFusionVipCrack.js, timeout=60
