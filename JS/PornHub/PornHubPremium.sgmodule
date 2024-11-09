@@ -13,5 +13,6 @@
 # > PornHub Unlock Premium
 PornHubPremiumCrack = type=http-request, pattern=^https?:\/\/cn\.pornhubpremium\.com\/, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/PornHub/JS/PornHubPremiumCrack.js, timeout=60
 
+
 [MITM]
 hostname = %APPEND% cn.pornhubpremium.com
