@@ -9,7 +9,6 @@
 #!openUrl=https://apps.apple.com/app/id1530776865
 
 
-
 [Script]
 # > FaceLab解锁Vip
 FaceLab = type=http-request, pattern=^https?:\/\/subscription-api\.lyrebirdstudio\.net\/subscriptions\/apple\/(verify|status|decode-apple-receipt), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/FaceLab/JS/FaceLab.js, timeout=60
@@ -17,4 +16,3 @@ FaceLab = type=http-request, pattern=^https?:\/\/subscription-api\.lyrebirdstudi
 
 [MITM]
 hostname = %APPEND% subscription-api.lyrebirdstudio.net
-
