@@ -16,4 +16,3 @@ Initium = type=http-response, pattern=^https?:\/\/app\.theinitium\.com\/subs\/in
 
 [MITM]
 hostname = %APPEND% app.theinitium.com
-
