@@ -15,4 +15,3 @@ smqnw = type=http-response, pattern=^https:\/\/(api|api-cs)\.intsig\.net\/purcha
 
 [MITM]
 hostname = %APPEND% ap*.intsig.net
-
