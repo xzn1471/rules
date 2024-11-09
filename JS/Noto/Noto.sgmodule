@@ -16,4 +16,3 @@ Noto = type=http-response, pattern=https://api.revenuecat.com/v1/(receipts|subsc
 
 [MITM]
 hostname = %APPEND% api.revenuecat.com
-
