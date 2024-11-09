@@ -17,4 +17,3 @@ Teak = type=http-request, pattern=^https?:\/\/api\.revenuecat\.com\/.+\/(receipt
 
 [MITM]
 hostname = %APPEND% api.revenuecat.com
-
