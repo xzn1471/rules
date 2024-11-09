@@ -16,4 +16,3 @@ Sorted = type=http-response, pattern=^https?:\/\/api\.sortedapp\.com\/receipt$, 
 
 [MITM]
 hostname = %APPEND% api.sortedapp.com
-
