@@ -15,4 +15,3 @@ xmind = type=http-response, pattern=^http[s]?:\/\/www.xmind.cn\/_res\/devices, s
 
 [MITM]
 hostname = %APPEND% www.xmind.cn, www.xmind.net
-
