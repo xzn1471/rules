@@ -16,4 +16,3 @@ PolarrXT = type=http-response, pattern=^https?:\/\/api\.polaxiong\.com\/v1\/paym
 
 [MITM]
 hostname = %APPEND% api.polaxiong.com
-
