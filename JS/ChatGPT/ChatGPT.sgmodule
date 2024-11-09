@@ -16,4 +16,3 @@ ChatGPTPlusCrack = type=http-response, pattern=^https?:\/\/ios\.chat\.openai\.co
 
 [MITM]
 hostname = %APPEND% ios.chat.openai.com
-
