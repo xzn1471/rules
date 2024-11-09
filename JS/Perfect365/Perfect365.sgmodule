@@ -16,4 +16,3 @@ Perfect365 = type=http-response, pattern=^https?:\/\/service\.perfect365\.com\/s
 
 [MITM]
 hostname = %APPEND% service.perfect365.com
-
