@@ -6,3 +6,4 @@
 
 [Script]
 妹子图定时任务=type=cron,cronexp="{{{CRON_EXP}}}",timeout={{{SCRIPT_TIMEOUT}}},script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Task/MeiZiTu/JS/meizitu.js,argument="MODE={{{MODE}}}&TIMEOUT={{{TIMEOUT}}}&RETRIES={{{RETRIES}}}&RETRY_DELAY={{{RETRY_DELAY}}}",engine={{{ENGINE}}},wake-system={{{SCRIPT_WAKE_SYSTEM}}}
+
