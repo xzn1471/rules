@@ -15,4 +15,3 @@ QobuzHiResProCrack = type=http-request, pattern=^https?:\/\/www\.qobuz\.com\/api
 
 [MITM]
 hostname = %APPEND% www.qobuz.com
-
