@@ -8,7 +8,6 @@
 #!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/MiGuShiPin.png
 #!openUrl=https://apps.apple.com/app/id787130974
 
-
 [Map Local]
 # > 开屏广告
 ^https://.*miguvideo\.com/request/sdk data-type=text data=" " status-code=200
