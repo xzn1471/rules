@@ -8,6 +8,7 @@
 #!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/BaiduNetDisk.png
 #!openUrl=https://apps.apple.com/app/id547166701
 
+
 [Script]
 百度网盘 = type=http-response,pattern=https://pan.baidu.com/rest/2.0/membership/user,script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/BaiDuYun/JS/BaiDuYun.js,requires-body=1,max-size=0
 
