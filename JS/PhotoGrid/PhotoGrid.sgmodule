@@ -16,4 +16,3 @@ PhotoGrid = type=http-response, pattern=^https?:\/\/pgapi\.(ksmobile\.com||photo
 
 [MITM]
 hostname = %APPEND% pgapi.ksmobile.com, pgapi.photogrid.app
-
