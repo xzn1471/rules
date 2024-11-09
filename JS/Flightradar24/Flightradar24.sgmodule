@@ -9,7 +9,6 @@
 #!openUrl=https://apps.apple.com/app/id382233851
 
 
-
 [Script]
 # > Flightradar24 解锁Gold
 Flightradar24 = type=http-response, pattern=^https?:\/\/mobile\.flightradar24\.com\/mobile\/(user-session|subscribe), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Flightradar24/JS/Flightradar24.js, requires-body=true, max-size=-1, timeout=60
@@ -17,4 +16,3 @@ Flightradar24 = type=http-response, pattern=^https?:\/\/mobile\.flightradar24\.c
 
 [MITM]
 hostname = %APPEND% mobile.flightradar24.com
-
