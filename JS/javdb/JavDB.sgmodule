@@ -17,4 +17,3 @@ javbdvipcrack = type=http-response, pattern=^https?:\/\/.*\/api\/v1\/users, scri
 
 [MITM]
 hostname = %APPEND% shukego.com, yiliang8888.com, 91mingyang.com, mnter.com, f5bc.club, api.pxxgg.xyz, api.ujvnmkx.cn, jdforrepam.com, api.yijingluowangluo.xyz, api.wwwuh5.cn, api.hechuangxinxi.xyz
-
