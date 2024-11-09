@@ -16,4 +16,3 @@ Craft = type=http-response, pattern=^https?:\/\/(api|docs)\.craft\.do\/(api\/)?(
 
 [MITM]
 hostname = %APPEND% api.craft.do, docs.craft.do
-
