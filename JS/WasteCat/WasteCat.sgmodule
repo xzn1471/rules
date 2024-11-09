@@ -14,4 +14,3 @@ WasteCat = type=http-response, pattern=^https:\/\/buy\.itunes\.apple\.com\/verif
 
 [MITM]
 hostname = %APPEND% buy.itunes.apple.com
-
