@@ -15,4 +15,3 @@ mdsqallcrack = type=http-request, pattern=^https?:\/\/.*\/api\/app\/media\/m3u8\
 
 [MITM]
 hostname = %APPEND% ypmnkbb.saejeuj.com, fufxtyc.bytebwq.com, lcbnejx.dirptev.com, gcyivjc.qrneryt.com
-
