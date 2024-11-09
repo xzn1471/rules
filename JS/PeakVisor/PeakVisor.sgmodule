@@ -16,4 +16,3 @@ PeakVisor = type=http-response, pattern=^https:\/\/peakvisor\.com\/peakvisor\/v1
 
 [MITM]
 hostname = %APPEND% peakvisor.com
-
