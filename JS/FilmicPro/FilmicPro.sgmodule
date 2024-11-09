@@ -16,4 +16,3 @@ FilmicPro = type=http-response, pattern=^https:\/\/filmicpro\.oracle\.bendingspo
 
 [MITM]
 hostname = %APPEND% filmicpro.oracle.bendingspoonsapps.com
-
