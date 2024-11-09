@@ -22,4 +22,3 @@ miguyinyue = type=http-request, pattern=^https?:\/\/app.(c|pd).nf.migu.cn\/.*\/(
 
 [MITM]
 hostname = %APPEND% *.migu.cn
-
