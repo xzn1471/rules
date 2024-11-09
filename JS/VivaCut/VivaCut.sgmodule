@@ -8,7 +8,6 @@
 #!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/VivaCut.png
 #!openUrl=https://apps.apple.com/app/id1489090374
 
-
 [Script]
 # > VivaCut解锁永久订阅
 VivaCutProCrack = type=http-response, pattern=^https?:\/\/medi\.dxzzy321\.top\/api\/rest\/commerce\/integrate\/vip\/perform$, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/VivaCut/JS/VivaCutProCrack.js, requires-body=true, max-size=-1, timeout=60
