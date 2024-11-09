@@ -16,4 +16,3 @@ AlohaBrowser = type=http-response, pattern=^https?:\/\/api\.alohaprofile\.com\/v
 
 [MITM]
 hostname = %APPEND% api.alohaprofile.com
-
