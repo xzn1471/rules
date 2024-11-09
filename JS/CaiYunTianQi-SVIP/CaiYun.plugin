@@ -1,0 +1,31 @@
+#!name=彩云天气Pro
+#!desc=彩云天气-净化/解锁SVIP 。app版本 ≤ 7.20.2
+#!system=ios
+#!date=2024-11-01
+#!author=BOBOLAOSHIV587
+#!category=😍BOBO Premium
+#!homepage=https://github.com/BOBOLAOSHIV587/Rules
+#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/ColorfulCloudsWeatherPro.png
+#!openUrl=https://apps.apple.com/app/id1067198688
+
+
+[Rule]
+DOMAIN, abyss.cyapi.cn, REJECT
+DOMAIN, ad.cyapi.cn, REJECT
+DOMAIN, gather.colorfulclouds.net, REJECT
+
+[Rewrite]
+^https:\/\/biz\.cyapi\.cn\/(p\/v1\/entries|p\/v1\/trial_card\/info|v2\/product) reject-dict
+^https:\/\/starplucker\.cyapi\.cn\/v3\/(config\/cypage\/\w+\/conditions|notification\/message_center|operation\/homefeatures) reject-dict
+
+[Script]
+# 彩云天气会员
+http-request ^https:\/\/wrapper\.cyapi\.cn\/v1\/(nafp\/origin_images|satellite)\? script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/CaiYunTianQi-SVIP/JS/caiyuntq.js, tag = cy_vip
+
+# 底部菜单栏,活动推广
+http-response ^https:\/\/api\.caiyunapp\.com\/v1\/activity\? script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/CaiYunTianQi-SVIP/JS/caiyuntq.js, requires-body = true, tag = cy_tab1
+http-response ^https:\/\/biz\.cyapi\.cn\/(api\/v1\/user_detail|p\/v1\/vip_info|v2\/user) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/CaiYunTianQi-SVIP/JS/caiyuntq.js, requires-body = true, tag = cy_mine
+http-response ^https:\/\/wrapper\.cyapi\.cn\/v1\/activity\? script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/CaiYunTianQi-SVIP/JS/caiyuntq.js, requires-body = true, tag = cy_tab2
+
+[MITM]
+hostname = api.caiyunapp.com, *.cyapi.cn
