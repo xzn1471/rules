@@ -16,4 +16,3 @@ ChatOnAI = type=http-response, pattern=^https?:\/\/billing\.chaton\.ai\/v1\/subs
 
 [MITM]
 hostname = %APPEND% billing.chaton.ai
-
