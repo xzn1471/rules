@@ -9,3 +9,4 @@
 
 [Script]
 Pixiv Show = type=cron,cronexp=0 0/30 8-22 * * ?,script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Task/PixivShow/Script/PixivShow.js,script-update-interval=0
+
