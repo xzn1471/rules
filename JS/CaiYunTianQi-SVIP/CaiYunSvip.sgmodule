@@ -1,0 +1,10 @@
+#!name=彩雲天氣 SVIP
+#!desc=彩雲天氣 SVIP
+
+[MITM]
+hostname = %APPEND% biz.caiyunapp.com
+
+[Script]
+# 彩雲天氣 SVIP biz.caiyunapp.com
+彩雲天氣_SVIP = type=http-response,requires-body=1,max-size=0,pattern=https?:\/\/biz\.caiyunapp\.com\/(membership_rights|v2\/user),script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/CaiYunTianQi-SVIP/JS/caiyun-svip.js
+
