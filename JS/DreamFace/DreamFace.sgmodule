@@ -16,4 +16,3 @@ DreamFace = type=http-response, pattern=^https?:\/\/dreamfaceapp\.com\/df-server
 
 [MITM]
 hostname = %APPEND% dreamfaceapp.com
-
