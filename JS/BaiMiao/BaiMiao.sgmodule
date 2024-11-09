@@ -8,7 +8,6 @@
 #!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/ScanScan(BaiMiao).png
 #!openUrl=https://apps.apple.com/app/id1249901692
 
-
 [Map Local]
 ^https?:\/\/baimiao\.uzero\.cn\/api\/v2\.user\/c(heckLoginClient|leanAccount) data-type=text data="[]" status-code=200
 
