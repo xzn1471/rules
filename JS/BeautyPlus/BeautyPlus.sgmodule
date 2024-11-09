@@ -16,4 +16,3 @@ BeautyPlus = type=http-response, pattern=https:\/\/(api\.mr\.pixocial\.com\/v1\/
 
 [MITM]
 hostname = %APPEND% api.mr.pixocial.com, newbeee-api.beautyplus.com
-
