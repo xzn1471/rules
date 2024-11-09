@@ -15,4 +15,3 @@ DisableBaiduJumpAction = type=http-request, pattern=^https?:\/\/.*\.baidu\.com\/
 
 [MITM]
 hostname = %APPEND% *.baidu.com
-
