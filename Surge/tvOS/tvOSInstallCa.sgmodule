@@ -6,6 +6,7 @@
 # 2.输入 ca.me 然后完成并安装
 # 3.去Apple TV的设置->通用->关于->证书信任，设置刚刚下载的证书为可信
 
+
 [General]
 http-api = mieq@127.0.0.1:6166
 http-api-tls = false
