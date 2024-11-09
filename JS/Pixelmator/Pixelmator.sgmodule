@@ -14,4 +14,3 @@ Pixelmator = type=http-response, pattern=https:\/\/api\.revenuecat\.com\/v1\/(su
 
 [MITM]
 hostname = %APPEND% api.revenuecat.com
-
