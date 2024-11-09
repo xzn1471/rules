@@ -16,4 +16,3 @@ XXYH = type=http-response, pattern=^http[s]?:\/\/www\.xiaoxiongyouhao\.com\/api\
 
 [MITM]
 hostname = %APPEND% www.xiaoxiongyouhao.com
-
