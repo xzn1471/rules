@@ -16,4 +16,3 @@ AutoCAD = type=http-response, pattern=^https:\/\/app\.autocad360\.com\/entitleme
 
 [MITM]
 hostname = %APPEND% app.autocad360.com
-
