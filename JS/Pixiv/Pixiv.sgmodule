@@ -1,8 +1,15 @@
 #!name=Unlock Pixiv
-#!desc=解锁 Pixiv Premium @Sk-itsu @LufsX
-#!category=体验增强
+#!desc=解锁 Pixiv Premium
+#!system=iOS
+#!date=2024-11-01
+#!author=BOBOLAOSHIV587
+#!category=😍BOBO Premium
+#!homepage=https://github.com/BOBOLAOSHIV587/Rules
+#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Pixiv.png
+#!openUrl=https://apps.apple.com/app/id337248563
 
 [Script]
+# > 解锁 Pixiv Premium
 pixiv = type=http-response, pattern=^https:\/\/oauth\.secure\.pixiv\.net\/auth\/token, requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Pixiv/JS/pixiv_premium.min.js
 
 [MITM]
