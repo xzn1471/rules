@@ -16,4 +16,3 @@ Slidebox = type=http-response, pattern=^https?:\/\/.*-slidebox-ios-prod\.cloudfu
 
 [MITM]
 hostname = %APPEND% *-slidebox-ios-prod.cloudfunctions.net
-
