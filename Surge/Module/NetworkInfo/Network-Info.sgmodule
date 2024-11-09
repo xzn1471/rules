@@ -5,6 +5,7 @@
 # 更新日期：2024.09.09
 # 版本：3.0
 
+
 [Panel]
 NetInfoPanel=title="",content="",style=info,script-name=net-info-panel.js,update-interval=1
 
