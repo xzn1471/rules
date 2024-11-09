@@ -16,4 +16,3 @@ Snailsleep = type=http-response, pattern=^https?:\/\/snailsleep\.net\/snail\/v\d
 
 [MITM]
 hostname = %APPEND% snailsleep.net
-
