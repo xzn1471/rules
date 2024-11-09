@@ -16,4 +16,3 @@ TickTick = type=http-response, pattern=^https:\/\/(ticktick|dida365)\.com\/api\/
 
 [MITM]
 hostname = %APPEND% dida365.com, ticktick.com
-
