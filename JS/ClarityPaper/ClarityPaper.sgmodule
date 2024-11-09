@@ -8,6 +8,7 @@
 #!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/ClarityWallpaper.png
 #!openUrl=https://apps.apple.com/app/id1233738041
 
+
 [Script]
 # > 克拉壁纸解锁订阅
 ClarityPaperProCrack = type=http-response, pattern=^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/ClarityPaper/JS/ClarityPaperProCrack.js, requires-body=true, max-size=-1, timeout=60
