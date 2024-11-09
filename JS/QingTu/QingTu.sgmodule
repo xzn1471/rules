@@ -16,4 +16,3 @@ QingTu = type=http-request, pattern=^https?:\/\/(purchase-qingtu-api.b612kaji|ap
 
 [MITM]
 hostname = %APPEND% purchase-qingtu-api.b612kaji.com, api-qingtu.kajicam.com
-
