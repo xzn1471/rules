@@ -13,7 +13,5 @@
 # >元气桌面壁纸解锁Vip
 YQZMBZ = type=http-response, pattern=^https?:\/\/mobile-ios-wallpaper-api\.zhhainiao\.com\/v1\/user\/info, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/YuanQiZMBZ/JS/YQZMBZ.js, requires-body=true, max-size=-1, timeout=60
 
-
 [MITM]
 hostname = %APPEND% mobile-ios-wallpaper-api.zhhainiao.com
-
