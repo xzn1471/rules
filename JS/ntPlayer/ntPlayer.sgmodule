@@ -17,4 +17,3 @@ ntPlayer = type=http-request, pattern=^https?:\/\/api\.revenuecat\.com\/.+\/(rec
 
 [MITM]
 hostname = %APPEND% api.revenuecat.com
-
