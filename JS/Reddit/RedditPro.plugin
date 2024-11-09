@@ -1,0 +1,17 @@
+#!name=RedditPro
+#!desc=Reddit过滤应用内推广,阻止NSFW提示,解锁会员功能
+#!system=ios
+#!author=BOBOLAOSHIV587
+#!date=2024-11-01
+#!category=😍BOBO Premium
+#!homepage=https://github.com/BOBOLAOSHIV587/Rules
+#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Reddit.png
+#!openUrl=https://apps.apple.com/app/id1064216828
+
+
+[Script]
+# > Reddit过滤应用内推广,阻止NSFW提示,解锁会员功能
+http-response ^https?:\/\/gql(-fed)?\.reddit\.com script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Reddit/JS/Reddit.js, requires-body=true, tag=RedditPro
+
+[MITM]
+hostname = gql.reddit.com, gql-fed.reddit.com
