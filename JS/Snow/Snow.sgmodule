@@ -16,4 +16,3 @@ Snow = type=http-request, pattern=^https:\/\/user-snow-api\.snow\.me\/v1\/purcha
 
 [MITM]
 hostname = %APPEND% user-snow-api.snow.me
-
