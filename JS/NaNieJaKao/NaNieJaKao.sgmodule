@@ -16,4 +16,3 @@ NaNieJaKao = type=http-response, pattern=^https?:\/\/nanie\.flyingeffect\.com\/a
 
 [MITM]
 hostname = %APPEND% nanie.flyingeffect.com
-
