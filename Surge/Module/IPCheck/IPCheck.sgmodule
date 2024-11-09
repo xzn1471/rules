@@ -5,6 +5,7 @@
 # 更新日期：2024.11.01
 # 版本：3.3
 
+
 [Panel]
 IP-Check = script-name=IP-Check, title="节点详情", content="请刷新", style=info, update-interval=1
 
