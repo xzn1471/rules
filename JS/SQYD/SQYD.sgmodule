@@ -16,4 +16,3 @@ SQYD = type=http-response, pattern=^https?:\/\/(((m|i)\.815616\.xyz)|175\.178\.5
 
 [MITM]
 hostname = %APPEND% m.815616.xyz, i.815616.xyz, 175.178.52.149
-
