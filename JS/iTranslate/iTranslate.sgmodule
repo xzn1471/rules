@@ -16,4 +16,3 @@ iTranslate = type=http-response, pattern=^https?:\/\/ssl-api\.itranslateapp\.com
 
 [MITM]
 hostname = %APPEND% ssl-api.itranslateapp.com
-
