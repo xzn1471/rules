@@ -16,4 +16,3 @@ QNSJ = type=http-response, pattern=^https:\/\/api\.qingning6\.com\/api\/user\/ge
 
 [MITM]
 hostname = %APPEND% api.qingning6.com
-
