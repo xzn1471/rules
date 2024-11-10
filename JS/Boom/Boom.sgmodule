@@ -10,7 +10,7 @@
 
 [Script]
 # > Boom解锁高级会员权限
-Boom=type=http-response,pattern=^https:\/\/apimboom2\.globaldelight\.net\/itunesreceipt_v2\.php$,requires-body=1,script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Boom/JS/Boom.js
+Boom = type=http-response, pattern=^https:\/\/apimboom2\.globaldelight\.net\/itunesreceipt_v2\.php$, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Boom/JS/Boom.js, requires-body=true, max-size=-1, timeout=60
 
 [MITM]
 hostname= %APPEND% apimboom2.globaldelight.net
