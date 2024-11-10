@@ -537,7 +537,37 @@ Reheji = type=http-request, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receip
 
 
 
+# > AppRaven解锁会员
+AppRaven = type=http-response, pattern=https://appraven.net/appraven/graphql, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/AppRaven/JS/AppRaven.js, requires-body=true, max-size=-1, timeout=60
+
+
+
+
+# > GitHub解锁永久订阅
+GithubPro = type=http-response, pattern=https://api.github.com/graphql, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Github/JS/GithubPro.js, requires-body=true, max-size=-1, timeout=60
+
+
+
+
+# > Musixmatch解锁会员功能
+Musixmatch = type=http-response, pattern=https://apic.musixmatch.com/ws/1.1/config.get, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Musixmatch/JS/Musixmatch.js, requires-body=true
+
+
+
+
+# > 解锁 Pixiv Premium
+pixiv = type=http-response, pattern=^https:\/\/oauth\.secure\.pixiv\.net\/auth\/token, requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Pixiv/JS/pixiv_premium.min.js
+
+
+
+
+# > 酷我音乐解锁会员皮肤、会员音频(最高无损)、听书权限
+KuWo = type=http-response, pattern=^https?:\/\/(?:musicpay|nmobi|vip1|audiobookpay|tingshu)\.kuwo\.cn\/(?:music\.pay\?newver=\d+|mobi.s\?f=kwxs|vip\/(?:enc\/user\/vip\?op=ui&uid=|v2\/theme\?op=gd)|a\.p|v2\/api\/pay\/user\/info), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/KuWoMusic/JS/KuWo.js, requires-body=true, max-size=-1, timeout=60
+
+
+
+
 
 [MITM]
-hostname = %APPEND% api.revenuecat.com, buy.itunes.apple.com, *.adguard.org, pan.baidu.com, baimiao.uzero.cn, tagit.hyhuo.com, biz.caiyunapp.com, ios.chat.openai.com, license.pdfexpert.com, media.deezer.com, api.deepfaker.app, api*.faceu.mobi, api3-lq.faceu.mobi, commerce-api-lf.faceu.mobi, commerce-api-lq.faceu.mobi, lv-api-lq.ulikecam.com, lv-api-hl.ulikecam.com, app.theinitium.com, isi.*.g*.com*, filmicpro.oracle.bendingspoonsapps.com, interface*.music.163.com, restore-access.indream.app, nicegram.cloud, notability.com, api.meiease.*, api-drive.mypikpak.com, cn.pornhubpremium.com, www.qobuz.com, commerce-api.faceu.mobi, api3-misc-lf.retouchpics.com, remini.oracle.bendingspoonsapps.com, api-mobile.soundcloud.com, spclient.wg.spotify.com, *.x-storm.com, *.wallpaperscraft.com, *.docer.wps.cn, vipapi.wps.cn, account.wps.cn, *.wps.cn, medi.dxzzy321.top, api2.vlognow.me, api.tidal.com, shukego.com, yiliang8888.com, 91mingyang.com, mnter.com, f5bc.club, api.pxxgg.xyz, api.ujvnmkx.cn, jdforrepam.com, api.yijingluowangluo.xyz, api.wwwuh5.cn, api.hechuangxinxi.xyz, ypmnkbb.saejeuj.com, fufxtyc.bytebwq.com, lcbnejx.dirptev.com, gcyivjc.qrneryt.com, *.miguvideo.com, *.migu.cn, ap*.intsig.net, mobile.flightradar24.com, api.mr.pixocial.com, newbeee-api.beautyplus.com, isi.csan.goodnotes.com, app.autocad360.com, api.alohaprofile.com, api.craft.do, docs.craft.do, user-snow-api.snow.me, dreamfaceapp.com, appv2.filmix.com.cn, subscription-api.lyrebirdstudio.net, nanie.flyingeffect.com, *.api.moji.com, peakvisor.com, service.perfect365.com, video-svr.perfect365.com, api.polaxiong.com, user-snow-api.snow.me, *-slidebox-ios-prod.cloudfunctions.net, api.sortedapp.com, api.qonversion.io, m.815616.xyz, i.815616.xyz, 175.178.52.149, api.qingning6.com, snailsleep.net, mobile-ios-wallpaper-api.zhhainiao.com, 49.232.234.212, interpreter.cyapi.cn, ssl-api.itranslateapp.com
+hostname = %APPEND% api.revenuecat.com, buy.itunes.apple.com, *.adguard.org, pan.baidu.com, baimiao.uzero.cn, tagit.hyhuo.com, biz.caiyunapp.com, ios.chat.openai.com, license.pdfexpert.com, media.deezer.com, api.deepfaker.app, api*.faceu.mobi, api3-lq.faceu.mobi, commerce-api-lf.faceu.mobi, commerce-api-lq.faceu.mobi, lv-api-lq.ulikecam.com, lv-api-hl.ulikecam.com, app.theinitium.com, isi.*.g*.com*, filmicpro.oracle.bendingspoonsapps.com, interface*.music.163.com, restore-access.indream.app, nicegram.cloud, notability.com, api.meiease.*, api-drive.mypikpak.com, cn.pornhubpremium.com, www.qobuz.com, commerce-api.faceu.mobi, api3-misc-lf.retouchpics.com, remini.oracle.bendingspoonsapps.com, api-mobile.soundcloud.com, spclient.wg.spotify.com, *.x-storm.com, *.wallpaperscraft.com, *.docer.wps.cn, vipapi.wps.cn, account.wps.cn, *.wps.cn, medi.dxzzy321.top, api2.vlognow.me, api.tidal.com, shukego.com, yiliang8888.com, 91mingyang.com, mnter.com, f5bc.club, api.pxxgg.xyz, api.ujvnmkx.cn, jdforrepam.com, api.yijingluowangluo.xyz, api.wwwuh5.cn, api.hechuangxinxi.xyz, ypmnkbb.saejeuj.com, fufxtyc.bytebwq.com, lcbnejx.dirptev.com, gcyivjc.qrneryt.com, *.miguvideo.com, *.migu.cn, ap*.intsig.net, mobile.flightradar24.com, api.mr.pixocial.com, newbeee-api.beautyplus.com, isi.csan.goodnotes.com, app.autocad360.com, api.alohaprofile.com, api.craft.do, docs.craft.do, user-snow-api.snow.me, dreamfaceapp.com, appv2.filmix.com.cn, subscription-api.lyrebirdstudio.net, nanie.flyingeffect.com, *.api.moji.com, peakvisor.com, service.perfect365.com, video-svr.perfect365.com, api.polaxiong.com, user-snow-api.snow.me, *-slidebox-ios-prod.cloudfunctions.net, api.sortedapp.com, api.qonversion.io, m.815616.xyz, i.815616.xyz, 175.178.52.149, api.qingning6.com, snailsleep.net, mobile-ios-wallpaper-api.zhhainiao.com, 49.232.234.212, interpreter.cyapi.cn, ssl-api.itranslateapp.com, appraven.net, api.github.com, apic.musixmatch.com, oauth.secure.pixiv.net, *.kuwo.cn
 
