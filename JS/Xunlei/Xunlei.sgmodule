@@ -1,5 +1,5 @@
 #!name=迅雷
-#!desc=迅雷-你的专享云盘+解锁VIP 软件版本：1.5.8
+#!desc=迅雷Unlock 倍速播放、去广告解锁VIP 软件版本：2.2.21
 #!system=iOS
 #!date=2024-11-01
 #!author=BOBOLAOSHIV587
@@ -8,9 +8,13 @@
 #!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/ThunderCloudDisk.png
 #!openUrl=https://apps.apple.com/app/id1503466530
 
+[URL Rewrite]
+^http://adapi\.izuiyou\.com - reject
+^https?://api-shoulei-ssl\.xunlei\.com/flowhub/v1/slots:batchGet - reject
+
 [Script]
-# > 迅雷-你的专享云盘+解锁VIP
-xunlei = type=http-response, pattern=https://xluser-ssl.xunlei.com/xluser.core.login/v3/getuserinfo, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Xunlei/JS/xunlei.js, requires-body=true, max-size=-1, timeout=60
+# > 迅雷Unlock 倍速播放、去广告解锁VIP
+xunlei = type=http-response, pattern=^https?:\/\/.+.xunlei.com\/(drive\/v1\/files|xluser.core.login\/v3\/getuserinfo), script-path=https://raw.githubusercontent.com/WeiGiegie/666/main/xunlei.js, requires-body=true, max-size=-1, timeout=60
 
 [MITM]
-hostname = %APPEND% xluser-ssl.xunlei.com
+hostname = %APPEND% *xunlei.com, api-shoulei-ssl.xunlei.com
