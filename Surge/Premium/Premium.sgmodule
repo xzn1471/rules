@@ -18,6 +18,11 @@ DOMAIN,gather.colorfulclouds.net,REJECT
 ^https://app\.c\.nf\.migu\.cn/member/api/marketing/text - reject
 
 
+# > 迅雷Unlock 倍速播放、去广告解锁VIP
+^http://adapi\.izuiyou\.com - reject
+^https?://api-shoulei-ssl\.xunlei\.com/flowhub/v1/slots:batchGet - reject
+
+
 [Header Rewrite]
 # > Spotify(>=iOS15)部分解锁premium,if-none-match返回304状态码
 http-request ^https:\/\/spclient\.wg\.spotify\.com\/user-customization-service\/v1\/customize$ header-del if-none-match
