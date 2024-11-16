@@ -5,6 +5,10 @@
 # DOMAIN-KEYWORD: 1
 # DOMAIN-SUFFIX: 3
 # TOTAL: 4
+
+# 防止TG加载转圈
+IP-CIDR,95.161.76.100/31,REJECT-NO-DROP,no-resolve
+
 DOMAIN-SUFFIX,cdninstagram.com
 DOMAIN-SUFFIX,instagr.am
 DOMAIN-SUFFIX,instagram.com
