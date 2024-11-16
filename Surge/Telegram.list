@@ -36,6 +36,10 @@ DOMAIN-SUFFIX,tg.dev
 DOMAIN-SUFFIX,tx.me
 DOMAIN-SUFFIX,usercontent.dev
 DOMAIN-KEYWORD,nicegram
+
+# 防止TG加载转圈
+IP-CIDR,95.161.76.100/31,REJECT-NO-DROP,no-resolve
+
 IP-CIDR,109.239.140.0/24,no-resolve
 IP-CIDR,149.154.160.0/20,no-resolve
 IP-CIDR,5.28.192.0/18,no-resolve
