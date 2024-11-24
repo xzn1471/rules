@@ -12,6 +12,7 @@
 [Script]
 # > Zoomable解锁Pro
 Zoomable = type=http-response, pattern=https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Zoomable/JS/Zoomable.js, requires-body=true, max-size=-1, timeout=60
+Zoomable = type=http-response, pattern=https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Zoomable/JS/Zoomable.js, timeout=60
 
 
 [MITM]
