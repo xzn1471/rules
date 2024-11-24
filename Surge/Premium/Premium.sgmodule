@@ -598,11 +598,6 @@ Boom = type=http-response, pattern=^https:\/\/apimboom2\.globaldelight\.net\/itu
 
 
 
-# > VSCO Pro长期会员订阅
-VSCO = type=http-response, pattern=https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/VSCO/JS/VSCO.js, requires-body=true, max-size=-1, timeout=60
-
-
-
 # > VDIT 年度会员订阅
 VDIT = type=http-response, pattern=https:\/\/buy\.itunes\.apple\.com\/verifyReceipt, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/VDIT/JS/VDIT.js, requires-body=true, max-size=-1, timeout=60
 
