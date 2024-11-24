@@ -42,7 +42,8 @@ http-request ^https:\/\/spclient\.wg\.spotify\.com\/user-customization-service\/
 # > 咪咕音乐
 ^https://app\.c.nf\.migu\.cn/payment/watch-ad data-type=text data=" " status-code=200
 
-
+# > 今日热榜vip自定义+广告移除+新增订阅摘要展示+新增追踪摘要展示+新增自定义模块摘要展示
+https:\/\/api2\.tophub\.app\/remai\/recommend\/taobao data-type=text data="{}" status-code=200
 
 
 
@@ -597,6 +598,36 @@ Boom = type=http-response, pattern=^https:\/\/apimboom2\.globaldelight\.net\/itu
 
 
 
+# > Zoomable解锁Pro
+Zoomable = type=http-response, pattern=https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Zoomable/JS/Zoomable.js, requires-body=true, max-size=-1, timeout=60
+
+
+
+# > VSCO Pro长期会员订阅
+VSCO = type=http-response, pattern=https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/VSCO/JS/VSCO.js, requires-body=true, max-size=-1, timeout=60
+
+
+
+# > VDIT 年度会员订阅
+VDIT = type=http-response, pattern=https:\/\/buy\.itunes\.apple\.com\/verifyReceipt, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/VDIT/JS/VDIT.js, requires-body=true, max-size=-1, timeout=60
+
+
+
+# > 今日热榜vip自定义+广告移除+新增订阅摘要展示+新增追踪摘要展示+新增自定义模块摘要展示
+JRRB = type=http-response, pattern=https:\/\/api2\.tophub\.app\/account\/sync, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/TodayHotList/JS/JRRB.js, requires-body=true, max-size=-1, timeout=60
+JRRB = type=http-response, pattern=https:\/\/api2\.tophub\.app\/my\/items, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/TodayHotList/JS/JRRB.js, requires-body=true, max-size=-1, timeout=60
+JRRB = type=http-response, pattern=https:\/\/api2\.tophub\.app\/my\/alerts\/items, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/TodayHotList/JS/JRRB.js, requires-body=true, max-size=-1, timeout=60
+JRRB = type=http-response, pattern=https:\/\/api2\.tophub\.app\/my\/channels\/.+\/items, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/TodayHotList/JS/JRRB.js, requires-body=true, max-size=-1, timeout=60
+JRRB = type=http-response, pattern=https:\/\/api2\.tophub\.app\/explore, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/TodayHotList/JS/JRRB.js, requires-body=true, max-size=-1, timeout=60
+
+
+
+# > WeatherScope解锁premium
+WS = type=http-response, pattern=https:\/\/weather\.aviatorassistant\.com, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/WeatherScope/JS/WS.js, requires-body=true, max-size=-1, timeout=60
+
+
+
+
 [MITM]
-hostname = %APPEND% api.revenuecat.com, buy.itunes.apple.com, *.adguard.org, pan.baidu.com, baimiao.uzero.cn, tagit.hyhuo.com, biz.caiyunapp.com, ios.chat.openai.com, license.pdfexpert.com, media.deezer.com, api.deepfaker.app, api*.faceu.mobi, api3-lq.faceu.mobi, commerce-api-lf.faceu.mobi, commerce-api-lq.faceu.mobi, lv-api-lq.ulikecam.com, lv-api-hl.ulikecam.com, app.theinitium.com, isi.*.g*.com*, filmicpro.oracle.bendingspoonsapps.com, interface*.music.163.com, restore-access.indream.app, nicegram.cloud, notability.com, api.meiease.*, api-drive.mypikpak.com, cn.pornhubpremium.com, www.qobuz.com, commerce-api.faceu.mobi, api3-misc-lf.retouchpics.com, remini.oracle.bendingspoonsapps.com, api-mobile.soundcloud.com, spclient.wg.spotify.com, *.x-storm.com, *.wallpaperscraft.com, *.docer.wps.cn, vipapi.wps.cn, account.wps.cn, *.wps.cn, medi.dxzzy321.top, api2.vlognow.me, api.tidal.com, shukego.com, yiliang8888.com, 91mingyang.com, mnter.com, f5bc.club, api.pxxgg.xyz, api.ujvnmkx.cn, jdforrepam.com, api.yijingluowangluo.xyz, api.wwwuh5.cn, api.hechuangxinxi.xyz, ypmnkbb.saejeuj.com, fufxtyc.bytebwq.com, lcbnejx.dirptev.com, gcyivjc.qrneryt.com, *.miguvideo.com, *.migu.cn, ap*.intsig.net, mobile.flightradar24.com, api.mr.pixocial.com, newbeee-api.beautyplus.com, isi.csan.goodnotes.com, app.autocad360.com, api.alohaprofile.com, api.craft.do, docs.craft.do, user-snow-api.snow.me, dreamfaceapp.com, appv2.filmix.com.cn, subscription-api.lyrebirdstudio.net, nanie.flyingeffect.com, *.api.moji.com, peakvisor.com, service.perfect365.com, video-svr.perfect365.com, api.polaxiong.com, user-snow-api.snow.me, *-slidebox-ios-prod.cloudfunctions.net, api.sortedapp.com, api.qonversion.io, m.815616.xyz, i.815616.xyz, 175.178.52.149, api.qingning6.com, snailsleep.net, mobile-ios-wallpaper-api.zhhainiao.com, 49.232.234.212, interpreter.cyapi.cn, ssl-api.itranslateapp.com, appraven.net, api.github.com, apic.musixmatch.com, oauth.secure.pixiv.net, *.kuwo.cn, user-kaji-api.b612kaji.com, gql.reddit.com, gql-fed.reddit.com, cdn-bm.camera360.com, apimboom2.globaldelight.net, *xunlei.com, api-shoulei-ssl.xunlei.com
+hostname = %APPEND% api.revenuecat.com, buy.itunes.apple.com, *.adguard.org, pan.baidu.com, baimiao.uzero.cn, tagit.hyhuo.com, biz.caiyunapp.com, ios.chat.openai.com, license.pdfexpert.com, media.deezer.com, api.deepfaker.app, api*.faceu.mobi, api3-lq.faceu.mobi, commerce-api-lf.faceu.mobi, commerce-api-lq.faceu.mobi, lv-api-lq.ulikecam.com, lv-api-hl.ulikecam.com, app.theinitium.com, isi.*.g*.com*, filmicpro.oracle.bendingspoonsapps.com, interface*.music.163.com, restore-access.indream.app, nicegram.cloud, notability.com, api.meiease.*, api-drive.mypikpak.com, cn.pornhubpremium.com, www.qobuz.com, commerce-api.faceu.mobi, api3-misc-lf.retouchpics.com, remini.oracle.bendingspoonsapps.com, api-mobile.soundcloud.com, spclient.wg.spotify.com, *.x-storm.com, *.wallpaperscraft.com, *.docer.wps.cn, vipapi.wps.cn, account.wps.cn, *.wps.cn, medi.dxzzy321.top, api2.vlognow.me, api.tidal.com, shukego.com, yiliang8888.com, 91mingyang.com, mnter.com, f5bc.club, api.pxxgg.xyz, api.ujvnmkx.cn, jdforrepam.com, api.yijingluowangluo.xyz, api.wwwuh5.cn, api.hechuangxinxi.xyz, ypmnkbb.saejeuj.com, fufxtyc.bytebwq.com, lcbnejx.dirptev.com, gcyivjc.qrneryt.com, *.miguvideo.com, *.migu.cn, ap*.intsig.net, mobile.flightradar24.com, api.mr.pixocial.com, newbeee-api.beautyplus.com, isi.csan.goodnotes.com, app.autocad360.com, api.alohaprofile.com, api.craft.do, docs.craft.do, user-snow-api.snow.me, dreamfaceapp.com, appv2.filmix.com.cn, subscription-api.lyrebirdstudio.net, nanie.flyingeffect.com, *.api.moji.com, peakvisor.com, service.perfect365.com, video-svr.perfect365.com, api.polaxiong.com, user-snow-api.snow.me, *-slidebox-ios-prod.cloudfunctions.net, api.sortedapp.com, api.qonversion.io, m.815616.xyz, i.815616.xyz, 175.178.52.149, api.qingning6.com, snailsleep.net, mobile-ios-wallpaper-api.zhhainiao.com, 49.232.234.212, interpreter.cyapi.cn, ssl-api.itranslateapp.com, appraven.net, api.github.com, apic.musixmatch.com, oauth.secure.pixiv.net, *.kuwo.cn, user-kaji-api.b612kaji.com, gql.reddit.com, gql-fed.reddit.com, cdn-bm.camera360.com, apimboom2.globaldelight.net, *xunlei.com, api-shoulei-ssl.xunlei.com, api2.tophub.app, weather.aviatorassistant.com
 
