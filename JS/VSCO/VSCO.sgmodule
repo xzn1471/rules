@@ -15,4 +15,4 @@ VSCO = type=http-response, pattern=https:\/\/api\.revenuecat\.com\/v1\/(subscrib
 
 
 [MITM]
-hostname = api.revenuecat.com
+hostname = %APPEND% api.revenuecat.com
