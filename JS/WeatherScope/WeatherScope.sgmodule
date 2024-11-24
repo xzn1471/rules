@@ -1,0 +1,19 @@
+#!name=WeatherScope premium
+#!desc=WeatherScope解锁premium
+#!system=iOS
+#!date=2024-11-01
+#!author=BOBOLAOSHIV587
+#!category=😍BOBO Premium
+#!homepage=https://github.com/BOBOLAOSHIV587/Rules
+#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/WeatherScope.png
+#!openUrl=https://apps.apple.com/app/id1644911162
+
+
+[Script]
+# > WeatherScope解锁premium
+WS = type=http-response, pattern=https:\/\/weather\.aviatorassistant\.com, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/WeatherScope/JS/WS.js, requires-body=true, max-size=-1, timeout=60
+
+
+[MITM]
+hostname = %APPEND% weather.aviatorassistant.com
+
