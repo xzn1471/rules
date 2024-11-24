@@ -31,17 +31,17 @@ https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/XiaoMaoC
 hostname = biz.caiyunapp.com,biz.cyapi.cn,cdn-w.caiyunapp.com,ad.cyapi.cn,wrapper.cyapi.cn,starplucker.cyapi.cn,api.caiyunapp.com
 
 [rewrite_local]
-https:\/\/cdn-w\.caiyunapp\.com\/p\/app\/activity url reject
-https:\/\/biz\.cyapi\.cn\/p\/v1\/entries url reject-dict
 https:\/\/ad\.cyapi\.cn\/* url reject
 https:\/\/starplucker\.cyapi\.cn\/v3\/config url reject
+https:\/\/biz\.cyapi\.cn\/p\/v1\/entries url reject-dict
+https:\/\/cdn-w\.caiyunapp\.com\/p\/app\/activity url reject
 https:\/\/starplucker\.cyapi\.cn\/v3\/notification\/message_center url reject
 https:\/\/starplucker\.cyapi\.cn\/v3\/config\/cypage\/home\/conditions\/local url reject
-https:\/\/(wrapper|api)\.(cyapi|caiyunapp)\.(cn|com)\/v1\/activity url script-response-body https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/cyw_b.js
-https?:\/\/biz\.(caiyunapp|cyapi)\.(com|cn)\/(membership_rights|v2\/user) url script-response-body https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/cyw_b.js
-https:\/\/starplucker\.cyapi\.cn\/v3 url script-response-body https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/cyw_b.js
-https:\/\/biz\.cyapi\.cn\/api\/v1\/user_detail url script-response-body https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/cyw_b.js
-https:\/\/biz\.cyapi\.cn\/p\/v1\/vip_info url script-response-body https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/cyw_b.js
-https:\/\/wrapper\.cyapi\.cn\/v1 url script-request-header https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/cyw_h.js
+https:\/\/(wrapper|api)\.(cyapi|caiyunapp)\.(cn|com)\/v1\/activity url script-response-body https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/CaiYunTianQi-SVIP/JS/Others/CaiYun-B.js
+https?:\/\/biz\.(caiyunapp|cyapi)\.(com|cn)\/(membership_rights|v2\/user) url script-response-body https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/CaiYunTianQi-SVIP/JS/Others/CaiYun-B.js
+https:\/\/starplucker\.cyapi\.cn\/v3 url script-response-body https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/CaiYunTianQi-SVIP/JS/Others/CaiYun-B.js
+https:\/\/biz\.cyapi\.cn\/api\/v1\/user_detail url script-response-body https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/CaiYunTianQi-SVIP/JS/Others/CaiYun-B.js
+https:\/\/biz\.cyapi\.cn\/p\/v1\/vip_info url script-response-body https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/CaiYunTianQi-SVIP/JS/Others/CaiYun-B.js
+https:\/\/wrapper\.cyapi\.cn\/v1 url script-request-header https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/CaiYunTianQi-SVIP/JS/Others/CaiYun-H.js
 
  ***************/
