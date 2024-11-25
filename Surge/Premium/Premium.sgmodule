@@ -1,3 +1,8 @@
+#!name=波波老师自用Premium
+#!desc=波波老师自用Premium
+#!date=2024-11-01
+#!category=😍BOBO Premium
+
 [Rule]
 # （彩云天气）禁用上传信息 - 来源: @苍井灰灰
 DOMAIN,gather.colorfulclouds.net,REJECT
@@ -6,7 +11,6 @@ DOMAIN,gather.colorfulclouds.net,REJECT
 [URL Rewrite]
 # > 咪咕音乐
 ^https://app\.c\.nf\.migu\.cn/member/api/marketing/text - reject
-
 
 # > 迅雷Unlock 倍速播放、去广告解锁VIP
 ^http://adapi\.izuiyou\.com - reject
