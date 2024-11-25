@@ -1,11 +1,7 @@
 #!name=拦截100解锁超级会员
 #!desc=软件版本：3.0.2【最高支持版本】
-#!system=ios
-#!author=BOBOLAOSHIV587
 #!date=2024-11-01
 #!category=😍BOBO Premium
-#!homepage=https://github.com/BOBOLAOSHIV587/Rules
-#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Block100.png
 #!openUrl=https://apps.apple.com/app/id1576858756
 
 [Script]
