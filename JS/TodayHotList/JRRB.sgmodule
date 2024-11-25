@@ -1,13 +1,8 @@
 #!name=今日热榜TodayHotList
 #!desc=今日热榜vip自定义+广告移除+新增订阅摘要展示+新增追踪摘要展示+新增自定义模块摘要展示
-#!system=iOS
 #!date=2024-11-01
-#!author=BOBOLAOSHIV587
 #!category=😍BOBO Premium
-#!homepage=https://github.com/BOBOLAOSHIV587/Rules
-#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/TodayHotList.png
 #!openUrl=https://apps.apple.com/app/id1453322696
-
 
 [Map Local]
 https:\/\/api2\.tophub\.app\/remai\/recommend\/taobao data-type=text data="{}" status-code=200
