@@ -1,13 +1,8 @@
 #!name=Qobuz解锁Hi-Res订阅
 #!desc=Qobuz解锁Hi-Res订阅  软件版本：6.6.0
-#!system=ios
 #!date=2024-11-01
-#!author=BOBOLAOSHIV587
 #!category=😍BOBO Premium
-#!homepage=https://github.com/BOBOLAOSHIV587/Rules
-#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Qobuz.png
 #!openUrl=https://apps.apple.com/app/id946429340
-
 
 [Script]
 # > Qobuz解锁Hi-Res订阅
