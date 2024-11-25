@@ -1,11 +1,7 @@
 #!name=Emby Premiere
 #!desc=Emby Premiere Unlock解锁
-#!system=iOS
 #!date=2024-11-01
-#!author=BOBOLAOSHIV587
 #!category=😍BOBO Premium
-#!homepage=https://github.com/BOBOLAOSHIV587/Rules
-#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Emby.png
 #!openUrl=https://apps.apple.com/app/id992180193
 
 [Script]
