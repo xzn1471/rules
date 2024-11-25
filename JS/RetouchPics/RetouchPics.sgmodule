@@ -1,13 +1,8 @@
 #!name=醒图解锁会员
 #!desc=醒图解锁会员  应用版本：7.3.0
-#!system=ios
 #!date=2024-11-01
-#!author=BOBOLAOSHIV587
 #!category=😍BOBO Premium
-#!homepage=https://github.com/BOBOLAOSHIV587/Rules
-#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/RetouchPics.png
 #!openUrl=https://apps.apple.com/app/id1500526240
-
 
 [Script]
 # > 醒图解锁会员
