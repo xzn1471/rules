@@ -1,11 +1,7 @@
 #!name=TVRemote
 #!desc=TVRemote解锁永久订阅
-#!system=ios
-#!author=BOBOLAOSHIV587
 #!date=2024-11-01
 #!category=😍BOBO Premium
-#!homepage=https://github.com/BOBOLAOSHIV587/Rules
-#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/TVRemote.png
 #!openUrl=https://apps.apple.com/app/id1591238748
 
 [Script]
