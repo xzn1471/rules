@@ -1,17 +1,11 @@
 #!name=Spotify歌词翻译(>=iOS15)
 #!desc=Spotify歌词翻译(>=iOS15)。改下方[Script]链接argument中的appid和securityKey,填入自己的appid和密钥
-#!system=ios
-#!author=@BOBOLAOSHIV587
 #!date=2024-11-01
 #!category=😍BOBO Premium
-#!homepage=https://github.com/BOBOLAOSHIV587/Rules
-#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Spotify.png
 #!openUrl=https://apps.apple.com/app/id324684580
-
 
 [MITM]
 hostname = %APPEND% spclient.wg.spotify.com
-
 
 [Script]
 # 修改下方argument中的appid和securityKey,填入自己的appid和密钥
