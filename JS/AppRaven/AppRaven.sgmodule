@@ -1,14 +1,8 @@
 #!name=AppRaven
 #!desc=AppRaven解锁会员
-#!system=ios
-#!author=BOBOLAOSHIV587
 #!date=2024-11-01
 #!category=😍BOBO Premium
-#!homepage=https://github.com/BOBOLAOSHIV587/Rules
-#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/AppRaven.png
 #!openUrl=https://apps.apple.com/app/id1490607195
-#!system_version = 
-#!loon_version = 3.2.2(749)
 
 [Script]
 # > AppRaven解锁会员
