@@ -1,11 +1,7 @@
 #!name=迅雷
 #!desc=迅雷Unlock 倍速播放、去广告解锁VIP 软件版本：2.2.21
-#!system=iOS
 #!date=2024-11-01
-#!author=BOBOLAOSHIV587
 #!category=😍BOBO Premium
-#!homepage=https://github.com/BOBOLAOSHIV587/Rules
-#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/ThunderCloudDisk.png
 #!openUrl=https://apps.apple.com/app/id1503466530
 
 [URL Rewrite]
