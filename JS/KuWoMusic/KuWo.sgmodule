@@ -1,11 +1,7 @@
 #!name=酷我音乐
 #!desc=酷我音乐解锁会员皮肤、会员音频(最高无损)、听书权限, 配合其他去广告脚本达到最佳效果
-#!system=ios
-#!author=BOBOLAOSHIV587
 #!date=2024-11-01
 #!category=😍BOBO Premium
-#!homepage=https://github.com/BOBOLAOSHIV587/Rules
-#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/KuWo.png
 #!openUrl=https://apps.apple.com/app/id588673713
 
 [Script]
