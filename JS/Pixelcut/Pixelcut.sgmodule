@@ -1,15 +1,11 @@
 #!name=Pixelcut
 #!desc=Pixelcut解锁Premium 版本:0.16.0
-#!system=ios
-#!author=BOBOLAOSHIV587
 #!date=2024-11-01
 #!category=😍BOBO Premium
-#!homepage=https://github.com/BOBOLAOSHIV587/Rules
-#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Pixelcut.png
 #!openUrl=https://apps.apple.com/app/id1534785237
 
-
 [Script]
+# > Pixelcut解锁Premium
 Pixelcut = type=http-response,pattern=https://api.revenuecat.com/v1/(receipts|subscribers)/*,script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Pixelcut/JS/Pixelcut.js,requires-body=1,max-size=0
 
 [MITM]
