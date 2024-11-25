@@ -1,13 +1,8 @@
 #!name=咪咕音乐
 #!desc=咪咕音乐vip、音质、下载  软件版本：7.41.16
-#!system=iOS
 #!date=2024-11-01
-#!author=BOBOLAOSHIV587
 #!category=😍BOBO Premium
-#!homepage=https://github.com/BOBOLAOSHIV587/Rules
-#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/miguyinyue.png
 #!openUrl=https://music.migu.cn/v3
-
 
 [Map Local]
 ^https://app\.c.nf\.migu\.cn/payment/watch-ad data-type=text data=" " status-code=200
