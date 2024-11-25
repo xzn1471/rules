@@ -1,14 +1,11 @@
 #!name=解锁StormSniffer
 #!desc=解锁Storm Sniffer
-#!system=ios
-#!author=BOBOLAOSHIV587
 #!date=2024-11-01
 #!category=😍BOBO Premium
-#!homepage=https://github.com/BOBOLAOSHIV587/Rules
-#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/StormSniffer.png
 #!openUrl=https://apps.apple.com/app/id1610958307
 
 [Script]
+# > 解锁StormSniffer
 StormSnifferHeader = type=http-request, pattern="^http[s]?:\/\/api\.x-storm\.com(:\d{2,5})?\/app/.+$", script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/StormSniffer/JS/StormSnifferHeader.js, timeout=60, script-update-interval=0
 StormSnifferCrack = type=http-response, pattern="^http[s]?:\/\/api\.x-storm\.com(:\d{2,5})?\/app/user-profile\/$", requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/StormSniffer/JS/StormSnifferCrack.js, timeout=60, script-update-interval=0
 
