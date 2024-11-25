@@ -1,18 +1,13 @@
 #!name=AccuWeather
 #!desc=AccuWeather解锁Premium 版本 15.2.1
-#!system=iOS
 #!date=2024-11-01
-#!author=BOBOLAOSHIV587
 #!category=😍BOBO Premium
-#!homepage=https://github.com/BOBOLAOSHIV587/Rules
-#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/AccuWeather.png
 #!openUrl=https://apps.apple.com/app/id300048137
 
 
 [Script]
 # > AccuWeather 解锁 Premium
 AccuWeather = type=http-response,pattern=https://app-subscription-proxy.accuweather.com/subscriptions/v1/apple/validate,script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/AccuWeather/JS/AccuWeather.js,requires-body=1,max-size=0
-
 
 [MITM]
 hostname = %APPEND% app-subscription-proxy.accuweather.com
