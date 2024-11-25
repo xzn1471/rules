@@ -1,18 +1,12 @@
 #!name=PornHub解锁Premium
 #!desc=PornHub Unlock Premium
-#!system=ios
 #!date=2024-11-01
-#!author=BOBOLAOSHIV587
 #!category=😍BOBO Premium
-#!homepage=https://github.com/BOBOLAOSHIV587/Rules
-#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/Qure/Image/Color/Pornhub.png
 #!openUrl=https://cn.pornhub.com/
-
 
 [Script]
 # > PornHub Unlock Premium
 PornHubPremiumCrack = type=http-request, pattern=^https?:\/\/cn\.pornhubpremium\.com\/, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/PornHub/JS/PornHubPremiumCrack.js, timeout=60
-
 
 [MITM]
 hostname = %APPEND% cn.pornhubpremium.com
