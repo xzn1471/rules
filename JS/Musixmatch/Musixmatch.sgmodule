@@ -1,13 +1,8 @@
 #!name=Musixmatch
 #!desc=Musixmatch解锁会员功能
-#!system=iOS
 #!date=2024-11-01
-#!author=BOBOLAOSHIV587
 #!category=😍BOBO Premium
-#!homepage=https://github.com/BOBOLAOSHIV587/Rules
-#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Musixmatch.png
 #!openUrl=https://apps.apple.com/app/id448278467
-
 
 [Script]
 # > Musixmatch解锁会员功能
