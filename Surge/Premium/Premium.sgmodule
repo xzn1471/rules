@@ -1,7 +1,3 @@
-#!name=波波老师自用Premium
-#!desc=波波老师自用Premium
-#!category=😍BOBO Premium
-
 [Rule]
 # （彩云天气）禁用上传信息 - 来源: @苍井灰灰
 DOMAIN,gather.colorfulclouds.net,REJECT
@@ -46,10 +42,8 @@ https:\/\/api2\.tophub\.app\/remai\/recommend\/taobao data-type=text data="{}" s
 1BlockerProCrack = type=http-response, pattern=^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/1Blocker/JS/1BlockerProCrack.js, requires-body=true, max-size=-1, timeout=60
 
 
-
 # > Audiomack解锁会员功能
 Audiomack = type=http-response,pattern=https://api.revenuecat.com/v1/(receipts|subscribers)/*,script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Audiomack/JS/Audiomack.js,requires-body=1,max-size=0
-
 
 
 # > Anime Waifu-AI画画解锁订阅
