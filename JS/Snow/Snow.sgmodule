@@ -1,18 +1,12 @@
 #!name=Snow解锁Pro
 #!desc=Snow解锁Pro.使用此脚本，会导致AppleStore无法切换账户，解决方法[关闭QX切换账户，或关闭MITM，或删除脚本，或去设置媒体与购买项目处切换ID]
-#!system=iOS
 #!date=2024-11-01
-#!author=BOBOLAOSHIV587
 #!category=😍BOBO Premium
-#!homepage=https://github.com/BOBOLAOSHIV587/Rules
-#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/SNOW.png
 #!openUrl=https://apps.apple.com/app/id1022267439
 
-
 [Script]
-# >Snow解锁Pro
+# > Snow解锁Pro
 Snow = type=http-request, pattern=^https:\/\/user-snow-api\.snow\.me\/v1\/purchase\/subscription\/subscriber\/status$, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Snow/JS/Snow.js, timeout=60
-
 
 [MITM]
 hostname = %APPEND% user-snow-api.snow.me
