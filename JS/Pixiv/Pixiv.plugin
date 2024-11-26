@@ -1,13 +1,9 @@
 #!name=Unlock Pixiv
 #!desc=解锁 Pixiv Premium
-#!system=iOS
-#!date=2024-11-01
-#!author=BOBOLAOSHIV587
 #!category=😍BOBO Premium
 #!homepage=https://github.com/BOBOLAOSHIV587/Rules
 #!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Pixiv.png
 #!openUrl=https://apps.apple.com/app/id337248563
-
 
 [Script]
 # > 解锁 Pixiv Premium
