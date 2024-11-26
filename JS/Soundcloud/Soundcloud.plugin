@@ -1,15 +1,12 @@
 #!name=Soundcloud
-#!desc= Soundcloud解锁Go plus 测试版本:5.174.0
-#!system=ios
-#!author=BOBOLAOSHIV587
-#!date=2024-11-01
+#!desc=Soundcloud解锁Go plus 测试版本:5.174.0
 #!category=😍BOBO Premium
 #!homepage=https://github.com/BOBOLAOSHIV587/Rules
 #!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/SoundCloud.png
 #!openUrl=https://apps.apple.com/app/id336353151
 
-
 [Script]
+# > Soundcloud解锁Go plus
 http-response https://api-mobile.soundcloud.com/configuration/ios script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Soundcloud/JS/Soundcloud.js,requires-body=1, timeout=60, tag=Soundcloud解锁Go plus
 
 [MITM]
