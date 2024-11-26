@@ -1,0 +1,13 @@
+#!name=Zoomable
+#!desc=Zoomable解锁Pro.解锁成功理论上有消息弹窗，成功后即可关闭脚本。[🚨🚨🚨无效请关掉软件进程后，先打开脚本，再进软件进行解锁]
+#!date=2024-11-01
+#!category=😍BOBO Premium
+#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Zoomable.png
+#!openUrl=https://apps.apple.com/app/id1568442831
+
+[Script]
+# > Zoomable解锁Pro
+http-response https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Zoomable/JS/Zoomable.js, requires-body=true, timeout=60, tag=Zoomable
+
+[MITM]
+hostname = api.revenuecat.com
