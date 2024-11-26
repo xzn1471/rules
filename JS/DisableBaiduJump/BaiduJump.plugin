@@ -1,13 +1,9 @@
 #!name=解决Safari中疯狂跳转百度
 #!desc=解决Safari中疯狂跳转百度  www.baidu.com
-#!system=ios
 #!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Baidu.png
-#!date=2024-11-01
-#!author=BOBOLAOSHIV587
 #!homepage=https://github.com/BOBOLAOSHIV587/Rules
 #!openUrl = www.baidu.com
 #!category=😍BOBO Premium
-
 
 [Script]
 # > 百度不跳转
