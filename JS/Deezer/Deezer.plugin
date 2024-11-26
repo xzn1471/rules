@@ -1,13 +1,9 @@
 #!name=Deezer
 #!desc=Deezer解锁Hi-Fi订阅
-#!system=ios
-#!date=2024-11-01
-#!author=BOBOLAOSHIV587
 #!category=😍BOBO Premium
 #!homepage=https://github.com/BOBOLAOSHIV587/Rules
 #!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Deezer.png
 #!openUrl=https://apps.apple.com/app/id292738169
-
 
 [Script]
 # > Deezer解锁Hi-Fi订阅
