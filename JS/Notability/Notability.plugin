@@ -1,15 +1,12 @@
 #!name=Notability解锁
 #!desc=Notability解锁2099年
-#!system=ios
-#!date=2024-11-01
-#!author=BOBOLAOSHIV587
 #!category=😍BOBO Premium
 #!homepage=https://github.com/BOBOLAOSHIV587/Rules
 #!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Notability.png
 #!openUrl=https://apps.apple.com/app/id360593530
 
-
 [Script]
+# > Notability解锁2099年
 http-response ^https?:\/\/notability\.com\/(global|subscriptions) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Notability/JS/Notability.js, requires-body=true, timeout=60, tag=Notability
 
 [MITM]
