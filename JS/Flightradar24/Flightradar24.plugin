@@ -1,20 +1,13 @@
 #!name=Flightradar24 解锁Gold
 #!desc=Flightradar24 解锁Gold. 使用此脚本，会导致AppleStore无法切换账户，解决方法[关闭QX切换账户，或关闭MITM，或删除脚本，或去设置媒体与购买项目处切换ID]
-#!system=iOS
-#!date=2024-11-01
-#!author=BOBOLAOSHIV587
 #!category=😍BOBO Premium
 #!homepage=https://github.com/BOBOLAOSHIV587/Rules
 #!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Flightradar24.png
 #!openUrl=https://apps.apple.com/app/id382233851
 
-
-
 [Script]
 # > Flightradar24 解锁Gold
 http-response ^https?:\/\/mobile\.flightradar24\.com\/mobile\/(user-session|subscribe) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Flightradar24/JS/Flightradar24.js, requires-body=true, timeout=60, tag=Flightradar24
 
-
 [MITM]
 hostname = mobile.flightradar24.com
-
