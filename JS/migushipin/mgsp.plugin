@@ -1,13 +1,9 @@
 #!name=咪咕视频Vip
 #!desc=解锁咪咕视频Vip会员 软件版本：6.2.30
-#!system=ios
-#!date=2024-11-01
-#!author=BOBOLAOSHIV587
 #!category=😍BOBO Premium
 #!homepage=https://github.com/BOBOLAOSHIV587/Rules
 #!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/MiGuShiPin.png
 #!openUrl=https://apps.apple.com/app/id787130974
-
 
 [Rewrite]
 # > 开屏广告
