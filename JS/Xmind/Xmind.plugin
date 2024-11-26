@@ -1,18 +1,14 @@
 #!name=XMind思维导图+解锁VIP
 #!desc=XMind思维导图+解锁VIP  软件版本：23.06
-#!system=ios
-#!date=2024-11-01
-#!author=BOBOLAOSHIV587
 #!category=😍BOBO Premium
 #!homepage=https://github.com/BOBOLAOSHIV587/Rules
 #!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Xmind.png
 #!openUrl=https://apps.apple.com/app/id1286983622
 
-
 [Script]
+# > XMind思维导图+解锁VIP
 http-response https?:\/\/www\.xmind\.(cn|net)\/\_res\/devices script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Xmind/JS/Xmind.js, requires-body=true, timeout=60, tag=Xmind
 http-response ^http[s]?:\/\/www.xmind.cn\/_res\/devices script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Xmind/JS/xmind.js, requires-body=true, timeout=60, tag=xmind
 
 [MITM]
 hostname = www.xmind.cn, www.xmind.net
-
