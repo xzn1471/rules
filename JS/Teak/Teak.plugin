@@ -1,19 +1,14 @@
 #!name=Teak浏览器
 #!desc=Teak浏览器-解锁订阅.注意事项：开启脚本再进入软件
-#!system=iOS
-#!date=2024-11-01
-#!author=BOBOLAOSHIV587
 #!category=😍BOBO Premium
 #!homepage=https://github.com/BOBOLAOSHIV587/Rules
 #!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Teak.png
 #!openUrl=https://apps.apple.com/app/id6443938027
 
-
 [Script]
-# >Teak浏览器-解锁订阅
+# > Teak浏览器-解锁订阅
 http-response ^https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Teak/JS/Teak.js, requires-body=true, timeout=60, tag=Teak
 http-request ^https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Teak/JS/Teak.js, timeout=60, tag=Teak
-
 
 [MITM]
 hostname = api.revenuecat.com
