@@ -1,13 +1,9 @@
 #!name=JavDB解锁会员
 #!desc=JavDB解锁会员  软件版本：1.9.16  注册时填写邀请码：rckasw,可无限延长脚本的使用期限
-#!system=ios
-#!date=2024-11-01
-#!author=BOBOLAOSHIV587
 #!category=😍BOBO Premium
 #!homepage=https://github.com/BOBOLAOSHIV587/Rules
 #!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/JavDB.png
 #!openUrl=https://javdb.com/
-
 
 [Script]
 # > JavDB解锁会员
@@ -17,4 +13,3 @@ http-response ^https?:\/\/.*\/api\/v1\/users script-path=https://raw.githubuserc
 
 [MITM]
 hostname = shukego.com, yiliang8888.com, 91mingyang.com, mnter.com, f5bc.club, api.pxxgg.xyz, api.ujvnmkx.cn, jdforrepam.com, api.yijingluowangluo.xyz, api.wwwuh5.cn, api.hechuangxinxi.xyz
-
