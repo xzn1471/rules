@@ -1,11 +1,7 @@
 #!name=波波老师自用Premium
 #!desc=波波老师自用Premium
-#!system=ios
-#!author=BOBOLAOSHIV587
-#!date=2024-11-01
 #!category=😍BOBO Premium
 #!homepage=https://github.com/BOBOLAOSHIV587/Rules
-
 
 
 [Rewrite]
@@ -26,8 +22,6 @@ DOMAIN,gather.colorfulclouds.net,REJECT
 ^https://common-sc\.miguvideo\.com/task/v7/task-list/cmvideo/visitor reject-200
 
 
-
-
 [Script]
 # > 1Blocker 解锁永久订阅
 http-response ^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/1Blocker/JS/1BlockerProCrack.js, requires-body=true, timeout=60, tag=1BlockerProCrack
@@ -35,7 +29,6 @@ http-response ^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/) scr
 
 # > APTV-+解锁订阅
 http-response https://api.revenuecat.com/v1/(receipts|subscribers)/* script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/APTV/JS/APTV.js, requires-body=true, timeout=60, tag=APTV
-
 
 
 # > Audiomack解锁会员功能
@@ -56,7 +49,6 @@ http-response ^https?:\/\/mobile-api\.adguard\.org\/api\/.+\/ios_validate_receip
 
 # > AccuWeather 解锁 Premium
 http-response https://app-subscription-proxy.accuweather.com/subscriptions/v1/apple/validate script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/AccuWeather/JS/AccuWeather.js, requires-body=true, timeout=60, tag=AccuWeather
-
 
 
 
