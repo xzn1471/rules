@@ -1,18 +1,13 @@
 #!name=Sorted解锁Pro
 #!desc=Sorted解锁Pro.使用此脚本，会导致AppleStore无法切换账户，解决方法[关闭QX切换账户，或关闭MITM，或删除脚本，或去设置媒体与购买项目处切换ID]
-#!system=iOS
-#!date=2024-11-01
-#!author=BOBOLAOSHIV587
 #!category=😍BOBO Premium
 #!homepage=https://github.com/BOBOLAOSHIV587/Rules
 #!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Sorted.png
 #!openUrl=https://apps.apple.com/app/id1306893526
 
-
 [Script]
-# >Sorted解锁Pro
+# > Sorted解锁Pro
 http-response ^https?:\/\/api\.sortedapp\.com\/receipt$ script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Sorted/JS/Sorted.js, requires-body=true, timeout=60, tag=Sorted
-
 
 [MITM]
 hostname = api.sortedapp.com
