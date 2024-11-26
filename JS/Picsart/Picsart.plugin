@@ -1,15 +1,12 @@
 #!name=Picsart
 #!desc= Picsart解锁Gold 版本:19.7.3
-#!system=ios
-#!author=BOBOLAOSHIV587
-#!date=2024-11-01
 #!category=😍BOBO Premium
 #!homepage=https://github.com/BOBOLAOSHIV587/Rules
 #!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Picsart.png
 #!openUrl=https://apps.apple.com/app/id587366035
 
-
 [Script]
+# > Picsart解锁Gold
 http-response https://api.meiease.(cn|com)/shop/subscription/apple/purchases script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Picsart/JS/Picsart.js,requires-body=1, timeout=60, tag=Picsart解锁Gold
 
 [MITM]
