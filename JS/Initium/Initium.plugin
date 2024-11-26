@@ -1,13 +1,9 @@
 #!name=端传媒(Initium)
 #!desc=端传媒(Initium)  解锁会员订阅[支持app和网页端]  version 1.0.0
-#!system=ios
-#!date=2024-11-01
-#!author=BOBOLAOSHIV587
 #!category=😍BOBO Premium
 #!homepage=https://github.com/BOBOLAOSHIV587/Rules
 #!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Initium.png
 #!openUrl=https://apps.apple.com/app/id1020176943
-
 
 [Script]
 # > 端传媒(Initium)  解锁会员订阅[支持app和网页端]
