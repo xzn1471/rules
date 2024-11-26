@@ -1,13 +1,9 @@
 #!name=彩云天气Pro
 #!desc=彩云天气-净化/解锁SVIP 。app版本 ≤ 7.20.2
-#!system=ios
-#!date=2024-11-01
-#!author=BOBOLAOSHIV587
 #!category=😍BOBO Premium
 #!homepage=https://github.com/BOBOLAOSHIV587/Rules
 #!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/ColorfulCloudsWeatherPro.png
 #!openUrl=https://apps.apple.com/app/id1067198688
-
 
 [Rule]
 DOMAIN, abyss.cyapi.cn, REJECT
