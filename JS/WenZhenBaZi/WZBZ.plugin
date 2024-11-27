@@ -1,0 +1,13 @@
+#!name=问真八字 钻石vip
+#!desc=问真八字 钻石vip
+#!category=😍BOBO Premium
+#!homepage=https://github.com/BOBOLAOSHIV587/Rules
+#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/WenZhenBaZi.png
+#!openUrl=https://apps.apple.com/app/id1665624645
+
+[Script]
+# > 问真八字 钻石vip
+http-response https:\/\/bzpp2\.iwzbz\.com\/api\/v1.1\/user\/getvipinfo script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/WenZhenBaZi/JS/WZBZ.js, requires-body=true, timeout=60, tag=WZBZ
+
+[MITM]
+hostname = bzpp2.iwzbz.com
