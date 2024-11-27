@@ -1,0 +1,13 @@
+#!name=MusicMate
+#!desc=MusicMate 永久Premium会员.打开软件 > 右下角设置 > 成为Premium会员 > 点击「恢复购买」
+#!category=😍BOBO Premium
+#!homepage=https://github.com/BOBOLAOSHIV587/Rules
+#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/MusicMate.png
+#!openUrl=https://apps.apple.com/app/id1605379758
+
+[Script]
+# > MusicMate 永久Premium会员
+http-response https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/MusicMate/JS/MusicMate.js, requires-body=true, timeout=60, tag=MusicMate
+
+[MITM]
+hostname = api.revenuecat.com
