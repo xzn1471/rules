@@ -1,0 +1,13 @@
+#!name=NYMF
+#!desc=NYMF Pro图片 视频 故事 模特资源解锁 去除马赛克
+#!category=😍BOBO Premium
+#!homepage=https://github.com/BOBOLAOSHIV587/Rules
+#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/NYMF.png
+#!openUrl=https://apps.apple.com/app/id1495951015
+
+[Script]
+# > NYMF Pro图片 视频 故事 模特资源解锁 去除马赛克
+NYMF = type=http-response, pattern=https:\/\/nymfapp\.com\/api\/(photos|posts|stories|compose), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/NYMF/JS/NYMF.js, requires-body=true, max-size=-1, timeout=60
+
+[MITM]
+hostname = %APPEND% nymfapp.com
