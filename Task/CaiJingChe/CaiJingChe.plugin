@@ -3,4 +3,4 @@
 #!category=😍BOBO Task
 
 [Script]
-cron "0 0/30 8-22 * * ?" script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Task/CaiJingChe/JS/CaiJingChe.js, tag=18🈲️采精车, img-url=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/ZiShi/Image/Preview.png
+cron "0 0/30 8-22 * * ?" script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Task/CaiJingChe/JS/CaiJingChe.js, tag=18🈲️采精车, img-url=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/ZiShi/Image/zs18.png
