@@ -1,0 +1,13 @@
+#!name=Open Love - AI Girlfriend
+#!desc=Open Love - AI Girlfriend ziwei解锁
+#!category=😍BOBO Premium
+#!homepage=https://github.com/BOBOLAOSHIV587/Rules
+#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/OpenLove.png
+#!openUrl=https://apps.apple.com/app/id6469017914
+
+[Script]
+# > Open Love - AI Girlfriend ziwei解锁
+OL = type=http-response, pattern=https:\/\/api\.openlove\.life, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/OpenLove/JS/OL.js, requires-body=true, max-size=-1, timeout=60
+
+[MITM]
+hostname = %APPEND% api.openlove.life
