@@ -1,0 +1,8 @@
+#!name=18🈲️采精车
+#!desc=18🈲️采精车
+#!category=😍BOBO Task
+
+
+[Script]
+18🈲️采精车 = type=cron,cronexp=0 0/30 8-22 * * ?,script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Task/CaiJingChe/JS/CaiJingChe.js,script-update-interval=0
+
