@@ -1,0 +1,13 @@
+#!name=Pix
+#!desc=Pix解锁Pro.打开软件 > 设置 > 点击「恢复购买」.⚠️⚠️⚠️解锁脚本不可共存，请逐一使用并关闭。
+#!category=😍BOBO Premium
+#!homepage=https://github.com/BOBOLAOSHIV587/Rules
+#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Pix.png
+#!openUrl=https://apps.apple.com/app/id1542670372
+
+[Script]
+# > Pix解锁Pro
+http-response https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Pix/JS/Pix.js, requires-body=true, timeout=60, tag=Pix解锁Pro
+
+[MITM]
+hostname = api.revenuecat.com
