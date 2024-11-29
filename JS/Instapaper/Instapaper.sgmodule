@@ -1,0 +1,13 @@
+#!name=Instapaper
+#!desc=Instapaper 解锁高级用户199年会员.解锁失败，请重试手动访问一次 > 左滑「设置」> Premium > 等待片刻
+#!category=😍BOBO Premium
+#!homepage=https://github.com/BOBOLAOSHIV587/Rules
+#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Instapaper.png
+#!openUrl=https://apps.apple.com/app/id288545208
+
+[Script]
+# > Instapaper 解锁高级用户199年会员
+Instapaper 解锁高级用户199年会员 = type=http-response, pattern=https:\/\/www\.instapaper\.com\/api\/subscription_status, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Instapaper/JS/Instapaper.js, requires-body=true, max-size=-1, timeout=60
+
+[MITM]
+hostname = %APPEND% www.instapaper.com
