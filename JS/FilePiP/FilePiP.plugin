@@ -1,0 +1,13 @@
+#!name=FilePiP
+#!desc=FilePiP解锁Pro.打开软件 > 右下角设置 > 点击「恢复购买」.⚠️⚠️⚠️解锁脚本不可共存，请逐一使用并关闭。
+#!category=😍BOBO Premium
+#!homepage=https://github.com/BOBOLAOSHIV587/Rules
+#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/FilePiP.png
+#!openUrl=https://apps.apple.com/app/id1593145001
+
+[Script]
+# > FilePiP解锁Pro
+http-response https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/FilePiP/JS/FilePiP.js, requires-body=true, timeout=60, tag=FilePiP解锁Pro
+
+[MITM]
+hostname = api.revenuecat.com
