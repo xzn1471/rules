@@ -12,3 +12,12 @@
 个人自用Surge、QuantumultX(Qx)、Loon分流规则、JS会员解锁脚本、Task
 
 
+.conf为QX脚本
+
+
+.plugin为Loon脚本
+
+
+.sgmodule为Surge脚本
+
+
