@@ -1,0 +1,13 @@
+#!name=Cubox - 文章阅读与标注笔记
+#!desc=Cubox - 文章阅读与标注笔记 解锁高级会员
+#!category=😍BOBO Premium
+#!homepage=https://github.com/BOBOLAOSHIV587/Rules
+#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Cubox.png
+#!openUrl=https://apps.apple.com/app/id1113361350
+
+[Script]
+# > Cubox - 文章阅读与标注笔记 解锁高级会员
+Cubox - 文章阅读与标注笔记 解锁高级会员 = type=http-response, pattern=^https:\/\/cubox\.pro\/c\/api\/userInfo, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Cubox/JS/Cubox.js, requires-body=true, max-size=-1, timeout=60
+
+[MITM]
+hostname = %APPEND% cubox.pro
