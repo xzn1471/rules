@@ -1,0 +1,13 @@
+#!name=WorkingCopy
+#!desc=WorkingCopy 解锁Pro
+#!category=😍BOBO Premium
+#!homepage=https://github.com/BOBOLAOSHIV587/Rules
+#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/WorkingCopy.png
+#!openUrl=https://apps.apple.com/app/id896694807
+
+[Script]
+# > WorkingCopy 解锁Pro
+WorkingCopy 解锁Pro = type=http-response, pattern=^https:\/\/education\.github\.com\/api\/user$, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/WorkingCopy/JS/WorkingCopy.js, requires-body=true, max-size=-1, timeout=60
+
+[MITM]
+hostname = %APPEND% education.github.com
