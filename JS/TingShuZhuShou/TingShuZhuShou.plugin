@@ -1,0 +1,13 @@
+#!name=听书助手
+#!desc=听书助手解锁永久会员
+#!category=😍BOBO Premium
+#!homepage=https://github.com/BOBOLAOSHIV587/Rules
+#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/TingShuZhuShou.png
+#!openUrl=https://apps.apple.com/app/id6444621554
+
+[Script]
+# > 听书助手解锁永久会员
+http-response https:\/\/www\.huojiwangluo.cn\/ting\/user\/(get|anonylogin) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/TingShuZhuShou/JS/TSZS.js, requires-body=true, timeout=60, tag=听书助手解锁永久会员
+
+[MITM]
+hostname = www.huojiwangluo.cn
