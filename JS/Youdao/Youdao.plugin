@@ -1,0 +1,31 @@
+#!name=网易有道词典
+#!desc=网易有道词典解锁会员
+#!category=😍BOBO Premium
+#!homepage=https://github.com/BOBOLAOSHIV587/Rules
+#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Youdao.png
+#!openUrl=https://apps.apple.com/app/id353115739
+
+[Rewrite]
+# > 翻译   广告均由 安妮 分享 
+^https:\/\/dict\.youdao\.com\/course\/tab\/translateTab reject-dict
+# > 听读训练  
+^^https:\/\/dict\.youdao\.com\/homepage\/tile reject-dict
+# > 首次查词弹窗
+^https:\/\/api-overmind\.youdao\.com\/openapi\/get\/luna\/dict\/dict-mobile\/prod\/dictCommonConfig reject-dict
+# > 首页弹窗
+^https:\/\/cdke\.youdao\.com\/course3\/recommend\/dict\/startup reject-dict
+# > 搜索预想
+^https:\/\/dict\.youdao\.com\/commonsearch reject-dict
+# > 会员优惠券弹窗
+^https:\/\/dict\.youdao\.com\/vip\/activity\/couponinfo reject-dict
+# > 首页左上角福利中心
+^https:\/\/dict\.youdao\.com\/dictusertask\/system reject-dict
+# > 会员界面横幅广告
+^https:\/\/dictvip-business\.youdao\.com\/home\/ad reject-dict
+
+[Script]
+# > 网易有道词典解锁会员
+http-response ^https:\/\/dict\.youdao\.com\/vip\/user\/status script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Youdao/JS/Youdao.js, requires-body=true, timeout=60, tag=Youdao网易有道词典解锁会员
+
+[MITM]
+hostname = dict.youdao.com, business.youdao.com, api-overmind.youdao.com, cdke.youdao.com
