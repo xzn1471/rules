@@ -1,0 +1,31 @@
+#!name=网易有道词典
+#!desc=网易有道词典解锁会员
+#!category=😍BOBO Premium
+#!homepage=https://github.com/BOBOLAOSHIV587/Rules
+#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Youdao.png
+#!openUrl=https://apps.apple.com/app/id353115739
+
+[Map Local]
+# > 翻译   广告均由 安妮 分享 
+^https:\/\/dict\.youdao\.com\/course\/tab\/translateTab data-type=text data="{}" status-code=200
+# > 听读训练  
+^https:\/\/dict\.youdao\.com\/homepage\/tile data-type=text data="{}" status-code=200
+# > 首次查词弹窗
+^https:\/\/api-overmind\.youdao\.com\/openapi\/get\/luna\/dict\/dict-mobile\/prod\/dictCommonConfig data-type=text data="{}" status-code=200
+# > 首页弹窗
+^https:\/\/cdke\.youdao\.com\/course3\/recommend\/dict\/startup data-type=text data="{}" status-code=200
+# > 搜索预想
+^https:\/\/dict\.youdao\.com\/commonsearch data-type=text data="{}" status-code=200
+# > 会员优惠券弹窗
+^https:\/\/dict\.youdao\.com\/vip\/activity\/couponinfo data-type=text data="{}" status-code=200
+# > 首页左上角福利中心
+^https:\/\/dict\.youdao\.com\/dictusertask\/system data-type=text data="{}" status-code=200
+# > 会员界面横幅广告
+^https:\/\/dictvip-business\.youdao\.com\/home\/ad data-type=text data="{}" status-code=200
+
+[Script]
+# > 网易有道词典解锁会员
+Youdao网易有道词典解锁会员 = type=http-response, pattern=^https:\/\/dict\.youdao\.com\/vip\/user\/status, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Youdao/JS/Youdao.js, requires-body=true, max-size=-1, timeout=60
+
+[MITM]
+hostname = %APPEND% dict.youdao.com, business.youdao.com, api-overmind.youdao.com, cdke.youdao.com
