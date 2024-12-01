@@ -1,0 +1,13 @@
+#!name=FlipaClip: 2维动漫工作室！先绘画、再做成动漫
+#!desc=FlipaClip解锁Plus.2维动漫工作室！先绘画、再做成动漫。软件版本：2.8.0
+#!category=😍BOBO Premium
+#!homepage=https://github.com/BOBOLAOSHIV587/Rules
+#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/FlipaClip.png
+#!openUrl=https://apps.apple.com/app/id1101848914
+
+[Script]
+# > FlipaClip解锁Plus
+http-response ^https://api.purchasely.io/paab/user_purchases script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/FlipaClip/JS/FlipaClip.js, requires-body=true, timeout=60, tag=FlipaClip解锁Plus
+
+[MITM]
+hostname = api.purchasely.io
