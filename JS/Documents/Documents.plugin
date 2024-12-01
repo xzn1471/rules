@@ -7,7 +7,7 @@
 
 [Script]
 # > Documents文件管理器+解锁订阅
-http-request ^https:\/\/license\.pdfexpert\.com\/api\/2\.0\/documents\/subscription\/refresh script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Documents/JS/Documents.js, requires-body=true, timeout=60, tag=Documents
+http-request https://license.pdfexpert.com/api/2.0/documents/subscription/refresh script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Documents/JS/Documents.js, requires-body=true, timeout=60, tag=Documents文件管理器+解锁订阅
 
 [MITM]
-hostname = license.pdfexpert.com
+hostname = *.pdfexpert.com
