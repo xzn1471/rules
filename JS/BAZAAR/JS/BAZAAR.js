@@ -1,5 +1,7 @@
 /*
-时尚芭莎(BAZAAR)－时尚杂志新纪元解锁Vip
+# 时尚芭莎(BAZAAR)－时尚杂志新纪元解锁Vip
+# https://apps.apple.com/us/app/%E6%97%B6%E5%B0%9A%E8%8A%AD%E8%8E%8E-%E6%97%B6%E5%B0%9A%E6%9D%82%E5%BF%97%E6%96%B0%E7%BA%AA%E5%85%83/id532074097?uo=4
+
 
 [rewrite_local]
 
