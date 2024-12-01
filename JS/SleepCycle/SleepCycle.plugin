@@ -1,0 +1,13 @@
+#!name=Sleep Cycle: 睡眠监测
+#!desc=Sleep Cycle: 睡眠监测, 鼾声记录及智能闹钟Premium。登陆 购买取消 退后台 重新打开即可。软件版本：6.23.42
+#!category=😍BOBO Premium
+#!homepage=https://github.com/BOBOLAOSHIV587/Rules
+#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/SleepCycle.png
+#!openUrl=https://apps.apple.com/app/id320606217
+
+[Script]
+# > Sleep Cycle: 睡眠监测, 鼾声记录及智能闹钟Premium
+http-response https://ch.sleepcycle.com/(useraccountstats|api/v1/subscription/get$) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/SleepCycle/JS/SleepCycle.js, requires-body=true, timeout=60, tag=Sleep Cycle睡眠监测
+
+[MITM]
+hostname = ch.sleepcycle.com
