@@ -11,7 +11,7 @@ hostname = api.termius.com
 
 [rewrite_local]
 
-https:\/\/api\.termius\.com\/api\/v3\/bulk\/account\/ url script-response-body https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Termius/JS/Termius.js
+https:\/\/api\.termius\.com\/api\/.+\/bulk\/account\/ url script-response-body https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Termius/JS/Termius.js
 
 ********************************/
 
