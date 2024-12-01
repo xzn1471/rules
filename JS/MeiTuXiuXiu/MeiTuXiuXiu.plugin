@@ -1,0 +1,14 @@
+#!name=美图秀秀
+#!desc=美图秀秀 解锁SVIP 获取ai擦除照片
+#!category=😍BOBO Premium
+#!homepage=https://github.com/BOBOLAOSHIV587/Rules
+#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/MeiTuXiuXiu.png
+#!openUrl=https://apps.apple.com/app/id416048305
+
+[Script]
+# > 美图秀秀 解锁SVIP 获取ai擦除照片
+http-response ^https?:\/\/((h5|api)\.xiuxiu|api-sub|api\.posters)\.meitu\.com\/.+\/(vip|user|h\d|center|home) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/MeiTuXiuXiu/JS/MTXX.js, requires-body=true, timeout=60, tag=美图秀秀 解锁SVIP 获取ai擦除照片
+http-response https?:\/\/api\.posters\.meitu\.com\/matting\/znxc\.json script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/MeiTuXiuXiu/JS/MTXX.js, requires-body=true, timeout=60, tag=美图秀秀 解锁SVIP 获取ai擦除照片
+
+[MITM]
+hostname = *.xiuxiu.meitu.com, api.posters.meitu.com, api-sub.meitu.com
