@@ -1,0 +1,15 @@
+#!name=Zettelbox
+#!desc=Zettelbox-简洁高效的卡片笔记工具-永久解锁。软件版本：1.1.4
+#!category=😍BOBO Premium
+#!homepage=https://github.com/BOBOLAOSHIV587/Rules
+#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Zettelbox.png
+#!openUrl=https://apps.apple.com/app/id1605557791
+
+[Script]
+# > Zettelbox-简洁高效的卡片笔记工具-永久解锁
+http-response ^https?:\/\/api\.revenuecat\.com\/v1\/(subscribers\/[^\/]+$|receipts$) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Zettelbox/JS/Zettelbox.js, requires-body=true, timeout=60, tag=Zettelbox
+# > 清理
+http-request ^https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Zettelbox/JS/Zettelbox.js, timeout=60, tag=Zettelbox
+
+[MITM]
+hostname = api.revenuecat.com
