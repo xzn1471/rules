@@ -1,0 +1,13 @@
+#!name=Termius
+#!desc=Termius 解锁Pro
+#!category=😍BOBO Premium
+#!homepage=https://github.com/BOBOLAOSHIV587/Rules
+#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Termius.png
+#!openUrl=https://apps.apple.com/app/id549039908
+
+[Script]
+# > Termius 解锁Pro
+http-response https:\/\/api\.termius\.com\/api\/.+\/bulk\/account\/ script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Termius/JS/Termius.js, requires-body=true, timeout=60, tag=Termius 解锁Pro
+
+[MITM]
+hostname = api.termius.com
