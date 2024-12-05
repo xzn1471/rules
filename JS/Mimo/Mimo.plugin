@@ -1,0 +1,13 @@
+#!name=Mimo编程:Python,HTML,SQL编码
+#!desc=Mimo编程:Python,HTML,SQL编码解锁Max.学习 Python、JavaScript、HTML 代码。使用此脚本，会导致AppleStore无法切换账户，解决方法[关闭QX切换账户，或关闭MITM，或删除脚本，或去设置媒体与购买项目处切换ID]
+#!category=😍BOBO Premium
+#!homepage=https://github.com/BOBOLAOSHIV587/Rules
+#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Mimo.png
+#!openUrl=https://apps.apple.com/app/id1133960732
+
+[Script]
+# > Mimo编程:Python,HTML,SQL编码解锁Max
+http-response ^https?:\/\/api\.getmimo\.com\/v\d\/subscriptions script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Mimo/JS/Mimo.js, requires-body=true, timeout=60, tag=Mimo编程:Python,HTML,SQL编码解锁Max
+
+[MITM]
+hostname = api.getmimo.com
