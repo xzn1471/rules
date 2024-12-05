@@ -1,0 +1,16 @@
+#!name=插画世界-P站画师创作约稿平台
+#!desc=插画世界-P站画师创作约稿平台解锁Vip&去开屏广告。使用此脚本，会导致AppleStore无法切换账户，解决方法[关闭QX切换账户，或关闭MITM，或删除脚本，或去设置媒体与购买项目处切换ID]
+#!category=😍BOBO Premium
+#!homepage=https://github.com/BOBOLAOSHIV587/Rules
+#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/ChaHuaShiJie.png
+#!openUrl=https://apps.apple.com/app/id1561620000
+
+[Rule]
+DOMAIN,*.adukwai.com,REJECT
+
+[Script]
+# > 插画世界-P站画师创作约稿平台解锁Vip&去开屏广告
+插画世界-P站画师创作约稿平台解锁Vip&去开屏广告 = type=http-response, pattern=^https:\/\/api2\.vilipix\.com\/api\/v\d\/user\/current, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/ChaHuaShiJie/JS/CHSJ.js, requires-body=true, max-size=-1, timeout=60
+
+[MITM]
+hostname = %APPEND% api2.vilipix.com
