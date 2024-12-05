@@ -1,5 +1,5 @@
 #!name=WorkingCopy
-#!desc=WorkingCopy 解锁Pro
+#!desc=WorkingCopy 解锁Pro。利用 GitHub Education解锁Working Copy，启用此脚本后再 Safari 打开 https://workingcopy.app/education/ 点击「tap here to access all pro features.」中的 here 跳转到 Working Copy，登录自己的 GitHub 账号即可解锁
 #!category=😍BOBO Premium
 #!homepage=https://github.com/BOBOLAOSHIV587/Rules
 #!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/WorkingCopy.png
@@ -7,7 +7,7 @@
 
 [Script]
 # > WorkingCopy 解锁Pro
-http-response ^https:\/\/education\.github\.com\/api\/user$ script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/WorkingCopy/JS/WorkingCopy.js, requires-body=true, timeout=60, tag=WorkingCopy 解锁Pro
+http-response ^https?:\/\/education\.github\.com\/api\/user$ script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/WorkingCopy/JS/WorkingCopy.js, requires-body=true, timeout=60, tag=WorkingCopy 解锁Pro
 
 [MITM]
 hostname = education.github.com
