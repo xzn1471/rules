@@ -1,0 +1,13 @@
+#!name=极光投影
+#!desc=极光投影解锁Vip。使用此脚本，会导致AppleStore无法切换账户，解决方法[关闭QX切换账户，或关闭MITM，或删除脚本，或去设置媒体与购买项目处切换ID]
+#!category=😍BOBO Premium
+#!homepage=https://github.com/BOBOLAOSHIV587/Rules
+#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/JGTY.png
+#!openUrl=https://apps.apple.com/app/id6496848777
+
+[Script]
+# > 极光投影解锁Vip
+极光投影解锁Vip = type=http-response, pattern=^https?:\/47\.120\.25\.12\:3000\/app\/subscribe\/getSubscribeData, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/JGTY/JS/JGTY.js, requires-body=true, max-size=-1, timeout=60
+
+[MITM]
+hostname = %APPEND% 47.120.25.12:3000
