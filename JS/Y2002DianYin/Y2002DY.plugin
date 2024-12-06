@@ -1,0 +1,14 @@
+#!name=Y2002电音-DJ电音音乐播放器
+#!desc=Y2002电音-DJ电音音乐播放器解锁永久Vip
+#!category=😍BOBO Premium
+#!homepage=https://github.com/BOBOLAOSHIV587/Rules
+#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Y2002DianYin.png
+#!openUrl=https://apps.apple.com/app/id1146785690
+
+[Script]
+# > Y2002电音-DJ电音音乐播放器解锁永久Vip
+http-response ^https?:\/\/app-ios\.y2002\.com\/api\/v2\/User\/Info? script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Y2002DianYin/JS/Y1.js, requires-body=true, timeout=60, tag=Y2002电音-DJ电音音乐播放器解锁永久Vip-Y1
+http-response ^https?:\/\/app-ios\.y2002\.com\/API\/V2\/Processer\.ashx? script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Y2002DianYin/JS/Y2.js, requires-body=true, timeout=60, tag=Y2002电音-DJ电音音乐播放器解锁永久Vip-Y2
+
+[MITM]
+hostname = app-ios.y2002.com
