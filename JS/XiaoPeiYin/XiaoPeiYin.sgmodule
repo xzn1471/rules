@@ -1,0 +1,13 @@
+#!name=小配音-视频&小说配音助手
+#!desc=小配音-视频&小说配音助手解锁终身VIP
+#!category=😍BOBO Premium
+#!homepage=https://github.com/BOBOLAOSHIV587/Rules
+#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/XiaoPeiYin.png
+#!openUrl=https://apps.apple.com/app/id6443398813
+
+[Script]
+# > 小配音-视频&小说配音助手解锁终身VIP
+小配音-视频&小说配音助手解锁终身VIP = type=http-response, pattern=^https?:\/\/api\.py\.juxiao123\.cn\/facades\/account\.show?, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/XiaoPeiYin/JS/XiaoPeiYin.js, requires-body=true, max-size=-1, timeout=60
+
+[MITM]
+hostname = %APPEND% api.py.juxiao123.cn
