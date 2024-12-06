@@ -9,5 +9,5 @@
 # > iMuseum每日环球展览解锁Vip
 http-response ^https?:\/\/icity-imsm\.2q10\.com\/api\/v\d\/users\/mark_paid script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/iMuseum/JS/iMuseum.js, requires-body=true, timeout=60, tag=iMuseum每日环球展览解锁Vip
 
-[MITM]
-hostname = %APPEND% icity-imsm.2q10.com
+[Mitm]
+hostname = icity-imsm.2q10.com
