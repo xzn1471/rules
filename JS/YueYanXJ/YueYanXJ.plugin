@@ -1,0 +1,13 @@
+#!name=悦颜相机
+#!desc=悦颜相机解锁永久Vip
+#!category=😍BOBO Premium
+#!homepage=https://github.com/BOBOLAOSHIV587/Rules
+#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/YueYanXJ.png
+#!openUrl=https://apps.apple.com/app/id6443581419
+
+[Script]
+# > 悦颜相机解锁永久Vip
+http-response ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/YueYanXJ/JS/YueYanXJ.js, requires-body=true, timeout=60, tag=悦颜相机解锁永久Vip
+
+[MITM]
+hostname = buy.itunes.apple.com
