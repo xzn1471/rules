@@ -484,10 +484,6 @@ Penbook解锁pro = type=http-response, pattern=https:\/\/api\.revenuecat\.com\/v
 Pix解锁Pro = type=http-response, pattern=https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Pix/JS/Pix.js, requires-body=true, max-size=-1, timeout=60
 
 
-# > VSCO Pro长期会员订阅
-VSCO Pro长期会员订阅 = type=http-response, pattern=https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/VSCO/JS/VSCO.js, requires-body=true, max-size=-1, timeout=60
-
-
 # > FilePiP解锁Pro
 FilePiP解锁Pro = type=http-response, pattern=https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/FilePiP/JS/FilePiP.js, requires-body=true, max-size=-1, timeout=60
 
