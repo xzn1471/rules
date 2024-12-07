@@ -1,20 +1,58 @@
 /*************************************
 
->「 脚本名称 」         Snow解锁Pro
->「 脚本作者 」         M̆̈̆̈ĭ̈̆̈k̆̈̆̈ĕ̈
->「 电报频道 」         https://t.me/TrollStoreKios 
->「 更新时间 」         2024-10-07
->「 注意事项 」         如需引用请注明出处，谢谢合作！
->「 注意事项 」         使用此脚本，会导致AppleStore无法切换账户，解决方法[关闭QX切换账户，或关闭MITM，或删除脚本，或去设置媒体与购买项目处切换ID]
->「 额外说明 」         请勿传播或售卖此脚本
+项目名称：SNOW-系列解锁
+下载地址：https://t.cn/A6QSe5Tf
+更新日期：2024-12-06
+脚本作者：chxm1023
+电报频道：https://t.me/chxm1023
+使用声明：⚠️仅供参考，🈲转载与售卖！
+
+**************************************
 
 [rewrite_local]
-# >Snow解锁Pro
-^https:\/\/user-snow-api\.snow\.me\/v1\/purchase\/subscription\/subscriber\/status$ url script-request-header https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Snow/JS/Snow.js
+^https?:\/\/.*\.snow\.me\/v\d\/purchase\/subscription\/subscriber\/status url script-response-body https://raw.githubusercontent.com/chxm1023/Rewrite/main/snow.js
 
 [mitm]
-hostname = user-snow-api.snow.me
+hostname = *.snow.me
 
 *************************************/
 
-var _0xodL='\x6a\x73\x6a\x69\x61\x6d\x69\x2e\x63\x6f\x6d\x2e\x76\x37';var _0x47efc0=_0x53d4;function _0x53d4(_0xa64a37,_0x4f886a){var _0x31e4f4=_0x31e4();return _0x53d4=function(_0x53d485,_0xa0c53b){_0x53d485=_0x53d485-0x1e3;var _0x225437=_0x31e4f4[_0x53d485];if(_0x53d4['pyStAZ']===undefined){var _0x37a4f3=function(_0x49f49d){var _0x5f0dfe='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';var _0x5617de='',_0x2cf732='';for(var _0x54927c=0x0,_0x5f45c5,_0x53cc28,_0x521bd1=0x0;_0x53cc28=_0x49f49d['charAt'](_0x521bd1++);~_0x53cc28&&(_0x5f45c5=_0x54927c%0x4?_0x5f45c5*0x40+_0x53cc28:_0x53cc28,_0x54927c++%0x4)?_0x5617de+=String['fromCharCode'](0xff&_0x5f45c5>>(-0x2*_0x54927c&0x6)):0x0){_0x53cc28=_0x5f0dfe['indexOf'](_0x53cc28);}for(var _0x4b9481=0x0,_0x15763e=_0x5617de['length'];_0x4b9481<_0x15763e;_0x4b9481++){_0x2cf732+='%'+('00'+_0x5617de['charCodeAt'](_0x4b9481)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x2cf732);};var _0x460c82=function(_0x2d1926,_0x1776db){var _0x4638d8=[],_0x47b937=0x0,_0x3c5a3d,_0x4cf0fa='';_0x2d1926=_0x37a4f3(_0x2d1926);var _0x554373;for(_0x554373=0x0;_0x554373<0x100;_0x554373++){_0x4638d8[_0x554373]=_0x554373;}for(_0x554373=0x0;_0x554373<0x100;_0x554373++){_0x47b937=(_0x47b937+_0x4638d8[_0x554373]+_0x1776db['charCodeAt'](_0x554373%_0x1776db['length']))%0x100,_0x3c5a3d=_0x4638d8[_0x554373],_0x4638d8[_0x554373]=_0x4638d8[_0x47b937],_0x4638d8[_0x47b937]=_0x3c5a3d;}_0x554373=0x0,_0x47b937=0x0;for(var _0x44ce7d=0x0;_0x44ce7d<_0x2d1926['length'];_0x44ce7d++){_0x554373=(_0x554373+0x1)%0x100,_0x47b937=(_0x47b937+_0x4638d8[_0x554373])%0x100,_0x3c5a3d=_0x4638d8[_0x554373],_0x4638d8[_0x554373]=_0x4638d8[_0x47b937],_0x4638d8[_0x47b937]=_0x3c5a3d,_0x4cf0fa+=String['fromCharCode'](_0x2d1926['charCodeAt'](_0x44ce7d)^_0x4638d8[(_0x4638d8[_0x554373]+_0x4638d8[_0x47b937])%0x100]);}return _0x4cf0fa;};_0x53d4['gMhLNE']=_0x460c82,_0xa64a37=arguments,_0x53d4['pyStAZ']=!![];}var _0x3fc514=_0x31e4f4[0x0],_0xa71c31=_0x53d485+_0x3fc514,_0x1357ba=_0xa64a37[_0xa71c31];return!_0x1357ba?(_0x53d4['DVzBhq']===undefined&&(_0x53d4['DVzBhq']=!![]),_0x225437=_0x53d4['gMhLNE'](_0x225437,_0xa0c53b),_0xa64a37[_0xa71c31]=_0x225437):_0x225437=_0x1357ba,_0x225437;},_0x53d4(_0xa64a37,_0x4f886a);}(function(_0xef0d1f,_0x26692d,_0x3220ed,_0x16fa5a,_0x516f9f,_0x39ca07,_0x18915a){return _0xef0d1f=_0xef0d1f>>0x3,_0x39ca07='hs',_0x18915a='hs',function(_0x3fc549,_0x231291,_0x57d0b9,_0x147cdf,_0x359625){var _0x19e611=_0x53d4;_0x147cdf='tfi',_0x39ca07=_0x147cdf+_0x39ca07,_0x359625='up',_0x18915a+=_0x359625,_0x39ca07=_0x57d0b9(_0x39ca07),_0x18915a=_0x57d0b9(_0x18915a),_0x57d0b9=0x0;var _0x4f2010=_0x3fc549();while(!![]&&--_0x16fa5a+_0x231291){try{_0x147cdf=-parseInt(_0x19e611(0x1fc,'FoJ1'))/0x1*(-parseInt(_0x19e611(0x1fd,'Wqlx'))/0x2)+-parseInt(_0x19e611(0x1e3,'KX1D'))/0x3*(-parseInt(_0x19e611(0x1f6,'&hYt'))/0x4)+-parseInt(_0x19e611(0x1e4,'GIzr'))/0x5*(-parseInt(_0x19e611(0x1e8,'Noh*'))/0x6)+-parseInt(_0x19e611(0x1f3,'odU4'))/0x7+parseInt(_0x19e611(0x1ff,'4^H8'))/0x8*(parseInt(_0x19e611(0x1e9,']4h^'))/0x9)+-parseInt(_0x19e611(0x1f1,'xtnW'))/0xa*(parseInt(_0x19e611(0x1f9,'4FXg'))/0xb)+-parseInt(_0x19e611(0x1e6,'MWLU'))/0xc;}catch(_0x42c892){_0x147cdf=_0x57d0b9;}finally{_0x359625=_0x4f2010[_0x39ca07]();if(_0xef0d1f<=_0x16fa5a)_0x57d0b9?_0x516f9f?_0x147cdf=_0x359625:_0x516f9f=_0x359625:_0x57d0b9=_0x359625;else{if(_0x57d0b9==_0x516f9f['replace'](/[tuWyYgOMwDfCHhIKRdpneT=]/g,'')){if(_0x147cdf===_0x231291){_0x4f2010['un'+_0x39ca07](_0x359625);break;}_0x4f2010[_0x18915a](_0x359625);}}}}}(_0x3220ed,_0x26692d,function(_0x19bc49,_0x293c01,_0x29343c,_0x317cc4,_0x43b47c,_0x2dc12b,_0x5bcf69){return _0x293c01='\x73\x70\x6c\x69\x74',_0x19bc49=arguments[0x0],_0x19bc49=_0x19bc49[_0x293c01](''),_0x29343c='\x72\x65\x76\x65\x72\x73\x65',_0x19bc49=_0x19bc49[_0x29343c]('\x76'),_0x317cc4='\x6a\x6f\x69\x6e',(0x18787f,_0x19bc49[_0x317cc4](''));});}(0x640,0x6aff2,_0x31e4,0xca),_0x31e4)&&(_0xodL=_0x31e4);function _0x31e4(){var _0x4e1f12=(function(){return[_0xodL,'tYjHOspjweKihaDmiI.ydHcoKmT.yuyvf7CWngRM==','WQRcVCkvW6aTB8oy','dwZdVMFdJq','W5JcQCoxomkyWRfcW4vtj1NcIaS','BmknpmovWOVcVeJdImkE','W7pdN8kQWOXrW4ylW7ldIq','WO3dNgOaWP3cMSo/y8kalSoaCG','W4m4yWxcR8kXW5jXehn4n8k0za','WP7dTH5HjdrvF8oCgrXHr0S','WQFcRcD4WRlcOCo2'].concat((function(){return['Fw7cSaldUJhdKCo1','yxhcVtDdW49U','W4m4yGNcOSk2W5uxag1enSkG','W7FdN8kQW5qWW7q1W7ddRCkZWRu','WOHuxLO1vG','cgpdQhhdJN0vqmkT','txzDdefobCo2da','W7ldKb/cKMnGW7qqdWyImmkdWR3dOYKmvxpcPcqUaCowWPNcTJ7cImkAzSknqZhdQSo9l8kM','W7JcKcynW43dRcVdQW','W49lFSkOW7ZcM8k3W7Tkuq','W5i9WQFdGeGDzmoMmmo/m8ov'].concat((function(){return['z8k8WRn2WQZcMvDuWRNcGWJdJ2u','WQ/dVCoCWRXQtmowW67dRZTo','W53cP1qTCxe','W7RcLSocffNcJf3dRCkbA1O','p8ovD8o8WRRcL3O','x8oXWOHNWRxdSrldT8k3W5i','AwpcPfNdUuuPdSkPWQNcOq','W5SyW5pcVa','omozCCoqWQ3cLwBdH8kz','dtSCvb0FkCoHa1lcSCkU'];}()));}()));}());_0x31e4=function(){return _0x4e1f12;};return _0x31e4();};if($response[_0x47efc0(0x1fa,'lqnT')]!==_0x47efc0(0x1ed,'6uPD')){var Mike=JSON[_0x47efc0(0x1fe,'6uPD')]($response['body']);const url=$request['url'];var ids=_0x47efc0(0x1ef,'RJo)');Mike[_0x47efc0(0x1f5,'MWLU')]['products'][_0x47efc0(0x1f7,'Fz!X')](_0xd7db6b=>{_0xd7db6b['productId']=ids;}),Mike[_0x47efc0(0x1ec,'ynfO')][_0x47efc0(0x1fb,'Fz!X')]=!![],$done({'body':JSON[_0x47efc0(0x1ee,'FoJ1')](Mike)});}var version_ = '\x6a\x73\x6a\x69\x61\x6d\x69\x2e\x63\x6f\x6d\x2e\x76\x37';
+
+var chxm1023 = JSON.parse($response.body);
+const ua = $request.headers["User-Agent"] || $request.headers["user-agent"];
+const times = Date.now();
+
+const list = {
+  "iphoneapp.epik": { id: "com.snowcorp.epik.subscribe.plan.oneyear" },  //Epik-AI照片&视频编辑
+  "iphoneapp.snow": { id: "com.campmobile.snow.subscribe.oneyear" }  //SNOW-AI写真
+};
+
+for (const key of Object.keys(list)) {
+  if (new RegExp(`^${key}`, "i").test(ua)) {
+    chxm1023.result = {
+      "products": [
+        {
+          "managed": true,
+          "status": "ACTIVE",
+          "startDate": times,
+          "productId": list[key].id,
+          "expireDate": 4092599349000
+        }
+      ],
+      "tickets": [
+        {
+          "managed": true,
+          "status": "ACTIVE",
+          "startDate": times,
+          "productId": list[key].id,
+          "expireDate": 4092599349000
+        }
+      ],
+      "activated": true
+    };
+    console.log("已操作成功🎉🎉🎉\n叮当猫の分享频道: https://t.me/chxm1023");
+    break;
+  }
+}
+
+$done({ body: JSON.stringify(chxm1023) });
