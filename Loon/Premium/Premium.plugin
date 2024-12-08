@@ -112,7 +112,7 @@ http-response ^https:\/\/app\.autocad360\.com\/entitlements\/v2\/me\/status scri
 
 
 # > 百度网盘解锁 SVIP倍速播放、高画质
-http-response https://pan.baidu.com/rest/2.0/membership/user script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/BaiDuYun/JS/BaiDuYun.js, requires-body=true, timeout=60, tag=BaiDuYun
+http-response ^https?:\/\/pan.baidu.com.+(rest\/.+\/membership\/user|api\/user\/getinfo|act\/v2\/welfare\/list|api\/taskscore\/tasklist)\? script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/BaiDuYun/JS/BaiDuYun.js, requires-body=true, timeout=60, tag=百度网盘解锁 SVIP倍速播放、高画质
 
 
 # > 白描解锁黄金会员
