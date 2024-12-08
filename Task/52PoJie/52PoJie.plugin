@@ -5,8 +5,7 @@
 #!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/miniColor/Image/Color/52pj.png
 #!openUrl=https://www.52pojie.cn/
 
-
-[MITM]
+[Mitm]
 hostname = www.52pojie.cn
 
 [Script]
