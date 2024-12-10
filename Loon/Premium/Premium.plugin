@@ -4,21 +4,20 @@
 #!homepage=https://github.com/BOBOLAOSHIV587/Rules
 
 
-[Rewrite]
-# 白描
-^https?:\/\/baimiao\.uzero\.cn\/api\/v2\.user\/c(heckLoginClient|leanAccount) reject-array
-
+[Rule]
 # (彩云天气)禁用上传信息 - 来源: @苍井灰灰
 DOMAIN,gather.colorfulclouds.net,REJECT
 
-# > 堆糖svip、去除部分广告、去除部分推广去开屏广告
-http:\/\/api\.duitang\.com\/napi\/ads reject-dict
-https:\/\/api\.duitang\.com\/napi\/infra\/settings reject-dict
-https:\/\/www\.duitang\.com\/napi\/hot\/(tag|search)\/(top|list) reject-dict
-https:\/\/qzs\.gdtimg\.com\/union\/res\/union_temp_v2\/page\/ANTempMob\/tempMob.package.json reject
+# > 插画世界-P站画师创作约稿平台解锁Vip&去开屏广告
+DOMAIN,*.adukwai.com,REJECT
 
-# > 网易云音乐解锁会员音频、音质
-^https?:\/\/interface\d?\.music\.163\.com\/e?api\/vip\/cashier\/tspopup\/get - reject-200
+# > IUV-万能小组件主题壁纸解锁永久Vip
+DOMAIN-SUFFIX,pglstatp-toutiao.com,REJECT
+
+
+[Rewrite]
+# 白描
+^https?:\/\/baimiao\.uzero\.cn\/api\/v2\.user\/c(heckLoginClient|leanAccount) reject-array
 
 # > Spotify(>=iOS15)部分解锁premium
 ^https:\/\/spclient\.wg\.spotify\.com\/user-customization-service\/v1\/customize$ header-del if-none-match
@@ -61,21 +60,14 @@ https:\/\/api2\.tophub\.app\/remai\/recommend\/taobao reject-dict
 ^https?:\/\/(api-access\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk\/get_ads|open\.e\.kuaishou\.com\/rest\/e\/v3\/open\/univ$|mi\.gdt\.qq\.com\/gdt_mview\.fcg\?) reject-200
 
 
-[Rule]
-# > 插画世界-P站画师创作约稿平台解锁Vip&去开屏广告
-DOMAIN,*.adukwai.com,REJECT
-
-# > IUV-万能小组件主题壁纸解锁永久Vip
-DOMAIN-SUFFIX,pglstatp-toutiao.com,REJECT
-
 
 [Script]
 # > 1Blocker 解锁永久订阅
 http-response ^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/1Blocker/JS/1BlockerProCrack.js, requires-body=true, timeout=60, tag=1BlockerProCrack
 
 
-# > APTV-+解锁订阅
-http-response https://api.revenuecat.com/v1/(receipts|subscribers)/* script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/APTV/JS/APTV.js, requires-body=true, timeout=60, tag=APTV
+# > 阿基米德-广播电台音频FM解锁永久Vip
+http-response ^https?:\/\/a\.ajmide\.com\/(v21|v29)\/get_user_(detail|home)\.php$ script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/AJiMiDe/JS/AJMD.js, requires-body=true, timeout=60, tag=阿基米德-广播电台音频FM解锁永久Vip
 
 
 # > AccuWeather 解锁 Premium
@@ -131,12 +123,16 @@ http-response ^https?:\/\/tagit\.hyhuo\.com\/cypt\/block100\/get_vip_info$ scrip
 http-response ^https:\/\/apimboom2\.globaldelight\.net\/itunesreceipt_v2\.php$ script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Boom/JS/Boom.js, requires-body=true, timeout=60, tag=Boom
 
 
-# > 彩云天气-净化/解锁SVIP(旧版)
+# > 彩云天气 解锁SVIP.最高支持版本：6.7.2(旧版)
 http-response https?:\/\/biz\.caiyunapp\.com\/(membership_rights|v2\/user) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/CaiYunTianQi-SVIP/JS/caiyun_svip.js, requires-body=true, timeout=60, tag=彩云天气SVIP
 
 
 # > 彩云小译-登陆后解锁会员
 http-response ^https:\/\/interpreter\.cyapi\.cn\/ script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/CaiYunxiaoyi/JS/xiaoyi.js, requires-body=true, timeout=60, tag=xiaoyi
+
+
+# > 插画世界-P站画师创作约稿平台解锁Vip&去开屏广告
+http-response ^https:\/\/api2\.vilipix\.com\/api\/v\d\/user\/current script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/ChaHuaShiJie/JS/CHSJ.js, requires-body=true, timeout=60, tag=插画世界-P站画师创作约稿平台解锁Vip&去开屏广告
 
 
 # > ChatGPT 解锁 Plus 订阅
@@ -163,10 +159,6 @@ http-response ^https:\/\/api\.deepfaker\.app\/api\/v1\/account\/update-profile s
 http-request ^https?:\/\/media\.deezer\.com\/v1\/get_url$ script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Deezer/JS/DeezerHiFiProCrack.js, requires-body=true, timeout=60, tag=DeezerHiFiProCrack
 
 
-# > 百度不跳转
-http-request ^https?:\/\/.*\.baidu\.com\/.+ script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/DisableBaiduJump/JS/DisableBaiduJumpAction.js, timeout=60, tag=DisableBaiduJumpAction
-
-
 # > Documents文件管理器+解锁订阅
 http-request https://license.pdfexpert.com/api/2.0/documents/subscription/refresh script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Documents/JS/Documents.js, requires-body=true, timeout=60, tag=Documents文件管理器+解锁订阅
 
@@ -175,26 +167,20 @@ http-request https://license.pdfexpert.com/api/2.0/documents/subscription/refres
 http-response ^https?:\/\/dreamfaceapp\.com\/df-server\/user\/save_user_login script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/DreamFace/JS/DreamFace.js, requires-body=true, timeout=60, tag=DreamFace
 
 
-
-# > 堆糖svip、去除部分广告、去除部分推广去开屏广告
-http-response http:\/\/api\.duitang\.com\/napi\/index\/discovery script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Duitang/JS/DT.js, requires-body=true, timeout=60, tag=DT
-http-response http:\/\/api\.duitang\.com\/napi\/settings script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Duitang/JS/DT.js, requires-body=true, timeout=60, tag=DT
-http-response https?:\/\/(www|api)\.duitang\.com\/napi\/people\/me script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Duitang/JS/DT.js, requires-body=true, timeout=60, tag=DT
-http-response https:\/\/www\.duitang\.com\/napi\/vienna\/graphic script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Duitang/JS/DT.js, requires-body=true, timeout=60, tag=DT
-
-
-
-
 # > Emby Premiere Unlock解锁
-http-response ^http(s?):\/\/(www\.|)mb3admin\.com\/.*$ script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Emby/JS/Emby.js, requires-body=true, timeout=10, tag=unlock_emby
+http-response ^http(s?):\/\/(www\.|)mb3admin\.com\/.*$ script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Emby/JS/Emby.js, requires-body=true, timeout=10, tag=Emby Premiere Unlock解锁
 
 
-# > Epik解锁Pro & Snow解锁Pro
+# > Snow解锁--SNOW+Epik解锁Pro
 http-response ^https?:\/\/.*\.snow\.me\/v\d\/purchase\/subscription\/subscriber\/status script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Epik/JS/Epik.js, requires-body=true, timeout=60, tag=Epik解锁Pro
 
 
 # > FaceLab解锁Vip
 http-response ^https?:\/\/subscription-api\.lyrebirdstudio\.net\/subscriptions\/apple\/(verify|status|decode-apple-receipt) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/FaceLab/JS/FaceLab.js, requires-body=true, timeout=60, tag=FaceLab
+
+
+# > FilePiP解锁Pro
+http-response https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/FilePiP/JS/FilePiP.js, requires-body=true, timeout=60, tag=FilePiP解锁Pro
 
 
 # > Filmic Pro相机解锁高级会员
@@ -209,20 +195,48 @@ http-response https:\/\/appv2\.filmix\.com\.cn\/api\/(v2|v4)\/users script-path=
 http-response ^https?:\/\/mobile\.flightradar24\.com\/mobile\/(user-session|subscribe) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Flightradar24/JS/Flightradar24.js, requires-body=true, timeout=60, tag=Flightradar24
 
 
+# > FlipaClip解锁Plus
+http-response ^https://api.purchasely.io/paab/user_purchases script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/FlipaClip/JS/FlipaClip.js, requires-body=true, timeout=60, tag=FlipaClip解锁Plus
+
+
+# > Focos+Focos live☆解锁会员权限
+http-response ^https?:\/\/.*oracle\.bendingspoonsapps\.com\/v\d\/(users\/setup|purchases\/verify\/apple) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Focos/JS/FocosProCrack.js, requires-body=true, timeout=60, tag=Focos+Focos live☆解锁会员权限
+
+
+# > 歌歌AI写歌解锁VIP
+http-response ^https?:\/\/apiv2\.somuseai\.com\/userinfo script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/GGAIXG/JS/GGAIXG.js, requires-body=true, timeout=60, tag=歌歌AI写歌解锁VIP
+
+
 # > GitHub解锁永久订阅
 http-response https://api.github.com/graphql script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Github/JS/GithubPro.js, requires-body=true, timeout=60, tag=GithubPro
+
+
+# > 海报制作大师-设计Logo、邀请函、请柬等图片编辑软件解锁永久VIP
+http-response ^https?:\/\/poster\.leminet\.cn\/v01\/profile script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/HBZZDS/JS/HBZZDS.js, requires-body=true, timeout=60, tag=海报制作大师-设计Logo、邀请函、请柬等图片编辑软件解锁永久VIP
 
 
 # > Httpbot解锁永久订阅,进软件恢复购买
 http-request ^https?:\/\/api\.revenuecat\.com/v\d/(subscribers/(\$RCAnonymousID\%)?(\w)+|receipts)$ script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/HTTPBot/JS/Httpbot.js, timeout=60, tag=Httpbot
 
 
+# > IFTTT-工作流程和智能家居自动化解锁永久Vip
+http-response ^https?:\/\/ifttt\.com\/api\/v3\/graph script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/IFTTT/JS/IFTTT.js, requires-body=true, timeout=60, tag=IFTTT-工作流程和智能家居自动化解锁永久Vip
+
+
+# > IUV-万能小组件主题壁纸解锁永久Vip
+http-response ^https?:\/\/widgets-api\.kaixinyf\.cn\/User\/GetInfoByUserCode script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/IUV/JS/IUV.js, requires-body=true, timeout=60, tag=IUV-万能小组件主题壁纸解锁永久Vip
+
+
 # > ImgPlay gif制作器 & 表情包制作 & 动图  年度会员订阅
 http-response https:\/\/buy\.itunes\.apple\.com\/verifyReceipt script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/ImgPlay/JS/ImgPlay.js, requires-body=true, timeout=60, tag=ImgPlay
 
 
-# > 剪映解锁会员
-http-request ^https?:\/\/commerce-api-.*\.faceu\.mobi\/commerce\/v1\/(subscription\/user_info|purchase\/draft_unlock|effect\/check_effects) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/JianYing/JS/VideoFusionVipCrack.js, timeout=60, tag=VideoFusionVipCrack
+# > Instapaper 解锁高级用户199年会员
+http-response https:\/\/www\.instapaper\.com\/api\/subscription_status script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Instapaper/JS/Instapaper.js, requires-body=true, timeout=60, tag=Instapaper 解锁高级用户199年会员
+
+
+# > 酷狗音乐解锁永久Vip
+http-response ^https?:\/\/gateway\.kugou\.com script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/KuGouYinYue/JS/KuGou.js, requires-body=true, timeout=60, tag=酷狗音乐解锁永久Vip
 
 
 # > 酷我音乐解锁会员皮肤、会员音频(最高无损)、听书权限
@@ -238,10 +252,13 @@ http-request ^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/.+$) s
 http-response https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/LeicaLUX/JS/LeicaLUX.js, requires-body=true, timeout=60, tag=LeicaLUX
 
 
+# > Limory解锁长期会员订阅Premium
+http-response https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Limory/JS/Limory.js, requires-body=true, timeout=60, tag=Limory解锁长期会员订阅Premium
+
+
 # > Linearity Curve插画和图形绘-解锁订阅
 http-response ^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/.+$) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/LinearityCurve/JS/LC.js, requires-body=true, timeout=60, tag=LC
 http-request ^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/.+$) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/LinearityCurve/JS/LC.js, timeout=60, tag=LC
-
 
 
 # > Loopsie AI绘画-解锁订阅
@@ -257,6 +274,11 @@ http-response https?:\/\/cdn-bm\.camera360\.com\/api\/mix\/recovery script-path=
 http-response ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/MWeb/JS/MWeb.js, requires-body=true, timeout=60, tag=MWeb
 
 
+# > 美图秀秀 解锁SVIP 获取ai擦除照片
+http-response ^https?:\/\/((h5|api)\.xiuxiu|api-sub|api\.posters)\.meitu\.com\/.+\/(vip|user|h\d|center|home) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/MeiTuXiuXiu/JS/MTXX.js, requires-body=true, timeout=60, tag=美图秀秀 解锁SVIP 获取ai擦除照片
+http-response https?:\/\/api\.posters\.meitu\.com\/matting\/znxc\.json script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/MeiTuXiuXiu/JS/MTXX.js, requires-body=true, timeout=60, tag=美图秀秀 解锁SVIP 获取ai擦除照片
+
+
 # > MemoKit 解锁Pro
 http-response https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/MemoKit/JS/MemoKit.js, requires-body=true, timeout=60, tag=MemoKit
 
@@ -265,8 +287,16 @@ http-response https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts) script-
 http-response https:\/\/bmall\.camera360\.com\/api\/iap\/check-receipt script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Mix2/JS/Mix2.js, requires-body=true, timeout=60, tag=Mix2
 
 
+# > Morpholio Trace - Sketch CAD草图CAD建筑师设计师专用工具 解锁Pro
+http-response ^https:\/\/www\.mymorpholio\.com\/api\/index\.php\/rest_iap\/receipt script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/MorpholioTrace/JS/MorpholioTrace.js, requires-body=true, timeout=60, tag=Morpholio Trace CAD草图CAD建筑师设计师专用工具 解锁Pro
+
+
 # > Movavi-视频图片编辑解锁Pro
 http-response ^https?:\/\/.*\.apphud\.com\/v\d\/(subscriptions|customers)$ script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Movavi/JS/Movavi.js, requires-body=true, timeout=60, tag=Movavi
+
+
+# > 幕布-大纲笔记&思维导图 解锁终身会员
+http-response https://api2.mubu.com/v3/api/user/current_user script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/MuBu/JS/MuBu.js, requires-body=true, timeout=60, tag=幕布-大纲笔记&思维导图 解锁终身会员
 
 
 # > MusicMate 永久Premium会员
@@ -277,13 +307,12 @@ http-response https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts) script-
 http-response https://apic.musixmatch.com/ws/1.1/config.get script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Musixmatch/JS/Musixmatch.js, requires-body=true, tag=Musixmatch
 
 
+# > MyFitnessPal解锁Premium
+http-response ^https?:\/\/premium-api\.myfitnesspal\.com\/v\d\/subscriptions\/MFP\/* script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/MyFitnessPal/JS/MyFitnessPal.js, requires-body=true, timeout=60, tag=MyFitnessPal解锁Premium
+
+
 # > 拿捏驾考解锁Vip
 http-response ^https?:\/\/nanie\.flyingeffect\.com\/api\/me\/info script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/NaNieJaKao/JS/NaNieJaKao.js, requires-body=true, timeout=60, tag=NaNieJaKao
-
-
-# > 网易云音乐解锁会员音频、音质
-http-response ^https?:\/\/interface\d?\.music\.163\.com\/e?api\/(mine\/collect\/header\/info|v\d\/user\/detail\/\d+|vipnewcenter\/app\/resource\/newaccountpage|music-vip-membership\/(client|front)\/vip\/info|batch|playlist\/privilege|search\/complex\/page|v\d\/(discovery\/recommend\/songs|playlist\/detail)) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/NeteaseCloudMusic/JS/NeteaseCloudMusic.js, requires-body=true, binary-body-mode=true, timeout=60, tag=网易云重写
-http-request ^https?:\/\/interface\d?\.music\.163\.com\/e?api\/(song\/enhance\/player\/url\/v\d|vipauth\/app\/auth\/query) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/NeteaseCloudMusic/JS/NeteaseCloudMusic.js, requires-body=true, timeout=60, tag=网易云转发
 
 
 # > Nicegram会员解锁
@@ -299,14 +328,21 @@ http-response ^https?:\/\/notability\.com\/(global|subscriptions) script-path=ht
 http-response https://api.revenuecat.com/v1/(receipts|subscribers)/* script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Noto/JS/Noto.js, requires-body=true, timeout=60, tag=Noto
 
 
-
 # > Obscura专业相机-解锁订阅
 http-response ^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/.+$) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Obscura/JS/Obscura.js, requires-body=true, timeout=60, tag=Obscura
 http-request ^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/.+$) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Obscura/JS/Obscura.js, timeout=60, tag=Obscura
 
 
+# > Photoshop Express-图片编辑&修图 解锁Premium
+http-response https://lcs-mobile-cops.adobe.io/mobiles/access_profile/v3 script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/PSExpress/JS/PSExpress.js, requires-body=true, timeout=60, tag=Photoshop Express-图片编辑&修图 解锁Premium
+
+
 # > PeakVisor解锁Premium
 http-response ^https:\/\/peakvisor\.com\/peakvisor\/v1\/purchase\/verifyReceipt script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/PeakVisor/JS/PeakVisor.js, requires-body=true, timeout=60, tag=PeakVisor
+
+
+# > Penbook解锁pro
+http-response https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Penbook/JS/Penbook.js, requires-body=true, timeout=60, tag=Penbook解锁pro
 
 
 # > Perfect365 解锁VIP
@@ -322,12 +358,16 @@ http-response ^https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*
 http-request ^https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Photomator/JS/Photomator.js, timeout=60, tag=Photomator
 
 
-# > Picsew解锁专业版
+# > Picsew标准版&专业版解锁.必须3.9.5版本以下
 http-response ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Picsew/JS/PicsewProCrack.js, requires-body=true, timeout=60, tag=PicsewProCrack
 
 
 # > PikPak解锁会员
 http-response ^https:\/\/api-drive\.mypikpak\.com\/(vip\/v\d\/(vip\/info|allSubscriptionStatus)|drive\/v\d\/about\?space) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/PikPak/JS/PikPak.js, requires-body=true, timeout=60, tag=PikPak
+
+
+# > Pix解锁Pro
+http-response https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Pix/JS/Pix.js, requires-body=true, timeout=60, tag=Pix解锁Pro
 
 
 # > PixImagine lifetime解锁
@@ -362,24 +402,22 @@ http-request ^https?:\/\/cn\.pornhubpremium\.com\/ script-path=https://raw.githu
 http-response https:\/\/buy\.itunes\.apple\.com\/verifyReceipt script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/ProCamera/JS/ProCamera.js, requires-body=true, timeout=60, tag=ProCamera
 
 
-# > 青柠设计解锁VIP
-http-response ^https:\/\/api\.qingning6\.com\/api\/user\/getUserInfo script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/QingNingSheJi/JS/QNSJ.js, requires-body=true, timeout=60, tag=QNSJ
-
-
-# > 轻图解锁Pro
-http-request ^https?:\/\/(purchase-qingtu-api.b612kaji|api-qingtu.kajicam).com\/(v1\/purchase\/subscription\/subscriber\/status|xht\/api\/user\/info) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/QingTu/JS/QingTu.js, timeout=60, tag=QingTu
+# > 起点读书-解锁会员专享-付费未解锁
+http-request ^https:\/\/magev6\.if\.qidian\.com script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/QiDianDuShu/JS/qidiantk.js, timeout=60, tag=qidiantk
+# > 重组个人界面
+http-response ^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v3\/user\/getaccountpage script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/QiDianDuShu/JS/qidianbd.js, requires-body=true, timeout=60, tag=qidianbd
 
 
 # > Qobuz解锁Hi-Res订阅
 http-request ^https?:\/\/www\.qobuz\.com\/api\.json\/0\.2\/user\/login$ script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Qobuz/JS/QobuzHiResProCrack.js, requires-body=true, timeout=60, tag=QobuzHiResProCrack
 
 
+# > 让我喵喵-简洁化浏览图片网站解锁Vip
+http-response ^https?:\/\/www\.pdreamer\.com\/aymyProd\/api\/getUserInfo script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/RangWoMiaoMiao/JS/RWMM.js, requires-body=true, timeout=60, tag=让我喵喵-简洁化浏览图片网站解锁Vip
+
+
 # > ReadBay 解锁Pro长期会员订阅
 http-response https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/ReadBay/JS/ReadBay.js, requires-body=true, timeout=60, tag=ReadBay
-
-
-# > Reddit过滤应用内推广,阻止NSFW提示,解锁会员功能
-http-response ^https?:\/\/gql(-fed)?\.reddit\.com script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Reddit/JS/Reddit.js, requires-body=true, tag=RedditPro
 
 
 # > 醒图解锁会员
@@ -390,10 +428,27 @@ http-request ^https?:\/\/commerce-api\.faceu\.mobi\/commerce\/v1\/subscription\/
 http-response ^https?:\/\/(((m|i)\.815616\.xyz)|175\.178\.52\.149:88)\/api\/v\d\/myinfo script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/SQYD/JS/SQYD.js, requires-body=true, timeout=60, tag=SQYD
 
 
-
 # > ServerBee——解锁订阅
 http-response ^https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/ServerBee/JS/ServerBee.js, requires-body=true, timeout=60, tag=ServerBee
 http-request ^https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/ServerBee/JS/ServerBee.js, timeout=60, tag=ServerBee
+
+
+# > 石墨文档-在线文档协作编辑和表格制作 解锁超级会员
+http-response https://shimo.im/lizard-api/users/me script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/ShiMoWenDang/JS/SMWD.js, requires-body=true, timeout=60, tag=石墨文档 解锁超级会员
+
+
+# > 书旗小说-会员中心
+http-response ^https:\/\/ocean\.shuqireader\.com\/sqios\/render\/render\/page\/bookstore script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/ShuQi/JS/ShuQi.js, requires-body=true, timeout=60, tag=书旗小说-会员中心
+# > 书旗小说-用户中心
+http-request ^https:\/\/ocean\.shuqireader\.com\/api\/jspend\/iosapi\/userinfo\/info script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/ShuQi/JS/ShuQi.js, requires-body=true, timeout=60, tag=书旗小说-用户中心
+
+
+# > 思维导图(MindLine)解锁永久Vip
+http-response ^https?:\/\/mindline\.cn\/userSync? script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/SiWeiDaoTu/JS/SiWeiDaoTu.js, requires-body=true, timeout=60, tag=思维导图(MindLine)解锁永久Vip
+
+
+# > Sleep Cycle: 睡眠监测, 鼾声记录及智能闹钟Premium
+http-response https://ch.sleepcycle.com/(useraccountstats|api/v1/subscription/get$) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/SleepCycle/JS/SleepCycle.js, requires-body=true, timeout=60, tag=Sleep Cycle睡眠监测
 
 
 # > Slidebox解锁Pro
@@ -413,10 +468,13 @@ http-response ^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/.+$) 
 http-request ^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/.+$) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/SparkMail/JS/SparkMail.js, timeout=60, tag=SparkMaill
 
 
-
 # > Spotify(>=iOS15)部分解锁premium,音质不能设置为超高
 http-request ^https:\/\/spclient\.wg\.spotify\.com\/(artistview\/v1\/artist|album-entity-view\/v2\/album)\/ script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Spotify-Pro/JS/Spotify-Json.js, timeout=10, tag=spotifyJson
 http-response ^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$ script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Spotify-Pro/JS/Spotify-Proto.js, requires-body=true, binary-body-mode=true, timeout=10, tag=spotifyProto
+
+
+# > StepsApp计步器-解锁Pro（恢复购买）
+http-response ^https?:\/\/api.revenuecat.com\/v1\/(receipts|subscribers).*$ script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/StepsApp/JS/StepsApp.js, requires-body=true, timeout=60, tag=StepsApp计步器-解锁Pro（恢复购买）
 
 
 # > StoreView解锁Pro
@@ -427,6 +485,15 @@ http-response https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts) script-
 http-request ^https?:\/\/api\.tidal\.com\/v1\/(pages\/album|(user|track|page)s\/(\d+)\/(state|subscription|lyrics|onboarding|playbackinfopostpaywall)),requires-body=0 script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/TIDAL/JS/TIDALHiFiPlusCrack.js
 http-request ^https?:\/\/api\.tidal\.com\/v1\/tracks/\d+\/playbackinfopostpaywall.+ script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/TIDAL/JS/TIDALHiFiPlusCrack.js, requires-body=true, timeout=60, tag=TIDALHiFiPlusCrack
 http-response ^https?:\/\/api\.tidal\.com\/v1\/users\/\d+\/subscription.+ script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/TIDAL/JS/TIDALHiFiPlusCrack.js, requires-body=true, timeout=60, tag=TIDALHiFiPlusCrack
+
+
+# > Teak浏览器-解锁订阅
+http-response ^https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Teak/JS/Teak.js, requires-body=true, timeout=60, tag=Teak
+http-request ^https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Teak/JS/Teak.js, timeout=60, tag=Teak
+
+
+# > Termius解锁Premium
+http-response ^https?:\/\/api\.termius\.com\/api\/v\d\/bulk\/account\/ script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Termius/JS/Termius.js, requires-body=true, timeout=60, tag=Termius解锁Premium
 
 
 
@@ -442,12 +509,24 @@ http-response https:\/\/api2\.tophub\.app\/explore script-path=https://raw.githu
 http-response ^https?:\/\/api.revenuecat.com\/v1\/receipts script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/TouchRetouch/JS/TouchRetouch.js, requires-body=true, timeout=60, tag=TouchRetouch
 
 
+# > Transmission Hub解锁Lifetime Premium
+http-response https://api.revenuecat.com/v1/(receipts|subscribers)/* script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/TransmissionHub/JS/TransmissionHub.js, requires-body=true, timeout=60, tag=TransmissionHub
+
+
+# > Tripsy旅行计划解锁Premium
+http-response ^https?:\/\/firstclass\.tripsy\.app\/api\/v1\/(receipt\/update|me)\? script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Tripsy/JS/Tripsy.js, requires-body=true, timeout=60, tag=Tripsy旅行计划解锁Premium
+
+
 # > VDIT 年度会员订阅
 http-response https:\/\/buy\.itunes\.apple\.com\/verifyReceipt script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/VDIT/JS/VDIT.js, requires-body=true, timeout=60, tag=VDIT
 
 
-# > VN视频剪辑解锁订阅
+# > VN(VlogNow)视频剪辑解锁订阅-软件最高支持版本：1.76.2
 http-response ^https?:\/\/api2\.vlognow\.me\/vn-pay\/api\/v1\/public\/iap\/receipt\/status script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/VN/JS/VlogNowProCrack.js, requires-body=true, timeout=60, tag=VlogNowProCrack
+
+
+# > VSCO Pro长期会员订阅
+http-response https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/VSCO/JS/VSCO.js, requires-body=true, timeout=60, tag=VSCO Pro长期会员订阅
 
 
 # > VivaCut解锁永久订阅
@@ -458,7 +537,6 @@ http-response ^https?:\/\/medi\.dxzzy321\.top\/api\/rest\/commerce\/integrate\/v
 http-response https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/WIS/JS/WIS.js, requires-body=true, timeout=60, tag=WIS
 
 
-
 # > WPS解锁稻壳会员
 http-response ^https?:\/\/account\.wps\.cn\/api\/v3\/mine\/vips script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/WPS/JS/WPSDocerVIPuserCrack.js, requires-body=true, timeout=60, tag=WPSDocerVIPuserCrack
 http-request ^https?:\/\/.+\.(docer.)?wps.cn\/(user\/v1\/vip|android\/mb\/buy|download\/v1\/ios|partner\/invoke\/usable|(api|rank)\/v1(\/mobile\/mb)?\/detail) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/WPS/JS/WPSDocerVIPowerCrack.js, timeout=60, tag=WPSDocerVIPowerCrack
@@ -467,12 +545,28 @@ http-response ^https?:\/\/(account|drive|vas|userinfo.docer)\.wps\.cn\/(.*api\/(
 http-request ^https?:\/\/(mobile|client|vas|download)(\.docer)?\.wps.cn\/(android\/mb\/buy_info|api\/v1\/mobile\/mb\/detail|query\/api\/v1\/list_privilege_info|download\/adapter\/v1\/mb) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/WPS/JS/WPSuperVIPowerCrack.js, timeout=60, tag=WPSuperVIPowerCrack
 
 
+# > 网易蜗牛读书解锁Vip
+http-response ^https?:\/\/p\.du\.163\.com\/gain\/readtime\/info script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/WYWNDS/JS/WYWNDS.js, requires-body=true, timeout=60, tag=网易蜗牛读书解锁Vip
+
+
 # > WallCraft解锁永久专业版
 http-response ^https?:\/\/billing-ios\.wallpaperscraft\.com\/verify_receipt\/remove_ads$ script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/WallCraft/JS/WallCraftFProCrack.js, requires-body=true, timeout=60, tag=WallCraftFProCrack
 
 
 # > WeatherScope解锁premium
 http-response https:\/\/weather\.aviatorassistant\.com script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/WeatherScope/JS/WS.js, requires-body=true, timeout=60, tag=WS
+
+
+# > Wizard AI解锁Pro
+http-response ^https?:\/\/europe-west1-ai-art-generator-services\.cloudfunctions\.net\/app\/user\/coins script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/WizardAI/JS/WizardAI.js, requires-body=true, timeout=60, tag=Wizard AI解锁Pro
+
+
+# > WorkingCopy 解锁Pro利用 GitHub Education解锁Working Copy，启用此脚本后再 Safari 打开 https://workingcopy.app/education/ 点击「tap here to access all pro features.」中的 here 跳转到 Working Copy，登录自己的 GitHub 账号即可解锁
+http-response ^https?:\/\/education\.github\.com\/api\/user$ script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/WorkingCopy/JS/WorkingCopy.js, requires-body=true, timeout=60, tag=WorkingCopy 解锁Pro
+
+
+# > 小配音-视频&小说配音助手解锁终身VIP
+http-response ^https?:\/\/api\.py\.juxiao123\.cn\/facades\/account\.show? script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/XiaoPeiYin/JS/XiaoPeiYin.js, requires-body=true, timeout=60, tag=小配音-视频&小说配音助手解锁终身VIP
 
 
 # > 小旋风收音机解锁VIP
@@ -487,8 +581,25 @@ http-response ^https?:\/\/(?:www\.)?xmind\..*\/.+\/(devices|token\/.+) script-pa
 http-response ^https?:\/\/.+.xunlei.com\/(drive\/v1\/files|xluser.core.login\/v3\/getuserinfo) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Xunlei/JS/xunlei.js, requires-body=true, timeout=60, tag=迅雷Unlock
 
 
-# > Zoomable解锁Pro
-http-response https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Zoomable/JS/Zoomable.js, requires-body=true, timeout=60, tag=Zoomable
+# > Y2002电音-DJ电音音乐播放器解锁永久Vip
+http-response ^https?:\/\/app-ios\.y2002\.com\/api\/v2\/User\/Info? script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Y2002DianYin/JS/Y1.js, requires-body=true, timeout=60, tag=Y2002电音-DJ电音音乐播放器解锁永久Vip-Y1
+http-response ^https?:\/\/app-ios\.y2002\.com\/API\/V2\/Processer\.ashx? script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Y2002DianYin/JS/Y2.js, requires-body=true, timeout=60, tag=Y2002电音-DJ电音音乐播放器解锁永久Vip-Y2
+
+
+# > 宜搜小说-全场免费读超级会员
+http-response ^https?:\/\/api\.ieasou\.com\/api\/bookapp\/balance\.m? script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/YiSouXS/JS/YiSouXS.js, requires-body=true, timeout=60, tag=宜搜小说-全场免费读超级会员
+
+
+# > 网易有道词典解锁会员
+http-response ^https:\/\/dict\.youdao\.com\/vip\/user\/status script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Youdao/JS/Youdao.js, requires-body=true, timeout=60, tag=Youdao网易有道词典解锁会员
+
+
+# > 悦颜相机解锁永久Vip
+http-response ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/YueYanXJ/JS/YueYanXJ.js, requires-body=true, timeout=60, tag=悦颜相机解锁永久Vip
+
+
+# > 知音漫客解锁付费章节、Vip、去广告
+http-response ^https?:\/\/apigate.kaimanhua.com\/zymk.+(paychapters|getuserinfo).*$ script-path=https://raw.githubusercontent.com/Mike-offers/Rewrite/refs/heads/master/QuantumultX/ZYMK.js, requires-body=true, timeout=60, tag=知音漫客解锁付费章节、Vip、去广告
 
 
 # > djayDJ应用-解锁订阅
@@ -496,8 +607,16 @@ http-response ^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/.+$) 
 http-request ^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/.+$) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/djay/JS/djay.js, timeout=60, tag=djay
 
 
-# > 麻豆社区解锁全部视频
-http-request ^https?:\/\/.*\/api\/app\/media\/m3u8\/.*\.m3u8 script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/mdsq/JS/mdsqallcrack.js, timeout=60, tag=mdsqallcrack
+# > iLovePDF解锁Vip
+http-response ^https?:\/\/service\.ilovepdf\.com\/v\d\/user script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/iLovePDF/JS/iLovePDF.js, requires-body=true, timeout=60, tag=iLovePDF解锁Vip
+
+
+# > intoLive 年度会员订阅
+http-response https:\/\/buy\.itunes\.apple\.com\/verifyReceipt script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/intoLive/JS/intoLive.js, requires-body=true, timeout=60, tag=intoLive 年度会员订阅
+
+
+# > 扫描全能王-手机扫描仪+解锁VIP
+http-response ^https:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\? script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/smqnw/JS/smqnw.js, requires-body=true, timeout=60, tag=扫描全能王-手机扫描仪+解锁VIP
 
 
 # > 咪咕视频Vip会员
@@ -510,206 +629,5 @@ http-response ^https?:\/\/(u|c|app).(musicapp|c.nf).migu.cn.*(user\/(queryUserIn
 http-request ^https?:\/\/app.(c|pd).nf.migu.cn\/.*\/(listen-url|music\/batchQueryMusicPolicy|download-url).*$ script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/miguyinyue/JS/miguyinyue.js, timeout=60, tag=miguyinyue
 
 
-# > 扫描全能王-手机扫描仪+解锁VIP
-http-response ^https:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\? script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/smqnw/JS/smqnw.js, requires-body=true, timeout=60, tag=smqnw
-
-
-# > Instapaper 解锁高级用户199年会员
-http-response https:\/\/www\.instapaper\.com\/api\/subscription_status script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Instapaper/JS/Instapaper.js, requires-body=true, timeout=60, tag=Instapaper 解锁高级用户199年会员
-
-
-# > Penbook解锁pro
-http-response https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Penbook/JS/Penbook.js, requires-body=true, timeout=60, tag=Penbook解锁pro
-
-
-# > Pix解锁Pro
-http-response https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Pix/JS/Pix.js, requires-body=true, timeout=60, tag=Pix解锁Pro
-
-
-# > VSCO Pro长期会员订阅
-http-response https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/VSCO/JS/VSCO.js, requires-body=true, timeout=60, tag=VSCO Pro长期会员订阅
-
-
-# > FilePiP解锁Pro
-http-response https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/FilePiP/JS/FilePiP.js, requires-body=true, timeout=60, tag=FilePiP解锁Pro
-
-
-# > Limory解锁长期会员订阅Premium
-http-response https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Limory/JS/Limory.js, requires-body=true, timeout=60, tag=Limory解锁长期会员订阅Premium
-
-
-# > intoLive 年度会员订阅
-http-response https:\/\/buy\.itunes\.apple\.com\/verifyReceipt script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/intoLive/JS/intoLive.js, requires-body=true, timeout=60, tag=intoLive 年度会员订阅
-
-
-# > 时尚芭莎(BAZAAR)－时尚杂志新纪元解锁Vip
-http-response http://bz.metshow.cn/api/userminivip/myminivipinfo script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/BAZAAR/JS/BAZAAR.js, requires-body=true, timeout=60, tag=时尚芭莎(BAZAAR)－时尚杂志新纪元解锁Vip
-
-
-# > 美图秀秀 解锁SVIP 获取ai擦除照片
-http-response ^https?:\/\/((h5|api)\.xiuxiu|api-sub|api\.posters)\.meitu\.com\/.+\/(vip|user|h\d|center|home) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/MeiTuXiuXiu/JS/MTXX.js, requires-body=true, timeout=60, tag=美图秀秀 解锁SVIP 获取ai擦除照片
-http-response https?:\/\/api\.posters\.meitu\.com\/matting\/znxc\.json script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/MeiTuXiuXiu/JS/MTXX.js, requires-body=true, timeout=60, tag=美图秀秀 解锁SVIP 获取ai擦除照片
-
-
-# > Morpholio Trace - Sketch CAD草图CAD建筑师设计师专用工具 解锁Pro
-http-response ^https:\/\/www\.mymorpholio\.com\/api\/index\.php\/rest_iap\/receipt script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/MorpholioTrace/JS/MorpholioTrace.js, requires-body=true, timeout=60, tag=Morpholio Trace CAD草图CAD建筑师设计师专用工具 解锁Pro
-
-
-# > 幕布-大纲笔记&思维导图 解锁终身会员
-http-response https://api2.mubu.com/v3/api/user/current_user script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/MuBu/JS/MuBu.js, requires-body=true, timeout=60, tag=幕布-大纲笔记&思维导图 解锁终身会员
-
-
-
-# > 起点读书-解锁会员专享-付费未解锁
-http-request ^https:\/\/magev6\.if\.qidian\.com script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/QiDianDuShu/JS/qidiantk.js, timeout=60, tag=qidiantk
-# > 重组个人界面
-http-response ^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v3\/user\/getaccountpage script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/QiDianDuShu/JS/qidianbd.js, requires-body=true, timeout=60, tag=qidianbd
-
-
-# > 石墨文档-在线文档协作编辑和表格制作 解锁超级会员
-http-response https://shimo.im/lizard-api/users/me script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/ShiMoWenDang/JS/SMWD.js, requires-body=true, timeout=60, tag=石墨文档 解锁超级会员
-
-
-# > 书旗小说-会员中心
-http-response ^https:\/\/ocean\.shuqireader\.com\/sqios\/render\/render\/page\/bookstore script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/ShuQi/JS/ShuQi.js, requires-body=true, timeout=60, tag=书旗小说-会员中心
-# > 书旗小说-用户中心
-http-request ^https:\/\/ocean\.shuqireader\.com\/api\/jspend\/iosapi\/userinfo\/info script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/ShuQi/JS/ShuQi.js, requires-body=true, timeout=60, tag=书旗小说-用户中心
-
-
-# > Sleep Cycle: 睡眠监测, 鼾声记录及智能闹钟Premium
-http-response https://ch.sleepcycle.com/(useraccountstats|api/v1/subscription/get$) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/SleepCycle/JS/SleepCycle.js, requires-body=true, timeout=60, tag=Sleep Cycle睡眠监测
-
-
-# > Transmission Hub解锁Lifetime Premium
-http-response https://api.revenuecat.com/v1/(receipts|subscribers)/* script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/TransmissionHub/JS/TransmissionHub.js, requires-body=true, timeout=60, tag=TransmissionHub
-
-
-# > 万兴喵影 解锁VIP
-http-response https://api.300624.com/v3/plan/feature-code/auth script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/WanXingMiaoYing/JS/WXMY.js, requires-body=true, timeout=60, tag=万兴喵影 解锁VIP
-
-
-# > 网易有道词典解锁会员
-http-response ^https:\/\/dict\.youdao\.com\/vip\/user\/status script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Youdao/JS/Youdao.js, requires-body=true, timeout=60, tag=Youdao网易有道词典解锁会员
-
-
-# > xTerminal - SSH Terminal Shell解锁pro
-http-response ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/xTerminal/JS/xTerminal.js, requires-body=true, timeout=60, tag=xTerminal解锁pro
-
-
-# > FlipaClip解锁Plus
-http-response ^https://api.purchasely.io/paab/user_purchases script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/FlipaClip/JS/FlipaClip.js, requires-body=true, timeout=60, tag=FlipaClip解锁Plus
-
-
-# > 阿基米德-广播电台音频FM解锁永久Vip
-http-response ^https?:\/\/a\.ajmide\.com\/(v21|v29)\/get_user_(detail|home)\.php$ script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/AJiMiDe/JS/AJMD.js, requires-body=true, timeout=60, tag=阿基米德-广播电台音频FM解锁永久Vip
-
-
-# > 插画世界-P站画师创作约稿平台解锁Vip&去开屏广告
-http-response ^https:\/\/api2\.vilipix\.com\/api\/v\d\/user\/current script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/ChaHuaShiJie/JS/CHSJ.js, requires-body=true, timeout=60, tag=插画世界-P站画师创作约稿平台解锁Vip&去开屏广告
-
-
-# > 歌歌AI写歌解锁VIP
-http-response ^https?:\/\/apiv2\.somuseai\.com\/userinfo script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/GGAIXG/JS/GGAIXG.js, requires-body=true, timeout=60, tag=歌歌AI写歌解锁VIP
-
-
-# > 海报制作大师-设计Logo、邀请函、请柬等图片编辑软件解锁永久VIP
-http-response ^https?:\/\/poster\.leminet\.cn\/v01\/profile script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/HBZZDS/JS/HBZZDS.js, requires-body=true, timeout=60, tag=海报制作大师-设计Logo、邀请函、请柬等图片编辑软件解锁永久VIP
-
-
-# > IFTTT-工作流程和智能家居自动化解锁永久Vip
-http-response ^https?:\/\/ifttt\.com\/api\/v3\/graph script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/IFTTT/JS/IFTTT.js, requires-body=true, timeout=60, tag=IFTTT-工作流程和智能家居自动化解锁永久Vip
-
-
-# > IUV-万能小组件主题壁纸解锁永久Vip
-http-response ^https?:\/\/widgets-api\.kaixinyf\.cn\/User\/GetInfoByUserCode script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/IUV/JS/IUV.js, requires-body=true, timeout=60, tag=IUV-万能小组件主题壁纸解锁永久Vip
-
-
-# > 酷狗音乐解锁永久Vip
-http-response ^https?:\/\/gateway\.kugou\.com script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/KuGouYinYue/JS/KuGou.js, requires-body=true, timeout=60, tag=酷狗音乐解锁永久Vip
-
-
-# > MyFitnessPal解锁Premium
-http-response ^https?:\/\/premium-api\.myfitnesspal\.com\/v\d\/subscriptions\/MFP\/* script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/MyFitnessPal/JS/MyFitnessPal.js, requires-body=true, timeout=60, tag=MyFitnessPal解锁Premium
-
-
-# > 让我喵喵-简洁化浏览图片网站解锁Vip
-http-response ^https?:\/\/www\.pdreamer\.com\/aymyProd\/api\/getUserInfo script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/RangWoMiaoMiao/JS/RWMM.js, requires-body=true, timeout=60, tag=让我喵喵-简洁化浏览图片网站解锁Vip
-
-
-# > 思维导图(MindLine)解锁永久Vip
-http-response ^https?:\/\/mindline\.cn\/userSync? script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/SiWeiDaoTu/JS/SiWeiDaoTu.js, requires-body=true, timeout=60, tag=思维导图(MindLine)解锁永久Vip
-
-
-# > Termius解锁Premium
-http-response ^https?:\/\/api\.termius\.com\/api\/v\d\/bulk\/account\/ script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Termius/JS/Termius.js, requires-body=true, timeout=60, tag=Termius解锁Premium
-
-
-# > Tripsy旅行计划解锁Premium
-http-response ^https?:\/\/firstclass\.tripsy\.app\/api\/v1\/(receipt\/update|me)\? script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Tripsy/JS/Tripsy.js, requires-body=true, timeout=60, tag=Tripsy旅行计划解锁Premium
-
-
-# > 网易蜗牛读书解锁Vip
-http-response ^https?:\/\/p\.du\.163\.com\/gain\/readtime\/info script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/WYWNDS/JS/WYWNDS.js, requires-body=true, timeout=60, tag=网易蜗牛读书解锁Vip
-
-
-# > Wizard AI解锁Pro
-http-response ^https?:\/\/europe-west1-ai-art-generator-services\.cloudfunctions\.net\/app\/user\/coins script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/WizardAI/JS/WizardAI.js, requires-body=true, timeout=60, tag=Wizard AI解锁Pro
-
-
-# > WorkingCopy 解锁Pro。利用 GitHub Education解锁Working Copy，启用此脚本后再 Safari 打开 https://workingcopy.app/education/ 点击「tap here to access all pro features.」中的 here 跳转到 Working Copy，登录自己的 GitHub 账号即可解锁
-http-response ^https?:\/\/education\.github\.com\/api\/user$ script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/WorkingCopy/JS/WorkingCopy.js, requires-body=true, timeout=60, tag=WorkingCopy 解锁Pro
-
-
-# > 小配音-视频&小说配音助手解锁终身VIP
-http-response ^https?:\/\/api\.py\.juxiao123\.cn\/facades\/account\.show? script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/XiaoPeiYin/JS/XiaoPeiYin.js, requires-body=true, timeout=60, tag=小配音-视频&小说配音助手解锁终身VIP
-
-
-# > Y2002电音-DJ电音音乐播放器解锁永久Vip
-http-response ^https?:\/\/app-ios\.y2002\.com\/api\/v2\/User\/Info? script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Y2002DianYin/JS/Y1.js, requires-body=true, timeout=60, tag=Y2002电音-DJ电音音乐播放器解锁永久Vip-Y1
-http-response ^https?:\/\/app-ios\.y2002\.com\/API\/V2\/Processer\.ashx? script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Y2002DianYin/JS/Y2.js, requires-body=true, timeout=60, tag=Y2002电音-DJ电音音乐播放器解锁永久Vip-Y2
-
-
-# > 宜搜小说-全场免费读超级会员
-http-response ^https?:\/\/api\.ieasou\.com\/api\/bookapp\/balance\.m? script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/YiSouXS/JS/YiSouXS.js, requires-body=true, timeout=60, tag=宜搜小说-全场免费读超级会员
-
-
-# > 悦颜相机解锁永久Vip
-http-response ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/YueYanXJ/JS/YueYanXJ.js, requires-body=true, timeout=60, tag=悦颜相机解锁永久Vip
-
-
-# > 知音漫客解锁付费章节、Vip、去广告
-http-response ^https?:\/\/apigate.kaimanhua.com\/zymk.+(paychapters|getuserinfo).*$ script-path=https://raw.githubusercontent.com/Mike-offers/Rewrite/refs/heads/master/QuantumultX/ZYMK.js, requires-body=true, timeout=60, tag=知音漫客解锁付费章节、Vip、去广告
-
-
-# > 字幕翻译作者全家桶解锁永久会员Vip
-http-response ^https?:\/\/yp\.yunmiao\.tech\/api\/user\/my script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/ZiMuFanYi/JS/ZMFY.js, requires-body=true, timeout=60, tag=ZMFY
-http-response ^https?:\/\/ai\.yunmiao\.tech\/api\/user\/my script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/ZiMuFanYi/JS/ZMFY.js, requires-body=true, timeout=60, tag=ZMFY
-http-response ^https?:\/\/jys\.autvideo\.com\/api\/user\/my script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/ZiMuFanYi/JS/ZMFY.js, requires-body=true, timeout=60, tag=ZMFY
-http-response ^https?:\/\/ly\.autvideo\.com\/api\/user\/index script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/ZiMuFanYi/JS/ZMFY.js, requires-body=true, timeout=60, tag=ZMFY
-http-response ^https?:\/\/lp\.autvideo\.com\/api\/user\/my script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/ZiMuFanYi/JS/ZMFY.js, requires-body=true, timeout=60, tag=ZMFY
-http-response ^https?:\/\/pth\.autvideo\.com\/api\/user\/my script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/ZiMuFanYi/JS/ZMFY.js, requires-body=true, timeout=60, tag=ZMFY
-http-response ^https?:\/\/hb\.yunmiao\.tech\/api\/user\/my script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/ZiMuFanYi/JS/ZMFY.js, requires-body=true, timeout=60, tag=ZMFY
-http-response ^https?:\/\/zimu\.yunmiaomiao\.cn\/api\/user\/index script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/ZiMuFanYi/JS/ZMFY.js, requires-body=true, timeout=60, tag=ZMFY
-http-response ^https?:\/\/vedio\.yunmiao\.tech\/api\/user\/my script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/ZiMuFanYi/JS/ZMFY.js, requires-body=true, timeout=60, tag=ZMFY
-http-response ^https?:\/\/bz\.yunmiao\.tech\/api\/user\/my script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/ZiMuFanYi/JS/ZMFY.js, requires-body=true, timeout=60, tag=ZMFY
-http-response ^https?:\/\/xpc\.autvideo\.com\/api\/user\/my script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/ZiMuFanYi/JS/ZMFY.js, requires-body=true, timeout=60, tag=ZMFY
-
-
-# > iLovePDF解锁Vip
-http-response ^https?:\/\/service\.ilovepdf\.com\/v\d\/user script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/iLovePDF/JS/iLovePDF.js, requires-body=true, timeout=60, tag=iLovePDF解锁Vip
-
-
-# > iMe解锁Premium(非Tg)
-http-response https:\/\/api\.imem\.apple\.app\/api\/premium\/getOwnStatus script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/iMe/JS/iMe.js, requires-body=true, timeout=60, tag=iMe解锁Premium(非Tg)
-
-
-# > StepsApp计步器-解锁Pro（恢复购买）
-http-response ^https?:\/\/api.revenuecat.com\/v1\/(receipts|subscribers).*$ script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/StepsApp/JS/StepsApp.js, requires-body=true, timeout=60, tag=StepsApp计步器-解锁Pro（恢复购买）
-
-
-# > Focos+Focos live☆解锁会员权限
-http-response ^https?:\/\/.*oracle\.bendingspoonsapps\.com\/v\d\/(users\/setup|purchases\/verify\/apple) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Focos/JS/FocosProCrack.js, requires-body=true, timeout=60, tag=Focos+Focos live☆解锁会员权限
-
-
 [Mitm]
-hostname = api.revenuecat.com, buy.itunes.apple.com, spclient.wg.spotify.com, app-subscription-proxy.accuweather.com, api.adblockpro.app, *.adguard.org, api.alohaprofile.com, appraven.net, app.autocad360.com, pan.baidu.com, baimiao.uzero.cn, api.mr.pixocial.com, newbeee-api.beautyplus.com, tagit.hyhuo.com, apimboom2.globaldelight.net, biz.caiyunapp.com, interpreter.cyapi.cn, ios.chat.openai.com, billing.chaton.ai, api.craft.do, docs.craft.do, api.deepfaker.app, media.deezer.com, *.baidu.com, dreamfaceapp.com, api.duitang.com, www.duitang.com, qzs.gdtimg.com, mb3admin.com, www.mb3admin.com, subscription-api.lyrebirdstudio.net, filmicpro.oracle.bendingspoonsapps.com, appv2.filmix.com.cn, mobile.flightradar24.com, api.github.com, api*.faceu.mobi, api3-lq.faceu.mobi, commerce-api-lf.faceu.mobi, commerce-api-lq.faceu.mobi, lv-api-lq.ulikecam.com, lv-api-hl.ulikecam.com, *.kuwo.cn, cdn-bm.camera360.com, bmall.camera360.com, *.apphud.com, apic.musixmatch.com, nanie.flyingeffect.com, interface*.music.163.com, restore-access.indream.app, nicegram.cloud, notability.com, peakvisor.com, service.perfect365.com, api-drive.mypikpak.com, oauth.secure.pixiv.net, api.polaxiong.com, cn.pornhubpremium.com, api.qingning6.com, purchase-qingtu-api.b612kaji.com, api-qingtu.kajicam.com, www.qobuz.com, gql.reddit.com, gql-fed.reddit.com, commerce-api.faceu.mobi, api3-misc-lf.retouchpics.com, m.815616.xyz, i.815616.xyz, 175.178.52.149, *-slidebox-ios-prod.cloudfunctions.net, snailsleep.net, api-mobile.soundcloud.com, api.tidal.com, api2.tophub.app, api2.vlognow.me, medi.dxzzy321.top, *.docer.wps.cn, vipapi.wps.cn, account.wps.cn, *.wps.cn, *.wallpaperscraft.com, weather.aviatorassistant.com, 49.232.234.212, *xunlei.com, api-shoulei-ssl.xunlei.com, ypmnkbb.saejeuj.com, fufxtyc.bytebwq.com, lcbnejx.dirptev.com, gcyivjc.qrneryt.com, *.miguvideo.com, *.migu.cn, ap*.intsig.net, www.instapaper.com, bz.metshow.cn, *.xiuxiu.meitu.com, api.posters.meitu.com, api-sub.meitu.com, www.mymorpholio.com, api2.mubu.com, license.pdfexpert.com, magev6.if.qidian.com, shimo.im, ocean.shuqireader.com, ch.sleepcycle.com, api.300624.com, dict.youdao.com, business.youdao.com, api-overmind.youdao.com, cdke.youdao.com, api.purchasely.io, a.ajmide.com, api2.vilipix.com, apiv2.somuseai.com, poster.leminet.cn, ifttt.com, widgets-api.kaixinyf.cn, gateway.kugou.com, premium-api.myfitnesspal.com, www.pdreamer.com, mindline.cn, api.termius.com, firstclass.tripsy.app, p.du.163.com, europe-west1-ai-art-generator-services.cloudfunctions.net, education.github.com, api.py.juxiao123.cn, app-ios.y2002.com, api.ieasou.com, apigate.kaimanhua.com, api-access.pangolin-sdk-toutiao.com, mi.gdt.qq.com, open.e.kuaishou.com, api-cdn.kaimanhua.com, *.yunmiao.tech, *.autvideo.com, *.yunmiaomiao.cn, service.ilovepdf.com, -api.imem.app, *.snow.me, *xmind.*, *.oracle.bendingspoonsapps.com
+hostname = api.revenuecat.com, buy.itunes.apple.com, a.ajmide.com, app-subscription-proxy.accuweather.com, api.adblockpro.app, *.adguard.org, api.alohaprofile.com, appraven.net, app.autocad360.com, pan.baidu.com, baimiao.uzero.cn, api.mr.pixocial.com, newbeee-api.beautyplus.com, tagit.hyhuo.com, apimboom2.globaldelight.net, biz.caiyunapp.com, interpreter.cyapi.cn, api2.vilipix.com, ios.chat.openai.com, billing.chaton.ai, api.craft.do, docs.craft.do, api.deepfaker.app, media.deezer.com, *.pdfexpert.com, dreamfaceapp.com, mb3admin.com, www.mb3admin.com, *.snow.me, subscription-api.lyrebirdstudio.net, filmicpro.oracle.bendingspoonsapps.com, appv2.filmix.com.cn, mobile.flightradar24.com, api.purchasely.io, *.oracle.bendingspoonsapps.com, apiv2.somuseai.com, api.github.com, poster.leminet.cn, ifttt.com, widgets-api.kaixinyf.cn, www.instapaper.com, gateway.kugou.com, *.kuwo.cn, cdn-bm.camera360.com, *.xiuxiu.meitu.com, api.posters.meitu.com, api-sub.meitu.com, bmall.camera360.com, www.mymorpholio.com, *.apphud.com, api2.mubu.com, apic.musixmatch.com, premium-api.myfitnesspal.com, nanie.flyingeffect.com, restore-access.indream.app, nicegram.cloud, notability.com, lcs-mobile-cops.adobe.io, peakvisor.com, service.perfect365.com, api-drive.mypikpak.com, oauth.secure.pixiv.net, api.polaxiong.com, cn.pornhubpremium.com, magev6.if.qidian.com, www.qobuz.com, www.pdreamer.com, commerce-api.faceu.mobi, api3-misc-lf.retouchpics.com, m.815616.xyz, i.815616.xyz, 175.178.52.149, shimo.im, ocean.shuqireader.com, mindline.cn, ch.sleepcycle.com, *-slidebox-ios-prod.cloudfunctions.net, snailsleep.net, api-mobile.soundcloud.com, spclient.wg.spotify.com, api.tidal.com, api.termius.com, api2.tophub.app, firstclass.tripsy.app, api2.vlognow.me, medi.dxzzy321.top, *.docer.wps.cn, vipapi.wps.cn, account.wps.cn, *.wps.cn, p.du.163.com, *.wallpaperscraft.com, weather.aviatorassistant.com, europe-west1-ai-art-generator-services.cloudfunctions.net, education.github.com, api.py.juxiao123.cn, 49.232.234.212, *xmind.*, *xunlei.com, api-shoulei-ssl.xunlei.com, app-ios.y2002.com, api.ieasou.com, dict.youdao.com, business.youdao.com, api-overmind.youdao.com, cdke.youdao.com, apigate.kaimanhua.com, api-access.pangolin-sdk-toutiao.com, mi.gdt.qq.com, open.e.kuaishou.com, api-cdn.kaimanhua.com, service.ilovepdf.com, ap*.intsig.net, *.miguvideo.com, *.migu.cn
