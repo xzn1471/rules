@@ -1,22 +1,37 @@
-/*
-# Cubox - 文章阅读与标注笔记 解锁高级会员
-# https://apps.apple.com/cn/app/cubox-%E6%96%87%E7%AB%A0%E9%98%85%E8%AF%BB%E4%B8%8E%E6%A0%87%E6%B3%A8%E7%AC%94%E8%AE%B0/id1113361350?uo=4
+/*************************************
+
+项目名称：Cubox-收藏阅读
+下载地址：https://t.cn/A6x4qhyJ
+脚本作者：chxm1023
+电报频道：https://t.me/chxm1023
+使用声明：⚠️仅供参考，🈲转载与售卖！
+
+**************************************
 
 [rewrite_local]
-^https:\/\/cubox\.pro\/c\/api\/userInfo url script-response-body https://raw.githubusercontent.com/Yu9191/Rewrite/main/cubox.js
+^https:\/\/cubox\.(pro|cc)\/c\/api\/userInfo url script-response-body https://raw.githubusercontent.com/chxm1023/Rewrite/main/Cb.js
 
 [mitm]
-hostname = cubox.pro
+hostname = cubox.*
 
-*/
-let obj = JSON.parse($response.body);
+*************************************/
 
-obj.data.level = 1;
-obj.data.expireTime = "2099-09-12T23:50:23+08:00";
-obj.data.isExpire = false;
-obj.data.active = true;
-obj.data.payTime = 1660006006;
 
-$done({
-  body: JSON.stringify(obj)
-});
+var body = $response.body;
+var url = $request.url;
+var chxm1023 = JSON.parse(body);
+const vip = '/userInfo';
+
+if (url.indexOf(vip) != -1) {
+    chxm1023.data.level = 1;
+    chxm1023.data.expireTime = "2099-09-09T09:09:09+09:09";
+    chxm1023.data.nickName = "chxm1023";
+    chxm1023.data.thirdNickName = "chxm1023";
+    chxm1023.data.isExpire = false;
+    chxm1023.data.active = true;
+    chxm1023.data.isThirdUser = true;
+    chxm1023.data.payTime = 1660006006;
+    body = JSON.stringify(chxm1023);
+}
+
+$done({body});
