@@ -1,26 +1,29 @@
 /*************************************
 
->「 脚本名称 」         Craft解锁Premium
->「 脚本作者 」         M̆̈̆̈ĭ̈̆̈k̆̈̆̈ĕ̈
->「 电报频道 」         https://t.me/TrollStoreKios 
->「 更新时间 」         2024-10-05
->「 注意事项 」         使用此脚本，会导致AppleStore无法切换账户，解决方法[关闭QX切换账户，或关闭MITM，或删除脚本，或去设置媒体与购买项目处切换ID]
+项目名称：Craft-文件笔记编辑器解锁Premium
+下载地址：https://t.cn/A6HEVDeP
+更新日期：2024-10-15
+脚本作者：chxm1023
+电报频道：https://t.me/chxm1023
+使用声明：⚠️仅供参考，🈲转载与售卖！
 
+**************************************
 
 [rewrite_local]
-^https?:\/\/(api|docs)\.craft\.do\/(api\/)?(auth\/v\d\/profile|subscription\/(receipt|teams\/get-subscriptions))  url script-response-body https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Craft/JS/Craft.js
+^https?:\/\/(api|docs)\.craft\.do\/(api\/)?(auth\/v\d\/profile|subscription\/(receipt|teams\/get-subscriptions)) url script-response-body https://raw.githubusercontent.com/chxm1023/Rewrite/main/Craft.js
 
 [mitm]
-hostname = api.craft.do , docs.craft.do
+hostname = api.craft.do
 
 *************************************/
 
-var Mike = JSON.parse($response.body);
+
+var chxm1023 = JSON.parse($response.body);
 
 if (/auth\/v\d\/profile/.test($request.url)) {
-  Mike.teams = Mike.teams || [{}];
-  Mike.spaces = Mike.spaces || [{}];
-  Mike.teams.forEach(team => {
+  chxm1023.teams = chxm1023.teams || [{}];
+  chxm1023.spaces = chxm1023.spaces || [{}];
+  chxm1023.teams.forEach(team => {
     team.tier = "V2_Team";
     team.subscriptionInfo = {
       "autoRenewStatus": true,
@@ -31,14 +34,14 @@ if (/auth\/v\d\/profile/.test($request.url)) {
       "renewPeriod": "Yearly"
     };
   });
-  Mike.spaces.forEach(space => {
+  chxm1023.spaces.forEach(space => {
     space.tier = "V2_Team";
   });
 }
 
 
 if (/subscription\/receipt/.test($request.url)) {
-  Mike.subscription = {
+  chxm1023.subscription = {
     "expirationDate": 4092599349000,
     "subscriptionActive": true,
     "subscriptionId": "55555555-8888-1023-8888-999999999999",
@@ -51,9 +54,9 @@ if (/subscription\/receipt/.test($request.url)) {
 }
 
 if (/subscription\/teams\/get-subscriptions/.test($request.url)) {
-  Mike.subscriptions = Mike.subscriptions || [{}];
-  Mike.tier = "V2_Team";
-  Mike.subscriptions.push({
+  chxm1023.subscriptions = chxm1023.subscriptions || [{}];
+  chxm1023.tier = "V2_Team";
+  chxm1023.subscriptions.push({
     "isPrimary": true,
     "provider": "AppStore",
     "subscriptionId": "55555555-8888-1023-8888-999999999999",
@@ -65,4 +68,4 @@ if (/subscription\/teams\/get-subscriptions/.test($request.url)) {
   });
 }
 
-$done({ body: JSON.stringify(Mike) });
+$done({ body: JSON.stringify(chxm1023) });
