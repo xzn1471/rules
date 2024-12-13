@@ -1,0 +1,13 @@
+#!name=Moises-音乐人应用
+#!desc=Moises-音乐人应用解锁Premium
+#!category=😍BOBO Premium
+#!homepage=https://github.com/BOBOLAOSHIV587/Rules
+#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Moises.png
+#!openUrl=https://apps.apple.com/app/id1515796612
+
+[Script]
+# > Moises-音乐人应用解锁Premium
+Moises-音乐人应用解锁Premium = type=http-response, pattern=^https?:\/\/api\.moises\.ai\/graphql, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Moises/JS/Moises.js, requires-body=true, max-size=-1, timeout=60
+
+[MITM]
+hostname = %APPEND% api.moises.ai
