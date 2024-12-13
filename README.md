@@ -14,7 +14,23 @@
 
   1、）Task文件夹：各种定时任务----每日随机图片（二次元+18）、吾爱破解签到、定时推送妹子图、Pixiv推送服务等。
 
-  2、）Icons文件夹：各种图标。在软件中导入.json文件查看。（有图示-在各文件夹README文件查看）
+  2、）Icons文件夹：各种图标。在软件中导入.json文件查看。（有图示-在各文件夹README文件查看）。
+
+  3、）JS文件夹：各种App会员解锁脚本。
+
+  4、）Loon文件夹：
+
+    1、）Premium文件夹：为适配Loon专用的自用JS会员脚本（JS文件夹App解锁脚本合集）；
+
+    2、）TikTok-Unlock文件夹：为适配Loon专用的TikTok解锁脚本；
+
+    3、）loon-resource-parser文件夹：为适配Loon的专用解析器；
+
+  5、）QuantumultX文件夹：
+
+    1、）Dualsub文件夹：为适配QX专用的流媒体字幕翻译工具+配合捷径使用；
+
+    2、）GeoLocationChecker文件夹：为适配QX专用的Geo检查器；
 
 <div align="center">
 <br>
