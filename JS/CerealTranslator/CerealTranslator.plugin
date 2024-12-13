@@ -1,0 +1,13 @@
+#!name=麦片屏幕翻译-Cereal Translator
+#!desc=麦片屏幕翻译-Cereal Translator解锁Premium Membership-登陆后解锁
+#!category=😍BOBO Premium
+#!homepage=https://github.com/BOBOLAOSHIV587/Rules
+#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/CerealTranslator.png
+#!openUrl=https://apps.apple.com/app/id6466264767
+
+[Script]
+# > 麦片屏幕翻译-解锁Premium Membership-登陆后解锁
+http-response ^https?:\/\/youxifanyizhushou\.com\/ios\/api\/product\/user\/remain\/ios script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/CerealTranslator/JS/CerealTranslator.js, requires-body=true, timeout=60, tag=麦片屏幕翻译-解锁Premium
+
+[Mitm]
+hostname = youxifanyizhushou.com
