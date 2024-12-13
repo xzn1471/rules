@@ -1,0 +1,13 @@
+#!name=FIMO-复古胶片相机
+#!desc=FIMO-复古胶片相机 解锁Vip
+#!category=😍BOBO Premium
+#!homepage=https://github.com/BOBOLAOSHIV587/Rules
+#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Fimo.png
+#!openUrl=https://apps.apple.com/app/id1454219307
+
+[Script]
+# > FIMO-复古胶片相机 解锁Vip
+FIMO-复古胶片相机-解锁Vip = type=http-response, pattern=^https:\/\/server\.(yoyiapp|zbisq)\.com, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Fimo/JS/Fimo.js, requires-body=true, max-size=-1, timeout=60
+
+[MITM]
+hostname = %APPEND% server.*.com
