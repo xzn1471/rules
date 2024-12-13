@@ -1,0 +1,13 @@
+#!name=魔音工坊-AI智能配音软件
+#!desc=魔音工坊-AI智能配音软件-解锁会员
+#!category=😍BOBO Premium
+#!homepage=https://github.com/BOBOLAOSHIV587/Rules
+#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/MoYinGongFang.png
+#!openUrl=https://apps.apple.com/app/id1633046070
+
+[Script]
+# > 魔音工坊-AI智能配音软件-解锁会员
+http-response ^https?:\/\/moyin-gateway\.moyin\.com\/moyin-account\/v\d\/vip\/status script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/MoYinGongFang/JS/MoYinGongFang.js, requires-body=true, timeout=60, tag=魔音工坊-AI智能配音软件
+
+[Mitm]
+hostname = moyin-gateway.moyin.com
