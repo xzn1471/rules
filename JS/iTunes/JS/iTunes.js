@@ -1,7 +1,7 @@
 /*************************************
 
 项目名称：iTunes-系列解锁合集
-更新日期：2024-10-17
+更新日期：2024-12-09
 脚本作者：chxm1023
 电报频道：https://t.me/chxm1023
 使用声明：⚠️仅供参考，🈲转载与售卖！
@@ -11,16 +11,16 @@
 已解锁App传送门：https://too.st/iTunes
 额外说明：iTunes类可以单个写，又有现成的合集(写的挺好挺完整)，所以就不写了偷偷懒，自己碰到这类软件会添加上面没有的软件。仅作自用备份，不会进行任何商业用途！
 
-
 **************************************
 
 [rewrite_local]
-^https?:\/\/buy\.itunes\.apple\.com\/(verifyReceipt|analytics\/profile|receipt\/validate|verify|purchase)$ url script-response-body https://raw.githubusercontent.com/Mike-offers/Rewrite/refs/heads/master/QuantumultX/Itunes.js
+^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ url script-response-body https://raw.githubusercontent.com/chxm1023/Rewrite/main/iTunes.js
 
 [mitm]
 hostname = buy.itunes.apple.com
 
 *************************************/
+
 
 var chxm1023 = JSON.parse($response.body);
 const ua = $request.headers['User-Agent'] || $request.headers['user-agent'];
@@ -31,39 +31,14 @@ const yearlysubscription = `${bundle_id}.yearlysubscription`;
 const lifetimeid = `${bundle_id}.lifetime`;
 
 const list = {
+  'com.cuilingshi.flipclock': { cm: 'timeb', hx: 'hxpda', id: "FlipClockProVersion", latest: "chxm1023" },  //翻页时钟
   'com.maine.aifill': { cm: 'timeb', hx: 'hxpda', id: "com.maine.aifill.unlimited", latest: "chxm1023" },  //AI FILL-智能填充.换衣/换背景
   'DeviceFinder': { cm: 'timeb', hx: 'hxpda', id: "com.wonderfind.lifetime", latest: "chxm1023" },  //Wonderfind-设备查找
-  'com.face.replacer': { cm: 'timea', hx: 'hxpda', id: "93_premium_normal_yearly", latest: "chxm1023" },  //FaceSwapper
-  'com.fleurbudget': { cm: 'timea', hx: 'hxpda', id: "fleur_lifetime_2", latest: "chxm1023" },  //Fleur记账
-  'com.fleurbudget': { cm: 'timea', hx: 'hxpda', id: "fleur_lifetime_3", latest: "chxm1023" },  //Fleur记账
-  'elegantplanner.app': { cm: 'timea', hx: 'hxpda', id: "floret_lifetime_2", latest: "chxm1023" },  //Floret
-  'quitanger.app': { cm: 'timea', hx: 'hxpda', id: "housedesign_lifetime", latest: "chxm1023" },  //Quit Anger
-  'miary.app': { cm: 'timea', hx: 'hxpda', id: "lifetime_sub", latest: "chxm1023" },  //Miary
-  'app.housedesign': { cm: 'timea', hx: 'hxpda', id: "housedesign_lifetime", latest: "chxm1023" },  //Room Planner-室内设计
-  'Fasta': { cm: 'timea', hx: 'hxpda', id: "fasta_lifetime_sub", latest: "chxm1023" },  //Fasta
-  'Graphionica': { cm: 'timea', hx: 'hxpda', id: "premium_year", latest: "chxm1023" },  //Graphionica
-  'in.muditbhargava.LookUp': { cm: 'timea', hx: 'hxpda', id: "com.squircle.lookup.plus.lifetime", latest: "chxm1023" },  //LookUp
-  'com.cuilingshi.fileextract': { cm: 'timea', hx: 'hxpda', id: "Unzip_ProVersion", latest: "chxm1023" },  //Unzip-解压缩
+  'Graphionica': { cm: 'timea', hx: 'hxpda', id: "premium_year", latest: "chxm1023" },  //Graphionica-限时动态拼版图片
   'AIAssistant': { cm: 'timea', hx: 'hxpda', id: "AIchat_1w_7.99_trial", latest: "chxm1023" },  //AIAssistant
-  'com.highonemob.weather': { cm: 'timeb', hx: 'hxpda', id: "com.highonemob.weather.base.w", latest: "chxm1023" },  //安心天气
   'MonitorPlus': { cm: 'timeb', hx: 'hxpda', id: "com.unhonin.MonitorPlus.proversion", latest: "chxm1023" },  //Monitor+
   'MessageHold': { cm: 'timeb', hx: 'hxpda', id: "com.messagehold.forever", latest: "chxm1023" },  //拦截盾
-  'com.appalex.learnlanguages': { cm: 'timeb', hx: 'hxpda', id: "language_sub_lifetime", latest: "chxm1023" },  //Wordy
-  'net.daylio.Daylio': { cm: 'timea', hx: 'hxpda', id: "net.daylio.one_year_pro.offer_initial", latest: "chxm1023" },  //Daylio 日记
-  'health.sleep.sounds.tracker.alarm.calm': { cm: 'timea', hx: 'hxpda', id: "shuteye.vip.feature.unlock.tier1", latest: "chxm1023" },  //星空睡眠
-  'faceapp.snaplab.magikoly.ai.ios': { cm: 'timea', hx: 'hxpda', id: "com.magiklab.week.notrial4", latest: "chxm1023" },  //MagikLab
-  'com.xinling.pianoNotation': { cm: 'timeb', hx: 'hxpda', id: "com.number.weekly", latest: "chxm1023" },  //钢琴简谱-写简谱
-  'com.happy.VideoEditor': { cm: 'timeb', hx: 'hxpda', id: "subscribe_Year_Trial_Video", latest: "chxm1023" },  //易剪影
-  '(com.((mycall|island4klk|wutidef|keainotch|live4klock|haoluckywood|zuibeautyphoto).cn)|(jiandanisland.ccn)|(BertonYc.ScannerOCR))|(zw.EmoticonPackage)': { cm: 'timeb', hx: 'hxpda', id: "anyu_y", latest: "chxm1023" },  //许鑫所有应用全解锁&万能扫描王-批量文字识别和表格识别斗图表情包-聊天必备gif制作
-  'com.tj.first.vlogr': { cm: 'timeb', hx: 'hxpda', id: "vlogr.pro.yearly.subscription", latest: "chxm1023" },  //Vlogr
-  'com.auroroamob.org.GamePlayAICamera': { cm: 'timeb', hx: 'hxpda', id: "makacamera_permanent", latest: "chxm1023" },  //玛卡相机
-  'com.byteapp.tubepod': { cm: 'timea', hx: 'hxpda', id: "com.byteapp.tubepod.year", latest: "chxm1023" },  //tubepod
-  'com.youthpe.retake': { cm: 'timeb', hx: 'hxpda', id: "retake_unlock_forever", latest: "chxm1023" },  //Retake
-  'com.ai.face.play': { cm: 'timea', hx: 'hxpda', id: "fp_yearly_20240326", latest: "chxm1023" },  //FacePlay
-  'com.bravolol.bravoLang.chineseDictionary': { cm: 'timea', hx: 'hxpda', id: "com.bravolol.bravoLang.chineseDictionary.removeAds", latest: "chxm1023" },  //Dictionary & Translator
-  'VLLO': { cm: 'timea', hx: 'hxpda', id: "com.vimosoft.EVERYTHING", latest: "chxm1023" },  //VLLO
-  'com.pollykann.app': { cm: 'timeb', hx: 'hxpda', id: "vip.forever.pollykann", latest: "chxm1023" },  //小鹦看看
-  'co.vulcanlabs': { cm: 'timeb', hx: 'hxpda', id: "lifetimeid", latest: "chxm1023" },  //vulcanlabs合集
+  'co.vulcanlabs': { cm: 'timeb', hx: 'hxpda', id: lifetimeid, latest: "chxm1023" },  //vulcanlabs合集
   'com.eleven.chatgpt': { cm: 'timea', hx: 'hxpda', id: "com.chatgpt.yearly", latest: "chxm1023" },  //ChatAI
   'com.casttv.remotetv': { cm: 'timeb', hx: 'hxpda', id: "liftetime2", latest: "chxm1023" }, //TVRemote电视遥控器
   'WallpaperWidget': { cm: 'timea', hx: 'hxpda', id: "com.widget.theme.yearly.3dayfree", latest: "chxm1023" }, //壁纸主题(需试用)
@@ -137,7 +112,7 @@ const list = {
   'Photo%20Cutout': { cm: 'timea', hx: 'hxpda', id: "com.icepine.allyear", latest: "chxm1023" },  //轻松扣图
   'cleanPhone': { cm: 'timea', hx: 'hxpda', id: "com.clean.year", latest: "chxm1023" },  //爱机清理
   'ppt': { cm: 'timea', hx: 'hxpda', id: "com.palmmob.pptios.yearly", latest: "chxm1023" },  //手机PPT制作
-  'WasteCat': { cm: 'timeb', hx: 'hxpda', id: "dev.sanjin.WasteCat.PermanentVip", latest: "chxm1023" },  //拦截猫
+  'WasteCat': { cm: 'timeb', hx: 'hxpda', id: "dev.sanjin.WasteCat.PermanentVip", latest: "chxm1023" },  //垃圾贪吃猫
   'MeowTalk': { cm: 'timea', hx: 'hxpda', id: "meowtalk.month.basic.autorenewable.subscription", latest: "chxm1023" },  //喵说
   'habitdot': { cm: 'timeb', hx: 'hxpda', id: "habitdots_pro_forever", latest: "chxm1023" },  //习惯点点
   'stretchworkout': { cm: 'timea', hx: 'hxpda', id: "com.abishkking.premiumYearStretch", latest: "chxm1023" },  //拉伸运动
@@ -203,7 +178,7 @@ const list = {
   'com.skysoft.pencilsketch': { cm: 'timea', hx: 'hxpda', id: "com.skysoft.pencilsketch.subscription.yearly", latest: "chxm1023" },  //铅笔画(需试用)
   'com.instagridpost.rsigp': { cm: 'timea', hx: 'hxpda', id: "com.GridPost.oneyearplus", latest: "chxm1023" },  //九宫格切图
   'com.skysoft.picsqueen': { cm: 'timea', hx: 'hxpda', id: "com.skysoft.picsqueen.subscription.yearly", latest: "chxm1023" },  //PicsQueen-AI绘图
-  'com.skysoft.removalfree': { cm: 'timea', hx: 'hxpda', id: "com.skysoft.removalfree.subscription.yearly3", latest: "chxm1023" },  //神奇消除笔-图片消除
+  'com.skysoft.removalfree': { cm: 'timea', hx: 'hxpda', id: "com.skysoft.removalfree.discount.unlimitedaccess", latest: "chxm1023" },  //神奇消除笔-图片消除
   'com.skysoft.facecartoon': { cm: 'timea', hx: 'hxpda', id: "com.skysoft.facecartoon.subscription.yearly", latest: "chxm1023" },  //卡通头像
   'Jennie%20AI': { cm: 'timea', hx: 'hxpda', id: "com.skysoft.text2img.vip.yearly", latest: "chxm1023" },  //Jennie AI制作图片
   'MGhostLens': { cm: 'timea', hx: 'hxpda', id: "com.ghostlens.premium1month", latest: "chxm1023" },  //魔鬼相机
@@ -257,7 +232,7 @@ const list = {
   'com.SingingFish.SudokuGame': { cm: 'timea', hx: 'hxpda', id: "com.singingfish.sudokugame.year", latest: "chxm1023" },  //数独
   'com.kuaijiezhilingdashi.appname': { cm: 'timea', hx: 'hxpda', id: "com.othermaster.yearlyvip", latest: "chxm1023" },  //快捷指令库
   'LogInput': { cm: 'timea', hx: 'hxpda', id: "com.logcg.loginput", latest: "chxm1023" },  //落格输入法
-  'SoundLab': { cm: 'timea', hx: 'hxpda', id: "8001", latest: "chxm1023" },  //合声
+  'SoundLab': { cm: 'timea', hx: 'hxpda', id: "8800", latest: "chxm1023" },  //合声
   'Kilonotes': { cm: 'timea', hx: 'hxpda', id: "kipa_kilonotes_quarter_subscription", latest: "chxm1023" },  //千本笔记
   'YiJianKouTu': { cm: 'timea', hx: 'hxpda', id: "XiChaoYiJianKouTuPlus", latest: "chxm1023" },  //一键抠图
   'FileArtifact': { cm: 'timea', hx: 'hxpda', id: "com.shengzhou.fileartifact.year", latest: "chxm1023" },  //文晓生
@@ -273,7 +248,7 @@ const list = {
   'WidgetBox': { cm: 'timeb', hx: 'hxpda', id: "widgetlab001", latest: "chxm1023" },  //小组件盒子
   'LifeTracker': { cm: 'timea', hx: 'hxpda', id: "com.dk.lifetracker.yearplan", latest: "chxm1023" },  //Becord生活记录
   'imgplay': { cm: 'timea', hx: 'hxpda', id: "me.imgbase.imgplay.subscriptionYearly", latest: "chxm1023" },  //imgPlay
-  'WaterMinder': { cm: 'timea', hx: 'hxpda', id: "waterminder.premiumOnetime", latest: "chxm1023" },  //WaterMinder喝水APP
+  'WaterMinder': { cm: 'timea', hx: 'hxpda', id: "waterminder.premiumYearly", latest: "chxm1023" },  //WaterMinder喝水APP
   'HashPhotos': { cm: 'timeb', hx: 'hxpda', id: "com.kobaltlab.HashPhotos.iap.allinone.free", latest: "chxm1023" },  //HashPhotos
   'FileBrowser': { cm: 'timea', hx: 'hxpda', id: "com.qingcheng.filex.pro.yearly", latest: "chxm1023" },  //松鼠下载
   'SilProject': { cm: 'timea', hx: 'hxpda', id: "com.sm.Alina.Pro", latest: "chxm1023" },  //Alina米克锁屏—
