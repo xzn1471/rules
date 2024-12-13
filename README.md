@@ -1,3 +1,8 @@
+<div align="center">
+<img width="150" src="https://raw.githubusercontent.com/BOBOLAOSHIV587/QX-Rules/refs/heads/main/sticker.webp">
+<h2 align="center">Rules<h2>
+</div>
+
 # 说明
 
 1、自用Surge、QuantumultX(Qx)、Loon---分流规则、JS会员解锁脚本、Task。
@@ -61,11 +66,3 @@
     8、）YouTube(Music)Enhance文件夹：为适配Surge专用的YouTube(Music)增强脚本；
 
     9、）tvOS文件夹：为适配Surge专用的tvOS安装证书。
-
-<div align="center">
-<br>
-<img width="200" src="https://raw.githubusercontent.com/BOBOLAOSHIV587/QX-Rules/refs/heads/main/sticker.webp">
-<br>
-<br>
-<h1 align="center">Rules<h1>
-</div>
