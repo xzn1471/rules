@@ -1,0 +1,13 @@
+#!name=Flow & VN-视频&图片编辑套装
+#!desc=Flow & VN-视频&图片编辑套装-解锁Premium
+#!category=😍BOBO Premium
+#!homepage=https://github.com/BOBOLAOSHIV587/Rules
+#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Flow.png
+#!openUrl=https://apps.apple.com/app/id1721279833
+
+[Script]
+# > Flow & VN套装-解锁Premium
+http-response ^https?:\/\/.*\.vlognow\.me\/.*-pay\/api\/v\d\/(user\/subscriptions|public\/iap\/receipt\/status) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Flow/JS/Flow.js, requires-body=true, timeout=60, tag=Flow & VN套装-解锁Premium
+
+[Mitm]
+hostname = *.vlognow.me
