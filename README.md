@@ -2,9 +2,11 @@
 
 1、自用Surge、QuantumultX(Qx)、Loon分流规则、JS会员解锁脚本、Task。
 
-2、其中JS会员解锁脚本已测试均可使用。大部分需要登陆才能解锁。一次解锁不了多试几次。
+2、JS会员解锁脚本已测试均可使用。大部分软件需要登陆才能解锁。一次解锁不了多试几次。
 
-3、后缀文件对应使用软件：.conf为QX脚本；.plugin为Loon脚本；.sgmodule为Surge脚本。
+3、所有JS会员解锁脚本均已适配QX、Surge、Loon所需格式文件。有个别不适配或某个软件不可用脚本已在“最后提交消息”上标注。
+
+4、后缀文件对应使用软件：.conf为QX脚本；.plugin为Loon脚本；.sgmodule为Surge脚本。
 
 <div align="center">
 <br>
