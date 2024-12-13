@@ -5,7 +5,7 @@
 
 # 说明
 
-1、自用Surge、QuantumultX(Qx)、Loon---分流规则、JS会员解锁脚本、Task。
+1、自用Surge、QuantumultX(Qx)、Loon---分流规则、JS会员解锁脚本（搬运自各位大佬，防止删库）、Task。
 
 2、JS会员解锁脚本已测试均可使用。大部分软件需要登陆才能解锁。一次解锁不了多试几次。
 
