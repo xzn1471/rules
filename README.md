@@ -1,5 +1,5 @@
 <div align="center">
-<img width="150" src="https://raw.githubusercontent.com/BOBOLAOSHIV587/QX-Rules/refs/heads/main/sticker.webp">
+<img width="100" src="https://raw.githubusercontent.com/BOBOLAOSHIV587/QX-Rules/refs/heads/main/sticker.webp">
 <h2 align="center">Rules<h2>
 </div>
 
@@ -17,7 +17,7 @@
 
 6、各文件夹中文件明细：
 
-  1、）Task文件夹：各种定时任务----每日随机图片（二次元+18）、吾爱破解签到、定时推送妹子图、Pixiv推送服务等。
+  1、）Task文件夹：各种定时任务----随机图片二次元+18、吾爱破解签到、定时推送妹子图、Pixiv推送服务等。
 
   2、）Icons文件夹：各种图标。在软件中导入.json文件查看。（有图示-在各文件夹README文件查看）。
 
