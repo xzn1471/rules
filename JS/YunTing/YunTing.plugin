@@ -1,0 +1,13 @@
+#!name=云听-全国电台海量有声书
+#!desc=云听 全国电台/有声听书解锁会员
+#!category=😍BOBO Premium
+#!homepage=https://github.com/BOBOLAOSHIV587/Rules
+#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/YunTing.png
+#!openUrl=https://apps.apple.com/app/id496145505
+
+[Script]
+# > 云听-全国电台有声书解锁会员
+http-response (^https?:\/\/(ytmsout|ytapi|getway)\.radio\.cn|60\.205\.171\.165)\/(contentBiz|publish|rights|(user|ytsrv\/srv)\/(appUser|webPage)\/getUserInfo|app.+) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/YunTing/JS/YunTing.js, requires-body=true, timeout=60, tag=云听-全国电台有声书解锁会员
+
+[Mitm]
+hostname = *.radio.cn, 60.205.171.165
