@@ -1,0 +1,13 @@
+#!name=Mojo: Subtitles&Reels
+#!desc=Mojo: Subtitles & Reels 解锁 Pro
+#!category=😍BOBO Premium
+#!homepage=https://github.com/BOBOLAOSHIV587/Rules
+#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Mojo.png
+#!openUrl=https://apps.apple.com/app/id1434861974
+
+[Script]
+# > Mojo 解锁 Pro
+Mojo 解锁 Pro = type=http-response, pattern=https://api.revenuecat.com/v1/(receipts|subscribers)/*, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Mojo/JS/Mojo.js, requires-body=true, max-size=-1, timeout=60
+
+[MITM]
+hostname = %APPEND% api.revenuecat.com
