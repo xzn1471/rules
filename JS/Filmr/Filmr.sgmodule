@@ -1,0 +1,14 @@
+#!name=Filmr-Pro Video Editor视频剪辑
+#!desc=Filmr-视频剪辑 解锁 PRO
+#!category=😍BOBO Premium
+#!homepage=https://github.com/BOBOLAOSHIV587/Rules
+#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Filmr.png
+#!openUrl=https://apps.apple.com/app/id1171358257
+
+[Script]
+# > Filmr-视频剪辑 解锁 PRO
+Filmr-视频剪辑 解锁PRO = type=http-response, pattern=https://payments.invideo.io/verify_purchase, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Filmr/JS/Filmr.js, requires-body=true, max-size=-1, timeout=60
+Filmr-视频剪辑 解锁PRO = type=http-response, pattern=https://payments.invideo.io/subscription, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Filmr/JS/Filmr.js, requires-body=true, max-size=-1, timeout=60
+
+[MITM]
+hostname = %APPEND% payments.invideo.io
