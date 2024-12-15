@@ -1,0 +1,13 @@
+#!name=Funimate Video & Motion Editor
+#!desc=Funimate 解锁 Premium
+#!category=😍BOBO Premium
+#!homepage=https://github.com/BOBOLAOSHIV587/Rules
+#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Funimate.png
+#!openUrl=https://apps.apple.com/app/id844570015
+
+[Script]
+# > Funimate 解锁 Premium
+replaceBody = type=http-response, pattern=https://api.funimate.com/users/*, script-path=https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/scripts/replace-body.js, requires-body=true, max-size=-1, timeout=30, argument=%22is_pro_user%22%3A.*%3F%2C-%3E%22is_pro_user%22%3A%20true%2C
+
+[MITM]
+hostname = %APPEND% api.funimate.com
