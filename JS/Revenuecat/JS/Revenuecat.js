@@ -6,6 +6,8 @@
 >「 更新时间 」         2024-10-07
 >「 注意事项 」         使用此脚本，会导致AppleStore无法切换账户，解决方法[关闭QX切换账户，或关闭MITM，或删除脚本，或去设置媒体与购买项目处切换ID]
 
+*************************************
+
 [rewrite_local]
 # > 自动获取Revenuecat核心数据
 ^https:\/\/(api\.revenuecat|isi\.csan\.goodnotes)\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) url script-response-body https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Revenuecat/JS/Revenuecat.js
