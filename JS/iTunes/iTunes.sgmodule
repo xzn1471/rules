@@ -1,0 +1,13 @@
+#!name=iTunes-系列解锁合集
+#!desc=iTunes-系列解锁合集。使用说明：如果脚本无效，请先排除是否脚本冲突；特别说明：此脚本可能会导致App Store无法登录ID；解决方法：关[MITM][脚本][代理工具]方法选一即可；已解锁App传送门：https://too.st/iTunes
+#!category=😍BOBO Premium
+#!homepage=https://github.com/BOBOLAOSHIV587/Rules
+#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/iTunes.png
+#!openUrl=https://too.st/iTunes
+
+[Script]
+# > iTunes-系列解锁合集
+iTunes-系列解锁合集 = type=http-response, pattern=^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/iTunes/JS/iTunes.js, requires-body=true, max-size=-1, timeout=60
+
+[MITM]
+hostname = %APPEND% buy.itunes.apple.com
