@@ -3,15 +3,12 @@
 #!category=😍BOBO Premium
 #!homepage=https://github.com/BOBOLAOSHIV587/Rules
 #!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/RevenueCat-icon.png
-#!openUrl=https://apps.apple.com/app/id921765888
+#!openUrl=https://too.st/CollectionsAPP
 
 [Script]
-# > 自动获取Revenuecat核心数据
-http-response ^https:\/\/(api\.revenuecat|isi\.csan\.goodnotes)\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Revenuecat/JS/Revenuecat.js, requires-body=true, timeout=60, tag=Revenuecat
-http-request ^https:\/\/(api\.revenuecat|isi\.csan\.goodnotes)\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Revenuecat/JS/Revenuecat.js, timeout=60, tag=Revenuecat
 # > Revenuecat 系列解锁合集
 http-response ^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Revenuecat/JS/Reheji.js, requires-body=true, timeout=60, tag=Reheji
 http-request ^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Revenuecat/JS/Reheji.js, timeout=60, tag=Reheji
 
-[MITM]
-hostname = api.revenuecat.com, isi.csan.goodnotes.com
+[Mitm]
+hostname = api.revenuecat.com
