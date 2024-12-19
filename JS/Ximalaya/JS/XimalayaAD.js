@@ -69,7 +69,6 @@ if (typeof responseBody === 'string') {
     if (requestUrl.indexOf('/mobile-user/v2/homePage') !== -1) {
       parsedData.data.vipInfo.isVip = true;
       parsedData.data.vipInfo.level = 5; // VIP 等级
-      parsedData.data.nickname = 'Luis';
       parsedData.data.vipInfo.status = 4;
       parsedData.data.childTag.isChild = true;
       parsedData.data.childTag.isShadowChild = true;
@@ -79,7 +78,6 @@ if (typeof responseBody === 'string') {
       parsedData.data.topPicInfo.picUrl = 'https://imagev2.xmcdn.com/storages/1c63-audiofreehighqps/B0/37/GMCoOScJDSvBAAm9-wJy0ISu.png';
       delete parsedData.data.freeListenV2;
       parsedData.data.vLogoType = 2;
-      parsedData.data.mobileMiddleLogo = 'http://ykhp-user-imges.yikaobang.com.cn/Uploads/Avatar/2024/08/18/66c188e2d4fab.jpg';
       parsedData.data.userGradeInfo.level = 9;
       parsedData.data.userGradeInfo.darkIcon = 'https://imagev2.xmcdn.com/storages/c025-audiofreehighqps/D8/04/GMCoOR8JK30NAAAKwwJ-EuBa.png!xmagick=webp';
       delete parsedData.data.serviceModule;
@@ -90,7 +88,6 @@ if (typeof responseBody === 'string') {
       parsedData.data.modules[0].userInfo.subtitle = `2999-09-09到期`;
       parsedData.data.modules[0].userInfo.userLevel.userLevelIcon = 'https://imagev2.xmcdn.com/storages/14fe-audiofreehighqps/05/3A/GMCoOSAJzaapAAAFqQK5WqHL.png!op_type=0&magick=webp&xmagick=webp';
       parsedData.data.modules[0].userInfo.vipStatus = 2;
-      parsedData.data.modules[0].userInfo.nickName = 'Luis';
     }
 
     // 处理其他 URL 的逻辑略作省略，基本模式类似，修改相应字段或删除无用数据
