@@ -8,21 +8,6 @@
 [URL Rewrite]
 # > 去广告
 ^https?://passport\.ximalaya\.com/friendship-mobile/v1/findFriendsBanner/show/ - reject
-^https?://xdcs-collector\.ximalaya\.com/api/v1/realtime - reject
-^https?://.+\.ximalaya\.com/linkeye.+/checkIP\?ip.+passport.ximalaya.com - reject
-^https?://adse\.wsa\.ximalaya\.com - reject
-^https?://openapi\.mysteel\.com\/v5\/getAdv\.htm - reject
-^https?://ulogs\.umeng\.com\/unify_logs - reject
-^https?://adse\.ximalaya\.com\/ - reject
-^https?://gslbali\.ximalaya\.com - reject
-^https?://www\.taobao\.com\/help\/getip\.php - reject
-^https?://.+location\.ximalaya\.com - reject
-^https?://.+dbehavior\.ximalaya\.com - reject
-^https?://ad\.ximalaya\.com - reject
-^https?://.+audid-api\.taobao.com - reject
-^https?://passport\.ximalaya\.com\/user-http-app\/v1\/token\/refresh - reject
-^https?://adse\.ximalaya\.com/incentive/ting/durationConfig - reject
-^https?://mobile\.ximalaya\.com/mobile-playpage/view/ - reject
 
 [Script]
 # > 喜马拉雅会员.大师课,儿童+音效&音质,去广告,界面优化+++软件版本：9.2.78（兼容最新版本）
