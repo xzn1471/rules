@@ -1,12 +1,11 @@
 /********************************
- *
- *
+
 脚本功能：喜马拉雅,会员.大师课,儿童+音效&音质,去广告,界面优化+++
 软件版本：9.2.94（兼容最新版本）
 下载地址：
 *******************************
-[rewrite_local]
 
+[rewrite_local]
 # > 喜马拉雅,会员.大师课,儿童+音效&音质,去广告,界面优化+++
 https?:\/\/.+((ximalaya)|(xmcdn)).+(mobile-user\/v2|mobile-web|queryCategoryPageData|discovery-feed\/v4|vip\/v1\/recommand|product\/detail\/v1|mobile\/v1\/album|playpage|album\/price\/ts|mobile\/user\/member|freeListenTabStyle).*$ url script-response-body https://raw.githubusercontent.com/MomentLHC/qx/refs/heads/main/xmly.js
 ^https?:\/\/.+((ximalaya)|(xmcdn)).+\/[a-z]{6}\-[a-z]{8}\/track\/(v[0-9])\/[a-zA-Z]+\/ts.*$ url script-request-header https://raw.githubusercontent.com/MomentLHC/qx/refs/heads/main/xmly.js
@@ -72,9 +71,6 @@ if (typeof responseBody === 'string') {
       parsedData.data.vipInfo.status = 4;
       parsedData.data.childTag.isChild = true;
       parsedData.data.childTag.isShadowChild = true;
-      parsedData.data.topPicInfo.color = '#242121';
-      parsedData.data.topPicInfo.backgroundPicUrl = 'https://imagev2.xmcdn.com/storages/ca50-audiofreehighqps/AA/CB/GMCoOSEJshORAAB5owKt4Yef.png';
-      parsedData.data.topPicInfo.foregroundPicUrl = 'https://imagev2.xmcdn.com/storages/c45c-audiofreehighqps/08/70/GMCoOSMJshOSAAAJWQKt4Yf5.png';
       parsedData.data.topPicInfo.picUrl = 'https://imagev2.xmcdn.com/storages/1c63-audiofreehighqps/B0/37/GMCoOScJDSvBAAm9-wJy0ISu.png';
       delete parsedData.data.freeListenV2;
       parsedData.data.vLogoType = 2;
