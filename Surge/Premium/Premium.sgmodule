@@ -73,10 +73,6 @@ AdGuardProCrack = type=http-response, pattern=^https?:\/\/mobile-api\.adguard\.o
 AlohaBrowser = type=http-response, pattern=^https?:\/\/api\.alohaprofile\.com\/v1\/profile_info, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/AlohaBrowser/JS/AlohaBrowser.js, requires-body=true, max-size=-1, timeout=60
 
 
-# > 爱剪辑-解锁会员-登陆后解锁
-爱剪辑-解锁会员-登陆后解锁 = type=http-response, pattern=^https?:\/\/api\.open\.loveclip\.site\/UserInfo\/(UserPersonalCoreAsync|GetUserDetail), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/AiJianJi/JS/AiJianJi.js, requires-body=true, max-size=-1, timeout=60
-
-
 # > 阿里云盘 净化/解锁SVIP
 阿里云盘 净化/解锁SVIP = type=http-response, pattern=^https?:\/\/(api|member)\.(aliyundrive|alipan)\.com\/(.+\/(users|activity|user\/get)|((business|apps)\/.+\/users|adrive\/.+\/user)), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/AliDrive/JS/AliDrive.js, requires-body=true, max-size=-1, timeout=60
 
@@ -174,10 +170,6 @@ Filmix = type=http-response, pattern=https:\/\/appv2\.filmix\.com\.cn\/api\/(v2|
 Flightradar24 = type=http-response, pattern=^https?:\/\/mobile\.flightradar24\.com\/mobile\/(user-session|subscribe), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Flightradar24/JS/Flightradar24.js, requires-body=true, max-size=-1, timeout=60
 
 
-# > FlipaClip解锁Plus
-FlipaClip解锁Plus = type=http-response, pattern=^https://api.purchasely.io/paab/user_purchases, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/FlipaClip/JS/FlipaClip.js, requires-body=true, max-size=-1, timeout=60
-
-
 # > Focos+Focos live☆解锁会员权限
 Focos+Focos live☆解锁会员权限 = type=http-response, pattern=^https?:\/\/.*oracle\.bendingspoonsapps\.com\/v\d\/(users\/setup|purchases\/verify\/apple), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Focos/JS/FocosProCrack.js, requires-body=true, max-size=-1, timeout=60
 
@@ -215,11 +207,6 @@ Lake = type=http-request, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts
 LeicaLUX = type=http-response, pattern=https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/LeicaLUX/JS/LeicaLUX.js, requires-body=true, max-size=-1, timeout=60
 
 
-# > Linearity Curve插画和图形绘-解锁订阅
-LC = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/.+$), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/LinearityCurve/JS/LC.js, requires-body=true, max-size=-1, timeout=60
-LC = type=http-request, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/.+$), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/LinearityCurve/JS/LC.js, timeout=60
-
-
 # > Loopsie AI绘画-解锁订阅
 Loopsie = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/.+$), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Loopsie/JS/Loopsie.js, requires-body=true, max-size=-1, timeout=60
 Loopsie = type=http-request, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/.+$), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Loopsie/JS/Loopsie.js, timeout=60
@@ -238,16 +225,8 @@ MWeb = type=http-response, pattern=^https?:\/\/buy\.itunes\.apple\.com\/verifyRe
 美图秀秀 解锁SVIP 获取ai擦除照片 = type=http-response, pattern=https?:\/\/api\.posters\.meitu\.com\/matting\/znxc\.json, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/MeiTuXiuXiu/JS/MTXX.js, requires-body=true, max-size=-1, timeout=60
 
 
-# > MemoKit 解锁Pro
-MemoKit = type=http-response, pattern=https:\/\/api\.revenuecat\.com\/v1\/(subscribers|receipts), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/MemoKit/JS/MemoKit.js, requires-body=true, max-size=-1, timeout=60
-
-
 # > Mix2 解锁会员
 Mix2 = type=http-response, pattern=https:\/\/bmall\.camera360\.com\/api\/iap\/check-receipt, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Mix2/JS/Mix2.js, requires-body=true, max-size=-1, timeout=60
-
-
-# > Morpholio Trace - Sketch CAD草图CAD建筑师设计师专用工具 解锁Pro
-Morpholio Trace CAD草图CAD建筑师设计师专用工具 解锁Pro = type=http-response, pattern=^https:\/\/www\.mymorpholio\.com\/api\/index\.php\/rest_iap\/receipt, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/MorpholioTrace/JS/MorpholioTrace.js, requires-body=true, max-size=-1, timeout=60
 
 
 # > Movavi-视频图片编辑解锁Pro
@@ -290,10 +269,6 @@ Noto = type=http-response, pattern=https://api.revenuecat.com/v1/(receipts|subsc
 # > Obscura专业相机-解锁订阅
 Obscura = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/.+$), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Obscura/JS/Obscura.js, requires-body=true, max-size=-1, timeout=60
 Obscura = type=http-request, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/.+$), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Obscura/JS/Obscura.js, timeout=60
-
-
-# > Photoshop Express-图片编辑&修图 解锁Premium
-Photoshop Express-图片编辑&修图 解锁Premium = type=http-response, pattern=https://lcs-mobile-cops.adobe.io/mobiles/access_profile/v3, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/PSExpress/JS/PSExpress.js, requires-body=true, max-size=-1, timeout=60
 
 
 # > PeakVisor解锁Premium
@@ -508,10 +483,6 @@ djay = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipt
 djay = type=http-request, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/.+$), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/djay/JS/djay.js, timeout=60
 
 
-# > iLovePDF解锁Vip
-iLovePDF解锁Vip = type=http-response, pattern=^https?:\/\/service\.ilovepdf\.com\/v\d\/user, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/iLovePDF/JS/iLovePDF.js, requires-body=true, max-size=-1, timeout=60
-
-
 # > intoLive 年度会员订阅
 intoLive 年度会员订阅 = type=http-response, pattern=https:\/\/buy\.itunes\.apple\.com\/verifyReceipt, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/intoLive/JS/intoLive.js, requires-body=true, max-size=-1, timeout=60
 
@@ -546,10 +517,6 @@ Cubox - 文章阅读与标注笔记 解锁高级会员 = type=http-response, pat
 得间小说-解锁会员 = type=http-response, pattern=^https:\/\/dj\.palmestore\.com\/zyuc\/api\/user\/accountInfo, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/DeJianXS/JS/DeJianXS.js, requires-body=true, max-size=-1, timeout=60
 
 
-# > Diarly-每日日记-解锁Premium
-Diarly-每日日记-解锁Premium = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Diarly/JS/Diarly.js, requires-body=true, max-size=-1, timeout=60
-
-
 # > 地震预警-解锁会员
 地震预警-解锁会员 = type=http-response, pattern=^https?:\/\/mobile-new\.chinaeew\.cn\/v\d\/order\/apple\/vip, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/DiZhenYuJing/JS/DZYJ.js, requires-body=true, max-size=-1, timeout=60
 
@@ -560,10 +527,6 @@ Drafts解锁Pro = type=http-response, pattern=^https?:\/\/backend\.getdrafts\.co
 
 # > Epik解锁Pro
 Epik解锁Pro = type=http-response, pattern=^https?:\/\/.*\.snow\.me\/v\d\/purchase\/subscription\/subscriber\/status, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Epik/JS/Epik.js, requires-body=true, max-size=-1, timeout=60
-
-
-# > Endel-舒缓睡眠音-解锁Premium
-Endel-舒缓睡眠音-解锁Premium = type=http-response, pattern=^https?:\/\/api-production\.endel\.io\/v\d\/call, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Endel/JS/Endel.js, requires-body=true, max-size=-1, timeout=60
 
 
 # > 随手写FeeNote-解锁Premium
@@ -579,24 +542,12 @@ Filmr-视频剪辑 解锁PRO = type=http-response, pattern=https://payments.invi
 Filmr-视频剪辑 解锁PRO = type=http-response, pattern=https://payments.invideo.io/subscription, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Filmr/JS/Filmr.js, requires-body=true, max-size=-1, timeout=60
 
 
-# > FIMO-复古胶片相机 解锁Vip
-FIMO-复古胶片相机-解锁Vip = type=http-response, pattern=^https:\/\/server\.(yoyiapp|zbisq)\.com, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Fimo/JS/Fimo.js, requires-body=true, max-size=-1, timeout=60
-
-
 # > Flow & VN套装-解锁Premium
 Flow & VN套装-解锁Premium = type=http-response, pattern=^https?:\/\/.*\.vlognow\.me\/.*-pay\/api\/v\d\/(user\/subscriptions|public\/iap\/receipt\/status), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Flow/JS/Flow.js, requires-body=true, max-size=-1, timeout=60
 
 
 # > Funimate 解锁 Premium
 replaceBody = type=http-response, pattern=https://api.funimate.com/users/*, script-path=https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/scripts/replace-body.js, requires-body=true, max-size=-1, timeout=30, argument=%22is_pro_user%22%3A.*%3F%2C-%3E%22is_pro_user%22%3A%20true%2C
-
-
-# > 漫读-万能电子书阅读器-解锁专业版
-漫读-解锁专业版 = type=http-response, pattern=^http:\/\/enjoy_reading_pro\.particlethink\.com:8083\/app\/api\/v\d\/user\/is_vip, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/ManDu/JS/ManDu.js, requires-body=true, max-size=-1, timeout=60
-
-
-# > 滚动截屏-解锁 Premium
-滚动截屏-解锁Premium = type=http-response, pattern=^http:\/\/tailor\.tomax\.xyz\/api\/users\/fetch\/info, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/GunDongJiePing/JS/GDJP.js, requires-body=true, max-size=-1, timeout=60
 
 
 # > Imagex-AI图片放大改善图片画质解锁Pro
@@ -615,24 +566,8 @@ Picsart美易 解锁Gold = type=http-response, pattern=^https://api.(meiease|pic
 Mojo 解锁 Pro = type=http-response, pattern=https://api.revenuecat.com/v1/(receipts|subscribers)/*, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Mojo/JS/Mojo.js, requires-body=true, max-size=-1, timeout=60
 
 
-# > Moises-音乐人应用解锁Premium
-Moises-音乐人应用解锁Premium = type=http-response, pattern=^https?:\/\/api\.moises\.ai\/graphql, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Moises/JS/Moises.js, requires-body=true, max-size=-1, timeout=60
-
-
-# > 墨迹天气解锁SVip
-墨迹天气解锁SVip = type=http-response, pattern=^https?:\/\/.*\.api\.moji\.com\/(sns\/json\/profile\/get_info_.+|json\/member_new\/homepage_info.+|user\/personal\/json\/profile_.+|flycard\/novice|shortvideo\/.+), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/MoJiTianQi/JS/MoJiTianQi.js, requires-body=true, max-size=-1, timeout=60
-
-
 # > Symbolab计算器-数学分步求解器(需要登录)解锁Premium
 Symbolab计算器-解锁Premium = type=http-response, pattern=^https?:\/\/scibug\.com\/appleSubscriptionValidate$, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Symbolab/JS/Symbolab.js, requires-body=true, max-size=-1, timeout=60
-
-
-# > SwiftyCompiler解锁Premium Lifetime
-SwiftyCompiler解锁Premium Lifetime = type=http-response, pattern=^https?:\/\/api\.qonversion\.io\/v\d\/user\/(init|purchase), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/SwiftyCompiler/JS/SwiftyCompiler.js, requires-body=true, max-size=-1, timeout=60
-
-
-# > Tripsy旅行计划解锁Premium
-Tripsy旅行计划解锁Premium = type=http-response, pattern=^https?:\/\/firstclass\.tripsy\.app\/api\/v1\/(receipt\/update|me)\?, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Tripsy/JS/Tripsy.js, requires-body=true, max-size=-1, timeout=60
 
 
 # > Unfold视频照片编辑器-解锁订阅
@@ -645,4 +580,4 @@ Unfold = type=http-request, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receip
 
 
 [MITM]
-hostname = %APPEND% api.revenuecat.com, buy.itunes.apple.com, api.adblockpro.app, *.adguard.org, api.alohaprofile.com, appraven.net, app.autocad360.com, pan.baidu.com, baimiao.uzero.cn, api.mr.pixocial.com, newbeee-api.beautyplus.com, tagit.hyhuo.com, apimboom2.globaldelight.net, biz.caiyunapp.com, ios.chat.openai.com, billing.chaton.ai, api.craft.do, api.deepfaker.app, media.deezer.com, *.pdfexpert.com, dreamfaceapp.com, mb3admin.com, www.mb3admin.com, *.snow.me, filmicpro.oracle.bendingspoonsapps.com, appv2.filmix.com.cn, mobile.flightradar24.com, api.purchasely.io, *.oracle.bendingspoonsapps.com, api.github.com, ifttt.com, widgets-api.kaixinyf.cn, www.instapaper.com, *.kuwo.cn, cdn-bm.camera360.com, *.xiuxiu.meitu.com, api.posters.meitu.com, api-sub.meitu.com, bmall.camera360.com, www.mymorpholio.com, *.apphud.com, api2.mubu.com, apic.musixmatch.com, premium-api.myfitnesspal.com, nanie.flyingeffect.com, restore-access.indream.app, nicegram.cloud, notability.com, lcs-mobile-cops.adobe.io, peakvisor.com, service.perfect365.com, api-drive.mypikpak.com, oauth.secure.pixiv.net, api.polaxiong.com, cn.pornhubpremium.com, magev6.if.qidian.com, www.qobuz.com, www.pdreamer.com, commerce-api.faceu.mobi, api3-misc-lf.retouchpics.com, shimo.im, ocean.shuqireader.com, mindline.cn, ch.sleepcycle.com, *-slidebox-ios-prod.cloudfunctions.net, snailsleep.net, api-mobile.soundcloud.com, spclient.wg.spotify.com, api.tidal.com, api2.vlognow.me, medi.dxzzy321.top, *.docer.wps.cn, vipapi.wps.cn, account.wps.cn, *.wps.cn, p.du.163.com, *.wallpaperscraft.com, europe-west1-ai-art-generator-services.cloudfunctions.net, education.github.com, *xmind.*, *xunlei.com, api-shoulei-ssl.xunlei.com, app-ios.y2002.com, api.ieasou.com, dict.youdao.com, business.youdao.com, api-overmind.youdao.com, cdke.youdao.com, service.ilovepdf.com, ap*.intsig.net, *.miguvideo.com, *.migu.cn, api.open.loveclip.site, *.aliyundrive.com, *.alipan.com, *.aoscdn.com, *.apsapp.cn, user-b612-api.snow.me, cubox.pro, dj.palmestore.com, mobile-new.chinaeew.cn, backend.getdrafts.com, api-production.endel.io, www.kkmop.com, api-*.facereplacerext.com, payments.invideo.io, server.*.com, *.vlognow.me, api.funimate.com, pro.particlethink.com, tailor.tomax.xyz, *.meiyan.com, api.meiease.*, api.picsart.*, api.moises.ai, *.api.moji.com, scibug.com, api.qonversion.io, firstclass.tripsy.app, *.radio.cn, 60.205.171.165
+hostname = %APPEND% api.revenuecat.com, buy.itunes.apple.com, api.adblockpro.app, *.adguard.org, api.alohaprofile.com, appraven.net, app.autocad360.com, pan.baidu.com, baimiao.uzero.cn, api.mr.pixocial.com, newbeee-api.beautyplus.com, tagit.hyhuo.com, apimboom2.globaldelight.net, biz.caiyunapp.com, ios.chat.openai.com, billing.chaton.ai, api.craft.do, api.deepfaker.app, media.deezer.com, *.pdfexpert.com, dreamfaceapp.com, mb3admin.com, www.mb3admin.com, *.snow.me, filmicpro.oracle.bendingspoonsapps.com, appv2.filmix.com.cn, mobile.flightradar24.com, *.oracle.bendingspoonsapps.com, api.github.com, ifttt.com, widgets-api.kaixinyf.cn, www.instapaper.com, *.kuwo.cn, cdn-bm.camera360.com, *.xiuxiu.meitu.com, api.posters.meitu.com, api-sub.meitu.com, bmall.camera360.com, *.apphud.com, api2.mubu.com, apic.musixmatch.com, premium-api.myfitnesspal.com, nanie.flyingeffect.com, restore-access.indream.app, nicegram.cloud, notability.com, peakvisor.com, service.perfect365.com, api-drive.mypikpak.com, oauth.secure.pixiv.net, api.polaxiong.com, cn.pornhubpremium.com, magev6.if.qidian.com, www.qobuz.com, www.pdreamer.com, commerce-api.faceu.mobi, api3-misc-lf.retouchpics.com, shimo.im, ocean.shuqireader.com, mindline.cn, ch.sleepcycle.com, *-slidebox-ios-prod.cloudfunctions.net, snailsleep.net, api-mobile.soundcloud.com, spclient.wg.spotify.com, api.tidal.com, api2.vlognow.me, medi.dxzzy321.top, *.docer.wps.cn, vipapi.wps.cn, account.wps.cn, *.wps.cn, p.du.163.com, *.wallpaperscraft.com, europe-west1-ai-art-generator-services.cloudfunctions.net, education.github.com, *xmind.*, *xunlei.com, api-shoulei-ssl.xunlei.com, app-ios.y2002.com, api.ieasou.com, dict.youdao.com, business.youdao.com, api-overmind.youdao.com, cdke.youdao.com, ap*.intsig.net, *.miguvideo.com, *.migu.cn, *.aliyundrive.com, *.alipan.com, *.aoscdn.com, *.apsapp.cn, user-b612-api.snow.me, cubox.pro, dj.palmestore.com, mobile-new.chinaeew.cn, backend.getdrafts.com, www.kkmop.com, api-*.facereplacerext.com, payments.invideo.io, *.vlognow.me, api.funimate.com, *.meiyan.com, api.meiease.*, api.picsart.*, scibug.com, *.radio.cn, 60.205.171.165
