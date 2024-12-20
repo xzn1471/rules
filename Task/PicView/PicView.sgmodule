@@ -3,4 +3,4 @@
 #!category=😍BOBO Task
 
 [Script]
-每日随机图片（风景｜二次元｜福利姬） = type=cron,cronexp=0 0/30 8-22 * * ?,script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Task/PicView/JS/PicView.js,script-update-interval=0
+每日随机图片（风景｜二次元｜福利姬） = type=cron,cronexp=0 0 8-22 * * ?,script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Task/PicView/JS/PicView.js,script-update-interval=0
