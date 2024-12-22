@@ -6,7 +6,7 @@
 使用声明： 仅供个人参考学习交流，勿用于其它用途
 
 [rewrite_local]
-^https?:\/\/nicegram\.cloud\/api\/v\d\/(ai-assistant\/purchase-list|user\/info|telegram\/auth) url script-response-body https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Nicegram/JS/nicegram.js
+^https?:\/\/nicegram\.cloud\/api\/v\d\/(ai-assistant\/purchase-list|user\/info|telegram\/auth) url script-response-body https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Nicegram/JS/Nicegram.js
 [mitm]
 hostname = nicegram.cloud
 */
