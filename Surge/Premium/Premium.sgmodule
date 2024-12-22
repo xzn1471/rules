@@ -171,8 +171,7 @@ MyFitnessPal解锁Premium = type=http-response, pattern=^https?:\/\/premium-api\
 
 
 # > Nicegram会员解锁
-Nicegram = type=http-request, pattern=^https?:\/\/restore-access\.indream\.app\/restoreAccess\?id=\w+$, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Nicegram/JS/Nicegram.js, timeout=60
-nicegram = type=http-response, pattern=^https?:\/\/nicegram\.cloud\/api\/v\d\/(ai-assistant\/purchase-list|user\/info|telegram\/auth), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Nicegram/JS/nicegram.js, requires-body=true, max-size=-1, timeout=60
+nicegram = type=http-response, pattern=^https?:\/\/nicegram\.cloud\/api\/v\d\/(ai-assistant\/purchase-list|user\/info|telegram\/auth), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Nicegram/JS/Nicegram.js, requires-body=true, max-size=-1, timeout=60
 
 
 # > Notability解锁2099年
@@ -354,10 +353,6 @@ djay = type=http-request, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts
 intoLive 年度会员订阅 = type=http-response, pattern=https:\/\/buy\.itunes\.apple\.com\/verifyReceipt, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/intoLive/JS/intoLive.js, requires-body=true, max-size=-1, timeout=60
 
 
-# > 扫描全能王-手机扫描仪+解锁VIP
-扫描全能王-手机扫描仪+解锁VIP = type=http-response, pattern=^https:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\?, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/smqnw/JS/smqnw.js, requires-body=true, max-size=-1, timeout=60
-
-
 # > 咪咕视频Vip会员
 mgsp = type=http-response, pattern=^https?:\/\/(play|dis).*miguvideo.com\/(play|dis)(url|play)\/.*$, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/migushipin/JS/mgsp.js, requires-body=true, max-size=-1, timeout=60
 mgspck = type=http-request, pattern=^https?:\/\/play.miguvideo.com\/playurl\/v1\/play\/playurl\?2Kvivid=true?.*=true$, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/migushipin/JS/mgspck.js, timeout=60
@@ -429,5 +424,9 @@ Unfold = type=http-request, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receip
 云听-全国电台有声书解锁会员 = type=http-response, pattern=(^https?:\/\/(ytmsout|ytapi|getway)\.radio\.cn|60\.205\.171\.165)\/(contentBiz|publish|rights|(user|ytsrv\/srv)\/(appUser|webPage)\/getUserInfo|app.+), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/YunTing/JS/YunTing.js, requires-body=true, max-size=-1, timeout=60
 
 
+# > 扫描全能王-手机扫描仪 解锁黄金会员
+扫描全能王-解锁黄金会员 = type=http-response, pattern=^https:\/\/.*\.(intsig\.net|camscanner\.com), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/CamScanner/JS/CamScanner.js, requires-body=true, max-size=-1, timeout=60
+
+
 [MITM]
-hostname = %APPEND% api.revenuecat.com, buy.itunes.apple.com, api.adblockpro.app, *.adguard.org, appraven.net, pan.baidu.com, api.mr.pixocial.com, newbeee-api.beautyplus.com, tagit.hyhuo.com, apimboom2.globaldelight.net, biz.caiyunapp.com, ios.chat.openai.com, api.craft.do, media.deezer.com, *.pdfexpert.com, *.snow.me, filmicpro.oracle.bendingspoonsapps.com, appv2.filmix.com.cn, mobile.flightradar24.com, *.oracle.bendingspoonsapps.com, api.github.com, ifttt.com, *.kuwo.cn, cdn-bm.camera360.com, *.xiuxiu.meitu.com, api.posters.meitu.com, api-sub.meitu.com, bmall.camera360.com, *.apphud.com, api2.mubu.com, apic.musixmatch.com, premium-api.myfitnesspal.com, restore-access.indream.app, nicegram.cloud, notability.com, peakvisor.com, service.perfect365.com, oauth.secure.pixiv.net, api.polaxiong.com, cn.pornhubpremium.com, magev6.if.qidian.com, www.qobuz.com, www.pdreamer.com, commerce-api.faceu.mobi, api3-misc-lf.retouchpics.com, shimo.im, ocean.shuqireader.com, *-slidebox-ios-prod.cloudfunctions.net, snailsleep.net, api-mobile.soundcloud.com, spclient.wg.spotify.com, api.tidal.com, api2.vlognow.me, medi.dxzzy321.top, *.docer.wps.cn, vipapi.wps.cn, account.wps.cn, *.wps.cn, p.du.163.com, education.github.com, *xmind.*, *xunlei.com, api-shoulei-ssl.xunlei.com, app-ios.y2002.com, api.ieasou.com, ap*.intsig.net, *.miguvideo.com, *.aliyundrive.com, *.alipan.com, *.aoscdn.com, *.apsapp.cn, user-b612-api.snow.me, cubox.pro, dj.palmestore.com, mobile-new.chinaeew.cn, backend.getdrafts.com, www.kkmop.com, payments.invideo.io, *.vlognow.me, api.funimate.com, *.meiyan.com, api.meiease.*, api.picsart.*, *.radio.cn, 60.205.171.165
+hostname = %APPEND% api.revenuecat.com, buy.itunes.apple.com, api.adblockpro.app, *.adguard.org, appraven.net, pan.baidu.com, api.mr.pixocial.com, newbeee-api.beautyplus.com, tagit.hyhuo.com, apimboom2.globaldelight.net, biz.caiyunapp.com, ios.chat.openai.com, api.craft.do, media.deezer.com, *.pdfexpert.com, *.snow.me, filmicpro.oracle.bendingspoonsapps.com, appv2.filmix.com.cn, mobile.flightradar24.com, *.oracle.bendingspoonsapps.com, api.github.com, ifttt.com, *.kuwo.cn, cdn-bm.camera360.com, *.xiuxiu.meitu.com, api.posters.meitu.com, api-sub.meitu.com, bmall.camera360.com, *.apphud.com, api2.mubu.com, apic.musixmatch.com, premium-api.myfitnesspal.com, restore-access.indream.app, nicegram.cloud, notability.com, peakvisor.com, service.perfect365.com, oauth.secure.pixiv.net, api.polaxiong.com, cn.pornhubpremium.com, magev6.if.qidian.com, www.qobuz.com, www.pdreamer.com, commerce-api.faceu.mobi, api3-misc-lf.retouchpics.com, shimo.im, ocean.shuqireader.com, *-slidebox-ios-prod.cloudfunctions.net, snailsleep.net, api-mobile.soundcloud.com, spclient.wg.spotify.com, api.tidal.com, api2.vlognow.me, medi.dxzzy321.top, *.docer.wps.cn, vipapi.wps.cn, account.wps.cn, *.wps.cn, p.du.163.com, education.github.com, *xmind.*, *xunlei.com, api-shoulei-ssl.xunlei.com, app-ios.y2002.com, api.ieasou.com, *.miguvideo.com, *.aliyundrive.com, *.alipan.com, *.aoscdn.com, *.apsapp.cn, user-b612-api.snow.me, cubox.pro, dj.palmestore.com, mobile-new.chinaeew.cn, backend.getdrafts.com, www.kkmop.com, payments.invideo.io, *.vlognow.me, api.funimate.com, *.meiyan.com, api.meiease.*, api.picsart.*, *.radio.cn, 60.205.171.165, *.camscanner.com, *.intsig.net
