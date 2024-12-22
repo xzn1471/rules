@@ -1,0 +1,12 @@
+#!name=扫描全能王-解锁VIP
+#!desc=扫描全能王-手机扫描仪+解锁VIP  软件版本：6.24.5
+#!date=2024-11-01
+#!category=😍BOBO Premium
+#!openUrl=https://apps.apple.com/app/id388627783
+
+[Script]
+# > 扫描全能王-手机扫描仪 解锁黄金会员
+扫描全能王-解锁黄金会员 = type=http-response, pattern=^https:\/\/.*\.(intsig\.net|camscanner\.com), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/CamScanner/JS/CamScanner.js, requires-body=true, max-size=-1, timeout=60
+
+[MITM]
+hostname = %APPEND% *.camscanner.com, *.intsig.net
