@@ -1,0 +1,13 @@
+#!name=京东比价(弹窗通知版)
+#!desc=京东比价(弹窗通知版).点击商品详情页，详情页图片加载会触发脚本
+#!category=😍BOBO Premium
+#!homepage=https://github.com/BOBOLAOSHIV587/Rules
+#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Jingdong.png
+#!openUrl=https://apps.apple.com/app/id414245413
+
+[Script]
+# > 京东比价(弹窗通知版)
+京东比价(弹窗通知版) = type=http-request, pattern=^https:\/\/in\.m\.jd\.com\/product\/graphext\/\d+\.html, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/JD_Price/JS/jd_price.js
+
+[MITM]
+hostname = %APPEND% in.m.jd.com
