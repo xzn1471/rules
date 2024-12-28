@@ -7,19 +7,13 @@
 
 1、自用Surge、QuantumultX(Qx)、Loon---分流规则、JS会员解锁脚本（搬运自各位大佬，防止删库）、Task。
 
-2、JS会员解锁脚本已测试均可使用。大部分软件需要登陆才能解锁。一部分开启脚本自动解锁，另一部分需要“恢复购买”后解锁，具体情况具体分析。一次解锁不了多试几次。
+2、分流规则在对应的Surge、QuantumultX、Loon文件夹中。按软件使用分流规则。
 
-3、所有JS会员脚本均已适配QX、Surge、Loon所需格式文件。有个别不适配某个代理软件的脚本已标注。
-
-4、后缀文件对应使用软件：.conf为QX脚本；.plugin为Loon脚本；.sgmodule为Surge脚本。
-
-5、分流规则在对应的Surge、QuantumultX、Loon文件夹中。按软件使用分流规则。
-
-6、各文件夹中文件明细：
+3、各文件夹中文件明细：
 
   1、）Task文件夹：各种定时任务----随机图片二次元+18、吾爱破解签到、定时推送妹子图、Pixiv推送服务等。
 
-  2、）Icons文件夹：各种图标。在软件中导入.json文件查看。（有图示-在各文件夹README文件查看）。
+  2、）Icons文件夹：各种图标。在软件中导入.json文件查看。
 
   3、）JS文件夹：各种App会员解锁脚本。
 
@@ -51,13 +45,13 @@
 
     1、）Dualsub文件夹：为适配Surge专用的流媒体字幕翻译工具+配合捷径使用；
 
-    2、）Module文件夹：为适配Surge专用的各种面板工具（有图示-在各文件夹README文件查看）；
+    2、）Module文件夹：为适配Surge专用的各种面板工具；
 
-    3、）Net-Test文件夹：为适配Surge专用的各种面板工具（有图示-在文件夹README文件查看）；
+    3、）Net-Test文件夹：为适配Surge专用的各种面板工具；
 
-    4、）Network文件夹：为适配Surge专用的各种面板工具（有图示-在文件夹README文件查看）；
+    4、）Network文件夹：为适配Surge专用的各种面板工具；
 
-    5、）Surge-Tool文件夹：为适配Surge专用的面板工具（有图示-在文件夹README文件查看）；
+    5、）Surge-Tool文件夹：为适配Surge专用的面板工具；
 
     6、）Premium文件夹：为适配Surge专用的自用JS会员脚本（JS文件夹App解锁脚本合集）；
 
@@ -67,7 +61,7 @@
 
     9、）tvOS文件夹：为适配Surge专用的tvOS安装证书。
 
-7、特别感谢：以下排名不分先后顺序
+4、特别感谢：以下排名不分先后顺序
  * [afengye](https://github.com/afengye)
  * [blackmatrix7](https://github.com/blackmatrix7)
  * [Yu9191](https://github.com/Yu9191)
