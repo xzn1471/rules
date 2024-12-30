@@ -1,5 +1,5 @@
 <div align="center">
-<img width="100" src="https://raw.githubusercontent.com/BOBOLAOSHIV587/QX-Rules/refs/heads/main/sticker.webp">
+<img width="100" src="https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/sticker.webp">
 <h2 align="center">Rules<h2>
 </div>
 
