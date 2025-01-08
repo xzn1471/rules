@@ -93,6 +93,5 @@
  * [DualSubs](https://github.com/DualSubs)
  * [Orz-3](https://github.com/Orz-3)
  * [Neurogram-R](https://github.com/Neurogram-R)
- * [BlackSpacee](https://github.com/BlackSpacee)
 
 <h4 align="center">感谢以上作者默默付出</h4>
