@@ -1,10 +1,15 @@
 /*************************************
 
-项目名称：Revenuecat系列解锁合集
-更新日期：2025-01-15
-脚本作者：@ddm1023
-电报频道：https://t.me/ddm1023
-使用声明：⚠️仅供参考，🈲转载与售卖！
+# 项目名称：Revenuecat系列解锁合集
+# 更新日期：2025-01-15
+# 脚本作者：@ddm1023
+# 电报频道：https://t.me/ddm1023
+# 使用声明：⚠️仅供参考，🈲转载与售卖！
+# 旧：
+# [rewrite_local]
+# >Revenuecat 系列解锁合集
+# ^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) url script-response-body https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Revenuecat/JS/Reheji.js
+# ^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) url script-request-header https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Revenuecat/JS/Reheji.js
 
 **************************************
 
