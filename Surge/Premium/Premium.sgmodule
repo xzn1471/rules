@@ -21,6 +21,11 @@ DOMAIN,gather.colorfulclouds.net,REJECT
 ^https://common-sc\.miguvideo\.com/task/v7/task-list/cmvideo/visitor data-type=text data=" " status-code=200
 
 
+[Header Rewrite]
+# > Spotify(>=iOS15)部分解锁premium,音质不能设置为超高 if-none-match返回304状态码
+http-request ^https:\/\/spclient\.wg\.spotify\.com\/user-customization-service\/v1\/customize$ header-del if-none-match
+
+
 [Script]
 # > 1Blocker 解锁永久订阅
 1BlockerProCrack = type=http-response, pattern=^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/1Blocker/JS/1BlockerProCrack.js, requires-body=true, max-size=-1, timeout=60
@@ -299,5 +304,10 @@ goodnotes = type=http-response, pattern=^https:\/\/isi\.csan\.goodnotes\.com\/.+
 goodnotes = type=http-request, pattern=^https:\/\/isi\.csan\.goodnotes\.com\/.+\/(receipts$|subscribers\/?(.*?)*$), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Goodnotes6/JS/goodnotes.js, timeout=60
 
 
+# > Spotify(>=iOS15)部分解锁premium,音质不能设置为超高
+spotify-json = type=http-request,pattern=^https:\/\/spclient\.wg\.spotify\.com\/(artistview\/v1\/artist|album-entity-view\/v2\/album)\/,requires-body=0,script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Spotify-Pro/JS/Spotify-Json.js
+spotify-proto = type=http-response,pattern=^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$,requires-body=1,binary-body-mode=1,max-size=0,script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Spotify-Pro/JS/Spotify-Proto.js,script-update-interval=0
+
+
 [MITM]
-hostname = %APPEND% api.revenuecat.com, buy.itunes.apple.com, api.adblockpro.app, *.adguard.org, appraven.net, pan.baidu.com, api.mr.pixocial.com, newbeee-api.beautyplus.com, biz.caiyunapp.com, ios.chat.openai.com, api.craft.do, media.deezer.com, *.pdfexpert.com, *.snow.me, filmicpro.oracle.bendingspoonsapps.com, appv2.filmix.com.cn, mobile.flightradar24.com, *.oracle.bendingspoonsapps.com, api.github.com, ifttt.com, *.kuwo.cn, cdn-bm.camera360.com, *.xiuxiu.meitu.com, api.posters.meitu.com, api-sub.meitu.com, bmall.camera360.com, *.apphud.com, apic.musixmatch.com, premium-api.myfitnesspal.com, restore-access.indream.app, nicegram.cloud, notability.com, peakvisor.com, oauth.secure.pixiv.net, api.polaxiong.com, www.qobuz.com, api-mobile.soundcloud.com, api.tidal.com, api2.vlognow.me, medi.dxzzy321.top, *.docer.wps.cn, vipapi.wps.cn, account.wps.cn, *.wps.cn, p.du.163.com, *xmind.*, *xunlei.com, api-shoulei-ssl.xunlei.com, *.miguvideo.com, *.aoscdn.com, *.apsapp.cn, user-b612-api.snow.me, cubox.pro, mobile-new.chinaeew.cn, backend.getdrafts.com, www.kkmop.com, payments.invideo.io, *.vlognow.me, api.funimate.com, *.meiyan.com, api-cs.intsig.net, isi.csan.goodnotes.com
+hostname = %APPEND% api.revenuecat.com, buy.itunes.apple.com, api.adblockpro.app, *.adguard.org, appraven.net, pan.baidu.com, api.mr.pixocial.com, newbeee-api.beautyplus.com, biz.caiyunapp.com, ios.chat.openai.com, api.craft.do, media.deezer.com, *.pdfexpert.com, *.snow.me, filmicpro.oracle.bendingspoonsapps.com, appv2.filmix.com.cn, mobile.flightradar24.com, *.oracle.bendingspoonsapps.com, api.github.com, ifttt.com, *.kuwo.cn, cdn-bm.camera360.com, *.xiuxiu.meitu.com, api.posters.meitu.com, api-sub.meitu.com, bmall.camera360.com, *.apphud.com, apic.musixmatch.com, premium-api.myfitnesspal.com, restore-access.indream.app, nicegram.cloud, notability.com, peakvisor.com, oauth.secure.pixiv.net, api.polaxiong.com, www.qobuz.com, api-mobile.soundcloud.com, api.tidal.com, api2.vlognow.me, medi.dxzzy321.top, *.docer.wps.cn, vipapi.wps.cn, account.wps.cn, *.wps.cn, p.du.163.com, *xmind.*, *xunlei.com, api-shoulei-ssl.xunlei.com, *.miguvideo.com, *.aoscdn.com, *.apsapp.cn, user-b612-api.snow.me, cubox.pro, mobile-new.chinaeew.cn, backend.getdrafts.com, www.kkmop.com, payments.invideo.io, *.vlognow.me, api.funimate.com, *.meiyan.com, api-cs.intsig.net, isi.csan.goodnotes.com, spclient.wg.spotify.com
