@@ -75,7 +75,6 @@
  * [Chavyleung](https://github.com/chavyleung)
  * [ddgksf2013](https://github.com/ddgksf2013)
  * [Yunxingz](https://github.com/Yunxingz)
- * [Rabbit-Spec](https://gitlab.com/Rabbit-Spec)
  * [Maasea](https://github.com/Maasea)
  * [NobyDa](https://github.com/NobyDa)
  * [ScriptHub](https://github.com/Script-Hub-Org)
