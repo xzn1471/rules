@@ -4,10 +4,7 @@
 #!desc = 〔 酷我音乐&酷我畅听 〕全功能破解
 #!author = 影子[https://www.napi.ltd]
 #!homepage = https://napi.ltd
-#!openUrl = https://napi.ltd
 #!tag = 会员
-#!loon_version = 3.2.3(762)
-#!icon = https://static.napi.ltd/Image/KuWo.png
 #!date = 2025-02-15
 
 ****************************
@@ -34,10 +31,18 @@
 
 脚本链接：https://napi.ltd/script/Worker/KuWo.js
 
-3：surge 模块(安装新模块)
-模块链接：https://napi.ltd/script/Worker/KuWo.sgmodule
+[rewrite_local]
+^.*?(ad(.*)?\.tencentmusic\.com|kuwo\.cn\/((EcomResource|(Mobile)?Ad)Serv(er|ice)|(vip|(open)?api)?\/v\d\/(user\/freeMode|sysinfo\?op\=getRePayAndDoPayBox(New)?|album\/adBar|app\/(newMenuList\/menuListInfo|pasterAdvert\/config)|api\/advert\/(iListen|album)|operate\/pop\/info|-online\/sign\/new\/playEntryV1-)|kuwopay\/vip-tab\/page\/floatbox)) url reject-200
+^(?!.*img).*?(abt-kuwo\.tencentmusic\.com|kuwo\.cn)(/vip|/(open)?api)?(/enc.*?signver|/(v\d/)?(pay/app/getConfigInfo|app/startup/config|user/vip\?(vers|apiVersion|platform|op\=ui|_t)|theme\?op=gd|api/((pay/)?(user/info|payInfo/kwplayer/payMiniBar)|advert/myPage)|tingshu/index/radio|operate/homePage)|/kuwo/ui/info$|/kuwopay\/personal\/cells|/pay/viptab/index\.html|/kuwopay/vip-tab/(setting|page/cells)|/a\.p($|\?newver\=\d$|.*?op\=(getvip|policy_shortvideo)|.*?ptype\=vip)|/commercia/vip/(player/getStyleListByModel|hanger/wear)|/authPay|/mobi\.s\?f\=kwxs|/music\.pay\?newver\=\d$|/basedata\.s\?type\=get_album_info|/mgxh\.s\?user) url script-response-body https://napi.ltd/script/Worker/KuWo.js
+
+
+[mitm]
+hostname = *.kuwo.cn, *.tencentmusic.com
 
 ****************************
+
+3：surge 模块(安装新模块)
+模块链接：https://napi.ltd/script/Worker/KuWo.sgmodule
 
 [Rule]
 USER-AGENT,KWPlayer*,PROXY
