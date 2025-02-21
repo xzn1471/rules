@@ -1,0 +1,14 @@
+#!name=蛋啵解锁vip功能
+#!desc=蛋啵解锁vip功能  版本：1.3.00
+#!category=😍BOBO Premium
+#!homepage=https://github.com/BOBOLAOSHIV587/Rules
+#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/DanBo.png
+#!openUrl=https://apps.apple.com/app/id1594998254
+
+[Script]
+# > 蛋啵解锁vip功能
+danbovip = type=http-response, pattern=^https://api-sub\.meitu\.com/v2/user/vip_info_by_group, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/DanBo/JS/danbovip.js, requires-body=true, max-size=-1, timeout=60
+danboai = type=http-response, pattern=^https://ai\.xiuxiu\.meitu\.com/v1/tool/mtlab/ai_graffiti_permission, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/DanBo/JS/danboai.js, requires-body=true, max-size=-1, timeout=60
+
+[MITM]
+hostname = %APPEND% ai.xiuxiu.meitu.com, api-sub.meitu.com
