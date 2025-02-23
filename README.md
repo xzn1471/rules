@@ -94,3 +94,6 @@
  * [Neurogram-R](https://github.com/Neurogram-R)
 
 <h4 align="center">感谢以上作者默默付出</h4>
+
+## Star History
+[![Star History Chart](https://api.star-history.com/svg?repos=BOBOLAOSHIV587/Rules&type=Date)](https://star-history.com/#BOBOLAOSHIV587/Rules&Date)
