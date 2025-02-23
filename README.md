@@ -5,6 +5,11 @@
 
 # 说明
 
+
+- 累计访客量: ![累计访客量](https://profile-counter.glitch.me/BOBOLAOSHIV587/count.svg)
+- [星标数量](https://img.shields.io/github/stars/BOBOLAOSHIV587/Rules?style=social): ![星标数量](https://img.shields.io/github/stars/BOBOLAOSHIV587/Rules?style=social)
+
+
 1、自用Surge、QuantumultX(Qx)、Loon---分流规则、JS会员解锁脚本（搬运自各位大佬，防止删库）、Task。
 
 2、分流规则在对应的Surge、QuantumultX、Loon文件夹中。按软件使用分流规则。
