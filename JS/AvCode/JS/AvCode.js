@@ -2,9 +2,7 @@
  *  * @Author: XiaoMao
  * @LastMod: 2025-03-07
 
-
 车牌影片搜索
-
 
 使用方法：
 
@@ -12,7 +10,6 @@
 https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/XiaoMaoAvCode.js
 
 2、支持\百\度\引\擎\，及www开头的谷歌域名
-
 
 🍋‍🟩使用须知：
 ①注意身体
@@ -23,7 +20,6 @@ https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/XiaoMaoA
 ②使用百度/谷歌搜索车牌
 填入关键字 【 av# ➕ 车牌号 】
 ③弹窗跳转
-
 
 ********************************
 
