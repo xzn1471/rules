@@ -1,8 +1,18 @@
-/* 
+/*************************************
  * 淫荡猫 & 母狗圈解锁会员视频
  * 去除弹窗广告
  * 解锁付费视频
  * 2025-03-06
+
+#淫荡猫 🔞
+地址：https://dd38dkt7dfvyr.cloudfront.net
+
+
+#母狗圈
+下载地址: https://d2x03a61ogs2x5.cloudfront.net
+
+**************************************
+
 [rewrite_local]
 
 # 会员
@@ -12,7 +22,9 @@ https:\/\/(dd38dkt7dfvyr|d2x03a61ogs2x5)\.cloudfront\.net\/api\/(video\/getVideo
 
 [mitm]
 hostname = *.cloudfront.net
-*/
+
+*************************************/
+
 const $ = new Env("淫荡猫 & 母狗圈", {
     "logLevel": "info"
 });
