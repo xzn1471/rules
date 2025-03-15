@@ -1,7 +1,7 @@
 /*************************************
 
 项目名称：iTunes-系列解锁合集
-更新日期：2025-01-31
+更新日期：2025-03-14
 脚本作者：@ddm1023
 电报频道：https://t.me/ddm1023
 使用声明：⚠️仅供参考，🈲转载与售卖！
@@ -31,6 +31,8 @@ const yearlysubscription = `${bundle_id}.yearlysubscription`;
 const lifetimeid = `${bundle_id}.lifetime`;
 
 const list = {
+  'com.ideack.BusinessCard': { cm: 'timeb', hx: 'hxpda', id: "BusinessCardVipPerpetual", latest: "ddm1023" }, //名片夹
+  'com.ideack.MagicAudio': { cm: 'timeb', hx: 'hxpdb', id: "MagicAudioPermanent", latest: "ddm1023" }, //音乐剪辑
   'DuChuangZhe': { cm: 'timea', hx: 'hxpda', id: "org.zrey.du.main", latest: "ddm1023" }, //独创者
   'PhotoWhite': { cm: 'timeb', hx: 'hxpda', id: "org.zrey.photowhite.flash_lifetime", latest: "ddm1023" },  //印白
   'FETreeVideoChange': { cm: 'timeb', hx: 'hxpda', id: "com.dj.videototext.forever", latest: "ddm1023" },  //视频转文字
@@ -170,7 +172,7 @@ const list = {
   'com.yumiteam.Kuki.ID': { cm: 'timea', hx: 'hxpda', id: "com.yumiteam.Kuki.ID.2", latest: "ddm1023" },  //PicsLeap-美飞
   'com.quangtm193.picpro': { cm: 'timea', hx: 'hxpda', id: "com.quangtm193.picpro1year", latest: "ddm1023" },  //PicPro-人工智能照片编辑器
   'Storybeat': { cm: 'timea', hx: 'hxpda', id: "yearly_1", latest: "ddm1023" },  //Storybeat
-  'com.smartgymapp.smartgym': { cm: 'timea', hx: 'hxpda', id: "com.smartgymapp.smartgym.premiumpersonaltraineryearly", latest: "ddm1023" },  //SmartGym
+  'SmartGym': { cm: 'timea', hx: 'hxpda', id: "com.smartgymapp.smartgym.premiumuserworkoutsyearly", latest: "ddm1023" },  //SmartGym
   'Ptime': { cm: 'timea', hx: 'hxpda', id: "com.subscribe.pro.year", latest: "ddm1023" },  //Ptime-拼图(需试用)
   'Prookie': { cm: 'timea', hx: 'hxpda', id: "prookie.month.withtrial.0615", latest: "ddm1023" },  //AI灵绘
   'BodyTune': { cm: 'timea', hx: 'hxpda', id: "Bodypro1", latest: "ddm1023" },  //BodyTune-瘦身相机
