@@ -7,8 +7,6 @@
 
 
 - 累计访客量: ![](https://profile-counter.glitch.me/BOBOLAOSHIV587_Rules/count.svg)
-- [星标数量](https://img.shields.io/github/stars/BOBOLAOSHIV587/Rules?style=social): ![星标数量](https://img.shields.io/github/stars/BOBOLAOSHIV587/Rules?style=social)
-
 
 1、自用Surge、QuantumultX(Qx)、Loon---分流规则、JS会员解锁脚本（搬运自各位大佬，防止删库）、Task。
 
@@ -99,6 +97,3 @@
  * [Neurogram-R](https://github.com/Neurogram-R)
 
 <h4 align="center">感谢以上作者默默付出</h4>
-
-## Star History
-[![Star History Chart](https://api.star-history.com/svg?repos=BOBOLAOSHIV587/Rules&type=Date)](https://star-history.com/#BOBOLAOSHIV587/Rules&Date)
