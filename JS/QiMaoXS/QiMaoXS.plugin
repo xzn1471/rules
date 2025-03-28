@@ -1,0 +1,13 @@
+#!name=七猫小说
+#!desc=七猫小说解锁终身VIP + 去除所有广告 + 无限下载权限 + 无限听书权限 + 无限阅读权限.软件版本：5.13
+#!category=😍BOBO Premium
+#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/QiMao.png
+#!openUrl=https://apps.apple.com/app/id1387717110
+
+[Script]
+# > 七猫小说(2022.01.18)
+http-response ^https?:\/\/(api-\w+|xiaoshuo)\.wtzw\.com\/api\/v\d\/ script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/QiMaoXS/JS/QiMaoXiaoShuo.js, requires-body=true, timeout=60, tag=QiMaoXiaoShuo
+http-response ^https?:\/\/(api-\w+|xiaoshuo)\.wtzw\.com\/api\/v\d\/ script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/QiMaoXS/JS/XiaoShuo.js, requires-body=true, timeout=60, tag=XiaoShuo
+
+[Mitm]
+hostname= *.wtzw.com
