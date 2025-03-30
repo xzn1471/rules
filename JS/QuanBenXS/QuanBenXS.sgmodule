@@ -1,0 +1,12 @@
+#!name=全本小说—淘小说—解锁VIP
+#!desc=全本小说—淘小说—解锁VIP
+#!category=😍BOBO Premium
+#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/QuanBenXS.png
+#!openUrl=https://apps.apple.com/app/id1489311475
+
+[Script]
+# > 全本小说—淘小说—解锁VIP
+QuanBenXiaoShuo = type=http-response, pattern=^https?:\/\/t(f|y)book.taoyuewenhua.net\/(auth\/account\?adid|auth\/task_account_ios.do\?|wx_register.do\?|auth\/try_wx_bind\?).*$, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/QuanBenXS/JS/QuanBenXiaoShuo.js, requires-body=true, max-size=-1, timeout=60
+
+[MITM]
+hostname = %APPEND% tfbook.taoyuewenhua.net, tybook.taoyuewenhua.net
