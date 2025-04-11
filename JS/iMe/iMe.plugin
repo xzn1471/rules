@@ -10,4 +10,4 @@
 http-response https:\/\/api\.imem\.apple\.app\/api\/premium\/getOwnStatus script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/iMe/JS/iMe.js, requires-body=true, timeout=60, tag=iMe解锁Premium(非Tg)
 
 [MITM]
-hostname = -api.imem.app
+hostname = api.imem.app
