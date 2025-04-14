@@ -1,7 +1,7 @@
 /*************************************
 
 项目名称：iTunes-系列解锁合集
-更新日期：2025-03-25
+更新日期：2025-04-13
 脚本作者：@ddm1023
 电报频道：https://t.me/ddm1023
 使用声明：⚠️仅供参考，🈲转载与售卖！
@@ -31,6 +31,13 @@ const yearlysubscription = `${bundle_id}.yearlysubscription`;
 const lifetimeid = `${bundle_id}.lifetime`;
 
 const list = {
+  'FlashTransportMaster': { cm: 'timea', hx: 'hxpda', id: "com.flashtransport.fightenegery.yearly.base", latest: "ddm1023" },  //时光罐罐
+  'com.ideack.ASR': { cm: 'timeb', hx: 'hxpda', id: "ASR_Permanent_Plan", latest: "ddm1023" },  //录音转文字
+  'Presets': { cm: 'timea', hx: 'hxpda', id: "com.chromatech.chroma.yearlyAutoRenewable", latest: "ddm1023" },  //Presets:照片处理、图像编辑器
+  'GoodTask': { cm: 'timeb', hx: 'hxpda', id: "com.hahainteractive.goodtask3.pro", latest: "ddm1023" },  //代办事项清单-GoodTask
+  'com.hanchongzan.loverlist': { cm: 'timeb', hx: 'hxpda', id: "com.hanchongzan.loverlist.01", latest: "ddm1023" },  //恋人清单
+  'com.hanchongzan.period': { cm: 'timeb', hx: 'hxpda', id: "com.hanchongzan.period.girl", latest: "ddm1023" },  //姨妈来咯
+  'com.hanchongzan.book': { cm: 'timeb', hx: 'hxpda', id: "com.hanchongzan.book.vip", latest: "ddm1023" }, //闪电记账
   'SoundLab': { cm: 'timeb', hx: 'hxpda', id: "8001", latest: "ddm1023" },  //合声-音乐制作
   'ECGANALYZER': { cm: 'timea', hx: 'hxpda', id: "com.wms.hrv.yearlyfamilysharing", latest: "ddm1023" }, //ECG+
   'com.RuoG.Pixiu': { cm: 'timea', hx: 'hxpda', id: "com.RuoG.Pixiu.VIPYear", latest: "ddm1023" }, //貔貅记账
@@ -58,14 +65,13 @@ const list = {
   'com.casttv.remotetv': { cm: 'timeb', hx: 'hxpda', id: "liftetime2", latest: "ddm1023" }, //TVRemote电视遥控器
   'WallpaperWidget': { cm: 'timea', hx: 'hxpda', id: "com.widget.theme.yearly.3dayfree", latest: "ddm1023" }, //壁纸主题(需试用)
   'ProREC': { cm: 'timea', hx: 'hxpda', id: "ProAudioCamera_Annual", latest: "ddm1023" }, //ProREC-相机
-  'Period': { cm: 'timeb', hx: 'hxpda', id: "com.hanchongzan.book.vip", latest: "ddm1023" }, //闪电记账
   'TypeOn%20Keyboard': { cm: 'timeb', hx: 'hxpda', id: "com.hanchongzan.book.vip", latest: "ddm1023" }, //TypeOn
   'PhotoCollagePro': { cm: 'timeb', hx: 'hxpda', id: "PHOTABLE_PREMIUM", latest: "ddm1023" }, //Photable-腹肌P图神器
   'com.alphamobiletech.bodyApp': { cm: 'timeb', hx: 'hxpda', id: "Bodyapp_Forever", latest: "ddm1023" }, //Bodyapp-身材修图软件
   'com.alphamobiletech.facey': { cm: 'timeb', hx: 'hxpda', id: "Facey_Forever", latest: "ddm1023" }, //Facey-专业彩妆P图神器
   'Packet': { cm: 'timeb', hx: 'hxpda', id: "com.aaaalab.nepacket.iap.full", latest: "ddm1023" }, //HTTPS抓包
   'AllMyBatteries': { cm: 'timeb', hx: 'hxpda', id: "AllMyBatteries_Ultimate", latest: "ddm1023" }, //AllMyBatteries-电池管家
-  'VDIT': { cm: 'timea', hx: 'hxpda', id: "me.imgbase.videoday.profeaturesYearly", latest: "ddm1023" }, //VDIT-视频转换
+  'VDIT': { cm: 'timeb', hx: 'hxpda', id: "me.imgbase.videoday.profeaturesLifetime", latest: "ddm1023" }, //VDIT-视频转换
   'CodeSnippet': { cm: 'timea', hx: 'hxpda', id: "it.beatcode.codesnippetpro.annualSubscription", latest: "ddm1023" }, //CodeSnippet
   'darkWeb': { cm: 'timea', hx: 'hxpda', id: "dforce_unlock_all_functions", latest: "ddm1023" }, //DForce-Safari扩展
   'BookReader': { cm: 'timea', hx: 'hxpda', id: "com.reader.1year", latest: "ddm1023" }, //阅读器-小说阅读器
