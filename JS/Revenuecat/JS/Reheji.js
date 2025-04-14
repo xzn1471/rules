@@ -1,7 +1,7 @@
 /*************************************
 
 项目名称：Revenuecat系列解锁合集
-更新日期：2025-03-27
+更新日期：2025-04-11
 脚本作者：@ddm1023
 电报频道：https://t.me/ddm1023
 使用声明：⚠️仅供参考，🈲转载与售卖！
@@ -34,6 +34,7 @@ if (forbiddenApps.some(app => (ua && ua.includes(app)) || ($request.body && $req
 }
 
 const bundle = {
+  'com.OfflineMusic.www': { name: 'premium', id: 'com.OfflineMusic.www.lifetime298', cm: 'sjb' },  //维克音乐
   'com.ausoco.umai': { name: 'umai_pro', id: 'umai_pro_yearly', cm: 'sja' },  //UmAI
   'camp.user.penbook': { name: 'pro', id: 'penbook.lifetime01', cm: 'sjb' },  //Penbook-智能笔记本
   'design.yugen.Flow': { name: 'pro', id: 'design.yugen.Flow.Lifetime', cm: 'sja' },  //Flow-番茄工作/专注计时器
@@ -50,10 +51,15 @@ const bundle = {
   'com.reader.book': { name: 'pro', id: 'reader.lifetimeFamily.pro', cm: 'sja' },  //PureLibro
   'app.imone.OneWidget': { name: 'pro', id: 'app.imone.OneWidget.Lifetime', cm: 'sjb' },  //OneWidget-小组件
   'io.innerpeace.yiye': { name: 'Premium', id: 'io.innerpeace.yiye.lifetime.forYearly', cm: 'sja' },  //言外笔记
+  'com.valo.reader': { name: 'com.valo.reader.vip1.forever', id: 'com.valo.reader.vip1.forever', nameb: 'com.valo.reader.vip2.forever', idb: 'com.valo.reader.vip2.forever', cm: 'sjb' },  //读不舍手
   'com.skysoft.removalfree': { name: 'Pro', id: 'com.skysoft.removalfree.subscription.newyearly', cm: 'sja' }  //图片消除
 };
 
 const listua = {
+  'Loopsie': { name: 'pro-iOS', id: 'com.gamelounge.loopsie.ios.one_time', cm: 'sjb' },  //Loopsie
+  'StockPlus': { name: 'Premium', id: 'stocks_lifetime_premium', cm: 'sjb' },  //Stock+股票图表
+  'StudyAI': { name: 'premium_access', id: 'Lifetime_PRO', cm: 'sjb' },  //StudyAI-智能题解AI
+  'PhotoVault': { name: 'lifetime', id: 'photovault.lifetime', cm: 'sjc' },  //iSafe-私密相册管家
   'CountdownWidget': { name: 'pro', id: 'cd_lifetime', cm: 'sjb' },  //倒计时小工具:Countful
   'DarkLooker': { name: 'Pro', id: 'com.boleStudio.safaridarkmode.permanent', cm: 'sjb' },  //DarkLooker 护眼蓝光/Safari扩展工具
   'Sunlitt': { name: 'sunlitt.pro', id: 'pro.lifetime', cm: 'sjb' },  //Sunlitt-太阳位置
@@ -272,7 +278,6 @@ const listua = {
   'Paper': { name: 'pro', id: 'com.fiftythree.paper.credit', cm: 'sjb' },  //Paper
   'Ape': { name: 'pro-iOS', id: 'ape.lifetime', cm: 'sjb' },  //Sharp AI
   'Boar': { name: 'pro-iOS', id: 'boar.yearly', cm: 'sja' },  //Erase Objects
-  'Loopsie': { name: 'pro-iOS', id: 'com.reader.autoRenewableSeason', cm: 'sja' },  //Loopsie
   'MySticker': { name: 'mysticker premium', id: 'com.miiiao.MySticker.lifetime', cm: 'sjb' },  //Tico-贴抠
   'Rec': { name: 'rec.paid', id: 'rec.paid.onetime', cm: 'sjb' },  //Rec相机
   'Photon': { name: 'photon.paid', id: 'photon.paid.onetime', cm: 'sjb' },  //Photon相机
