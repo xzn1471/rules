@@ -7,8 +7,8 @@
 [rewrite_local]
 # > 网易云解锁VIP
 ^https?:\/\/interface\d?\.music\.163\.com\/e?api\/vip\/cashier\/tspopup\/get url reject-200
-^https?:\/\/interface\d?\.music\.163\.com\/e?api\/(mine\/collect\/header\/info|v\d\/user\/detail\/\d+|vipnewcenter\/app\/resource\/newaccountpage|music-vip-membership\/(client|front)\/vip\/info|batch|playlist\/privilege|search\/complex\/page|v\d\/(discovery\/recommend\/songs|playlist\/detail)) url script-response-body https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/NeteaseCloudMusic/JS/NeteaseCloudMusic.js
-^https?:\/\/interface\d?\.music\.163\.com\/e?api\/(song\/enhance\/player\/url\/v\d|vipauth\/app\/auth\/query) url script-analyze-echo-response https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/NeteaseCloudMusic/JS/NeteaseCloudMusic.js
+^https?:\/\/interface\d?\.music\.163\.com\/e?api\/(mine\/collect\/header\/info|v\d\/user\/detail\/\d+|vipnewcenter\/app\/resource\/newaccountpage|music-vip-membership\/(client|front)\/vip\/info|batch|playlist\/privilege|search\/complex\/page|v\d\/(discovery\/recommend\/songs|playlist\/detail)) url script-response-body https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/refs/heads/main/JS/NeteaseCloudMusic/JS/JS-4/NeteaseCloudMusic.js
+^https?:\/\/interface\d?\.music\.163\.com\/e?api\/(song\/enhance\/player\/url\/v\d|vipauth\/app\/auth\/query) url script-analyze-echo-response https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/refs/heads/main/JS/NeteaseCloudMusic/JS/JS-4/NeteaseCloudMusic.js
 
 [mitm]
 hostname = interface*.music.163.com
