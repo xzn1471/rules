@@ -33,7 +33,6 @@
 # 会员认证
 ^https?:\/\/interface3?\.music\.163\.com\/eapi\/vipauth\/app\/auth\/(soundquality\/)?query url script-request-header https://raw.githubusercontent.com/WeiGiegie/666/main/wangyiyun.js
 
-
 [mitm]
 hostname = *music.163.com
 
