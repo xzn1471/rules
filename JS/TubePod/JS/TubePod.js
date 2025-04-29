@@ -1,6 +1,6 @@
 /*************************************
 TubePod解锁Lifetime
-
+https://apps.apple.com/us/app/tubepod-video-audio-streaming/id6636469468?l=zh-Hans-CN
 *************************************
 
 [rewrite_local]
