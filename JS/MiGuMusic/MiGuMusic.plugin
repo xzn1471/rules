@@ -1,0 +1,18 @@
+#!name=咪咕音乐
+#!desc=咪咕音乐vip、音质、下载  软件版本：7.41.16
+#!category=😍BOBO Premium
+#!homepage=https://github.com/BOBOLAOSHIV587/Rules
+#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/miguyinyue.png
+#!openUrl=https://music.migu.cn/v3
+
+[Rewrite]
+^https://app\.c\.nf\.migu\.cn/member/api/marketing/text reject
+^https://app\.c.nf\.migu\.cn/payment/watch-ad reject-200
+
+[Script]
+# > 咪咕音乐vip、音质、下载
+http-response ^https?:\/\/(u|c|app).(musicapp|c.nf).migu.cn.*(user\/(queryUserInfo.do|member\/center))|(column\/(startup-pic-with-ad|marketing\/advertising)|\/resource\/skin\/list\/).*$ script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/MiGuMusic/JS/MiGuMusic.js, requires-body=true, timeout=60, tag=咪咕音乐vip
+http-request ^https?:\/\/app.(c|pd).nf.migu.cn\/.*\/(listen-url|music\/batchQueryMusicPolicy|download-url).*$ script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/MiGuMusic/JS/MiGuMusic.js, timeout=60, tag=咪咕音乐vip
+
+[MITM]
+hostname = *.migu.cn
