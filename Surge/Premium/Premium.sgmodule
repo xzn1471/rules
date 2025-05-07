@@ -520,13 +520,13 @@ mdsqallcrack = type=http-request, pattern=^https?:\/\/.*\/api\/app\/media\/m3u8\
 
 
 # > 咪咕视频Vip会员
-mgsp = type=http-response, pattern=^https?:\/\/(play|dis).*miguvideo.com\/(play|dis)(url|play)\/.*$, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/migushipin/JS/mgsp.js, requires-body=true, max-size=-1, timeout=60
-mgspck = type=http-request, pattern=^https?:\/\/play.miguvideo.com\/playurl\/v1\/play\/playurl\?2Kvivid=true?.*=true$, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/migushipin/JS/mgspck.js, timeout=60
+咪咕视频Vip会员 = type=http-response, pattern=^https?:\/\/(play|dis).*miguvideo.com\/(play|dis)(url|play)\/.*$, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/MiGuShiPin/JS/MiGuShiPin.js, requires-body=true, max-size=-1, timeout=60
+咪咕视频Vip会员 = type=http-request, pattern=^https?:\/\/play.miguvideo.com\/playurl\/v1\/play\/playurl\?2Kvivid=true?.*=true$, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/MiGuShiPin/JS/MiGuShiPinck.js, timeout=60
 
 
 # > 咪咕音乐vip、音质、下载
-miguyinyue = type=http-response, pattern=^https?:\/\/(u|c|app).(musicapp|c.nf).migu.cn.*(user\/(queryUserInfo.do|member\/center))|(column\/(startup-pic-with-ad|marketing\/advertising)|\/resource\/skin\/list\/).*$, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/miguyinyue/JS/miguyinyue.js, requires-body=true, max-size=-1, timeout=60
-miguyinyue = type=http-request, pattern=^https?:\/\/app.(c|pd).nf.migu.cn\/.*\/(listen-url|music\/batchQueryMusicPolicy|download-url).*$, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/miguyinyue/JS/miguyinyue.js, timeout=60
+咪咕音乐vip = type=http-response, pattern=^https?:\/\/(u|c|app).(musicapp|c.nf).migu.cn.*(user\/(queryUserInfo.do|member\/center))|(column\/(startup-pic-with-ad|marketing\/advertising)|\/resource\/skin\/list\/).*$, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/MiGuMusic/JS/MiGuMusic.js, requires-body=true, max-size=-1, timeout=60
+咪咕音乐vip = type=http-request, pattern=^https?:\/\/app.(c|pd).nf.migu.cn\/.*\/(listen-url|music\/batchQueryMusicPolicy|download-url).*$, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/MiGuMusic/JS/MiGuMusic.js, timeout=60
 
 
 # > 海角社区解锁会员视频&付费视频
