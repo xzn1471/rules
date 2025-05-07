@@ -1,7 +1,7 @@
 /*************************************
 
 项目名称：Revenuecat系列解锁合集
-更新日期：2025-04-28
+更新日期：2025-05-06
 脚本作者：@ddm1023
 电报频道：https://t.me/ddm1023
 使用声明：⚠️仅供参考，🈲转载与售卖！
@@ -56,6 +56,9 @@ const bundle = {
 };
 
 const listua = {
+  'fengling': { name: 'Pro', id: 'com.nocmt.fengling.NewLifetime', cm: 'sjb' },  //烽翎
+  'Dailyart': { name: 'lifeTime', id: 'artLifeTime', cm: 'sjc' },  //Dailyart-每日艺术
+  'Lightune': { name: 'pro', id: 'Lightune_Pro_Year', cm: 'sja' },  //Lightune - AI专业修图
   'ArchiveList': { name: 'pro_life', id: 'com.jy.ArchiveBox.pro_1', cm: 'sjb' },  //ArchiveList - 收藏夹/稍后阅读
   'smscat': { name: 'pro', id: 'smscat_vip_lifetime', cm: 'sjb' },  //短信喵
   'Saifs%20Ai': { name: 'lifetime', id: 'ai_clothes_changer_lifetime_offer', cm: 'sjb' },  //SaifsAi-AI换装
