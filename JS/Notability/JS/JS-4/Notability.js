@@ -1,10 +1,11 @@
-/*
+/*************************************
 [rewrite_local]
+# > Notability解锁Plus
 https://notability.com/global url script-response-body https://raw.githubusercontent.com/Yu9191/Rewrite/refs/heads/main/Not.js
 
 [mitm]
 hostname = notability.com
-*/
+*************************************/
 
 const response = {
   "data": {
