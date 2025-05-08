@@ -7,7 +7,8 @@
 *******************************
 [rewrite_local]
 ^https:\/\/biz\.cyapi\.cn\/ url script-response-body https://raw.githubusercontent.com/afengye/QX/main/caiyun.js
-[mitm] 
+
+[mitm]
 hostname = biz.cyapi.cn
 *******************************/
 
