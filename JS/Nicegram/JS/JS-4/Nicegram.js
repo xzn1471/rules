@@ -19,7 +19,6 @@ hostname = nicegram.cloud, restore-access.indream.app
 
 *************************************/
 
-
 const url = $request.url;
 const isQX = typeof $task !== "undefined";
 var chxm1023 = JSON.parse($response.body);
