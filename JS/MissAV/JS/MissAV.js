@@ -29,13 +29,13 @@ modifiedHeaders['User-Agent'] = 'Mozilla/6.0 (iPhone 15; CPU iPhone OS 16_6 like
 
 var regex = /<\/title>/gi;
 var replace_str = '</title>\
-<link rel="stylesheet" href="https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/MissAV/JS/Adblock.user.css" type="text/css" />\
-<script type="text/javascript" async="async" src="https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/MissAV/JS/Adblock.user.js"></script>\
+<link rel="stylesheet" href="https://github.com/BOBOLAOSHIV587/Rules/blob/main/JS/MissAV/JS/Adblock.user.css" type="text/css" />\
+<script type="text/javascript" async="async" src="https://github.com/BOBOLAOSHIV587/Rules/blob/main/JS/MissAV/JS/Adblock.user.js"></script>\
 '
 
 var body_regex = /<\/body>/gi;
-var body_replace_str = '<link rel="stylesheet" href="https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/MissAV/JS/Adblock.user.css" type="text/css" />\
-<script type="text/javascript" async="async" src="https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/MissAV/JS/Adblock.user.js"></script></body>\
+var body_replace_str = '<link rel="stylesheet" href="https://github.com/BOBOLAOSHIV587/Rules/blob/main/JS/MissAV/JS/Adblock.user.css" type="text/css" />\
+<script type="text/javascript" async="async" src="https://github.com/BOBOLAOSHIV587/Rules/blob/main/JS/MissAV/JS/Adblock.user.js"></script></body>\
 '
 
 
