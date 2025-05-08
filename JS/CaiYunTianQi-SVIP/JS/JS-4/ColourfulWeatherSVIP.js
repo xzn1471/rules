@@ -1,10 +1,10 @@
-/*
+/*************************************
 彩云天气
 
 大于>7.20.2版本不可以mitm  需要使用最新版,比如7.22.0,可以通过登录旧版解锁，在线升级到新版版即可
 如果出现广告无法消除，请卸载重装，或者巨魔用户使用  轻松签+👉应用👉已安装👉彩云天气(Pro)👉清除数据👉仅清空数据(这样清除广告缓存且不需要重新登录)
 
-====================================
+*************************************
 [filter_local]
 # 上传信息
 host, gather.colorfulclouds.net ,reject
@@ -51,8 +51,9 @@ host, gather.colorfulclouds.net ,reject
 
 [mitm]
 hostname = *.cyapi.cn
-====================================
- */
+
+*************************************/
+
 var huihui = {}, url = $request.url, headers = ObjectKeys2LowerCase($request.headers);
 const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2ZXJzaW9uIjoxLCJ1c2VyX2lkIjoiNWY1YmZjNTdkMmM2ODkwMDE0ZTI2YmI4Iiwic3ZpcF9leHBpcmVkX2F0IjoxNzA1MzMxMTY2LjQxNjc3MSwidmlwX2V4cGlyZWRfYXQiOjB9.h_Cem89QarTXxVX9Z_Wt-Mak6ZHAjAJqgv3hEY6wpps';
 if (url.includes("/v2/user")) {
