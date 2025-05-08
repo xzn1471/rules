@@ -1,0 +1,11 @@
+#!name=音乐搜索
+#!desc=使用百度或谷歌 搜索框输入 “md#音乐名或歌手名” 或 “ml#音乐名或歌手名” 即可搜索音乐
+#!category=😍BOBO Premium
+
+[Script]
+# > 音乐搜索--使用百度或谷歌 搜索框输入 “md#音乐名或歌手名” 或 “ml#音乐名或歌手名” 即可搜索音乐
+MusicCode = type=http-request, pattern=^https:\/\/(?:m|www)\.baidu\.com\/s\?.*?[?&](?:word|wd)=(?:md|ml)%23[^&]+, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/MusicCode/JS/MusicCode.js, timeout=60
+MusicCode = type=http-request, pattern=^https?:\/\/(?:[a-zA-Z0-9-]+\.)?google\.[a-zA-Z.]+\/search\?[^&]*q=(md|ml)%23([^&]+), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/MusicCode/JS/MusicCode.js, timeout=60
+
+[MITM]
+hostname = %APPEND% m.baidu.com, www.baidu.com, www.google.*
