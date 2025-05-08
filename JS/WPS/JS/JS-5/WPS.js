@@ -1,10 +1,10 @@
 /**************************
  *  * @Author: XiaoMao
  * @LastMod: 2023-06-05
- *
- * 
-\w\p\s\v\i\p \稻\壳\会\员 \超\级\会\员 \w\p\s\会\员 \云\空\间\容\量\自\定\义\超\级\会\员\p\r\o\
-\新\会\员\体\系\解\锁\
+
+wpsvip 稻壳会员 超级会员 wps会员 云空间容量自定义超级会员pro
+新会员体系解锁
+
 仅供学习参考，请于下载后24小时内删除
 
 ********************************
@@ -26,9 +26,6 @@ https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/XiaoMaoW
 
 ********************************
 
-[mitm]
-hostname = account.wps.*,vip.wps.cn,vas.wps.cn,s4.vip.wpscdn.cn,s6.vip.wpscdn.cn,drive.wps.cn,wenk.ios.wpscdn.cn,vipapi.wps.cn
-
 [rewrite_local]
 https:\/\/account\.wps\.(com|cn)\/api\/users\/(.+)\/overview url script-response-body https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/wps.js
 https:\/\/vip\.wps\.cn\/userinfo url script-response-body https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/wps.js
@@ -39,7 +36,11 @@ https:\/\/s6\.vip\.wpscdn\.cn\/vipapi\/banner\/v1\/config url script-response-bo
 https:\/\/drive\.wps\.cn\/api\/v3\/spaces url script-response-body https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/wps.js
 https:\/\/wenk\.ios\.wpscdn\.cn\/config\/purchase_config.json url script-response-body https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/wps.js
 https:\/\/vipapi\.wps\.cn\/payment_config\/v1\/client\/conf url script-response-body https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/wps.js
- ***************/
+
+[mitm]
+hostname = account.wps.*,vip.wps.cn,vas.wps.cn,s4.vip.wpscdn.cn,s6.vip.wpscdn.cn,drive.wps.cn,wenk.ios.wpscdn.cn,vipapi.wps.cn
+
+********************************/
 
 function Env(name) {
   // 判断当前环境是否为 Loon
