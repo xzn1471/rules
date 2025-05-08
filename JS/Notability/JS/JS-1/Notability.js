@@ -1,21 +1,20 @@
 /*************************************
-# 个人备用
+
 # 项目名称：Notability
 # 下载地址：https://t.cn/A6Cgjtei
 # 原脚本作者：chxm1023
-# 脚本作者：BOBOLAOSHIV587
 
 
 **************************************
 
 [rewrite_local]
+# > Notability解锁2099年
 ^https?:\/\/notability\.com\/(global|subscriptions) url script-response-body https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Notability/JS/Notability.js
 
 [mitm]
 hostname = notability.com
 
 *************************************/
-
 
 var chxm1023 = JSON.parse($response.body);
 
