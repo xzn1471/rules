@@ -1,6 +1,5 @@
 /******************************
 
-# 个人备用
 # 脚本功能：WPS解锁稻壳会员
 # 软件版本：11.26.0
 # 下载地址：http://t.cn/A6ZD2hl3
@@ -13,7 +12,7 @@
 ^https?:\/\/account\.wps\.cn\/api\/v3\/mine\/vips url script-response-body https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/WPS/JS/WPSDocerVIPuserCrack.js
 ^https?:\/\/.+\.(docer.)?wps.cn\/(user\/v1\/vip|android\/mb\/buy|download\/v1\/ios|partner\/invoke\/usable|(api|rank)\/v1(\/mobile\/mb)?\/detail) url script-request-header https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/WPS/JS/WPSDocerVIPowerCrack.js
 
-[mitm] 
+[mitm]
 hostname = *.docer.wps.cn, vipapi.wps.cn, account.wps.cn
 
 *******************************/
