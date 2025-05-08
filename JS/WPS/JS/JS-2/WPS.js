@@ -1,16 +1,15 @@
-/*
+/*******************************
 
 # 作者：510004015
+*******************************
 
 [rewrite_local]
-
 ^https:\/\/(vip|vas)\.wps\.cn\/((v2\/vip_center\/my\/privilege)|(query\/api\/v1\/(list_purchase_info|list_privilege_info))) url script-response-body https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/WPS/JS/WPS.js
 
-[mitm] 
-
+[mitm]
 hostname = vas.wps.cn, vip.wps.cn
 
-*/
+*******************************/
 
 var url = $request.url;
 var mock = JSON.parse($response.body);
