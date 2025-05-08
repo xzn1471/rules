@@ -128,7 +128,7 @@ Boom = type=http-response, pattern=^https:\/\/apimboom2\.globaldelight\.net\/itu
 
 
 # > 彩云天气 解锁SVIP.最高支持版本：6.7.2(旧版)
-caiyun_svip = type=http-response, pattern=https?:\/\/biz\.caiyunapp\.com\/(membership_rights|v2\/user), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/CaiYunTianQi-SVIP/JS/caiyun_svip.js, requires-body=true, max-size=-1, timeout=60
+彩云天气SVIP = type=http-response, pattern=https?:\/\/biz\.caiyunapp\.com\/(membership_rights|v2\/user), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/CaiYunTianQi-SVIP/JS/JS-1/CaiYunTianQi.js, requires-body=true, max-size=-1, timeout=60
 
 
 # > 彩云小译-登陆后解锁会员
@@ -246,8 +246,8 @@ GithubPro = type=http-response, pattern=https://api.github.com/graphql, script-p
 
 
 # > GoodNotes6☆解锁会员权限
-goodnotes = type=http-response, pattern=^https:\/\/isi\.csan\.goodnotes\.com\/.+\/(receipts$|subscribers\/?(.*?)*$), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Goodnotes6/JS/goodnotes.js, requires-body=true, max-size=-1, timeout=60
-goodnotes = type=http-request, pattern=^https:\/\/isi\.csan\.goodnotes\.com\/.+\/(receipts$|subscribers\/?(.*?)*$), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Goodnotes6/JS/goodnotes.js, timeout=60
+goodnotes = type=http-response, pattern=^https:\/\/isi\.csan\.goodnotes\.com\/.+\/(receipts$|subscribers\/?(.*?)*$), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Goodnotes6/JS/JS-1/GoodNotes6.js, requires-body=true, max-size=-1, timeout=60
+goodnotes = type=http-request, pattern=^https:\/\/isi\.csan\.goodnotes\.com\/.+\/(receipts$|subscribers\/?(.*?)*$), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Goodnotes6/JS/JS-1/GoodNotes6.js, timeout=60
 
 
 # > 滚动截屏-解锁 Premium
@@ -337,11 +337,11 @@ NaNieJaKao = type=http-response, pattern=^https?:\/\/nanie\.flyingeffect\.com\/a
 
 
 # > Nicegram会员解锁
-nicegram = type=http-response, pattern=^https?:\/\/nicegram\.cloud\/api\/v\d\/(ai-assistant\/purchase-list|user\/info|telegram\/auth), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Nicegram/JS/Nicegram.js, requires-body=true, max-size=-1, timeout=60
+Nicegram会员解锁 = type=http-response, pattern=^https?:\/\/nicegram\.cloud\/api\/v\d\/(ai-assistant\/purchase-list|user\/info|telegram\/auth), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Nicegram/JS/JS-1/Nicegram.js, requires-body=true, max-size=-1, timeout=60
 
 
 # > Notability解锁2099年
-Notability = type=http-response, pattern=^https?:\/\/notability\.com\/(global|subscriptions), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Notability/JS/Notability.js, requires-body=true, max-size=-1, timeout=60
+Notability = type=http-response, pattern=^https?:\/\/notability\.com\/(global|subscriptions), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Notability/JS/JS-1/Notability.js, requires-body=true, max-size=-1, timeout=60
 
 
 # > Photoshop Express-图片编辑&修图 解锁Premium
@@ -458,12 +458,12 @@ VivaCutProCrack = type=http-response, pattern=^https?:\/\/medi\.dxzzy321\.top\/a
 
 
 # > WPS解锁稻壳会员
-WPSDocerVIPuserCrack = type=http-response, pattern=^https?:\/\/account\.wps\.cn\/api\/v3\/mine\/vips, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/WPS/JS/WPSDocerVIPuserCrack.js, requires-body=true, max-size=-1, timeout=60
-WPSDocerVIPowerCrack = type=http-request, pattern=^https?:\/\/.+\.(docer.)?wps.cn\/(user\/v1\/vip|android\/mb\/buy|download\/v1\/ios|partner\/invoke\/usable|(api|rank)\/v1(\/mobile\/mb)?\/detail), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/WPS/JS/WPSDocerVIPowerCrack.js, timeout=60
+WPSDocerVIPuserCrack = type=http-response, pattern=^https?:\/\/account\.wps\.cn\/api\/v3\/mine\/vips, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/WPS/JS/JS-1/WPSDocerVIPuserCrack.js, requires-body=true, max-size=-1, timeout=60
+WPSDocerVIPowerCrack = type=http-request, pattern=^https?:\/\/.+\.(docer.)?wps.cn\/(user\/v1\/vip|android\/mb\/buy|download\/v1\/ios|partner\/invoke\/usable|(api|rank)\/v1(\/mobile\/mb)?\/detail), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/WPS/JS/JS-1/WPSDocerVIPowerCrack.js, timeout=60
 
 # > WPS 解锁超级会员 Pro
-WPSuperVIPuserCrack = type=http-response, pattern=^https?:\/\/(account|drive|vas|userinfo.docer)\.wps\.cn\/(.*api\/(v3\/(mine\/vips|spaces)|users\/\d+\/overview|v1\/list_purchase_info)|user\/v1\/vip_dl_times), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/WPS/JS/WPSuperVIPuserCrack.js, requires-body=true, max-size=-1, timeout=60
-WPSuperVIPowerCrack = type=http-request, pattern=^https?:\/\/(mobile|client|vas|download)(\.docer)?\.wps.cn\/(android\/mb\/buy_info|api\/v1\/mobile\/mb\/detail|query\/api\/v1\/list_privilege_info|download\/adapter\/v1\/mb), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/WPS/JS/WPSuperVIPowerCrack.js, timeout=60
+WPSuperVIPuserCrack = type=http-response, pattern=^https?:\/\/(account|drive|vas|userinfo.docer)\.wps\.cn\/(.*api\/(v3\/(mine\/vips|spaces)|users\/\d+\/overview|v1\/list_purchase_info)|user\/v1\/vip_dl_times), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/WPS/JS/JS-1/WPSuperVIPuserCrack.js, requires-body=true, max-size=-1, timeout=60
+WPSuperVIPowerCrack = type=http-request, pattern=^https?:\/\/(mobile|client|vas|download)(\.docer)?\.wps.cn\/(android\/mb\/buy_info|api\/v1\/mobile\/mb\/detail|query\/api\/v1\/list_privilege_info|download\/adapter\/v1\/mb), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/WPS/JS/JS-1/WPSuperVIPowerCrack.js, timeout=60
 
 
 # > 网易蜗牛读书解锁Vip
