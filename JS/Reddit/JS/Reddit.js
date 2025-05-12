@@ -1,6 +1,16 @@
-/*
+/*************************************
 去广告by@xream 解锁会员 by@ios151
-*/
+
+*************************************
+[rewrite_local]
+# > Reddit解锁会员
+^https?:\/\/gql(-fed)?\.reddit\.com url script-response-body https://raw.githubusercontent.com/Mikephie/Script/main/qx/redditvip-qx.js
+
+[mitm]
+hostname = gql.reddit.com, gql-fed.reddit.com
+
+*************************************/
+
 let body;
 try {
   body = JSON.parse($response.body.replace(/"isNsfw":true/g, '"isNsfw":false'));
