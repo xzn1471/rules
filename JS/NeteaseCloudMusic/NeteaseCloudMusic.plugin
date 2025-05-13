@@ -37,4 +37,4 @@ http-request ^https?:\/\/interface3?\.music\.163\.com\/eapi\/vipauth\/app\/auth\
 
 
 [Mitm]
-hostname = %APPEND% *music.163.com
+hostname = %APPEND% *.music.163.com
