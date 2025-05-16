@@ -62,6 +62,20 @@ DOMAIN,*.adukwai.com,REJECT
 ^https://app\.c.nf\.migu\.cn/payment/watch-ad reject-200
 
 
+# > 酷我音乐解锁会员
+# > 通用广告请求
+https?:\/\/vip1\.kuwo\.cn\/vip\/activity\/kwMemberDay reject-200
+# > 屏蔽热词
+https?:\/\/hotword\.kuwo\.cn\/hotword\.s reject-200
+# > 通用广告请求
+https?:\/\/vip1\.kuwo\.cn\/vip_adv\/ reject-200
+# > 通用广告请求
+https?:\/\/wapi\.kuwo\.cn\/openapi\/v1\/app\/pasterAdvert reject-200
+# > 应用内弹窗及右下角
+^https?:\/\/mobilead\.kuwo\.cn\/ reject-200
+
+
+
 [Script]
 # > AGC Video Player解锁会员
 http-response https://api.agcplayer.com/ script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/AGC/JS/AGC.js, requires-body=true, timeout=60, tag=AGC
@@ -270,8 +284,40 @@ http-request ^https?:\/\/commerce-api-.*\.faceu\.mobi\/commerce\/v1\/(subscripti
 http-response ^https?:\/\/gateway\.kugou\.com script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/KuGouYinYue/JS/KuGou.js, requires-body=true, timeout=60, tag=酷狗音乐解锁永久Vip
 
 
-# > 酷我音乐解锁会员皮肤、会员音频(最高无损)、听书权限
-http-response ^https?:\/\/(?:musicpay|nmobi|vip1|audiobookpay|tingshu)\.kuwo\.cn\/(?:music\.pay\?newver=\d+|mobi.s\?f=kwxs|vip\/(?:enc\/user\/vip\?op=ui&uid=|v2\/theme\?op=gd)|a\.p|v2\/api\/pay\/user\/info) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/KuWoMusic/JS/KuWo.js, requires-body=true, timeout=60, tag=KuWo
+
+
+# > 酷我音乐解锁会员
+# > 搜索框处理
+http-response https?:\/\/searchrecterm\.kuwo\.cn\/recterm\.s script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/KuWoMusic/JS/Kuwo.js, requires-body=true, timeout=60, tag=Kuwo
+# > 会员页广告
+http-response https?:\/\/appi\.kuwo\.cn\/kuwopay\/vip-tab\/page\/cells script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/KuWoMusic/JS/Kuwo.js, requires-body=true, timeout=60, tag=Kuwo
+# > 会员页顶部广告tab
+http-response https?:\/\/appi\.kuwo\.cn\/kuwopay\/vip-tab\/setting script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/KuWoMusic/JS/Kuwo.js, requires-body=true, timeout=60, tag=Kuwo
+# > 开屏广告
+http-response https?:\/\/rich\.kuwo\.cn\/AdService script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/KuWoMusic/JS/Kuwo.js, requires-body=true, timeout=60, tag=Kuwo
+# > 数字专辑
+http-response ^https?:\/\/musicpay\.kuwo\.cn\/music\.pay\?newver script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/KuWoMusic/JS/Kuwo.js, requires-body=true, timeout=60, tag=Kuwo
+# > 听书权限接口1
+http-response ^https?:\/\/[a-z0-9A-Z]+\.(kuwo|lrts)\.(cn|me)\/a\.p script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/KuWoMusic/JS/Kuwo.js, requires-body=true, timeout=60, tag=Kuwo
+# > 听书权限接口2
+http-response ^https?:\/\/.*\.kuwo\.cn\/v2\/api\/pay\/vip\/extraVipStatus script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/KuWoMusic/JS/Kuwo.js, requires-body=true, timeout=60, tag=Kuwo
+# > 新版vip接口1
+http-response ^https?:\/\/vip1\.kuwo\.cn\/vip\/enc\/user\/vip\?op=ui script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/KuWoMusic/JS/Kuwo.js, requires-body=true, timeout=60, tag=Kuwo
+# > 新版vip接口2
+http-response ^https?:\/\/vip1\.kuwo\.cn\/vip\/v2\/userbase\/vip\?op=get script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/KuWoMusic/JS/Kuwo.js, requires-body=true, timeout=60, tag=Kuwo
+# > 旧版vip接口
+http-response ^https?:\/\/vip1\.kuwo\.cn\/vip\/v2\/user\/vip\?(uid|op=ui) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/KuWoMusic/JS/Kuwo.js, requires-body=true, timeout=60, tag=Kuwo
+# > 皮肤解锁
+http-response ^https?:\/\/vip1\.kuwo\.cn\/vip\/v2\/theme script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/KuWoMusic/JS/Kuwo.js, requires-body=true, timeout=60, tag=Kuwo
+# > 下载接口
+http-request ^https?:\/\/musicpay\.kuwo\.cn\/music\.pay\?ui script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/KuWoMusic/JS/Kuwo.js, timeout=60, tag=Kuwo
+# > 我的页面卡片
+http-response ^https?:\/\/appi.kuwo.cn/kuwopay/personal/cells script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/KuWoMusic/JS/Kuwo.js, requires-body=true, timeout=60, tag=Kuwo
+# > 音乐播放接口
+http-response ^https:\/\/[a-z0-9A-Z]+\.kuwo\.cn\/mobi\.s\?f=kwxs script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/KuWoMusic/JS/Kuwo.js, requires-body=true, timeout=60, tag=Kuwo
+
+
+
 
 
 # > 懒人听书vip
@@ -539,4 +585,4 @@ http-response ^https?:\/\/haijiao\.com\/api\/(topic\/\d+|banner\/banner_list)$ s
 
 
 [Mitm]
-hostname = api.agcplayer.com, a.ajmide.com, api.adblockpro.app, *.adguard.org, *.aliyundrive.com, *.alipan.com, api.alohaprofile.com, *.aoscdn.com, *.apsapp.cn, appraven.net, app.autocad360.com, user-b612-api.snow.me, pan.baidu.com, baimiao.uzero.cn, api.mr.pixocial.com, newbeee-api.beautyplus.com, apimboom2.globaldelight.net, biz.caiyunapp.com, interpreter.cyapi.cn, *.camscanner.com, *.intsig.net, api2.vilipix.com, ios.chat.openai.com, api.craft.do, cubox.pro, ai.xiuxiu.meitu.com, api-sub.meitu.com, dj.palmestore.com, media.deezer.com, mobile-new.chinaeew.cn, *.baidu.com, *.pdfexpert.com, backend.getdrafts.com, dreamfaceapp.com, mb3admin.com, www.mb3admin.com, api-production.endel.io, *.snow.me, subscription-api.lyrebirdstudio.net, api-*.facereplacerext.com, www.kkmop.com, filmicpro.oracle.bendingspoonsapps.com, appv2.filmix.com.cn, payments.invideo.io, mobile.flightradar24.com, api.purchasely.io, *.vlognow.me, *.oracle.bendingspoonsapps.com, api.funimate.com, api.github.com, isi.csan.goodnotes.com, tailor.tomax.xyz, ifttt.com, nobyda.app, in.m.jd.com, api*.faceu.mobi, api3-lq.faceu.mobi, commerce-api-lf.faceu.mobi, commerce-api-lq.faceu.mobi, lv-api-lq.ulikecam.com, lv-api-hl.ulikecam.com, gateway.kugou.com, *.kuwo.cn, shapi.mting.info, shapi.lanrentingshu.com, gzapi.lanrentingshu.com, shapi.mting.info:443, *mgtv.com, cdn-bm.camera360.com, pro.particlethink.com, *.xiuxiu.meitu.com, api.posters.meitu.com, api-sub.meitu.com, *.meiyan.com, bmall.camera360.com, *.api.moji.com, api.moises.ai, www.mymorpholio.com, *.apphud.com, api2.mubu.com, apic.musixmatch.com, premium-api.myfitnesspal.com, nanie.flyingeffect.com, restore-access.indream.app, nicegram.cloud, notability.com, lcs-mobile-cops.adobe.io, peakvisor.com, service.perfect365.com, api.meiease.*, api.picsart.*, api-drive.mypikpak.com, oauth.secure.pixiv.net, api.polaxiong.com, magev6.if.qidian.com, *.wtzw.com, purchase-qingtu-api.b612kaji.com, api-qingtu.kajicam.com, www.qobuz.com, tfbook.taoyuewenhua.net, tybook.taoyuewenhua.net, gql.reddit.com, gql-fed.reddit.com, commerce-api.faceu.mobi, api3-misc-lf.retouchpics.com, m.815616.xyz, i.815616.xyz, 175.178.52.149, shimo.im, ocean.shuqireader.com, *-slidebox-ios-prod.cloudfunctions.net, snailsleep.net, api-mobile.soundcloud.com, spclient.wg.spotify.com, api.qonversion.io, scibug.com, api.tidal.com, api.termius.com, api2.vlognow.me, medi.dxzzy321.top, *.docer.wps.cn, vipapi.wps.cn, account.wps.cn, *.wps.cn, p.du.163.com, *.wallpaperscraft.com, security.wechat.com, weixin110.qq.com, education.github.com, 49.232.234.212, *xmind.*, *xunlei.com, api-shoulei-ssl.xunlei.com, app-ios.y2002.com, api.ieasou.com, dict.youdao.com, business.youdao.com, api-overmind.youdao.com, cdke.youdao.com, *.radio.cn, 60.205.171.165, apigate.kaimanhua.com, api-access.pangolin-sdk-toutiao.com, mi.gdt.qq.com, open.e.kuaishou.com, api-cdn.kaimanhua.com, service.ilovepdf.com, *.miguvideo.com, *.migu.cn, *.upwqjcun.cc, haijiao.com
+hostname = api.agcplayer.com, a.ajmide.com, api.adblockpro.app, *.adguard.org, *.aliyundrive.com, *.alipan.com, api.alohaprofile.com, *.aoscdn.com, *.apsapp.cn, appraven.net, app.autocad360.com, user-b612-api.snow.me, pan.baidu.com, baimiao.uzero.cn, api.mr.pixocial.com, newbeee-api.beautyplus.com, apimboom2.globaldelight.net, biz.caiyunapp.com, interpreter.cyapi.cn, *.camscanner.com, *.intsig.net, api2.vilipix.com, ios.chat.openai.com, api.craft.do, cubox.pro, ai.xiuxiu.meitu.com, api-sub.meitu.com, dj.palmestore.com, media.deezer.com, mobile-new.chinaeew.cn, *.baidu.com, *.pdfexpert.com, backend.getdrafts.com, dreamfaceapp.com, mb3admin.com, www.mb3admin.com, api-production.endel.io, *.snow.me, subscription-api.lyrebirdstudio.net, api-*.facereplacerext.com, www.kkmop.com, filmicpro.oracle.bendingspoonsapps.com, appv2.filmix.com.cn, payments.invideo.io, mobile.flightradar24.com, api.purchasely.io, *.vlognow.me, *.oracle.bendingspoonsapps.com, api.funimate.com, api.github.com, isi.csan.goodnotes.com, tailor.tomax.xyz, ifttt.com, nobyda.app, in.m.jd.com, api*.faceu.mobi, api3-lq.faceu.mobi, commerce-api-lf.faceu.mobi, commerce-api-lq.faceu.mobi, lv-api-lq.ulikecam.com, lv-api-hl.ulikecam.com, gateway.kugou.com, *.kuwo.cn, *.lrts.me, shapi.mting.info, shapi.lanrentingshu.com, gzapi.lanrentingshu.com, shapi.mting.info:443, *mgtv.com, cdn-bm.camera360.com, pro.particlethink.com, *.xiuxiu.meitu.com, api.posters.meitu.com, api-sub.meitu.com, *.meiyan.com, bmall.camera360.com, *.api.moji.com, api.moises.ai, www.mymorpholio.com, *.apphud.com, api2.mubu.com, apic.musixmatch.com, premium-api.myfitnesspal.com, nanie.flyingeffect.com, restore-access.indream.app, nicegram.cloud, notability.com, lcs-mobile-cops.adobe.io, peakvisor.com, service.perfect365.com, api.meiease.*, api.picsart.*, api-drive.mypikpak.com, oauth.secure.pixiv.net, api.polaxiong.com, magev6.if.qidian.com, *.wtzw.com, purchase-qingtu-api.b612kaji.com, api-qingtu.kajicam.com, www.qobuz.com, tfbook.taoyuewenhua.net, tybook.taoyuewenhua.net, gql.reddit.com, gql-fed.reddit.com, commerce-api.faceu.mobi, api3-misc-lf.retouchpics.com, m.815616.xyz, i.815616.xyz, 175.178.52.149, shimo.im, ocean.shuqireader.com, *-slidebox-ios-prod.cloudfunctions.net, snailsleep.net, api-mobile.soundcloud.com, spclient.wg.spotify.com, api.qonversion.io, scibug.com, api.tidal.com, api.termius.com, api2.vlognow.me, medi.dxzzy321.top, *.docer.wps.cn, vipapi.wps.cn, account.wps.cn, *.wps.cn, p.du.163.com, *.wallpaperscraft.com, security.wechat.com, weixin110.qq.com, education.github.com, 49.232.234.212, *xmind.*, *xunlei.com, api-shoulei-ssl.xunlei.com, app-ios.y2002.com, api.ieasou.com, dict.youdao.com, business.youdao.com, api-overmind.youdao.com, cdke.youdao.com, *.radio.cn, 60.205.171.165, apigate.kaimanhua.com, api-access.pangolin-sdk-toutiao.com, mi.gdt.qq.com, open.e.kuaishou.com, api-cdn.kaimanhua.com, service.ilovepdf.com, *.miguvideo.com, *.migu.cn, *.upwqjcun.cc, haijiao.com
