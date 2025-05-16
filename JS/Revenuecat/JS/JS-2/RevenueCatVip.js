@@ -7,7 +7,7 @@
 > TgChannel         https://t.me/ddgksf2021
 > Contribute        https://t.me/ddgksf2013_bot
 > Feedback          📮 𝐝𝐝𝐠𝐤𝐬𝐟𝟐𝟎𝟏𝟑@𝟏𝟔𝟑.𝐜𝐨𝐦 📮
-> UpdateTime        2024-07-06
+> UpdateTime        2024-07-07
 > Suitable          自行观看“# > ”注释内容，解锁是暂时的，购买也不是永久的[订阅、跑路]
 > Attention         📣个别失效的APP请相关需求者自行降级、或寻找替代品、或购买支持
 > Attention         如需引用请注明出处，谢谢合作！
@@ -18,12 +18,14 @@
 https://appraven.net/collection/77299969
 
 [rewrite_local]
+
 # ～ RevenueCat@ddgksf2013
 ^https:\/\/api\.(revenuecat|rc-backup)\.com\/.+\/(receipts$|subscribers\/[^/]+$) url script-response-body https://gist.githubusercontent.com/ddgksf2013/dbb1695cd96743eef18f3fac5c6fe227/raw/revenuecat.js
 ^https:\/\/api\.(revenuecat|rc-backup)\.com\/.+\/(receipts|subscribers) url script-request-header https://raw.githubusercontent.com/ddgksf2013/Scripts/master/deleteHeader.js
 
 [mitm]
-hostname= api.revenuecat.com, api.rc-backup.com
+
+hostname=api.revenuecat.com, api.rc-backup.com
 
 ***********************************/
 
@@ -46,11 +48,12 @@ const mapping = {
   'Precious/': ['Pro'],
   'GBA/': ['xGBA.pro'],
   'mark_cup/': ['premiun'],
-  'Wake%20Music': ['premiun','com.OfflineMusic.www.lifetime298'],
+  'Wake%20Music': ['premium','com.OfflineMusic.www.lifetime198'],
   'Photomator': ['pixelmator_photo_pro_access'],
   'StepUp/': ['premiun'],
   'SleepMaster/': ['premium','sm_14999_lifetime'],
   'Notedrafts': ['pro_entitlement'],
+  'Photon/': ['photon.paid','photon.bundle.yearly'],
   'Rats%20Project': ['PandaTracker_Premiumv2','monthly_subscription_discount_idv3'],
   'Grain/': ['gold','lifetimeMembership'],
   'AudioPlayer': ['Pro'],
