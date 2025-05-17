@@ -11,6 +11,6 @@
 
 
 <div align="center">
-  <img src="JS/img/P.PNG" alt="" width="300px" style="margin-right: 6px;" />
-  <img src="JS/img/J.PNG" alt="" width="300px" />
+  <img src="JS/img/P.png" alt="" width="300px" style="margin-right: 6px;" />
+  <img src="JS/img/J.png" alt="" width="300px" />
 </div>
