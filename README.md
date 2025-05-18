@@ -8,17 +8,17 @@
 
 - 累计访客量: ![](https://profile-counter.glitch.me/BOBOLAOSHIV587_Rules/count.svg)
 
-1、自用Surge、QuantumultX(Qx)、Loon---分流规则、JS会员解锁脚本（搬运自各位大佬，防止删库）、Task。
+1、自用Surge、(Qx)QuantumultX、Loon--分流规则、JS会员解锁脚本（搬运自各位大佬，防止删库）、Task。
 
-2、分流规则在对应的Surge、QuantumultX、Loon文件夹中。按软件使用分流规则。
+2、分流规则在对应的Surge、QuantumultX、Loon文件夹中。
 
-3、各文件夹中文件明细：
+3、各文件夹文件明细：
 
-  1、）Task文件夹：各种定时任务----随机图片二次元+18、吾爱破解签到、定时推送妹子图、Pixiv推送服务等。
+  1、）Task文件夹：定时任务--吾爱破解签到、定时推送妹子图、Pixiv推送服务等。
 
-  2、）Icons文件夹：各种图标。在软件中导入.json文件查看。
+  2、）Icons文件夹：各种图标。
 
-  3、）JS文件夹：各种App会员解锁脚本。
+  3、）JS文件夹：App会员解锁脚本。
 
   4、）Loon文件夹：
 
@@ -62,7 +62,7 @@
 
     8、）YouTube(Music)Enhance文件夹：适配Surge专用的YouTube(Music)增强脚本；
 
-    9、）tvOS文件夹：适配Surge专用的tvOS安装证书。
+
 
 4、特别感谢：以下排名不分先后顺序
  * [afengye](https://github.com/afengye)
