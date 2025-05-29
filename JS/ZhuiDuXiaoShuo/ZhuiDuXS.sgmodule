@@ -1,0 +1,13 @@
+#!name=追读小说
+#!desc=解锁会员..注意事项：需登录.
+#!category=😍BOBO Premium
+#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/ZhuiDuXiaoShuo.png
+#!openUrl=https://apps.apple.com/app/id1205865478
+
+[Script]
+# > 追读小说-解锁会员
+追读小说-解锁会员 = type=http-response, pattern=^http[s]?:\/\/dj.palmestore.com\/zyuc\/api\/user\/accountInfo, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/ZhuiDuXiaoShuo/JS/JS-1/palmestore.js, requires-body=true, max-size=-1, timeout=60
+追读小说-解锁会员 = type=http-response, pattern=^https:\/\/dj\.palmestore\.com\/zyuc\/api\/user\/accountInfo(.?)+, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/ZhuiDuXiaoShuo/JS/JS-2/zdxs.js, requires-body=true, max-size=-1, timeout=60
+
+[MITM]
+hostname = %APPEND% dj.palmestore.com
