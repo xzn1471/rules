@@ -1,0 +1,100 @@
+#!name=知乎
+#!desc=净化/解锁盐选会员
+#!category=😍BOBO Premium
+#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Zhihu.png
+#!openUrl=https://apps.apple.com/app/id432274380
+
+
+[URL Rewrite]
+# > 知乎_暂不清楚作用
+^https?:\/\/api\.zhihu\.com\/ad-style-service\/request - reject
+# > 知乎_首页右下角悬浮窗
+^https?:\/\/api\.zhihu\.com\/commercial_api\/app_float_layer - reject
+# > 知乎_回答页面顶部推广
+^https?:\/\/www\.zhihu\.com\/api\/v4\/topics\/rank_list\/question\/\d+\/related - reject
+# > 知乎_热榜页去除直播
+^https?:\/\/api\.zhihu\.com\/drama\/hot-drama-list - reject
+
+
+[Map Local]
+# > 知乎_拦截DNS解析
+^https?:\/\/118\.89\.204\.198 data-type=text data=" " status-code=200
+^https?:\/\/103\.41\.167\.237 data-type=text data=" " status-code=200
+^https?:\/\/2402:4e00:1200:ed00:0:9089:6dac:96b6 data-type=text data=" " status-code=200
+# > 知乎_我的页面底部
+^https?:\/\/www\.zhihu\.com\/appview\/v\d\/zhmore data-type=text data=" " status-code=200
+# > 知乎_屏蔽远程配置
+^https?:\/\/api\.zhihu\.com\/ab\/api\/v1\/products\/zhihu\/platforms\/ios\/config data-type=text data=" " status-code=200
+# > 知乎_品牌提问广告
+^https?:\/\/api\.zhihu\.com\/brand\/question\/\d+/card\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https?:\/\/www\.zhihu\.com\/api\/v\d+\/brand\/question/\d+/card\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+# > 知乎_去除底部标签页关注人角标
+^https?:\/\/api\.zhihu\.com\/moments\/tab_v2 data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+# > 知乎_去除消息通知角标
+^https?:\/\/api\.zhihu\.com\/(notifications\/v\d\/count) data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+# > 知乎_拦截回答下的卡片广告
+^https?:\/\/www\.zhihu\.com\/api\/v\d\/answers\/\d+\/recommendations data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+# > 知乎_拦截应用内弹窗
+^https?:\/\/api\.zhihu\.com\/me\/guides data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+# > 知乎_去除关注页最常访问
+^https?:\/\/api\.zhihu\.com\/moments\/recent data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+# > 知乎_拦截推荐页顶部广告
+^https?:\/\/api\.zhihu\.com\/api\/v4\/ecom_data\/config data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+# > 知乎_底栏加号的广告
+^https?:\/\/api\.zhihu\.com\/content-distribution-core\/bubble\/common\/settings data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+# > 知乎_推荐页搜索栏左侧图标
+^https?:\/\/api\.zhihu\.com\/feed\/render\/revisit\/current_reading data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+# > 知乎_疑似推荐页内容更新红点
+^https?:\/\/api\.zhihu\.com\/feed\/render\/revisit\/tag_config data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+# > 知乎_暂不清楚作用
+^https?:\/\/api\.zhihu\.com\/commercial_api data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+# > 知乎_文章页去除底部广告
+^https?:\/\/www\.zhihu\.com\/api\/v\d\/articles\/\d+\/recommendation data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+# > 知乎_回答页面相关搜索词
+^https?:\/\/www\.zhihu\.com\/api\/v4\/search\/related_queries\/answer\/ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+# > 知乎_首页左侧图标
+^https?:\/\/api\.zhihu\.com\/root\/window data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+# > 知乎_我的页面下方内容
+^https?:\/\/api\.zhihu\.com\/api\/v4\/profile\/cards data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+
+[Script]
+# > 知乎_用户信息
+Zhihu = type=http-response, pattern=^https?:\/\/api\.zhihu\.com\/people/self$, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Zhihu/JS/JS-1/Zhihu.js, requires-body=true, max-size=-1, timeout=60
+# > 知乎_我的页面开通会员CARD
+Zhihu = type=http-response, pattern=^https?:\/\/api\.zhihu\.com\/unlimited/go/my_card, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Zhihu/JS/JS-1/Zhihu.js, requires-body=true, max-size=-1, timeout=60
+# > 知乎_开屏广告
+Zhihu = type=http-response, pattern=^https?:\/\/api\.zhihu\.com\/commercial_api.*launch_v2, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Zhihu/JS/JS-1/Zhihu.js, requires-body=true, max-size=-1, timeout=60
+# > 知乎_推荐信息流去广告
+Zhihu = type=http-response, pattern=^https?:\/\/api\.zhihu\.com\/topstory\/recommend, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Zhihu/JS/JS-1/Zhihu.js, requires-body=true, max-size=-1, timeout=60
+# > 知乎_搜索页去除推广
+Zhihu = type=http-response, pattern=^https?:\/\/api\.zhihu\.com\/search\/preset_words, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Zhihu/JS/JS-1/Zhihu.js, requires-body=true, max-size=-1, timeout=60
+# > 知乎_猜你想搜下面条目['猜你想搜'四个字无法去除]
+Zhihu = type=http-response, pattern=^https?:\/\/api\.zhihu\.com\/search\/recommend_query, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Zhihu/JS/JS-1/Zhihu.js, requires-body=true, max-size=-1, timeout=60
+# > 知乎_删除会员页面会员购
+Zhihu = type=http-response, pattern=^https?:\/\/api\.zhihu\.com\/bazaar\/vip_tab\/tabs, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Zhihu/JS/JS-1/Zhihu.js, requires-body=true, max-size=-1, timeout=60
+# > 知乎_热榜页去除广告
+Zhihu = type=http-response, pattern=^https?:\/\/api\.zhihu\.com\/v2\/topstory\/hot-lists, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Zhihu/JS/JS-1/Zhihu.js, requires-body=true, max-size=-1, timeout=60
+# > 知乎_会员页面顶部处理
+Zhihu = type=http-response, pattern=^https?:\/\/api\.zhihu\.com\/bazaar\/vip_tab\/header, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Zhihu/JS/JS-1/Zhihu.js, requires-body=true, max-size=-1, timeout=60
+# > 知乎_回答信息流去广告
+Zhihu = type=http-response, pattern=^https?:\/\/api\.zhihu\.com\/next-data, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Zhihu/JS/JS-1/Zhihu.js, requires-body=true, max-size=-1, timeout=60
+Zhihu = type=http-response, pattern=^https?:\/\/api\.zhihu\.com\/next-render, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Zhihu/JS/JS-1/Zhihu.js, requires-body=true, max-size=-1, timeout=60
+# > 知乎_问题回答列表
+Zhihu = type=http-response, pattern=^https?:\/\/api\.zhihu\.com\/(v4\/)?questions\/\d+\/feeds, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Zhihu/JS/JS-1/Zhihu.js, requires-body=true, max-size=-1, timeout=60
+# > 知乎_回答内容优化
+Zhihu = type=http-response, pattern=^https?:\/\/www\.zhihu\.com\/appview\/v2\/answer\/, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Zhihu/JS/JS-1/Zhihu.js, requires-body=true, max-size=-1, timeout=60
+# > 知乎_会员页面购物处理
+Zhihu = type=http-response, pattern=^https?:\/\/api\.zhihu\.com\/bazaar\/vip_tab\/modules, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Zhihu/JS/JS-1/Zhihu.js, requires-body=true, max-size=-1, timeout=60
+# > 知乎_修改用户盐值
+Zhihu = type=http-response, pattern=^https?:\/\/api\.zhihu\.com\/user-credit\/basis, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Zhihu/JS/JS-1/Zhihu.js, requires-body=true, max-size=-1, timeout=60
+# > 知乎_消息页
+Zhihu = type=http-response, pattern=^https?:\/\/api\.zhihu\.com\/notifications\/v3\/(message|timeline\/entry\/system_message), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Zhihu/JS/JS-1/Zhihu.js, requires-body=true, max-size=-1, timeout=60
+# > 知乎_关注页面去除今日话题和为您推荐
+Zhihu = type=http-response, pattern=^https?:\/\/api\.zhihu\.com\/moments_v3, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Zhihu/JS/JS-1/Zhihu.js, requires-body=true, max-size=-1, timeout=60
+# > 知乎_搜索发现
+Zhihu = type=http-response, pattern=https://api.zhihu.com/search/hot_search, script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Zhihu/JS/JS-1/Zhihu.js, requires-body=true, max-size=-1, timeout=60
+
+
+[MITM]
+hostname = %APPEND% 118.89.204.198, 103.41.167.237, 2402:4e00:1200:ed00:0:9089:6dac:96b6, www.zhihu.com, api.zhihu.com, zhuanlan.zhihu.com, appcloud2.zhihu.com, m-cloud.zhihu.com, 103.41.167.236, 103.41.167.234, 103.41.167.235, 103.41.167.226
