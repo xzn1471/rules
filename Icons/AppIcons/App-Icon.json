@@ -27,10 +27,6 @@
             "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Loon-TieTie.png"
         },
         {
-            "name": "Loon",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Loon-TestFlight.png"
-        },
-        {
             "name": "QuantumultX",
             "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/QuantumultX-01.png"
         },
@@ -75,10 +71,6 @@
             "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Clash.png"
         },
         {
-            "name": "ClashMeta",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/ClashMeta-01.png"
-        },
-        {
             "name": "ClashX",
             "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/ClashX.png"
         },
@@ -89,10 +81,6 @@
         {
             "name": "1.1.1.1",
             "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/1.1.1.1-02.png"
-        },
-        {
-            "name": "1.1.1.1",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/1.1.1.1-03.png"
         },
         {
             "name": "Cloudflare",
@@ -148,55 +136,11 @@
         },
         {
             "name": "Bilibili",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/BilibiliBlue.png"
-        },
-        {
-            "name": "Bilibili",
             "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/BilibiliWhite.png"
-        },
-        {
-            "name": "Ezviz",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Ezviz.png"
-        },
-        {
-            "name": "XPTV",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/XPTV.png"
-        },
-        {
-            "name": "CMSPlayer",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/CMSPlayer-1.0.15.png"
-        },
-        {
-            "name": "APTV",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/APTV.png"
-        },
-        {
-            "name": "Fileball",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Fileball.png"
         },
         {
             "name": "Infuse",
             "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Infuse.png"
-        },
-        {
-            "name": "Conflux",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Conflux.png"
-        },
-        {
-            "name": "MediaStorm",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/MediaStorm.png"
-        },
-        {
-            "name": "Emby",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Emby-01.png"
-        },
-        {
-            "name": "Emby",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Emby-02.png"
-        },
-        {
-            "name": "RSSHubRadar",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/RSSHubRadar.png"
         },
         {
             "name": "ColorfulCloudsWeather Caiyun",
@@ -263,10 +207,6 @@
             "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Telegram-02.png"
         },
         {
-            "name": "Swiftgram",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Swiftgram.png"
-        },
-        {
             "name": "Nicegram",
             "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Nicegram-01.png"
         },
@@ -295,10 +235,6 @@
             "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Audiomack.png"
         },
         {
-            "name": "Block100",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Block100.png"
-        },
-        {
             "name": "Notability",
             "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Notability.png"
         },
@@ -317,10 +253,6 @@
         {
             "name": "TIDAL",
             "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/TIDAL.png"
-        },
-        {
-            "name": "Hodor",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Hodor.png"
         },
         {
             "name": "StormSniffer",
@@ -463,10 +395,6 @@
             "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Qobuz.png"
         },
         {
-            "name": "Remini",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Remini.png"
-        },
-        {
             "name": "Xmind",
             "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Xmind.png"
         },
@@ -491,16 +419,8 @@
             "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/FilmicPro.png"
         },
         {
-            "name": "MWeb",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/MWeb.png"
-        },
-        {
             "name": "Noto",
             "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Noto.png"
-        },
-        {
-            "name": "Labixiaoxin",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Labixiaoxin.jpg"
         },
         {
             "name": "Sub-Store",
@@ -529,14 +449,6 @@
         {
             "name": "Hiddify",
             "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Hiddify-Blue.png"
-        },
-        {
-            "name": "Hiddify",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Hiddify-Red.png"
-        },
-        {
-            "name": "Hiddify",
-            "url": "https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Hiddify-Yellow.png"
         },
         {
             "name": "Hiddify",
