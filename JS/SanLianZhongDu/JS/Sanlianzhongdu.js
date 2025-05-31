@@ -1,7 +1,7 @@
 /*******************************
 脚本功能：三联中读,知识会员+数字刊会员
 下载地址：苹果商店下载
-更新时间：2025年5月14日 07:53
+更新时间：2025年5月31日 14:42
 电报频道：https://t.me/GieGie777
 使用声明：此脚本仅供学习与交流，请在下载使用24小时内删除！请勿在中国大陆转载与贩卖！
 *******************************
@@ -30,17 +30,17 @@ if (url.indexOf(p1) != -1) {
         },
         "model": {
             "msgRed": 0,
-            "registerTime": 1747180404871,
+            "registerTime": 1748673764028,
             "arOpen": true,
             "visitor": {
-                "uid": 2926901,
-                "ticket": "1747180404901yjdcz"
+                "uid": 2934609,
+                "ticket": "1748673764057girms"
             },
             "buyZhuanlanNewArticle": 1,
             "buyMsgNum": 1,
             "userInfo": {
                 "phone": "",
-                "uid": 2926901,
+                "uid": 2934609,
                 "userVflag": 0,
                 "remark": "此脚本仅供学习与交流，请在下载使用24小时内删除！请勿在中国大陆转载与贩卖!!!作者TG频道 : https://t.me/GieGie777",
                 "pic": "https://zdimg.lifeweek.com.cn/app/20230410/16811146599505136.jpg",
