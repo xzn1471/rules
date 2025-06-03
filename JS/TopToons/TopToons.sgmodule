@@ -1,0 +1,12 @@
+#!name=TopToons顶通韩漫网
+#!desc=金币解锁🔓--金币付费购买章节即可，无需登录！
+#!category=😍BOBO Premium
+#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/TopToons.png
+#!openUrl=https://www.toptoon.net/
+
+[Script]
+# > TopToons金币付费购买章节即可，无需登录！
+TopToons = type=http-request, pattern=^https?:\/\/toptoons.(online|click)\/(buychapter|comic\/\d+), script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/TopToons/JS/TopToons.js, timeout=60
+
+[MITM]
+hostname = %APPEND% toptoons.click, toptoons.online
