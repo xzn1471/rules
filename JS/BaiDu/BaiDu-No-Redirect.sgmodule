@@ -1,0 +1,12 @@
+#!name=百度搜索防跳转AppStore
+#!desc=使用网页版百度搜索,在搜索结果中点击关键词时防跳转AppStore
+#!category=😍BOBO Premium
+#!icon=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/Icons/AppIcons/Image/App/Baidu.png
+#!openUrl=www.baidu.com
+
+[Script]
+# > 百度搜索防跳转AppStore
+百度防跳转 = type=http-response,pattern=^https:\/\/boxer\.baidu\.com\/scheme\?scheme,script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/BaiDu/JS/BaiDu-No-Redirect.js
+
+[MITM]
+hostname = %APPEND% boxer.baidu.com
