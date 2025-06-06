@@ -70,10 +70,10 @@ const html = `
     <meta charset="UTF-8" />
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/assets/icon.png" />
-    <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/assets/icon-dark.png">
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Script-Hub/JS/icon/icon.png" />
+    <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Script-Hub/JS/icon/icon-dark.png">
     
-    <!-- (viewport-fit=cover,填充整个屏幕导致全屏布局不一样) <link rel="stylesheet" href="https://unpkg.com/simpledotcss/simple.min.css">-->
+    <!-- (viewport-fit=cover,填充整个屏幕导致全屏布局不一样) <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/BOBOLAOSHIV587/Rules/JS/Script-Hub/JS/CSS/simple.min.css">-->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no", viewport-fit=auto />
     <meta name="HandheldFriendly" content="true">
     <title>Script Hub</title>
