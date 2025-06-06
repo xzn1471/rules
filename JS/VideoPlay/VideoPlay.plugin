@@ -1,0 +1,14 @@
+#!name=VideoPlay视频聚合
+#!desc=https://api.sheep.com/sheep/videoPolymerization/  --浏览器打开链接，添加到主屏幕
+#!category=😍BOBO Premium
+#!openUrl=https://api.sheep.com/sheep/videoPolymerization/
+
+
+[Script]
+# > VideoPlay视频聚合
+http-response ^https:\/\/api\.sheep\.com\/sheep\/videoPolymerization\/?$ script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/VideoPlay/JS/API/VideoPlay-logic.js, requires-body=true, timeout=60, tag=VideoPlay-logic
+http-response ^https:\/\/api\.sheep\.com\/sheep\/videoPolymerization\/(api|userinfo\/username\/([^\/]+)|videoword\/([^\/]+)\/\?wd=([^\/]+)|videolist\/([^\/]+)) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/VideoPlay/JS/API/VideoPlay-API.js, requires-body=true, timeout=60, tag=VideoPlay-API
+
+
+[Mitm]
+hostname = api.sheep.com
