@@ -132,7 +132,7 @@ function finishScript() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
         <title>VidSheep</title>
         <link rel="stylesheet" href="https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/VideoPlay/JS/CSS/VideoPlay.css">
-        <link rel="stylesheet" href="https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/VideoPlay/JS/CSS/iconfont.css">
+        <link rel="stylesheet" href="https://at.alicdn.com/t/c/font_4885201_i2n2iwmepf.css">
     </head>
     <style>
         body::before {
