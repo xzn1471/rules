@@ -8,7 +8,7 @@
 *******************************
 [rewrite_local]
 # > 18品茶社-查看野🐔资料🔓，无需登录！
-^https?:\/\/18pcs.(fun|bond|cfd)\/record\/\d+ url script-request-header https://raw.githubusercontent.com/WeiGiegie/666/main/18pcs.js
+^https?:\/\/18pcs.(fun|bond|cfd|com|space)\/record\/\d+ url script-request-header https://raw.githubusercontent.com/WeiGiegie/666/main/18pcs.js
 
 [mitm]
 hostname = 18pcs.bond, 18pcs.fun, 18pcs.cfd, 18pcs.com, 18pcs.space
