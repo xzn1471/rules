@@ -4,6 +4,24 @@
 #!openUrl=https://api.sheep.com/sheep/videoPolymerization/
 
 
+[Rule]
+DOMAIN,caiji.moduapi.cc,DIRECT
+DOMAIN,tu.modututu.com,DIRECT
+DOMAIN,jszyapi.com,DIRECT
+DOMAIN,suoniapi.com,DIRECT
+DOMAIN,subocaiji.com,DIRECT
+DOMAIN,cj.lziapi.com,DIRECT
+DOMAIN,p2100.net,DIRECT
+DOMAIN,img.smdyw.top,DIRECT
+DOMAIN,360zy.com,DIRECT
+DOMAIN,api.guangsuapi.com,DIRECT
+DOMAIN,collect.wolongzyw.com,DIRECT
+DOMAIN,bfzyapi.com,DIRECT
+DOMAIN,api.zuidapi.com,DIRECT
+DOMAIN,mars-prod.whalean.com,DIRECT
+DOMAIN,at.alicdn.com,DIRECT
+
+
 [Script]
 # > VideoPlay视频聚合
 http-response ^https:\/\/api\.sheep\.com\/sheep\/videoPolymerization\/?$ script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/VideoPlay/JS/API/VideoPlay-logic.js, requires-body=true, timeout=60, tag=VideoPlay-logic
