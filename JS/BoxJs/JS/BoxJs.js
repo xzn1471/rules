@@ -44,9 +44,9 @@ $.json = $.name // `接口`类请求的响应体
 $.html = $.name // `页面`类请求的响应体
 
 // 页面源码地址
-$.web = `https://cdn.jsdelivr.net/gh/chavyleung/scripts@${
+$.web = `https://cdn.jsdelivr.net/gh/BOBOLAOSHIV587/Rules@${
   $.version
-}/box/chavy.boxjs.html?_=${new Date().getTime()}`
+}JS/BoxJs/JS/HTML/box.release.boxjs.html?_=${new Date().getTime()}`
 // 版本说明地址 (Release Note)
 $.ver = `https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/BoxJs/JS/JSON/box.release.json`
 
