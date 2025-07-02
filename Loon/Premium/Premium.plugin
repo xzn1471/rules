@@ -153,10 +153,6 @@ http-response ^https?:\/\/(api|docs)\.craft\.do\/(api\/)?(auth\/v\d\/profile|sub
 http-response ^https:\/\/cubox\.pro\/c\/api\/userInfo script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/Cubox/JS/Cubox.js, requires-body=true, timeout=60, tag=Cubox - 文章阅读与标注笔记 解锁高级会员
 
 
-# > 蛋啵解锁vip功能
-#http-response ^https://api-sub\.meitu\.com/v2/user/vip_info_by_group script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/DanBo/JS/danbovip.js, requires-body=true, timeout=60, tag=danbovip
-#http-response ^https://ai\.xiuxiu\.meitu\.com/v1/tool/mtlab/ai_graffiti_permission script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/DanBo/JS/danboai.js, requires-body=true, timeout=60, tag=danboai
-
 
 # > 得间小说-解锁会员
 http-response ^https:\/\/dj\.palmestore\.com\/zyuc\/api\/user\/accountInfo script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/DeJianXS/JS/DeJianXS.js, requires-body=true, timeout=60, tag=得间小说-解锁会员
@@ -328,10 +324,6 @@ http-response https?:\/\/cdn-bm\.camera360\.com\/api\/mix\/recovery script-path=
 # > 漫读-万能电子书阅读器-解锁专业版
 http-response ^http:\/\/enjoy_reading_pro\.particlethink\.com:8083\/app\/api\/v\d\/user\/is_vip script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/ManDu/JS/ManDu.js, requires-body=true, timeout=60, tag=漫读-解锁专业版
 
-
-# > 美图秀秀 解锁SVIP 获取ai擦除照片
-# http-response ^https?:\/\/((h5|api)\.xiuxiu|api-sub|api\.posters)\.meitu\.com\/.+\/(vip|user|h\d|center|home) script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/MeiTuXiuXiu/JS/MTXX.js, requires-body=true, timeout=60, tag=美图秀秀 解锁SVIP 获取ai擦除照片
-# http-response https?:\/\/api\.posters\.meitu\.com\/matting\/znxc\.json script-path=https://raw.githubusercontent.com/BOBOLAOSHIV587/Rules/main/JS/MeiTuXiuXiu/JS/MTXX.js, requires-body=true, timeout=60, tag=美图秀秀 解锁SVIP 获取ai擦除照片
 
 
 # > 美颜相机 解锁VIP
